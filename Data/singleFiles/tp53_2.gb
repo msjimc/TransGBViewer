@@ -1,0 +1,595 @@
+LOCUS       NM_001126114            2645 bp    mRNA    linear   PRI 12-JUN-2025
+DEFINITION  Homo sapiens tumor protein p53 (TP53), transcript variant 3, mRNA.
+ACCESSION   NM_001126114 XR_243566
+VERSION     NM_001126114.3
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2645)
+  AUTHORS   Mirgayazova,R., Khadiullina,R., Chasov,V., Mingaleeva,R.,
+            Miftakhova,R., Rizvanov,A. and Bulatov,E.
+  TITLE     Therapeutic Editing of the TP53 Gene: Is CRISPR/Cas9 an Option?
+  JOURNAL   Genes (Basel) 11 (6), 704 (2020)
+   PUBMED   32630614
+  REMARK    GeneRIF: Therapeutic Editing of the TP53 Gene: Is CRISPR/Cas9 an
+            Option?
+            Review article
+            Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 2645)
+  AUTHORS   Flynt,E., Bisht,K., Sridharan,V., Ortiz,M., Towfic,F. and
+            Thakurta,A.
+  TITLE     Prognosis, Biology, and Targeting of TP53 Dysregulation in Multiple
+            Myeloma
+  JOURNAL   Cells 9 (2), 287 (2020)
+   PUBMED   31991614
+  REMARK    Review article
+            Publication Status: Online-Only
+REFERENCE   3  (bases 1 to 2645)
+  AUTHORS   Barnoud,T., Parris,J.L.D. and Murphy,M.E.
+  TITLE     Common genetic variants in the TP53 pathway and their impact on
+            cancer
+  JOURNAL   J Mol Cell Biol 11 (7), 578-585 (2019)
+   PUBMED   31152665
+  REMARK    GeneRIF: Common genetic variants in the TP53 pathway and their
+            impact on cancer.
+            Review article
+REFERENCE   4  (bases 1 to 2645)
+  AUTHORS   Hu,W., Chen,S., Thorne,R.F. and Wu,M.
+  TITLE     TP53, TP53 Target Genes (DRAM, TIGAR), and Autophagy
+  JOURNAL   Adv Exp Med Biol 1206, 127-149 (2019)
+   PUBMED   31776983
+  REMARK    Review article
+REFERENCE   5  (bases 1 to 2645)
+  AUTHORS   Baugh,E.H., Ke,H., Levine,A.J., Bonneau,R.A. and Chan,C.S.
+  TITLE     Why are there hotspot mutations in the TP53 gene in human cancers?
+  JOURNAL   Cell Death Differ 25 (1), 154-160 (2018)
+   PUBMED   29099487
+  REMARK    GeneRIF: TP53 missense mutant alleles that occur in human cancers
+            are discussed in the context of high resolution models of these p53
+            mutant protein structures to determine the structural features of
+            mutations (review).
+            Review article
+REFERENCE   6  (bases 1 to 2645)
+  AUTHORS   Aubrey,B.J., Strasser,A. and Kelly,G.L.
+  TITLE     Tumor-Suppressor Functions of the TP53 Pathway
+  JOURNAL   Cold Spring Harb Perspect Med 6 (5), a026062 (2016)
+   PUBMED   27141080
+  REMARK    Review article
+            Publication Status: Online-Only
+REFERENCE   7  (bases 1 to 2645)
+  AUTHORS   Soussi,T. and Wiman,K.G.
+  TITLE     TP53: an oncogene in disguise
+  JOURNAL   Cell Death Differ 22 (8), 1239-1249 (2015)
+   PUBMED   26024390
+  REMARK    Review article
+REFERENCE   8  (bases 1 to 2645)
+  AUTHORS   Soussi,T.
+  TITLE     The TP53 gene network in a postgenomic era
+  JOURNAL   Hum Mutat 35 (6), 641-642 (2014)
+   PUBMED   24753184
+  REMARK    GeneRIF: Recommendations and guidelines for reporting and
+            annotating TP53 variants are also provided, to help researchers
+            generate standardized data that are easy to understand, analyze,
+            and exchange across various cancer variant databases
+            Review article
+REFERENCE   9  (bases 1 to 2645)
+  AUTHORS   Anczukow,O., Ware,M.D., Buisson,M., Zetoune,A.B.,
+            Stoppa-Lyonnet,D., Sinilnikova,O.M. and Mazoyer,S.
+  TITLE     Does the nonsense-mediated mRNA decay mechanism prevent the
+            synthesis of truncated BRCA1, CHK2, and p53 proteins?
+  JOURNAL   Hum Mutat 29 (1), 65-73 (2008)
+   PUBMED   17694537
+  REMARK    GeneRIF: the p53 protein encoded by the 770delT allele is as
+            abundant as the wild-type protein, as removal of the C-terminal p53
+            domain leads to a stabilized mutant protein, whose abundance is
+            markedly increased when NMD is inhibited.
+REFERENCE   10 (bases 1 to 2645)
+  AUTHORS   Bourdon,J.C.
+  TITLE     p53 Family isoforms
+  JOURNAL   Curr Pharm Biotechnol 8 (6), 332-336 (2007)
+   PUBMED   18289041
+  REMARK    Review article
+REFERENCE   11 (bases 1 to 2645)
+  AUTHORS   Candeias,M.M., Powell,D.J., Roubalova,E., Apcher,S., Bourougaa,K.,
+            Vojtesek,B., Bruzzoni-Giovanelli,H. and Fahraeus,R.
+  TITLE     Expression of p53 and p53/47 are controlled by alternative
+            mechanisms of messenger RNA translation initiation
+  JOURNAL   Oncogene 25 (52), 6936-6947 (2006)
+   PUBMED   16983332
+  REMARK    GeneRIF: harbouring alternative translation initiation sites, the
+            p53 mRNA gives rise to different levels of the p53 isoforms which
+            help to orchestrate the cell biological outcome of p53 activation
+REFERENCE   12 (bases 1 to 2645)
+  AUTHORS   Murray-Zmijewski,F., Lane,D.P. and Bourdon,J.C.
+  TITLE     p53/p63/p73 isoforms: an orchestra of isoforms to harmonise cell
+            differentiation and response to stress
+  JOURNAL   Cell Death Differ 13 (6), 962-972 (2006)
+   PUBMED   16601753
+  REMARK    Review article
+REFERENCE   13 (bases 1 to 2645)
+  AUTHORS   Bourdon,J.C., Fernandes,K., Murray-Zmijewski,F., Liu,G., Diot,A.,
+            Xirodimas,D.P., Saville,M.K. and Lane,D.P.
+  TITLE     p53 isoforms can regulate p53 transcriptional activity
+  JOURNAL   Genes Dev 19 (18), 2122-2137 (2005)
+   PUBMED   16131611
+  REMARK    GeneRIF: p53 isoforms can regulate p53 transcriptional activity.
+REFERENCE   14 (bases 1 to 2645)
+  AUTHORS   Ghosh,A., Stewart,D. and Matlashewski,G.
+  TITLE     Regulation of human p53 activity and cell localization by
+            alternative splicing
+  JOURNAL   Mol Cell Biol 24 (18), 7987-7997 (2004)
+   PUBMED   15340061
+  REMARK    GeneRIF: mechanism of p53 regulation originating through
+            alternative splicing of the human p53 gene resulting in the
+            expression of a novel p53 mRNA
+REFERENCE   15 (bases 1 to 2645)
+  AUTHORS   Flaman,J.M., Waridel,F., Estreicher,A., Vannier,A., Limacher,J.M.,
+            Gilbert,D., Iggo,R. and Frebourg,T.
+  TITLE     The human tumour suppressor gene p53 is alternatively spliced in
+            normal cells
+  JOURNAL   Oncogene 12 (4), 813-818 (1996)
+   PUBMED   8632903
+REFERENCE   16 (bases 1 to 2645)
+  AUTHORS   Schneider,K., Zelley,K., Nichols,K.E., Schwartz Levine,A. and
+            Garber,J.
+  TITLE     Li-Fraumeni Syndrome
+  JOURNAL   (in) Adam MP, Feldman J, Mirzaa GM, Pagon RA, Wallace SE and
+            Amemiya A (Eds.);
+            GENEREVIEWS(R);
+            (1993)
+   PUBMED   20301488
+REFERENCE   17 (bases 1 to 2645)
+  AUTHORS   Turner,J.T., Brzezinski,J. and Dome,J.S.
+  TITLE     Wilms Tumor Predisposition
+  JOURNAL   (in) Adam MP, Feldman J, Mirzaa GM, Pagon RA, Wallace SE and
+            Amemiya A (Eds.);
+            GENEREVIEWS(R);
+            (1993)
+   PUBMED   20301471
+REFERENCE   18 (bases 1 to 2645)
+  AUTHORS   Lamb,P. and Crawford,L.
+  TITLE     Characterization of the human p53 gene
+  JOURNAL   Mol Cell Biol 6 (5), 1379-1385 (1986)
+   PUBMED   2946935
+REFERENCE   19 (bases 1 to 2645)
+  AUTHORS   Isobe,M., Emanuel,B.S., Givol,D., Oren,M. and Croce,C.M.
+  TITLE     Localization of gene for human p53 tumour antigen to band 17p13
+  JOURNAL   Nature 320 (6057), 84-85 (1986)
+   PUBMED   3456488
+REFERENCE   20 (bases 1 to 2645)
+  AUTHORS   Benchimol,S., Lamb,P., Crawford,L.V., Sheer,D., Shows,T.B.,
+            Bruns,G.A. and Peacock,J.
+  TITLE     Transformation associated p53 protein is encoded by a gene on human
+            chromosome 17
+  JOURNAL   Somat Cell Mol Genet 11 (5), 505-510 (1985)
+   PUBMED   2994241
+REFERENCE   21 (bases 1 to 2645)
+  AUTHORS   Harlow,E., Williamson,N.M., Ralston,R., Helfman,D.M. and Adams,T.E.
+  TITLE     Molecular cloning and in vitro expression of a cDNA clone for human
+            cellular tumor antigen p53
+  JOURNAL   Mol Cell Biol 5 (7), 1601-1610 (1985)
+   PUBMED   3894933
+REFERENCE   22 (bases 1 to 2645)
+  AUTHORS   Zakut-Houri,R., Bienz-Tadmor,B., Givol,D. and Oren,M.
+  TITLE     Human p53 cellular tumor antigen: cDNA sequence and expression in
+            COS cells
+  JOURNAL   EMBO J 4 (5), 1251-1255 (1985)
+   PUBMED   4006916
+REFERENCE   23 (bases 1 to 2645)
+  AUTHORS   Matlashewski,G., Lamb,P., Pim,D., Peacock,J., Crawford,L. and
+            Benchimol,S.
+  TITLE     Isolation and characterization of a human p53 cDNA clone:
+            expression of the human p53 gene
+  JOURNAL   EMBO J 3 (13), 3257-3262 (1984)
+   PUBMED   6396087
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AC087388.9 and AC007421.13.
+            
+            On Aug 21, 2020 this sequence version replaced NM_001126114.2.
+            
+            Summary: This gene encodes a tumor suppressor protein containing
+            transcriptional activation, DNA binding, and oligomerization
+            domains. The encoded protein responds to diverse cellular stresses
+            to regulate expression of target genes, thereby inducing cell cycle
+            arrest, apoptosis, senescence, DNA repair, or changes in
+            metabolism. Mutations in this gene are associated with a variety of
+            human cancers, including hereditary cancers such as Li-Fraumeni
+            syndrome. Alternative splicing of this gene and the use of
+            alternate promoters result in multiple transcript variants and
+            isoforms. Additional isoforms have also been shown to result from
+            the use of alternate translation initiation codons from identical
+            transcript variants (PMIDs: 12032546, 20937277). [provided by
+            RefSeq, Dec 2016].
+            
+            CCDS Note: This CCDS ID represents the p53beta isoform described in
+            PMIDs: 16131611, 16601753 and 18289041. This variant is supported
+            by the transcript DQ186648.1. It should be noted that this
+            transcript is predicted to undergo nonsense-mediated mRNA decay
+            (NMD). However, the protein is represented because it was detected
+            endogenously in PMID:16131611 using an antibody specific for the
+            distinct C-terminus of this isoform. In addition, experiments in
+            PMID:17694537 indicate that this gene may be somewhat less
+            sensitive to NMD. A contributing factor is the presence of a
+            ubiquitination domain in the C-terminus of the full-length protein,
+            which makes the protein less stable under non-stress conditions.
+            C-terminally truncated proteins that lack the ubiquitination
+            domain, such as this isoform, are therefore more stable. NMD
+            inhibition experiments in the same study show that the majority of
+            NMD transcripts do indeed undergo NMD, but some low level of NMD
+            escape, combined with the increased stability of C-terminally
+            truncated isoforms, allows for the expression of such isoforms.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: DQ186648.1, SRR14038196.3383531.1
+                                           [ECO:0000332]
+            RNAseq introns              :: mixed sample support SAMEA1965299,
+                                           SAMEA1966682 [ECO:0006172]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            NMD candidate :: PMID: 16131611, 16601753, 18289041
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: full length.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-114               AC087388.9         67620-67733
+            115-216             AC087388.9         78488-78589
+            217-238             AC087388.9         78707-78728
+            239-517             AC087388.9         78838-79116
+            518-701             AC087388.9         79874-80057
+            702-814             AC087388.9         80139-80251
+            815-924             AC087388.9         80820-80929
+            925-1061            AC087388.9         81273-81409
+            1062-1135           AC087388.9         81502-81575
+            1136-1268           AC087388.9         81771-81903
+            1269-1375           AC007421.13        1457-1563
+            1376-2645           AC007421.13        2482-3751
+FEATURES             Location/Qualifiers
+     source          1..2645
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="17"
+                     /map="17p13.1"
+     gene            1..2645
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="tumor protein p53"
+                     /db_xref="GeneID:7157"
+                     /db_xref="HGNC:HGNC:11998"
+                     /db_xref="MIM:191170"
+     exon            1..114
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    35..37
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="upstream in-frame stop codon"
+     exon            115..216
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             143..1168
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="isoform b is encoded by transcript variant 3; tumor
+                     protein 53; mutant tumor protein 53; cellular tumor
+                     antigen p53; phosphoprotein p53; transformation-related
+                     protein 53; antigen NY-CO-13; tumor supressor p53"
+                     /codon_start=1
+                     /product="cellular tumor antigen p53 isoform b"
+                     /protein_id="NP_001119586.1"
+                     /db_xref="CCDS:CCDS45606.1"
+                     /db_xref="GeneID:7157"
+                     /db_xref="HGNC:HGNC:11998"
+                     /db_xref="MIM:191170"
+                     /translation="MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLM
+                     LSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKT
+                     YQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTPPPGTRVRAM
+                     AIYKQSQHMTEVVRRCPHHERCSDSDGLAPPQHLIRVEGNLRVEYLDDRNTFRHSVVV
+                     PYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSFEVRVCA
+                     CPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGEYFTLQDQT
+                     SFQKENC"
+     misc_feature    143..1102
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with CCAR2.
+                     /evidence=ECO:0000269|PubMed:25732823"
+     misc_feature    143..391
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with HRMT1L2.
+                     /evidence=ECO:0000269|PubMed:15186775"
+     misc_feature    143..274
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Transcription activation (acidic)"
+     misc_feature    167..169
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by HIPK4.
+                     /evidence=ECO:0000269|PubMed:18022393; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    185..187
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by CDK5, PRPK, AMPK, NUAK1 and ATM.
+                     /evidence=ECO:0000269|PubMed:10570149,
+                     ECO:0000269|PubMed:11554766, ECO:0000269|PubMed:15866171,
+                     ECO:0000269|PubMed:17108107, ECO:0000269|PubMed:17591690,
+                     ECO:0000269|PubMed:17967874, ECO:0000269|PubMed:21317932,
+                     ECO:0000269|PubMed:28842590; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    191..217
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: TADI"
+     misc_feature    194..196
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphothreonine, by CK1, VRK1 and VRK2.
+                     /evidence=ECO:0000269|PubMed:10606744,
+                     ECO:0000269|PubMed:10951572, ECO:0000269|PubMed:16704422,
+                     ECO:0000269|PubMed:31527692; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    200..202
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by CHEK2, CK1 and PLK3.
+                     /evidence=ECO:0000269|PubMed:10570149,
+                     ECO:0000269|PubMed:11447225, ECO:0000269|PubMed:11551930,
+                     ECO:0000269|PubMed:12810724, ECO:0000269|PubMed:20041275;
+                     propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     phosphorylation site"
+     misc_feature    239..241
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by CDK5 and CDK7.
+                     /evidence=ECO:0000269|PubMed:17591690,
+                     ECO:0000269|PubMed:9372954; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    251..253
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by MAPKAPK5.
+                     /evidence=ECO:0000269|PubMed:17254968; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    260..262
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="delta40p53beta; Region: alternative start codon"
+     misc_feature    278..280
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by CDK5, DYRK2, HIPK2 and PKC/PRKCG.
+                     /evidence=ECO:0000269|PubMed:11740489,
+                     ECO:0000269|PubMed:11780126, ECO:0000269|PubMed:16377624,
+                     ECO:0000269|PubMed:17349958, ECO:0000269|PubMed:17591690;
+                     propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     phosphorylation site"
+     misc_feature    284..310
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: TADII"
+     misc_feature    290..430
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Disordered. /evidence=ECO:0000269|PubMed:31953488"
+     misc_feature    305..307
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphothreonine, by TAF1 and GRK5.
+                     /evidence=ECO:0000269|PubMed:15053879,
+                     ECO:0000269|PubMed:20124405; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    338..472
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with WWOX"
+     misc_feature    440..1042
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Required for interaction with ZNF385A.
+                     /evidence=ECO:0000269|PubMed:17719541"
+     misc_feature    479..850
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Required for interaction with FBXO42.
+                     /evidence=ECO:0000269|PubMed:19509332"
+     misc_feature    488..1018
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with AXIN1. /evidence=ECO:0000250"
+     misc_feature    500..502
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Interaction with DNA.
+                     /evidence=ECO:0000269|PubMed:16793544,
+                     ECO:0000269|PubMed:18996393, ECO:0000269|PubMed:20364130;
+                     propagated from UniProtKB/Swiss-Prot (P04637.4); other
+                     site"
+     misc_feature    500..502
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="N6-acetyllysine.
+                     /evidence=ECO:0000269|PubMed:17189187,
+                     ECO:0000269|PubMed:19854137, ECO:0000269|PubMed:23431171;
+                     propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     acetylation site"
+     misc_feature    689..691
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by AURKB.
+                     /evidence=ECO:0000269|PubMed:20959462; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    863..886
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with the 53BP2 SH3 domain"
+     misc_feature    908..1024
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with E4F1.
+                     /evidence=ECO:0000269|PubMed:10644996"
+     misc_feature    947..949
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by AURKB.
+                     /evidence=ECO:0000269|PubMed:20959462; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    959..982
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Interaction with DNA"
+     misc_feature    986..1117
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    992..994
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphothreonine, by AURKB.
+                     /evidence=ECO:0000269|PubMed:20959462; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    1055..1105
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="propagated from UniProtKB/Swiss-Prot (P04637.4);
+                     Region: Bipartite nuclear localization signal"
+     misc_feature    1055..1057
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="N6-acetyllysine.
+                     /evidence=ECO:0000269|PubMed:12724314; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); acetylation site"
+     misc_feature    1085..1087
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="Phosphoserine, by AURKA, CDK1 and CDK2.
+                     /evidence=ECO:0000269|PubMed:10884347,
+                     ECO:0000269|PubMed:14702041; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); phosphorylation site"
+     misc_feature    1103..1105
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="N6-acetyllysine.
+                     /evidence=ECO:0000250|UniProtKB:P02340; propagated from
+                     UniProtKB/Swiss-Prot (P04637.4); acetylation site"
+     exon            217..238
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            239..517
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            518..701
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            702..814
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            815..924
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            925..1061
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1062..1135
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1136..1268
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1269..1375
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1376..2645
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      2628..2633
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="hexamer: AATAAA"
+     polyA_site      2645
+                     /gene="TP53"
+                     /gene_synonym="BCC7; BMFS5; LFS1; P53; TRP53"
+                     /note="major polyA site"
+ORIGIN      
+        1 ctcaaaagtc tagagccacc gtccagggag caggtagctg ctgggctccg gggacacttt
+       61 gcgttcgggc tgggagcgtg ctttccacga cggtgacacg cttccctgga ttggcagcca
+      121 gactgccttc cgggtcactg ccatggagga gccgcagtca gatcctagcg tcgagccccc
+      181 tctgagtcag gaaacatttt cagacctatg gaaactactt cctgaaaaca acgttctgtc
+      241 ccccttgccg tcccaagcaa tggatgattt gatgctgtcc ccggacgata ttgaacaatg
+      301 gttcactgaa gacccaggtc cagatgaagc tcccagaatg ccagaggctg ctccccccgt
+      361 ggcccctgca ccagcagctc ctacaccggc ggcccctgca ccagccccct cctggcccct
+      421 gtcatcttct gtcccttccc agaaaaccta ccagggcagc tacggtttcc gtctgggctt
+      481 cttgcattct gggacagcca agtctgtgac ttgcacgtac tcccctgccc tcaacaagat
+      541 gttttgccaa ctggccaaga cctgccctgt gcagctgtgg gttgattcca cacccccgcc
+      601 cggcacccgc gtccgcgcca tggccatcta caagcagtca cagcacatga cggaggttgt
+      661 gaggcgctgc ccccaccatg agcgctgctc agatagcgat ggtctggccc ctcctcagca
+      721 tcttatccga gtggaaggaa atttgcgtgt ggagtatttg gatgacagaa acacttttcg
+      781 acatagtgtg gtggtgccct atgagccgcc tgaggttggc tctgactgta ccaccatcca
+      841 ctacaactac atgtgtaaca gttcctgcat gggcggcatg aaccggaggc ccatcctcac
+      901 catcatcaca ctggaagact ccagtggtaa tctactggga cggaacagct ttgaggtgcg
+      961 tgtttgtgcc tgtcctggga gagaccggcg cacagaggaa gagaatctcc gcaagaaagg
+     1021 ggagcctcac cacgagctgc ccccagggag cactaagcga gcactgccca acaacaccag
+     1081 ctcctctccc cagccaaaga agaaaccact ggatggagaa tatttcaccc ttcaggacca
+     1141 gaccagcttt caaaaagaaa attgttaaag agagcatgaa aatggttcta tgactttgcc
+     1201 tgatacagat gctacttgac ttacgatggt gttacttcct gataaactcg tcgtaagttg
+     1261 aaaatattat ccgtgggcgt gagcgcttcg agatgttccg agagctgaat gaggccttgg
+     1321 aactcaagga tgcccaggct gggaaggagc caggggggag cagggctcac tccagccacc
+     1381 tgaagtccaa aaagggtcag tctacctccc gccataaaaa actcatgttc aagacagaag
+     1441 ggcctgactc agactgacat tctccacttc ttgttcccca ctgacagcct cccaccccca
+     1501 tctctccctc ccctgccatt ttgggttttg ggtctttgaa cccttgcttg caataggtgt
+     1561 gcgtcagaag cacccaggac ttccatttgc tttgtcccgg ggctccactg aacaagttgg
+     1621 cctgcactgg tgttttgttg tggggaggag gatggggagt aggacatacc agcttagatt
+     1681 ttaaggtttt tactgtgagg gatgtttggg agatgtaaga aatgttcttg cagttaaggg
+     1741 ttagtttaca atcagccaca ttctaggtag gggcccactt caccgtacta accagggaag
+     1801 ctgtccctca ctgttgaatt ttctctaact tcaaggccca tatctgtgaa atgctggcat
+     1861 ttgcacctac ctcacagagt gcattgtgag ggttaatgaa ataatgtaca tctggccttg
+     1921 aaaccacctt ttattacatg gggtctagaa cttgaccccc ttgagggtgc ttgttccctc
+     1981 tccctgttgg tcggtgggtt ggtagtttct acagttgggc agctggttag gtagagggag
+     2041 ttgtcaagtc tctgctggcc cagccaaacc ctgtctgaca acctcttggt gaaccttagt
+     2101 acctaaaagg aaatctcacc ccatcccaca ccctggagga tttcatctct tgtatatgat
+     2161 gatctggatc caccaagact tgttttatgc tcagggtcaa tttctttttt cttttttttt
+     2221 tttttttttc tttttctttg agactgggtc tcgctttgtt gcccaggctg gagtggagtg
+     2281 gcgtgatctt ggcttactgc agcctttgcc tccccggctc gagcagtcct gcctcagcct
+     2341 ccggagtagc tgggaccaca ggttcatgcc accatggcca gccaactttt gcatgttttg
+     2401 tagagatggg gtctcacagt gttgcccagg ctggtctcaa actcctgggc tcaggcgatc
+     2461 cacctgtctc agcctcccag agtgctggga ttacaattgt gagccaccac gtccagctgg
+     2521 aagggtcaac atcttttaca ttctgcaagc acatctgcat tttcacccca cccttcccct
+     2581 ccttctccct ttttatatcc catttttata tcgatctctt attttacaat aaaactttgc
+     2641 tgcca
+//
+
