@@ -552,7 +552,7 @@
             // 
             // nudIntronGap
             // 
-            nudIntronGap.Location = new Point(309, 227);
+            nudIntronGap.Location = new Point(309, 307);
             nudIntronGap.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             nudIntronGap.Name = "nudIntronGap";
             nudIntronGap.Size = new Size(88, 23);
@@ -562,7 +562,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(6, 229);
+            label8.Location = new Point(6, 309);
             label8.Name = "label8";
             label8.Size = new Size(206, 15);
             label8.TabIndex = 8;
@@ -571,7 +571,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(6, 260);
+            label11.Location = new Point(6, 231);
             label11.Name = "label11";
             label11.Size = new Size(225, 15);
             label11.TabIndex = 11;
@@ -579,7 +579,7 @@
             // 
             // btnFont
             // 
-            btnFont.Location = new Point(309, 256);
+            btnFont.Location = new Point(309, 227);
             btnFont.Name = "btnFont";
             btnFont.Size = new Size(88, 23);
             btnFont.TabIndex = 3;
@@ -665,7 +665,7 @@
             // 
             // btnFeatureFont
             // 
-            btnFeatureFont.Location = new Point(309, 285);
+            btnFeatureFont.Location = new Point(309, 256);
             btnFeatureFont.Name = "btnFeatureFont";
             btnFeatureFont.Size = new Size(88, 23);
             btnFeatureFont.TabIndex = 19;
@@ -676,7 +676,7 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.Location = new Point(6, 289);
+            label28.Location = new Point(6, 264);
             label28.Name = "label28";
             label28.Size = new Size(212, 15);
             label28.TabIndex = 20;
@@ -686,7 +686,7 @@
             // 
             cboLabels.FormattingEnabled = true;
             cboLabels.Items.AddRange(new object[] { "Left", "Above", "None" });
-            cboLabels.Location = new Point(309, 138);
+            cboLabels.Location = new Point(309, 169);
             cboLabels.Name = "cboLabels";
             cboLabels.Size = new Size(88, 23);
             cboLabels.TabIndex = 18;
@@ -695,7 +695,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(6, 141);
+            label17.Location = new Point(6, 172);
             label17.Name = "label17";
             label17.Size = new Size(171, 15);
             label17.TabIndex = 17;
