@@ -37,7 +37,7 @@ Figure 4: Pressing the __Select__ button when the __Colour picker__ option is se
 
 <hr />
 
-### Using the elect sequence colour window
+### Using the Select sequence colour window
 
 The __Select sequence colour__ window contains a blank text area and a dropdown list that contains all the standard Windows colours. The colour's names displayed are the stored as Windows colour variable names and as such use the American English spelling and contain no spaces. 
 
@@ -69,7 +69,7 @@ Figure 5a: Clicking on a colour in the grid (blue box) and then pressing __OK__ 
 
 ![Figure 6b](images/figureDisplay6b.jpg)
 
-Figure 6: To select a custom colour mouse click on the rainbow image (blue box) and then adjust its brightness with using the gradient slider (green box). The selected colour will appear in the area above the __Colour Solid__ text (Red box). Pressing the __Add to Custom Colours__ button (black line) and then the __OK__ button (grey line) will accept the colour.
+Figure 6: To select a custom colour, mouse click on the rainbow image (blue box) and then adjust its brightness with using the gradient slider (green box). The selected colour will appear in the area above the __Colour Solid__ text (Red box). Pressing the __Add to Custom Colours__ button (black line) and then the __OK__ button (grey line) will accept the colour.
 
 <hr />
 
