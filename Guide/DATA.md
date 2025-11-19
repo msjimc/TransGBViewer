@@ -1,10 +1,10 @@
-## Importing sequence data
+# Importing sequence data
 
 TransGBViewer is designed to display linear mRNA sequence data downloaded from the NCBI website in the GenBank format with the *.gb or *.genbank file extensions. It is possible to import a single file containing multiple entries or a folder of files that contain one or more entries. It is expected that all the sequences relate to the same gene in a single species.
 
 ⚠️ <b>Important note: Since the GenBank files do not reference each other, sequence similarities are determined based on their homology. Consequently, it is important that the sequences are highly homologous and so only sequences from the same species can be used and ideally, sequences submitted by the same group or by GenBank's own automated submission system used to annotated reference genomes.</b> 
 
-### Data selection
+## Data selection
 
 The first tab page of the ___mRNA Display Options___ window allows you to select the GenBank formatted sequence data. Pressing the __Select__ button with the __Folder__ option unticked prompts you to select a single file containing multiple entries (Figure 1)
 

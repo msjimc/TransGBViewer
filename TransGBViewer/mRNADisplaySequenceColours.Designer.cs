@@ -63,6 +63,7 @@
             groupBox1.Size = new Size(463, 303);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            groupBox1.Text = "Colour selection";
             // 
             // btnColourSelection
             // 
@@ -137,9 +138,9 @@
             // 
             // label2
             // 
-            label2.Location = new Point(0, 72);
+            label2.Location = new Point(6, 72);
             label2.Name = "label2";
-            label2.Size = new Size(227, 55);
+            label2.Size = new Size(221, 55);
             label2.TabIndex = 2;
             label2.Text = "Select whether you want to change  the colour of the codiing, non-coding or both types of sequence.";
             // 
@@ -155,9 +156,9 @@
             // 
             // label1
             // 
-            label1.Location = new Point(0, 22);
+            label1.Location = new Point(6, 22);
             label1.Name = "label1";
-            label1.Size = new Size(227, 50);
+            label1.Size = new Size(221, 50);
             label1.TabIndex = 0;
             label1.Text = "Select the accession IDs of the sequence you which to change in the list on the right. ";
             // 

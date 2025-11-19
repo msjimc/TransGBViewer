@@ -1,0 +1,29 @@
+NM_001126112
+NM_001126112	c133dfce69f606f20865e9008199f852	393	MobiDBLite	mobidb-lite	consensus disorder prediction	50	96	-	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Pfam	PF08563	P53 transactivation motif	6	30	2.3E-8	T	31-10-2025	IPR013872	p53, transactivation domain	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	SUPERFAMILY	SSF47719	p53 tetramerization domain	319	357	1.31E-11	T	31-10-2025	IPR036674	p53-like tetramerisation domain superfamily	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	MobiDBLite	mobidb-lite	consensus disorder prediction	282	325	-	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	ProSitePatterns	PS00348	p53 family signature.	237	249	-	T	31-10-2025	IPR057064	p53, central conserved site	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	FunFam	G3DSA:4.10.170.10:FF:000003	Cellular tumor antigen p53	319	360	3.7E-29	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	SUPERFAMILY	SSF49417	p53-like transcription factors	97	287	1.16E-90	T	31-10-2025	IPR008967	p53-like transcription factor, DNA-binding domain superfamily	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	MobiDBLite	mobidb-lite	consensus disorder prediction	69	90	-	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	CDD	cd08367	P53	109	288	1.26747E-97	T	31-10-2025	IPR011615	p53, DNA-binding domain	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Gene3D	G3DSA:2.60.40.720	-	95	294	1.5E-85	T	31-10-2025	IPR012346	p53/RUNT-type transcription factor, DNA-binding domain superfamily	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Gene3D	G3DSA:4.10.170.10	-	319	360	7.8E-25	T	31-10-2025	IPR036674	p53-like tetramerisation domain superfamily	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PRINTS	PR00386	P53 tumour supressor signature	116	142	6.0E-87	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PRINTS	PR00386	P53 tumour supressor signature	158	179	6.0E-87	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PRINTS	PR00386	P53 tumour supressor signature	213	234	6.0E-87	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PRINTS	PR00386	P53 tumour supressor signature	236	258	6.0E-87	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PRINTS	PR00386	P53 tumour supressor signature	264	286	6.0E-87	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PRINTS	PR00386	P53 tumour supressor signature	326	350	6.0E-87	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Pfam	PF00870	P53 DNA-binding domain	100	288	1.1E-59	T	31-10-2025	IPR011615	p53, DNA-binding domain	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	FunFam	G3DSA:2.60.40.720:FF:000003	Cellular tumor antigen p53	94	294	0.0	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Pfam	PF07710	P53 tetramerisation motif	319	357	2.3E-13	T	31-10-2025	IPR010991	p53, tetramerisation domain	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Pfam	PF18521	Transactivation domain 2	35	59	2.2E-14	T	31-10-2025	IPR040926	Cellular tumor antigen p53, transactivation domain 2	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	PANTHER	PTHR11447	CELLULAR TUMOR ANTIGEN P53	3	369	0.0	T	31-10-2025	IPR002117	p53 tumour suppressor family	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	MobiDBLite	mobidb-lite	consensus disorder prediction	282	299	-	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	MobiDBLite	mobidb-lite	consensus disorder prediction	365	384	-	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	Gene3D	G3DSA:6.10.50.20	-	13	61	2.3E-25	T	31-10-2025	-	-	-	-
+NM_001126112	c133dfce69f606f20865e9008199f852	393	MobiDBLite	mobidb-lite	consensus disorder prediction	351	393	-	T	31-10-2025	-	-	-	-
+
+

@@ -1557,6 +1557,7 @@
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "mRNADisplayOptions";
             Text = "mRNA Display Options";
             tabPage2.ResumeLayout(false);

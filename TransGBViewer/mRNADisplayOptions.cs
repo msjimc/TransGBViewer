@@ -1999,12 +1999,14 @@ namespace TransGBViewer
 
         private void nudZoomFrom_ValueChanged(object sender, EventArgs e)
         {
+            nudZoomTo.Minimum = nudZoomFrom.Value;
             parameters.Zoom = new Point((int)nudZoomFrom.Value, (int)nudZoomTo.Value);
             ReDraw();
         }
 
         private void nudZoomTo_ValueChanged(object sender, EventArgs e)
         {
+            nudZoomFrom.Maximum = nudZoomTo.Value;
             parameters.Zoom = new Point((int)nudZoomFrom.Value, (int)nudZoomTo.Value);
             ReDraw();
         }
