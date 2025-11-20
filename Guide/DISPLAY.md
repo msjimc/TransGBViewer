@@ -57,7 +57,7 @@ Figure 5: Once selected the name will appear in the dropdown list and a rectangl
 
 Pressing the __Accept__ button will save the colour selection and close the window. Press int eh __Cancel__ button will discard the selection.
 
-### Using the Windows Colour Picker dialog window
+### Using the Windows Colour Picker Dialog window
 
 There are to ways to select a colour using the Colour Picker dialog, the left hand side consists of a grid with each cell representing a different colour (blue box in Figure 6a). To select on of these, click on its cell press __OK__ (black line in Figure 6a). Alternately, on the right hand side is a picture box (blue box in Figure 6b) displaying a 'rainbow', mouse click on this image to select the colour drawn at the tip of the cursor and then set the colour's brightness using the slide bar (Green box in Figure 6b) to the right of the picture box. The selected colour will then appear in the box (red box in Figure 6b) just below the picture box. To select this colour press the __Add to Custom Colours__ button (black line in Figure 6b) and then press the __OK__ button (Grey line in Figure 6b).
 
@@ -148,3 +148,15 @@ Figure 12a: By default all sequences are drawn with non-coding sequence represen
 Figure 12b: Unchecking the the __Reduc__ check box (blue line) redraws the images with all the boxes the same height (red box in Figure 12b).
 
 <hr />
+
+## Highlight a transcripts exon splice sites
+
+Transcripts may share a common exon but differ functionally by utilizing alternative splice sites within that exon. To aid the visualisation of these situations it is possible to highlight exon boundaries for one or all the transcripts using the __Highlight splice sites of selected sequence__ option (Figure 13). When a transcript is selected from the dropdown list (blue line in Figure 13) it's splice sites are highlighted as a series of vertical dotted lines that run span the entire height of the image (excluding the base pair position). 
+
+![Figure 13](images/figureDisplay13.jpg)
+
+Figure 13: Selecting a transcript's name from the drop down list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the the splice sites to be highted as a series of vertical dotted lines that allow the use of alternative splice sites to be visualised (black box). 
+
+<hr />
+
+

@@ -222,6 +222,7 @@
             // 
             groupBox2.Controls.Add(nudLineWidth);
             groupBox2.Controls.Add(label26);
+            groupBox2.Controls.Add(pAcceptor);
             groupBox2.Controls.Add(chkCoordindatesAt1bp);
             groupBox2.Controls.Add(label25);
             groupBox2.Controls.Add(label23);
@@ -230,7 +231,6 @@
             groupBox2.Controls.Add(label22);
             groupBox2.Controls.Add(pStop);
             groupBox2.Controls.Add(pStart);
-            groupBox2.Controls.Add(pAcceptor);
             groupBox2.Controls.Add(pDonor);
             groupBox2.Controls.Add(btnORFStop);
             groupBox2.Controls.Add(btnORFStart);
@@ -261,11 +261,11 @@
             // 
             nudLineWidth.DecimalPlaces = 1;
             nudLineWidth.Increment = new decimal(new int[] { 1, 0, 0, 65536 });
-            nudLineWidth.Location = new Point(259, 322);
+            nudLineWidth.Location = new Point(241, 322);
             nudLineWidth.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
             nudLineWidth.Minimum = new decimal(new int[] { 5, 0, 0, 65536 });
             nudLineWidth.Name = "nudLineWidth";
-            nudLineWidth.Size = new Size(132, 23);
+            nudLineWidth.Size = new Size(150, 23);
             nudLineWidth.TabIndex = 40;
             nudLineWidth.Value = new decimal(new int[] { 15, 0, 0, 65536 });
             nudLineWidth.ValueChanged += nudLineWidth_ValueChanged;
@@ -274,7 +274,7 @@
             // 
             label26.Location = new Point(6, 315);
             label26.Name = "label26";
-            label26.Size = new Size(241, 30);
+            label26.Size = new Size(229, 30);
             label26.TabIndex = 39;
             label26.Text = "Set the width of lines highlighting the ends of the ORF and exon";
             // 
@@ -302,7 +302,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(316, 54);
+            label23.Location = new Point(314, 54);
             label23.Name = "label23";
             label23.Size = new Size(18, 15);
             label23.TabIndex = 35;
@@ -320,10 +320,10 @@
             // 
             // nudZoomFrom
             // 
-            nudZoomFrom.Location = new Point(256, 52);
+            nudZoomFrom.Location = new Point(241, 52);
             nudZoomFrom.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.Name = "nudZoomFrom";
-            nudZoomFrom.Size = new Size(57, 23);
+            nudZoomFrom.Size = new Size(69, 23);
             nudZoomFrom.TabIndex = 33;
             nudZoomFrom.Value = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.ValueChanged += nudZoomFrom_ValueChanged;
@@ -339,7 +339,7 @@
             // 
             // pStop
             // 
-            pStop.Location = new Point(328, 280);
+            pStop.Location = new Point(316, 280);
             pStop.Name = "pStop";
             pStop.Size = new Size(12, 23);
             pStop.TabIndex = 31;
@@ -347,7 +347,7 @@
             // 
             // pStart
             // 
-            pStart.Location = new Point(256, 280);
+            pStart.Location = new Point(241, 280);
             pStart.Name = "pStart";
             pStart.Size = new Size(12, 23);
             pStart.TabIndex = 30;
@@ -355,7 +355,7 @@
             // 
             // pAcceptor
             // 
-            pAcceptor.Location = new Point(328, 212);
+            pAcceptor.Location = new Point(316, 212);
             pAcceptor.Name = "pAcceptor";
             pAcceptor.Size = new Size(12, 23);
             pAcceptor.TabIndex = 29;
@@ -363,7 +363,7 @@
             // 
             // pDonor
             // 
-            pDonor.Location = new Point(256, 212);
+            pDonor.Location = new Point(241, 212);
             pDonor.Name = "pDonor";
             pDonor.Size = new Size(12, 23);
             pDonor.TabIndex = 28;
@@ -371,9 +371,9 @@
             // 
             // btnORFStop
             // 
-            btnORFStop.Location = new Point(346, 280);
+            btnORFStop.Location = new Point(336, 280);
             btnORFStop.Name = "btnORFStop";
-            btnORFStop.Size = new Size(45, 23);
+            btnORFStop.Size = new Size(55, 23);
             btnORFStop.TabIndex = 27;
             btnORFStop.Text = "Stop";
             btnORFStop.UseVisualStyleBackColor = true;
@@ -381,9 +381,9 @@
             // 
             // btnORFStart
             // 
-            btnORFStart.Location = new Point(272, 280);
+            btnORFStart.Location = new Point(260, 280);
             btnORFStart.Name = "btnORFStart";
-            btnORFStart.Size = new Size(45, 23);
+            btnORFStart.Size = new Size(50, 23);
             btnORFStart.TabIndex = 26;
             btnORFStart.Text = "Start";
             btnORFStart.UseVisualStyleBackColor = true;
@@ -400,9 +400,9 @@
             // 
             // btnAcceptor
             // 
-            btnAcceptor.Location = new Point(346, 212);
+            btnAcceptor.Location = new Point(333, 212);
             btnAcceptor.Name = "btnAcceptor";
-            btnAcceptor.Size = new Size(45, 23);
+            btnAcceptor.Size = new Size(58, 23);
             btnAcceptor.TabIndex = 24;
             btnAcceptor.Text = "Acceptor";
             btnAcceptor.UseVisualStyleBackColor = true;
@@ -410,9 +410,9 @@
             // 
             // btnDonor
             // 
-            btnDonor.Location = new Point(272, 212);
+            btnDonor.Location = new Point(260, 212);
             btnDonor.Name = "btnDonor";
-            btnDonor.Size = new Size(45, 23);
+            btnDonor.Size = new Size(50, 23);
             btnDonor.TabIndex = 23;
             btnDonor.Text = "Donor";
             btnDonor.UseVisualStyleBackColor = true;
@@ -430,9 +430,9 @@
             // cboORFLimits
             // 
             cboORFLimits.FormattingEnabled = true;
-            cboORFLimits.Location = new Point(256, 251);
+            cboORFLimits.Location = new Point(241, 251);
             cboORFLimits.Name = "cboORFLimits";
-            cboORFLimits.Size = new Size(135, 23);
+            cboORFLimits.Size = new Size(150, 23);
             cboORFLimits.TabIndex = 21;
             cboORFLimits.SelectedIndexChanged += cboORFLimits_SelectedIndexChanged;
             // 
@@ -447,9 +447,9 @@
             // cboSpliceSites
             // 
             cboSpliceSites.FormattingEnabled = true;
-            cboSpliceSites.Location = new Point(256, 183);
+            cboSpliceSites.Location = new Point(241, 183);
             cboSpliceSites.Name = "cboSpliceSites";
-            cboSpliceSites.Size = new Size(135, 23);
+            cboSpliceSites.Size = new Size(150, 23);
             cboSpliceSites.TabIndex = 19;
             cboSpliceSites.SelectedIndexChanged += cboSpliceSites_SelectedIndexChanged;
             // 

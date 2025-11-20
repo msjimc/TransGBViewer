@@ -23,7 +23,7 @@ namespace TransGBViewer
 
         private void ColourSelection()
         {
-            if (rdoDialogue.Checked == true)
+            if (rdoDialog.Checked == true)
             {
                 shapeColour = SetColour(shapeColour);
                 SetPictureBoxColour();

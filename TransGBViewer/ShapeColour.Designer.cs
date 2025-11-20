@@ -35,7 +35,7 @@
             btnBackground = new Button();
             p1Display = new PictureBox();
             lblInstructions = new Label();
-            rdoDialogue = new RadioButton();
+            rdoDialog = new RadioButton();
             rdoList = new RadioButton();
             label6 = new Label();
             groupBox1.SuspendLayout();
@@ -70,7 +70,7 @@
             groupBox1.Controls.Add(btnBackground);
             groupBox1.Controls.Add(p1Display);
             groupBox1.Controls.Add(lblInstructions);
-            groupBox1.Controls.Add(rdoDialogue);
+            groupBox1.Controls.Add(rdoDialog);
             groupBox1.Controls.Add(rdoList);
             groupBox1.Controls.Add(label6);
             groupBox1.Location = new Point(14, 14);
@@ -107,15 +107,15 @@
             lblInstructions.TabIndex = 55;
             lblInstructions.Text = "Set the shape's colour  by pressing the 'Colour' button.";
             // 
-            // rdoDialogue
+            // rdoDialog
             // 
-            rdoDialogue.AutoSize = true;
-            rdoDialogue.Location = new Point(416, 15);
-            rdoDialogue.Name = "rdoDialogue";
-            rdoDialogue.Size = new Size(132, 19);
-            rdoDialogue.TabIndex = 54;
-            rdoDialogue.Text = "Colour dialogue box";
-            rdoDialogue.UseVisualStyleBackColor = true;
+            rdoDialog.AutoSize = true;
+            rdoDialog.Location = new Point(416, 15);
+            rdoDialog.Name = "rdoDialog";
+            rdoDialog.Size = new Size(132, 19);
+            rdoDialog.TabIndex = 54;
+            rdoDialog.Text = "Colour dialog box";
+            rdoDialog.UseVisualStyleBackColor = true;
             // 
             // rdoList
             // 
@@ -135,7 +135,7 @@
             label6.Name = "label6";
             label6.Size = new Size(235, 37);
             label6.TabIndex = 52;
-            label6.Text = "Select the colour using a dialogue box or a list of predefined names:";
+            label6.Text = "Select the colour using a dialog box or a list of predefined names:";
             // 
             // ShapeColour
             // 
@@ -166,7 +166,7 @@
         private Button btnBackground;
         private PictureBox p1Display;
         private Label lblInstructions;
-        private RadioButton rdoDialogue;
+        private RadioButton rdoDialog;
         private RadioButton rdoList;
         private Label label6;
     }

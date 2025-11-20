@@ -852,8 +852,8 @@ namespace TransGBViewer
                 if (parameters.ShowExonLimits != "None")
                 { DrawSpliceSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowExonLimits, allSequences, limits); }
 
-                if (parameters.ShowORFLimits != "None")
-                { DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits); }
+            //    if (parameters.ShowORFLimits != "None")
+            //    { DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits); }
             }
             finally
             { g.SmoothingMode = SmoothingMode.AntiAlias; }
@@ -931,6 +931,18 @@ namespace TransGBViewer
                     }
                 }
             }
+
+            try
+            {
+                g.SmoothingMode = SmoothingMode.None;
+                //if (parameters.ShowExonLimits != "None")
+                //{ DrawSpliceSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowExonLimits, allSequences, limits); }
+
+                if (parameters.ShowORFLimits != "None")
+                { DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits); }
+            }
+            finally
+            { g.SmoothingMode = SmoothingMode.AntiAlias; }
 
             g.FillRectangle(Brushes.White, 0, height, parameters.DrawingArea.Width, parameters.DrawingArea.Height - height);
 
