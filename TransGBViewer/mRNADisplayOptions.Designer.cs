@@ -34,6 +34,7 @@
             groupBox2 = new GroupBox();
             nudLineWidth = new NumericUpDown();
             label26 = new Label();
+            pAcceptor = new PictureBox();
             chkCoordindatesAt1bp = new CheckBox();
             label25 = new Label();
             label23 = new Label();
@@ -42,7 +43,6 @@
             label22 = new Label();
             pStop = new PictureBox();
             pStart = new PictureBox();
-            pAcceptor = new PictureBox();
             pDonor = new PictureBox();
             btnORFStop = new Button();
             btnORFStart = new Button();
@@ -161,11 +161,11 @@
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pAcceptor).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudZoomTo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudZoomFrom).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pStop).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pStart).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pAcceptor).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pDonor).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudIntronGap).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudLabelWidth).BeginInit();
@@ -278,6 +278,14 @@
             label26.TabIndex = 39;
             label26.Text = "Set the width of lines highlighting the ends of the ORF and exon";
             // 
+            // pAcceptor
+            // 
+            pAcceptor.Location = new Point(310, 212);
+            pAcceptor.Name = "pAcceptor";
+            pAcceptor.Size = new Size(12, 23);
+            pAcceptor.TabIndex = 29;
+            pAcceptor.TabStop = false;
+            // 
             // chkCoordindatesAt1bp
             // 
             chkCoordindatesAt1bp.AutoSize = true;
@@ -353,14 +361,6 @@
             pStart.TabIndex = 30;
             pStart.TabStop = false;
             // 
-            // pAcceptor
-            // 
-            pAcceptor.Location = new Point(316, 212);
-            pAcceptor.Name = "pAcceptor";
-            pAcceptor.Size = new Size(12, 23);
-            pAcceptor.TabIndex = 29;
-            pAcceptor.TabStop = false;
-            // 
             // pDonor
             // 
             pDonor.Location = new Point(241, 212);
@@ -400,9 +400,9 @@
             // 
             // btnAcceptor
             // 
-            btnAcceptor.Location = new Point(333, 212);
+            btnAcceptor.Location = new Point(327, 212);
             btnAcceptor.Name = "btnAcceptor";
-            btnAcceptor.Size = new Size(58, 23);
+            btnAcceptor.Size = new Size(67, 23);
             btnAcceptor.TabIndex = 24;
             btnAcceptor.Text = "Acceptor";
             btnAcceptor.UseVisualStyleBackColor = true;
@@ -410,7 +410,7 @@
             // 
             // btnDonor
             // 
-            btnDonor.Location = new Point(260, 212);
+            btnDonor.Location = new Point(256, 212);
             btnDonor.Name = "btnDonor";
             btnDonor.Size = new Size(50, 23);
             btnDonor.TabIndex = 23;
@@ -421,7 +421,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(3, 216);
+            label20.Location = new Point(6, 216);
             label20.Name = "label20";
             label20.Size = new Size(161, 15);
             label20.TabIndex = 22;
@@ -589,7 +589,7 @@
             // 
             // btnCreateMiscellaneousSets
             // 
-            btnCreateMiscellaneousSets.Location = new Point(322, 35);
+            btnCreateMiscellaneousSets.Location = new Point(319, 35);
             btnCreateMiscellaneousSets.Name = "btnCreateMiscellaneousSets";
             btnCreateMiscellaneousSets.Size = new Size(75, 23);
             btnCreateMiscellaneousSets.TabIndex = 22;
@@ -1564,11 +1564,11 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pAcceptor).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudZoomTo).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudZoomFrom).EndInit();
             ((System.ComponentModel.ISupportInitialize)pStop).EndInit();
             ((System.ComponentModel.ISupportInitialize)pStart).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pAcceptor).EndInit();
             ((System.ComponentModel.ISupportInitialize)pDonor).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudIntronGap).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudLabelWidth).EndInit();

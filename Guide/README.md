@@ -25,9 +25,9 @@ The __Format__ tab of the  ___mRNA Display Options___ window allows the basic fo
  The __Display__ tab of the  ___mRNA Display Options___ window allows the way sequences are displayed to be modified: 
  - [Adjusting the sequences's display](DISPLAY.md)
 
- ## Annotating the sequences with data from the Genbank files, the UniProt and InterRroScan websites
+ ## Annotating the sequences with data from the Genbank files, the UniProt and InterProScan websites
 
- The __Feature__ tab of the  ___mRNA Display Options___ window allows meta-data from the GenBank files and the UniProt and InterRroScan websites to be included in the image: 
+ The __Feature__ tab of the  ___mRNA Display Options___ window allows meta-data from the GenBank files and the UniProt and InterProScan websites to be included in the image: 
  - [Annotate the image with meta data](FEATURES.md)
 
  ## Adjust the order of different types of data

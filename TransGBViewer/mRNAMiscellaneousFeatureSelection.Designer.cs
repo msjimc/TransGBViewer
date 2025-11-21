@@ -330,7 +330,7 @@
             Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "mRNAMiscellaneousFeatureSelection";
-            Text = "Miscellaneous Genbank Feature Selection";
+            Text = "Miscellaneous GenBank feature selection";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pCurrentColour).EndInit();
