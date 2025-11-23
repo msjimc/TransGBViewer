@@ -226,7 +226,8 @@ namespace TransGBViewer
 
         private void cboList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cboList.SelectedIndex < 1) { return; }
+            btnRemove.Enabled = true;
         }
 
         public Dictionary<string, List<mRNADisplayMiscFeature>> GetSets { get { return sets; } }
