@@ -172,7 +172,7 @@ namespace TransGBViewer
         {
             string name = txtSetName.Text.Trim();
             if (sets.ContainsKey(name + "#" + cboAccessionIDs.Text.Trim()) == true)
-            {
+            { 
                 btnAdd.Text = "Update";
             }
             else { btnAdd.Text = "Add"; }
