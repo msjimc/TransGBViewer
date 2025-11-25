@@ -82,7 +82,7 @@ Once added it is added to the dropdown list (blue line in Figure 9) to the right
 
 ![Figure 9](images/figurefeature9.jpg)
 
-Figure 9: A feature row is removed by selecting its name (Display name + # + linked sequence name) in the text area (blue line) and pressing __Remove__ (black line) 
+Figure 9: A feature row is removed by selecting its name ("Display name" + # + "linked sequence name") in the text area (blue line) and pressing __Remove__ (black line) 
 
 <hr />
 
