@@ -80,7 +80,7 @@ Figure 7: Pressing the __Colour button allows you to select the colour the featu
 
 ## Saving the features to be drawn
 
-Once a line's features and its colour have being selected, it is saved by entering the line's display name in the text area (blue line in Figure 8) to the right of the __Add__ button (black line in Figure 8). This name will also be used as the lines label in the final image and so must be informative, be correctly capitalised and be 3 or more letters in length. Once entered, the __Add__ button will be enabled and pressing it will save the line. If a feature row with the same name has already been save, the __Add__ button will be renamed __Update__ and pressing it will update the previously saved feature row.
+Once a line's features and its colour have being selected, it is saved by entering the line's display name in the text area (blue line in Figure 8) to the right of the __Add__ button (black line in Figure 8). This name will also be used as the line's label in the final image and so must be informative, correctly capitalised and 3 or more letters in length. Entering a label name will make the  __Add__ button active, while pressing it will save the line and clear the text area. If a feature line with the same name has already been saved, the __Add__ button will be named __Update__ and pressing it will update the previously saved feature row.
 
 ![Figure 8](images/figureFeature8.jpg)
 
