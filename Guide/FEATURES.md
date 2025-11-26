@@ -20,34 +20,45 @@ Pressing the _Create__ button in the __Sequence features from the GenBank files_
 
 ![Figure 2a](images/figureFeature2.jpg)
 
----
+Figure 2a
 
-![Figure 2a](images/figureFeature10.jpg)
+
+![Figure 2b](images/figurefeature10.jpg)
+
+Figure 2b
 
 Figure 2: Features in the GenBank file metadata can be selected and displayed (Figure 2b) by pressing the __Create__ button (blue line in Figure 2a) 
 
 <hr />
 
-Pressing the __Create__ button (blue line in Figure 2)displays the __Miscellaneous GenBank feature selection__ window (Figure 3). As the features in a GenBank file are linked to a specific sequence entry, a GenBank sequence accession ID has to be selected from the dropdown list in the top right corner of the window (blue line in Figure 3).
+## Display of features linked to the transcripts by UniProt
 
-## Display of features linked to the transcribes by UniProt
-
-The __Protein features from UniProt website__ panel allows you to obtain and display features linked to the transcripts by the UniProt website as described below:
+The __Protein features from UniProt website__ panel allows you to obtain and display features linked to the transcripts by the UniProt website (Figure 3) The process is described in the link below:
 
 - [Obtaining and displaying features suggested by the UniProt website](UniProt.md)
 
 ---
 
-![Figure 3a](images/figureFeature11.jpg)
+![Figure 3](images/figurefeature22.jpg)
 
----
-
-# to link
-
-![Figure 3b](images/figureFeatureq.jpg)
-
-Figure 3: Features linked to the transcripts by UniProt can be obtained and displayed (Figure 3b) using the controls in the __Protein features from UniProt website__ panel (Figure 3a) 
+Figure 3: Features linked to the transcripts by UniProt can be obtained and displayed using the controls in the __Protein features from UniProt website__ panel. 
 
 <hr />
 
-Pressing the __Create__ button (blue line in Figure 2)displays the __Miscellaneous GenBank feature selection__ window (Figure 3). As the features in a GenBank file are linked to a specific sequence entry, a GenBank sequence accession ID has to be selected from the dropdown list in the top right corner of the window (blue line in Figure 3).
+## Display of features frame by UniProt by via a transcripts protein sequence
+
+The __Protein features from the InterProScan website__ panel allows you to obtain and display features linked to translations of the transcripts open reading frame by the InterProScan website (Figure 4) The process is described in the link below:
+
+- [Obtaining and displaying features suggested by the InterProScan website](InterproScan.md)
+
+---
+
+# Link
+
+![Figure 4](images/figurefeatureq.jpg)
+
+Figure 4: Features linked to the transcript's open reading framse by InterProScan can be obtained and displayed using the controls in the __Protein features from the InterProScan website__ panel. 
+
+<hr />
+
+
