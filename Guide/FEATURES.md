@@ -45,11 +45,11 @@ Figure 3: Features linked to the transcripts by UniProt can be obtained and disp
 
 <hr />
 
-## Display of features frame by InterproScan by via a transcripts protein sequence
+## Display of features frame by InterProScan by via a transcripts protein sequence
 
 The __Protein features from the InterProScan website__ panel allows you to obtain and display features linked to translations of the transcripts open reading frame by the InterProScan website (Figure 4) The process is described in the link below:
 
-- [Obtaining and displaying features suggested by the InterProScan website](InterproScan.md)
+- [Obtaining and displaying features suggested by the InterProScan website](InterProScan.md)
 
 ---
 
