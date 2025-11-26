@@ -44,13 +44,13 @@ namespace TransGBViewer
             cboSignitureDescriptionValue.SelectedIndex = 0;
             cboInterProValue.SelectedIndex = 0;
             cboInterproDescriptionValue.SelectedIndex = 0;
-            if (limitToSequenceNames == false)
-            { cboNameLocation.SelectedIndex = 0; }
-            else
-            { 
-                cboNameLocation.SelectedIndex = 3;
-                cboNameLocation.Enabled = false;
-            }
+            //if (limitToSequenceNames == false)
+            //{ cboNameLocation.SelectedIndex = 0; }
+            //else
+            //{ 
+            //    cboNameLocation.SelectedIndex = 3;
+            //    cboNameLocation.Enabled = false;
+            //}
         }
 
         private void cboSequenceNames_SelectedIndexChanged(object sender, EventArgs e)
@@ -85,6 +85,7 @@ namespace TransGBViewer
             }
             btnAdd.Enabled = true;
             AlignmentDomainFeature adf = parameters.Domains[cboSequenceNames.Text][cboFeatureName.SelectedIndex - 1];
+            string displayName = adf.DisplayName;
             cboAnalysisValue.SelectedIndex = adf.NameSelectionOptions[0];
             cboSignatureValue.SelectedIndex = adf.NameSelectionOptions[1];
             cboSignitureDescriptionValue.SelectedIndex = adf.NameSelectionOptions[2];
@@ -93,23 +94,25 @@ namespace TransGBViewer
             chkDrawBorder.Checked = adf.DrawBorder;
             chkFillShape.Checked = adf.FillShape;
             chkRoundedDomains.Checked = adf.Rounded;
-            switch (adf.DomainNameLocation)
-            {
-                case DomainNameLocation.none:
-                    cboNameLocation.SelectedIndex = 0;
-                    break;
-                case DomainNameLocation.Above:
-                    cboNameLocation.SelectedIndex = 2;
-                    break;
-                case DomainNameLocation.left:
-                    cboNameLocation.SelectedIndex = 3;
-                    break;
-                case DomainNameLocation.inside:
-                    cboNameLocation.SelectedIndex = 1;
-                    break;
-            }
-            MakeDisplayName();
+            //switch (adf.DomainNameLocation)
+            //{
+            //    case DomainNameLocation.none:
+            //        cboNameLocation.SelectedIndex = 0;
+            //        break;
+            //    case DomainNameLocation.Above:
+            //        cboNameLocation.SelectedIndex = 2;
+            //        break;
+            //    case DomainNameLocation.left:
+            //        cboNameLocation.SelectedIndex = 3;
+            //        break;
+            //    case DomainNameLocation.inside:
+            //        cboNameLocation.SelectedIndex = 1;
+            //        break;
+            //}
+            //MakeDisplayName();
             SetButtons();
+            adf.DisplayName = displayName;
+            txtDisplayName.Text = displayName;
         }
 
         private void cboAnalysisValue_SelectedIndexChanged(object sender, EventArgs e)
@@ -139,7 +142,9 @@ namespace TransGBViewer
 
         private void MakeDisplayName()
         {
-            lblDescription.Text = "Description: " + GetAlignmentDomainFeatureName();
+            string displayname = GetAlignmentDomainFeatureName();
+            lblDescription.Text = "Description: " + displayname;
+            txtDisplayName.Text = displayname;
             DrawExampleDomain();
         }
 
@@ -208,7 +213,7 @@ namespace TransGBViewer
             Bitmap bmp = new Bitmap(pStyle.Width, pStyle.Height);
             Graphics g = Graphics.FromImage(bmp);
             g.Clear(Color.White);
-            //g.DrawRectangle(new Pen(Brushes.Black, 2), 1, 1, bmp.Width - 2, bmp.Height - 2);
+            
             if (cboSequenceNames.SelectedIndex == 0 || cboFeatureName.SelectedIndex < 1) { pStyle.Image = bmp; return; }
             AlignmentDomainFeature adf = parameters.Domains[cboSequenceNames.Text][cboFeatureName.SelectedIndex - 1];
 
@@ -225,14 +230,7 @@ namespace TransGBViewer
             SizeF size = g.MeasureString(adf.DisplayName, f);
             float textStart = (pStyle.Width - size.Width) / 2;
 
-            if (cboNameLocation.Text == "Above domain")
-            {
-                shape.Y = pStyle.Height * 0.5f;
-                g.DrawString(adf.DisplayName, f, Brushes.Black, textStart, shape.Y - size.Height - 5);
-            }
-            else
-            { shape.Y = (pStyle.Height - shape.Height) / 2; }
-
+            shape.Y = (pStyle.Height - shape.Height) / 2; 
             if (adf.FillShape == true) { CommonGraphicTasks.DrawRectangle(g, shape, new SolidBrush(adf.FillColour), adf.Rounded, scale, 4, false); }
             if (adf.DrawBorder == true)
             {
@@ -240,11 +238,6 @@ namespace TransGBViewer
                 CommonGraphicTasks.DrawBordersRectangle(g, shape, pen, adf.Rounded, scale, 6);
             }
 
-            if (cboNameLocation.Text == "In domain shape")
-            {
-                float vOffset = (shape.Height - size.Height) / 2;
-                g.DrawString(adf.DisplayName, f, Brushes.Black, textStart, shape.Y + vOffset);
-            }
             pStyle.Image = bmp;
         }
 
@@ -254,7 +247,7 @@ namespace TransGBViewer
             adf.Rounded = chkRoundedDomains.Checked;
             adf.FillShape = chkFillShape.Checked;
             adf.DrawBorder = chkDrawBorder.Checked;
-            adf.DomainNameLocation = getNameLocation();
+            adf.DomainNameLocation = DomainNameLocation.left;
             getNameSeletionOptions(adf);
         }
 
@@ -267,34 +260,11 @@ namespace TransGBViewer
             adf.NameSelectionOptions[4] = cboInterproDescriptionValue.SelectedIndex;
         }
 
-        private DomainNameLocation getNameLocation()
-        {
-            DomainNameLocation location;
-            switch (cboNameLocation.Text)
-            {
-                case "Not shown":
-                    location = DomainNameLocation.none;
-                    break;
-                case "In domain shape":
-                    location = DomainNameLocation.inside;
-                    break;
-                        case "Above domain":
-                    location = DomainNameLocation.Above;
-                    break;
-                case "With the sequence names":
-                    location = DomainNameLocation.left;
-                    break;
-                default:
-                    location = DomainNameLocation.inside;
-                    break;
-            }
-            return location;
-        }
-
        private void btnAdd_Click(object sender, EventArgs e)
         {
             if (cboSequenceNames.SelectedIndex == 0 || cboFeatureName.SelectedIndex < 1) { return; }
             AlignmentDomainFeature adf = parameters.Domains[cboSequenceNames.Text][cboFeatureName.SelectedIndex - 1];
+            adf.DisplayName = txtDisplayName.Text.Trim();
             string key = cboFeatureName.Text.Trim();
 
             if (selection.ContainsKey(key) == false)

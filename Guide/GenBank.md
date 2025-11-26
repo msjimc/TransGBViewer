@@ -1,10 +1,10 @@
 # Display of metadata present in the imported genBank files
 
-The __Sequence features from the Genbank files__ panel at the top of the __features__ tab allows the selection and display of features present in the imported Genbank files (Figure 2). 
+The __Sequence features from the GenBank files__ panel at the top of the __features__ tab allows the selection and display of features present in the imported GenBank files (Figure 2). 
 
 ![Figure 2](images/figureFeature2.jpg)
 
-The __Sequence features from the Genbank files__ panel allows the selection and display of domains and features present in the imported Genbank files (Figure 2).
+The __Sequence features from the GenBank files__ panel allows the selection and display of domains and features present in the imported GenBank files (Figure 2).
 
 <hr />
 
@@ -12,7 +12,7 @@ Pressing the __Create__ button (blue line in Figure 2)displays the __Miscellaneo
 
 ![Figure 3](images/figurefeature3a.jpg)
 
-Figure 3: The  __Miscellaneous GenBank feature selection__ window allows the selection of features present in the imported Genbank files (Figure 2). Selecting an accession ID from the dropdown list (blue line) causes the features linked to this sequence to be displayed.
+Figure 3: The  __Miscellaneous GenBank feature selection__ window allows the selection of features present in the imported GenBank files (Figure 2). Selecting an accession ID from the dropdown list (blue line) causes the features linked to this sequence to be displayed.
 
 <hr />
 
@@ -26,7 +26,7 @@ Figure 4: The  number of features linked to a GenBank entry varies widely.
 
 ## Selecting features to display in the image
 
-Genbank files contain metadata on a range of features that vary from single bases, three bases that represent a codon or larger domains that span the entry encoded protein. Consequently, it is possible to select one or more features to draw on a single line. In Figure 4b in can be seen that the NM_001126112 accession sequence is linked to a number of phosphoserines as well as the larger CCAR2 binding domain. 
+GenBank files contain metadata on a range of features that vary from single bases, three bases that represent a codon or larger domains that span the entry encoded protein. Consequently, it is possible to select one or more features to draw on a single line. In Figure 4b in can be seen that the NM_001126112 accession sequence is linked to a number of phosphoserines as well as the larger CCAR2 binding domain. 
 
 ### Selecting multiple feature to be displayed on one line
 
@@ -78,11 +78,11 @@ Figure 8: A feature row is saved by entering its display name in the text area (
 
 ## Removing a line
 
-Once added it is added to the dropdown list (blue line in Figure 9) to the right of the remove button (black line in Figure 9). A line's name is composed of its display name and the name of the sequence it is linked to. Selecting a name from the dropdown list and pressing __Remove__ will delete the line.
+Once added, its name is added to the dropdown list (blue line in Figure 9) to the right of the remove button (black line in Figure 9). A line's name is composed of its display name and the name of the sequence it is linked to: \<name\>#\<linked sequence name\>. Selecting a name from the dropdown list and pressing __Remove__ will delete the line.
 
 ![Figure 9](images/figurefeature9.jpg)
 
-Figure 9: A feature row is removed by selecting its name ("Display name" + # + "linked sequence name") in the text area (blue line) and pressing __Remove__ (black line) 
+Figure 9: A feature row is removed by selecting its name ("name" + # + "linked sequence name") in the text area (blue line) and pressing __Remove__ (black line) 
 
 <hr />
 

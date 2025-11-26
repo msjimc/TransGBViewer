@@ -16,6 +16,7 @@ namespace TransGBViewer
         private Dictionary<string, string> sequenceGeneNames = new Dictionary<string, string>();
         private Dictionary<string, string> sequenceDefinations = new Dictionary<string, string>();
         private Dictionary<string, string> sequenceAminoAcid = new Dictionary<string, string>();
+        private Dictionary<string, string> proteinIDs = new Dictionary<string, string>();
         private Dictionary<string, string> sequenceDNA = new Dictionary<string, string>();
         private Dictionary<string, Color> sequenceExonColour = new Dictionary<string, Color>(); 
         private Dictionary<string, Color> sequenceCDSColour = new Dictionary<string, Color>();
@@ -161,6 +162,7 @@ namespace TransGBViewer
         public Dictionary<string, string> GeneName { get { return sequenceGeneNames; } set { sequenceGeneNames = value; } }
         public Dictionary<string, string> SequenceDefinations { get { return sequenceDefinations; } set { sequenceDefinations = value; } }
         public Dictionary<string, string> SequenceAminoAcid { get { return sequenceAminoAcid; } set { sequenceAminoAcid = value; } }
+        public Dictionary<string, string> ProteinIDs { get { return proteinIDs; } set { proteinIDs = value; } }
         public Dictionary<string, string> SequenceDNA { get { return sequenceDNA; } set { sequenceDNA = value; } }
         public Dictionary<string, Point> CDSs { get { return cdss; } set { cdss = value; } }
         public Dictionary<string, List<Point> > Exons { get { return exons; } set { exons = value; } }

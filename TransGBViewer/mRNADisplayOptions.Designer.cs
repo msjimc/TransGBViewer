@@ -973,7 +973,7 @@
             groupBox5.Size = new Size(397, 66);
             groupBox5.TabIndex = 1;
             groupBox5.TabStop = false;
-            groupBox5.Text = "Sequence features from the Genbank files";
+            groupBox5.Text = "Sequence features from the GenBank files";
             // 
             // groupBox4
             // 
@@ -1034,7 +1034,7 @@
             // btnCreateUniProtsets
             // 
             btnCreateUniProtsets.Enabled = false;
-            btnCreateUniProtsets.Location = new Point(322, 128);
+            btnCreateUniProtsets.Location = new Point(322, 126);
             btnCreateUniProtsets.Name = "btnCreateUniProtsets";
             btnCreateUniProtsets.Size = new Size(75, 23);
             btnCreateUniProtsets.TabIndex = 26;

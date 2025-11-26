@@ -19,62 +19,78 @@ namespace TransGBViewer
         private static readonly WebClient webClient = new WebClient();
         private bool quit = false;
 
-        public Dictionary<string, string> GetProteinIDsFrommRNAID(List<string> mRNAID, mRNADomainSearchUpdate owner)
+        public Dictionary<string, string> GetProteinIDsFrommRNAID(List<string> mRNAID, Dictionary<string, string> known, mRNADomainSearchUpdate owner)
         {
             Dictionary<string, string> results = new Dictionary<string, string>();
+            bool retrievedData = false;
             try
             {
                 foreach (string id in mRNAID)
                 {
-                    string url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=nuccore&db=protein&id=" + id;
-                    int count = 0;
-                    string resultPage = "";
-                    while (count < 5 && quit == false)
+                    if (known.ContainsKey(id))
                     {
-                        try
-                        {
-                            owner.AddStatusText("Searching for: " + id + " (Try " + (count + 1).ToString() + " of 5)");
-                            resultPage = client.GetStringAsync(url).Result;
-                            Thread.Sleep(500);
-                            owner.AddStatusText("Response retrived");
-                            count = 5;
-                        }
-                        catch { owner.AddStatusText("Failed"); count++; }
+                        results[id] = known[id];
+                        owner.AddStatusText(id + " aready linked to " + results[id]);
+                        retrievedData = true;
                     }
-                    if (quit == true) { return results; }
-
-                    XmlDocument elinkData = new XmlDocument();
-                    elinkData.LoadXml(resultPage);
-
-                    XmlNode proteinIDNode = elinkData.SelectSingleNode("//LinkSetDb/Link/Id");
-                    if (proteinIDNode != null)
+                    else
                     {
-                        string proteinID = proteinIDNode.InnerText;
-                        owner.AddStatusText("Searching with protein id" + proteinID + "\n");
-                        string eFetchURL = $"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id={proteinID}&rettype=gb&retmode=text";
-                        count = 0;
-                        string eFetcgaAnswer = "";
+                        string url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=nuccore&db=protein&id=" + id;
+                        int count = 0;
+                        string resultPage = "";
                         while (count < 5 && quit == false)
                         {
                             try
                             {
-                                owner.AddStatusText("Searching for: " + id + " / " + proteinID + " (Try " + (count + 1).ToString() + " of 5)");
-                                eFetcgaAnswer = client.GetStringAsync(eFetchURL).Result;
-                                owner.AddStatusText("Response retrived\n");
+                                owner.AddStatusText("Searching for: " + id + " (Try " + (count + 1).ToString() + " of 5)");
+                                resultPage = client.GetStringAsync(url).Result;
+                                Thread.Sleep(500);
+                                owner.AddStatusText("Response retrived");
                                 count = 5;
                             }
-                            catch { owner.AddStatusText("Failed\n"); count++; }
+                            catch { owner.AddStatusText("Failed"); count++; }
                         }
-                        if (quit == true) { return results; }
+                        if (quit == true) { return new Dictionary<string, string>(); }
 
-                        string NPAccessionID = ExtractVersionLine(eFetcgaAnswer);
-                        results[id] = NPAccessionID;
-                        owner.AddStatusText(id + " linked to " + NPAccessionID + "\n");
-                    }
-                    else
-                    {
-                        results[id] = "Not found";
-                        owner.AddStatusText("Not found\n");
+                        XmlDocument elinkData = new XmlDocument();
+                        elinkData.LoadXml(resultPage);
+
+                        XmlNode proteinIDNode = elinkData.SelectSingleNode("//LinkSetDb/Link/Id");
+                        if (proteinIDNode == null)
+                        {
+                            XmlNode test = elinkData.SelectSingleNode("//LinkSet/IdList/Id");
+                            if (test != null)
+                            { owner.AddStatusText("Returned data incorrectly formed."); }
+                        }
+                        if (proteinIDNode != null)
+                        {
+                            string proteinID = proteinIDNode.InnerText;
+                            owner.AddStatusText("Searching with protein id" + proteinID + "\n");
+                            string eFetchURL = $"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id={proteinID}&rettype=gb&retmode=text";
+                            count = 0;
+                            string eFetcgaAnswer = "";
+                            while (count < 5 && quit == false)
+                            {
+                                try
+                                {
+                                    owner.AddStatusText("Searching for: " + id + " / " + proteinID + " (Try " + (count + 1).ToString() + " of 5)");
+                                    eFetcgaAnswer = client.GetStringAsync(eFetchURL).Result;
+                                    owner.AddStatusText("Response retrived\n");
+                                    count = 5;
+                                }
+                                catch { owner.AddStatusText("Failed\r\n"); count++; }
+                            }
+                            if (quit == true) { return new Dictionary<string, string>(); }
+
+                            string NPAccessionID = ExtractVersionLine(eFetcgaAnswer);
+                            results[id] = NPAccessionID; retrievedData = true;
+                            owner.AddStatusText(id + " linked to " + NPAccessionID + "\n");
+                        }
+                        else
+                        {
+                            results[id] = "Not found";
+                            owner.AddStatusText("Not found\n");
+                        }
                     }
                 }
             }
@@ -83,7 +99,9 @@ namespace TransGBViewer
                 owner.AddStatusText("An error occured: " + ex.Message);
                 results.Clear();
             }
-            return results;
+            if (retrievedData == false)
+            { return new Dictionary<string, string>(); }
+            else { return results; }
         }
 
         private string ExtractVersionLine(string responseString)
@@ -141,13 +159,13 @@ namespace TransGBViewer
                     { break; }
                     else if (statusJson.Contains("Error") == true )
                     { 
-                        mRNADSU.AddStatusText("Error message recived: stopping"); 
+                        mRNADSU.AddStatusText("Error message received: stopping"); 
                         return resultsPairs; 
                     }
-                        mRNADSU.AddStatusText("Not ready, wait 5 sec and before trying again");
+                    mRNADSU.AddStatusText("Not ready, wait 5 sec and before trying again");
                     Thread.Sleep(5000); // Wait 5 seconds before retrying
                 }
-                mRNADSU.AddStatusText("Recieved results");
+                mRNADSU.AddStatusText("Received results");
                 var resultsJson = client.GetStringAsync(resultUrl).Result;
                 var root = JObject.Parse(resultsJson);
                 var results = root["results"];
@@ -172,7 +190,7 @@ namespace TransGBViewer
 
                     }
                 }
-                mRNADSU.AddStatusText("Recieved domains: " + string.Join(" ", mappings));
+                mRNADSU.AddStatusText("Received domains: " + string.Join(" ", mappings));
                 foreach (string key in resultsPairs.Keys)
                 {
                     mRNADSU.AddStatusText(key + " -> " + string.Join(" ", resultsPairs[key]));

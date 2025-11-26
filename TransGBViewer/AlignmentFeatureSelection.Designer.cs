@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlignmentFeatureSelection));
             groupBox1 = new GroupBox();
+            txtDisplayName = new TextBox();
             btnRemove = new Button();
             btnAdd = new Button();
             label12 = new Label();
@@ -40,7 +41,6 @@
             chkDrawBorder = new CheckBox();
             chkRoundedDomains = new CheckBox();
             label10 = new Label();
-            cboNameLocation = new ComboBox();
             label9 = new Label();
             lblDescription = new Label();
             cboInterproDescriptionValue = new ComboBox();
@@ -67,6 +67,7 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(txtDisplayName);
             groupBox1.Controls.Add(btnRemove);
             groupBox1.Controls.Add(btnAdd);
             groupBox1.Controls.Add(label12);
@@ -77,7 +78,6 @@
             groupBox1.Controls.Add(chkDrawBorder);
             groupBox1.Controls.Add(chkRoundedDomains);
             groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(cboNameLocation);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(lblDescription);
             groupBox1.Controls.Add(cboInterproDescriptionValue);
@@ -101,6 +101,13 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Domain selection options";
+            // 
+            // txtDisplayName
+            // 
+            txtDisplayName.Location = new Point(275, 239);
+            txtDisplayName.Name = "txtDisplayName";
+            txtDisplayName.Size = new Size(302, 23);
+            txtDisplayName.TabIndex = 3;
             // 
             // btnRemove
             // 
@@ -212,32 +219,21 @@
             label10.TabIndex = 18;
             label10.Text = "Select the domains style and colour";
             // 
-            // cboNameLocation
-            // 
-            cboNameLocation.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            cboNameLocation.FormattingEnabled = true;
-            cboNameLocation.Items.AddRange(new object[] { "Not shown", "In domain shape", "Above domain", "With the sequence names" });
-            cboNameLocation.Location = new Point(285, 239);
-            cboNameLocation.Name = "cboNameLocation";
-            cboNameLocation.Size = new Size(292, 23);
-            cboNameLocation.TabIndex = 17;
-            cboNameLocation.SelectedIndexChanged += cboNameLocation_SelectedIndexChanged;
-            // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(6, 242);
             label9.Name = "label9";
-            label9.Size = new Size(249, 15);
+            label9.Size = new Size(263, 15);
             label9.TabIndex = 16;
-            label9.Text = "Select the location of the domains description";
+            label9.Text = "Enter an alternative display name for the domain";
             // 
             // lblDescription
             // 
             lblDescription.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDescription.Location = new Point(6, 217);
             lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(558, 19);
+            lblDescription.Size = new Size(571, 19);
             lblDescription.TabIndex = 15;
             lblDescription.Text = "Description: -";
             // 
@@ -461,7 +457,6 @@
         private Label label5;
         private ComboBox cboAnalysisValue;
         private Label label4;
-        private ComboBox cboNameLocation;
         private Label label9;
         private Label lblDescription;
         private CheckBox chkFillShape;
@@ -474,5 +469,6 @@
         private Button btnRemove;
         private Button btnAdd;
         private Label label12;
+        private TextBox txtDisplayName;
     }
 }

@@ -42,7 +42,7 @@ namespace TransGBViewer
 
             if (chkFolder.Checked == true)
             {
-                string folderName = FileString.GetFolder("Select the folder of Genbank files", "");
+                string folderName = FileString.GetFolder("Select the folder of GenBank files", "");
                 if (System.IO.Directory.Exists(folderName) == false) { return; }
 
                 parameters = new mRNADisplayParameters();
@@ -56,19 +56,19 @@ namespace TransGBViewer
                 }
 
                 foreach (string file in genbankFiles)
-                { ReadGenbankFile(file); }
+                { ReadGenBankFile(file); }
 
                 if (genbankFiles.Count == 0)
-                { MessageBox.Show("No Genbank files in folder."); return; }
+                { MessageBox.Show("No GenBank files in folder."); return; }
             }
             else
             {
-                String fileName = FileString.OpenAs("Select the gene data file", "Genbank file (*.gb;*.genbank;*.gb.gz;*.genbank.gz))|*.gb;*.genbank;*.gb.gz;*.genbank.gz");
+                String fileName = FileString.OpenAs("Select the gene data file", "GenBank file (*.gb;*.genbank;*.gb.gz;*.genbank.gz))|*.gb;*.genbank;*.gb.gz;*.genbank.gz");
                 if (System.IO.File.Exists(fileName) == false || fileName == "Cancel") { return; }
 
                 parameters = new mRNADisplayParameters();
 
-                ReadGenbankFile(fileName);
+                ReadGenBankFile(fileName);
             }
 
             parameters.ExonSet = makeMinimumExonSet();
@@ -84,7 +84,7 @@ namespace TransGBViewer
 
         }
 
-        private void ReadGenbankFile(string FileName)
+        private void ReadGenBankFile(string FileName)
         {
             FileProcessing fp = new FileProcessing(FileName);
 
@@ -144,10 +144,10 @@ namespace TransGBViewer
                 }
                 else if (line.StartsWith("     CDS"))
                 {
-                    Point temp = GetCoordinates(line);
                     parameters.AddCDS(name, GetCoordinates(line));
-                    string AASequence = GetTranslation(fp);
-                    parameters.AddAminoAcid(name, AASequence);
+                    string[] returnedData = GetTranslation(fp);
+                    parameters.ProteinIDs[name] = returnedData[0];
+                    parameters.AddAminoAcid(name, returnedData[1]);
                 }
                 else if (line.StartsWith("     polyA_site      ") == true)
                 {
@@ -190,25 +190,27 @@ namespace TransGBViewer
             return sequence.ToString();
         }
 
-        private string GetTranslation(FileProcessing fp)
+        private string[] GetTranslation(FileProcessing fp)
         {
             string line = "";
-            string translation = "";
+            string[] translation = { "",""};
             while (fp.Peek() > 0 && fp.Peek() != 79)
             {
                 line = fp.ReadLine();
-                if (line.StartsWith("                     /translation=\""))
+                if (line.StartsWith("                     /protein_id=\""))
+                { translation[0] = line.Substring(34).Trim().Replace("\"", ""); }
+                else if (line.StartsWith("                     /translation=\""))
                 {
-                    translation = line.Substring(35).Trim();
+                    translation[1] = line.Substring(35).Trim();
                     while (fp.Peek() > 0)
                     {
                         line = fp.ReadLine();
                         if (line.StartsWith("                     ") == true)
                         {
-                            translation += line.Substring(21).Trim();
+                            translation[1] += line.Substring(21).Trim();
                             if (line.TrimEnd().EndsWith("\"") == true)
                             {
-                                translation = translation.Substring(0, translation.Length - 1);
+                                translation[1] = translation[1].Substring(0, translation[1].Length - 1);
                                 fp.RePresentLastLine();
                                 return translation;
                             }

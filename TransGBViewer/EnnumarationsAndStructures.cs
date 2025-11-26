@@ -150,7 +150,7 @@ namespace TransGBViewer
 
     }
 
-    public struct GenbankProteinFeature
+    public struct GenBankProteinFeature
     {
         public Point Location;
         public Color Colour;

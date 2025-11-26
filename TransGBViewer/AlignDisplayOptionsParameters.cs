@@ -61,7 +61,7 @@ namespace TransGBViewer
         private Dictionary<string, ProteinDataGenBank> proteinDataGenBanks = new Dictionary<string, ProteinDataGenBank>();
         private Dictionary<string, mRNAUniProtAlignment> alignedAAGenBankLimits = new Dictionary<string, mRNAUniProtAlignment>();
         private Dictionary<string, string> alignedAAToGenBank = new Dictionary<string, string>();
-        private Dictionary<string, List<GenbankProteinFeature>> genbankProteinFeatureSets = new Dictionary<string, List<GenbankProteinFeature>>();
+        private Dictionary<string, List<GenBankProteinFeature>> genbankProteinFeatureSets = new Dictionary<string, List<GenBankProteinFeature>>();
         public AlignDisplayOptionsParameters(Dictionary<string, string> Sequences, List<string> SequenceNames)
         {
             orginalSequenceNames = new List<string>();
@@ -453,7 +453,7 @@ namespace TransGBViewer
         public Dictionary<string, ProteinDataGenBank> ProteinDataGenBanks { get { return proteinDataGenBanks; } set { proteinDataGenBanks = value; } }
         public Dictionary<string, mRNAUniProtAlignment> AlignedAAGenBankLimits { get { return alignedAAGenBankLimits; }set { alignedAAGenBankLimits = value; } }
         public Dictionary<string, string> AlignedAAToGenBank { get { return alignedAAToGenBank; } set { alignedAAToGenBank = value; } }
-        public Dictionary<string, List<GenbankProteinFeature>> GenbankProteinFeatureSets { get { return genbankProteinFeatureSets; } set { genbankProteinFeatureSets = value; } }
+        public Dictionary<string, List<GenBankProteinFeature>> GenBankProteinFeatureSets { get { return genbankProteinFeatureSets; } set { genbankProteinFeatureSets = value; } }
 
         public void ResetSequencenamesFont()
         { fontName = new System.Drawing.Font("Aptos Narrow", 9, FontStyle.Regular); }

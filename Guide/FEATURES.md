@@ -12,9 +12,9 @@ To facilitate the visualization of how motifs and domains are distributed across
 
 ## Display of metadata present in the imported genBank files
 
-Pressing the _Create__ button in the __Sequence features from the Genbank files__ panel allows the selection and display of features present in the imported Genbank files  to be displayed (Figure 2) as described in the link below: 
+Pressing the _Create__ button in the __Sequence features from the GenBank files__ panel allows the selection and display of features present in the imported GenBank files  to be displayed (Figure 2) as described in the link below: 
 
-- [Selecting and displaying features in the Genbank metadata](GenBank.md)
+- [Selecting and displaying features in the GenBank metadata](GenBank.md)
 
 ---
 

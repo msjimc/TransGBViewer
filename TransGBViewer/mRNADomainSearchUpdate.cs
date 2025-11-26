@@ -52,7 +52,7 @@ namespace TransGBViewer
                 AddStatusText("Searcing for: \r\n" + string.Join('\t', idList));
 
                 mapper = new DomianIdentifier();
-                Dictionary<string, string> ids = mapper.GetProteinIDsFrommRNAID(idList, this);
+                Dictionary<string, string> ids = mapper.GetProteinIDsFrommRNAID(idList,parameters.ProteinIDs, this);
                 if (ids.Count == 0)
                 {
                     AddStatusText("No protein IDs found for the provided mRNA IDs.");
@@ -63,7 +63,7 @@ namespace TransGBViewer
                 AddStatusText("Searching for domains at Uniprot");
                 string jobId = mapper.SubmitMappingJob(npID);
                 if (jobId == "") { return; }
-                AddStatusText("Submitted jod waiting for resuts of jod: " + jobId);
+                AddStatusText("Submitted job waiting for resuts of job: " + jobId);
                 Dictionary<string, List<string>> uniProtId = mapper.GetMappingResults(jobId, this);
                 if (uniProtId.Count == 0) { return; }
 
@@ -83,7 +83,7 @@ namespace TransGBViewer
                         
                         ReturnResultString += value + "\n" + results + "\n";
                         
-                        AddStatusText("Recived response from EBI");
+                        AddStatusText("Received response from EBI");
                         string sequence = DomianIdentifier.getSequenceFromEBIResult(results);
                         ProteinDomainFeature pdf = new ProteinDomainFeature(results, sequence, value);
                         if (mProteinDomainFeature.ContainsKey(value) == true)
@@ -112,7 +112,7 @@ namespace TransGBViewer
                 AddStatusText("Searching for domains at Uniprot");
                 string jobId = mapper.SubmitMappingJob(npID);
                 if (jobId == "") { return; }
-                AddStatusText("Submitted jod waiting for resuts of jod: " + jobId);
+                AddStatusText("Submitted job waiting for resuts of job: " + jobId);
                 Dictionary<string, List<string>> uniProtId = mapper.GetMappingResults(jobId, this);
                 if (uniProtId.Count == 0) { return; }
 
@@ -132,7 +132,7 @@ namespace TransGBViewer
                         
                         ReturnResultString += value + "\n" + results;
                         
-                        AddStatusText("Recived response from EBI");
+                        AddStatusText("Received response from EBI");
                         string sequence = DomianIdentifier.getSequenceFromEBIResult(results);
                         ProteinDomainFeature pdf = new ProteinDomainFeature(results, sequence, value);
                         if (mProteinDomainFeature.ContainsKey(value) == true)
@@ -166,7 +166,7 @@ namespace TransGBViewer
                         
                         ReturnResultString += value + "\n" + results;
                         
-                        AddStatusText("Recived response from EBI");
+                        AddStatusText("Received response from EBI");
                         string sequence = DomianIdentifier.getSequenceFromEBIResult(results);
                         ProteinDomainFeature pdf = new ProteinDomainFeature(results, sequence, value);
                         if (mProteinDomainFeature.ContainsKey(value) == true)
