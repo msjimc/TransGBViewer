@@ -51,8 +51,6 @@ The __Protein features from the InterProScan website__ panel allows you to obtai
 
 - [Obtaining and displaying features suggested by the InterProScan website](InterProScan.md)
 
----
-
 ![Figure 4](images/figurefeature41.jpg)
 
 Figure 4: Features linked to the transcript's open reading frame by InterProScan can be obtained and displayed using the controls in the __Protein features from the InterProScan website__ panel. 
