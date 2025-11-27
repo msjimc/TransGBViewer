@@ -1,4 +1,4 @@
-# Display of features linked to the transcripts by InterProScan
+# Displaying features linked to the transcripts by InterProScan
 
 The __Protein features from the InterProScan website__ panel (Figure 1) contains the controls required to obtain, select, format and display features linked to to the transcripts by the UniProt website. Pressing the __Get__ button (blue line in Figure 1) displays the __Import InterProScan features__ window (Figure 2)
 
@@ -88,5 +88,172 @@ Pressing the __Accept__ button on __Import InterProScan features__ form closes t
 ![Figure 8](images/figurefeature30.jpg)
 
 Figure 8: The  __Create__ button in the __Protein features from the InterProScan website__ panel will become active if the search is accepted.
+
+---
+
+## Selecting features for display
+
+<b>Note:</b> Unlike the presentation of the GenBank and UniProt features, due to the length of the InterProScan features, it is not possible to display multiple InterProScan features on a single line. 
+
+Pressing the  __Create__ button in the __Protein features from the InterProScan website__ panel select will open the __Domain selection__ window which allows you to select domain for display (Figure 9). 
+
+![Figure 9](images/figurefeature31.jpg)
+
+Figure 9: The __Domain selection__ window which allows you to select domain for display
+
+---
+
+The InterProScan features are linked to a transcript, consequently, you must first select a transcript to which features have been linked using the upper drop-down list (blue line in Figure 9).  
+
+Once a transcript has been selected, the names of the domains linked to it will appear in the second drop-down list (blue box in Figure 10). The the length on position of the domains is indicated by appending the position of the domain's first and last residue. For example, the highlighted domain starts at residue 97 and ends at residue 287.
+
+![Figure 10](images/figurefeature32.jpg)
+
+Figure 10: Once a transcript has been selected the second drop-down list will contain the names of the InterProScan domains linked to it (blue box)
+
+---
+
+Selecting a domain in the drop-down list (blue line in Figure 11) causes it graphical representation of it to be drawn at the bottom of the form (black box in Figure 11).
+
+![Figure 11](images/figurefeature33.jpg)
+
+Figure 11: Selecting a domain (blue line) causes a graphical representation of it to be drawn (black box).
+
+---
+
+## Setting the domain's display name using values linked to the domain
+
+Each domain contains 5 different descriptions:
+- Analysis: the name of the mechanism by which the domain was found
+- Signature: the domain's signature ID
+- Signature description: short description of the domain
+- InterPro: the domain's InterPro ID
+- InterPro description: short description of the domain
+
+It is possible to use one or more of these labels as the domain's display name in the final image. The display name is selected using the five drop-down list highlighted in Figure 12. Alternatively a label can be entered in to the text area below the drop-down lists (black line in Figure 12).
+
+![Figure 12](images/figurefeature34.jpg)
+
+Figure 12: The domain's display name is selected using the highlighted drop-down lists or by entering a label in the text area (black line).
+
+---
+
+Each of the drop-down list contains the word 'Hide' and the numbers one to five. If the word 'Hide' is selected, the term linked to that descriptor will not be displayed. However, if a number is selected, the domain's display name will contain the linked descriptor. If numbers are selected in more than one drop-down list, the display name will consist of the descriptors written in the order of the numbers. For example, in Figure 13, the drop-down lists are set as:
+
+- Analysis: 5
+- Signature: Hide
+- Signature description: 1
+- InterPro: 2
+- InterPro description: Hide
+
+Consequently the display name starts with the 'signature description', then the 'InterPro ID' value and finally the name of the 'analysis'. If two drop-down list have the same numeric value, the text is selected as follows: Analysis > Signature > Signature description > InterPro > InterPro description. 
+
+The display name based on the values in the drop-down list is displayed in text below the drop-down lists (blue line in Figure 13).
+
+![Figure 13](images/figurefeature35.jpg)
+
+Figure 13: The domain's display name based on the selection in the drop-down list is shown below the drop-down lists (blue line). 
+
+---
+
+## Manually entering the domain's display name
+
+Since the the values linked to the domain can be cryptic (Signature ID or InterPro ID) or to long to be easily displayed (Signature description or InterPro description), it is possible to manually enter a display name by typing it into the text area below the drop-down lists (blue lin in Figure 14). This value will be overwritten if the value of any of the drop-down lists are changed and will only be come permanent when the domain is selected to be displayed (see below).
+
+
+![Figure 14](images/figurefeature36.jpg)
+
+Figure 14: The domain's display name can be set by entering it in the text area below the drop-down lists (blue line). 
+
+---
+
+## modifying the appearance of the domain in the final image
+
+The appearance of the domain in the final image can be modified using the options above the graphically representation of the domain as shown in (Figures 15a to 15d). Initially, all the options are selected producing a green domain with a border and rounded corners Figure 15a). 
+
+<b>Note:</b> Both of the __Draw border__ and __Fill shape__ options can not be deselected at the same time.
+
+![Figure 15a](images/figurefeature37a.jpg)
+
+Figure 15a: The domain's appearance in the final image can be modified using the highlighted controls. 
+
+---
+
+![Figure 15b](images/figurefeature37b.jpg)
+
+Figure 15b: Deselecting the __Rounded corners__ option draws the domain with square corners (blue circle in Figure 15b)
+
+---
+
+![Figure 15c](images/figurefeature37c.jpg)
+
+Figure 15c: Deselecting the __Draw border__ option draws the domain without a black border corners (blue arrow in Figure 15b)
+
+---
+
+![Figure 15d](images/figurefeature37d.jpg)
+
+Figure 15d: Deselecting the __Fill shape__ option draws the domain without a black border corners (blue arrow in Figure 15b)
+
+---
+
+The final option is to change the colour used to fill the domain, this is set by pressing the __Colour__ button (blue line in Figure 16). By default, the domains  are coloured green. To change their colour press the __Coluor__ button (blue line in Figure 16a). This will display a window called  __Select the domain's fill colour__ (Figure 16b). This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 16b) or with the Windows colour picker dialog window if the __Colour dialog box__ option is selected (green line in Figure 16b) and the __Colour__ button is pressed (red line in Figure 16b).
+
+- [Using the Select colour by name dialog](equenceColour.md)
+- [Using the Windows colour picker dialog](ColourPickerDialog.md)
+
+The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will close the window, change the colour used to draw the domain (black box in Figure 16c)
+
+![Figure 16a](images/figurefeature38a.jpg)
+
+Figure 16a: The colour of domains can be changed by pressing the __Colour__ button (blue line) and selecting the colour using the displayed dialog box (figure 16b).
+
+---
+
+![Figure 16b](images/figurefeature38b.jpg)
+
+Figure 16b:  Once changed the colour of the start and stop lines are shown next to the appropriate button (blue lines) will the lines are now colour coded (black boxes).
+
+---
+
+![Figure 16c](images/figurefeature38c.jpg)
+
+Figure 16c:  When the __Accept__ on the __Select the domain's fill colour__ window is pressed the form closes and the domains fill colour changes to the selected colour.
+
+---
+
+## Saving the domain's formatting and selecting it to be displayed in the final image
+
+Once the domain's display name and format has been set, it can be selected to be included in the final image. This is done by pressing the __Add__ at the top of the form (blue line in Figure 17a). Once add, when ever that domain is selected in the domains drop-down list the name on the __Add__ button changes to __Update__ (blue line in Figure 17b) and the __Remove__ button becomes active (black line in Figure 17b). Press the __Update__ button replaces all previous formatting and display name with those currently selected. 
+
+![Figure 17a](images/figurefeature39a.jpg)
+
+Figure 17a: Pressing the __Add__ button saves the formatting and set the domain to be drawn in the final image.
+
+---
+
+![Figure 17b](images/figurefeature39b.jpg)
+
+Figure 17b:  When every a saved domain is selected the __Add__ button is renamed __Update__ (blue line) and the __Remove__ button is activated (black line).
+
+---
+
+## Deselecting an domain selected to be drawn
+
+To deselect a domain, select it in the domain name drop-down list and press the __Remove__ button (blue line in Figure 18).
+
+![Figure 18](images/figurefeature40.jpg)
+
+Figure 18: Pressing the __Add__ button saves the formatting and set the domain to be drawn in the final image.
+
+---
+
+## Redrawing the transcripts with the InterProScan domains
+
+Pressing the __Accept__ button closes the __Domain selection__ window and redraws the image.
+
+![Figure 19](images/figurefeature41.jpg)
+
+Figure 19: Pressing the __Accept__ button closes the __Domain selection__ window and redraws the transcript image with the InterProScan domains.
 
 ---

@@ -8,12 +8,12 @@ A colour can be selected by either selecting the colour from the items in the dr
 
 Figure 1a: Colour names are suggested as a name is entered in the upper text area. 
 
-<hr />
+---
 
 ![Figure 1b](images/figureDisplay5b.jpg)
 
 Figure 1b: Once selected, the name will appear in the dropdown list and a rectangle below the dropdown list will display the selected colour.
 
-<hr />
+---
 
 Pressing the __Accept__ button will save the colour selection and close the window. Press in the __Cancel__ button will discard the selection.

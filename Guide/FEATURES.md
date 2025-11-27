@@ -4,7 +4,7 @@
 
 The __features__ tab of the ___mRNA Display Options___ window provides controls for selection and display of sequence domains and motifs in the displayed sequences (Figure 1).
 
-<hr />
+---
 
 The generation of multiple alternatively spliced transcripts from a single gene enables the production of diverse mRNA molecules, each of which may encode distinct protein isoforms. Because these isoforms differ in sequence, they can vary in function, activity, and stability, allowing the gene to contribute to a broader range of cellular processes and adapt to different physiological conditions. 
 
@@ -29,7 +29,7 @@ Figure 2b
 
 Figure 2: Features in the GenBank file metadata can be selected and displayed (Figure 2b) by pressing the __Create__ button (blue line in Figure 2a) 
 
-<hr />
+---
 
 ## Display of features linked to the transcripts by UniProt
 
@@ -43,7 +43,7 @@ The __Protein features from UniProt website__ panel allows you to obtain and dis
 
 Figure 3: Features linked to the transcripts by UniProt can be obtained and displayed using the controls in the __Protein features from UniProt website__ panel. 
 
-<hr />
+---
 
 ## Display of features frame by InterProScan by via a transcripts protein sequence
 
@@ -53,12 +53,10 @@ The __Protein features from the InterProScan website__ panel allows you to obtai
 
 ---
 
-# Link
-
-![Figure 4](images/figurefeatureq.jpg)
+![Figure 4](images/figurefeature41.jpg)
 
 Figure 4: Features linked to the transcript's open reading frame by InterProScan can be obtained and displayed using the controls in the __Protein features from the InterProScan website__ panel. 
 
-<hr />
+---
 
 

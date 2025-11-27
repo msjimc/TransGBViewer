@@ -7,7 +7,7 @@ The __Format__ tab page of the __mRNA Display Options__ window (blue line in Fig
 
 Figure 1: The formatting options are revealed by pressing the __Format__ tab in the __mRNA Display Options__ window.
 
-<hr />
+---
 
 ## Format of the coordinate labels
 
@@ -22,17 +22,17 @@ The first dropdown list determines the weather the coordinates are displayed (op
 
 Figure2a: Selecting *None* from the __Display sequence coordinates__ options hides the coordinates label.
 
-<hr />
+---
 
 ![Figure 2a](images/figure6b.jpg)
 
 Figure 2b: Selecting *Above* from the __Display sequence coordinates__ options writes the values above the interval line.
-<hr />
+---
 
 ![Figure 2c](images/figure6c.jpg)
 
 Figure 2c: Selecting *Below* from the __Display sequence coordinates__ options writes the values below the interval line.
-<hr />
+---
 
 ## "Select the major tick interval" option
 
@@ -42,13 +42,13 @@ The interval between major ticks is set via the __Select the major tick interval
 
 Figure 3a: The __Select the major tick interval__ default value of 100 draws the major ticks at 100 bp intervals and annotates the tick only if the text doesn't overwrite a previous value.
 
-<hr />
+---
 
 ![Figure 3b](images/figure7b.jpg)
 
 Figure 3b: Setting __Select the major tick interval__ value to 300 draws the major ticks at 300 bp intervals.  Since the interval is wider, all the major ticks are annotated, except the final value (2,700 bp) whose value would be truncated by the edge of the image.
 
-<hr />
+---
 
 ## "Select the minor tick interval" option
 
@@ -58,7 +58,7 @@ The __Select the minor tick interval__ value determines the interval between eac
 
 Figure 4a: The __Select the minor tick interval__ default value of 10 draws the minor ticks at 20 bp intervals. These ticks are not annotated.
 
-<hr />
+---
 
 ![Figure 4b](images/figure8b.jpg)
 
@@ -72,13 +72,13 @@ A major interval is only annotated if the text does not overwrite previously dis
 
 Figure 5a: The __Set the angle of rotation of the coordinate text__ option allows the coordinate values to be rotated anti-clockwise when the __Display sequence coordinates__  options is set to _Above_
 
-<hr />
+---
 
 ![Figure 5b](images/figure9b.jpg)
 
 Figure 5b: The __Set the angle of rotation of the coordinate text__ option allows the coordinate values to be rotated clockwise when the __Display sequence coordinates__  options is set to _Below_
 
-<hr />
+---
 
 ## Sequence label formatting
 
@@ -92,19 +92,19 @@ The __Select the location of the labels__ dropdown list determines if the the se
 
 Figure 6a: If _None_ is selected from the  __Select the location of the labels__  dropdown list, no labels are written.
 
-<hr />
+---
 
 ![Figure 6](images/figure10b.jpg)
 
 Figure 6b: If _Left_ is selected from the  __Select the location of the labels__  dropdown list, the labels are written to the left of the sequences.
 
-<hr />
+---
 
 ![Figure 6c](images/figure10c.jpg)
 
 Figure 6c: If _Above_ is selected from the  __Select the location of the labels__  dropdown list, the labels are written to the Above of the sequences.
 
-<hr />
+---
 
 ## "Adjust label width area" Option
 
@@ -114,21 +114,21 @@ The __Adjust label width area__ option sets the width of area used to write the 
 
 Figure 7a: Initially, the label width area is set to 140 pixels (at 96 DPI)
 
-<hr />
+---
 
 
 ![Figure 7b](images/figure11b.jpg)
 
 Figure 7b: Changing the value in the __Adjust label width area__ control adjusts the width of the labels
 
-<hr />
+---
 
 
 ![Figure 7c](images/figure11c.jpg)
 
 Figure 7c: If the text is wider than the width of the label area, it is truncated. The sequences are always drawn with a 15 pixel (at 96 DPI) margin on their left and right sides.
 
-<hr />
+---
 
 ## "Select font used to write sequence names" and "Select font used to write feature names"options
 
@@ -140,13 +140,13 @@ Pressing either of the __Select__ buttons displays the font selection dialog box
 
 Figure 8a: Pressing the __Select__ button to the right of the __Select font used to write sequence names__ text allows the font used to write the sequence names to be changed. In Figure 8a the font is changed to the italic version of the serif font - Times New Roman. 
 
-<hr />
+---
 
 ![Figure 9b](images/figure12b.jpg)
 
 Figure 9b: Pressing the __Select__ button to the right of the __Select font used to write feature names__ text allows the font used to write the names of any feature (see the (__Feature__ tab description) to be changed. In Figure 9b the font is changed to the regular version of the sans serif font - Impact. 
 
-<hr />
+---
 
 ## "Adjust size of gap signifying an intron" option
 
@@ -156,11 +156,11 @@ By default two consecutive exons are drawn with no gap between them (Figure 10a)
 
 Figure 10a: Pairs of exons that do not flank alternatively spliced exons are drawn as an uninterrupted series of rectangles. 
 
-<hr />
+---
 
 ![Figure 10b](images/figure13b.jpg)
 
 Figure 10b: The __Adjust size of gap signifying an intron__ option allows the location of introns to be easily seen by inserting a gaps at splicing.  
 
-<hr />
+---
 

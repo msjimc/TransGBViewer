@@ -4,7 +4,7 @@
 
 Figure 1: The __Layout__ tab of the ___mRNA Display Options___ window allows you to change both the layout order and the order/names of transcripts (Figure 1).
 
-<hr />
+---
 
 In the previous tabs, you could create an image displaying aligned transcript sequences along with metadata from GenBank files and data from UniProt and InterProScan. By default, the order is:
 
@@ -47,7 +47,7 @@ The order in which the transcripts are drawn is determined by the order the sequ
 
 ## Modifying the transcripts displayed
 
-The __Sequence order and display name__ panel contains the __Change__ button (blue line Figure 5) that allows you to modify how the transcripts are ordered and named. Pressing the __Change__ button opens the __Rename transcripts__ form (Figure 5)
+The __Sequence order and display name__ panel contains the __Change__ button (blue line in Figure 5) that allows you to modify how the transcripts are ordered and named. Pressing the __Change__ button opens the __Rename transcripts__ form (Figure 5)
 
 ![Figure 5](images/figureLayout5.jpg)
 
@@ -60,13 +60,13 @@ Figure 5: Pressing the __Change__ button (blue line) opens the __Rename transcri
 ### Reordering and omitting transcripts
 
 The __Rename transcripts__ form consists of two lists of sequences names (blue and black boxes in Figure 6).  Initially the left-hand list contains all the sequence names, while the right-hand grid is empty. 
-Both lists have the same 3 column format, the __Order__ column (black line Figure 5) indicates the current position of that transcript in the image, the __Transcript__ column (green line Figure 5) shows the transcripts GenBank ID and the __Display name__ column (red line Figure 5) shows the transcript's display name. 
+Both lists have the same 3 column format, the __Order__ column (black line in Figure 5) indicates the current position of that transcript in the image, the __Transcript__ column (green line in Figure 5) shows the transcripts GenBank ID and the __Display name__ column (red line in Figure 5) shows the transcript's display name. 
 
-Only transcripts in the right-hand list will be displayed if the form is closed by pressing the window's __Accept__ button (grey line Figure 5). Also the order in which the transcripts are listed in the right-hand list is the order in which they are displayed.
+Only transcripts in the right-hand list will be displayed if the form is closed by pressing the window's __Accept__ button (grey line in Figure 5). Also the order in which the transcripts are listed in the right-hand list is the order in which they are displayed.
 
 #### Moving sequences from one list to the other
 
-To move a transcript from the left-hand list to the right-hand list, select the transcript in the left-hand list by clicking on it (Figure 6a). Then press the __Right__ arrow button (blue line Figure 6a). 
+To move a transcript from the left-hand list to the right-hand list, select the transcript in the left-hand list by clicking on it (Figure 6a). Then press the __Right__ arrow button (blue line in Figure 6a). 
 
 ![Figure 6a](images/figureLayout6a.jpg)
 
@@ -80,7 +80,7 @@ Figure 6b
 
 Figure 6c
 
-Figure 6: Selecting a transcript in the left-hand list and pressing the __Right__ arrow button (blue line Figure 6a) will remove the transcript from the left-hand list and place it in the right-hand list (Figure 6b). Selecting a transcript in the right-hand list and pressing the __Left__ arrow button (blue line Figure 6b) will move the transcript back to the left-hand list (Figure 6c).
+Figure 6: Selecting a transcript in the left-hand list and pressing the __Right__ arrow button (blue line in Figure 6a) will remove the transcript from the left-hand list and place it in the right-hand list (Figure 6b). Selecting a transcript in the right-hand list and pressing the __Left__ arrow button (blue line in Figure 6b) will move the transcript back to the left-hand list (Figure 6c).
 
 ---
 
@@ -104,7 +104,7 @@ Figure 7: Transcripts are displayed in the order they appeared in the right-hand
 
 ### Renaming a transcript
 
-To change a transcript's display name, select it by either clicking on it in one of the lists or choosing its name in the upper drop down-list (blue line Figure 8a). Once selected, the transcripts display name will appear in the text area below the dropdown list (black line in Figure 8a) - initially the display name is the same as the transcript's GenBank accession ID. To change the display name, delete the current display name in the text area and enter the new name. This should change the text in the Display name column - any changes are automatically stored, but only become permanent if the window is closed by pressing the __Accept__ button (Figure 8b). 
+To change a transcript's display name, select it by either clicking on it in one of the lists or choosing its name in the upper drop down-list (blue line in Figure 8a). Once selected, the transcripts display name will appear in the text area below the dropdown list (black line in Figure 8a) - initially the display name is the same as the transcript's GenBank accession ID. To change the display name, delete the current display name in the text area and enter the new name. This should change the text in the Display name column - any changes are automatically stored, but only become permanent if the window is closed by pressing the __Accept__ button (Figure 8b). 
 
 ![Figure 8a](images/figureLayout8a.jpg)
 

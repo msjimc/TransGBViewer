@@ -6,13 +6,13 @@ There are two ways to select a colour using the Colour Picker dialog, the left-h
 
 Figure 1a: Clicking on a colour in the grid (blue box) and then pressing __OK__ (black line) will select a predefined colour. 
 
-<hr />
+---
 
 ![Figure 1b](images/figureDisplay6b.jpg)
 
 Figure 1b: To select a custom colour, mouse click on the rainbow image (blue box) and then adjust its brightness with using the gradient slider (green box). The selected colour will appear in the area above the __Colour Solid__ text (Red box). Pressing the __Add to Custom Colours__ button (black line) and then the __OK__ button (grey line) will select the colour and close the window.
 
-<hr />
+---
 
 Pressing the __Accept___ button will accept the modifications and redraw the image (Figure 2), while pressing __Cancel__ will discard the changes.
 
@@ -20,4 +20,4 @@ Pressing the __Accept___ button will accept the modifications and redraw the ima
 
 Figure 2 Pressing the __Accept__ button will close the window, save the new scheme and redraw the image.
 
-<hr />
+---

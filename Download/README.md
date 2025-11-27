@@ -4,12 +4,12 @@ It is possible to download the whole repository by clicking on the green '<> Cod
 
 This folder contains the precompiled files needed to run the program on 32 or 64 bit systems, stored in two zip files. Each zip file contains 2 *.dlls, 2 *.json and a *.exe file. To run the program, download and extract and then double click on the TransGBViewer.exe. Due to heightened security by some organisations' IT departments, it may not be possible to simply download and run a program. This may be overcome by moving the application out of the download folder to a folder on the PC's hard drive, not a network drive or one shared with OneDrive for example. 
 
-<hr />
+---
 
 #### Important note  
 
 Once downloaded, it is important that the TransGBViewer.exe, TransGBViewer.dll, and TransGBViewer.runtimeconfig.json, and Newtonsoft.Json.dll are located in the same folder. 
-<hr />
+---
 
 * [Downloading the zip file](#downloading-the-zip-file)
 

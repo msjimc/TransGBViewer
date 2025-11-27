@@ -12,7 +12,7 @@ The first tab page of the ___mRNA Display Options___ window allows you to select
 
 Figure 1: Pressing the __Select__ button prompts you to select a single file, if the __Folder__ option is unchecked.
 
-<hr />
+---
 
 Pressing the __Select__ button with the __Folder__ option ticked prompts you to select a folder of GenBank formatted files each containing one or more entries (Figure 2).
 
@@ -20,7 +20,7 @@ Pressing the __Select__ button with the __Folder__ option ticked prompts you to 
 
 Figure 2: Pressing the __Select__ button with __Folder__ option checked prompts you to select a folder of files.
 
-<hr />
+---
 
 ## Image description
 
@@ -30,7 +30,7 @@ Once data has been imported, the sequences are displayed in the  ___Sequence Dis
 
 Figure 3:
 
-<hr />
+---
 
 The sequences of each transcript are used to create a consensus sequence of the gene's transcribed sequences. Initially, a transcript's non-coding sequences are drawn as narrow grey rectangles, while coding sequences are drawn as taller green boxes. Sequences common to a number of transcripts are drawn above each other allowing common sequences to be identified. If a transcript contains an alternatively spliced exon that is located between two consecutive exons in a transcript a gap is drawn. 
 

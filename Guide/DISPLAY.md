@@ -12,7 +12,7 @@ By default, coding sequences are drawn as green blocks and non-coding regions ar
 
 Figure 2: Pressing the __Select__ button opens the __Sequence colour selection__ window.
 
-<hr />
+---
 
 To change the colour of one or more transcripts, first check the name of the transcripts in the check list on the right hand side (Blue box in Figure 3) and then select whether the change will affect the coding, non-coding or both types of sequence using the __Coding__ and __Non-coding__ check boxes on the left (red box in Figure 3)
 
@@ -20,7 +20,7 @@ To change the colour of one or more transcripts, first check the name of the tra
 
 Figure 3: To change the transcript colour scheme, first check the names of the transcripts you wish to modify (blue box). Next select whether coding or non-coding sequences will be changed (black box).
 
-<hr />
+---
 
 Once one transcript and the type of sequence to change have been selected the __Select__ button will become active (grey light Figure 3). Pressing the __Select__ button will then display a colour selection window. If the __By Name__ option is selected the __Select sequence colour__ window is displayed (Figure 4a). If the __Colour picker__ option is selected the standard Windows __Colour Picker dialog__ window opens (Figure 4b).
 
@@ -35,7 +35,7 @@ Once the colour has been selected, pressing the __Accept___ button will accept t
 
 Figure 4: Pressing the __Accept__ button will close the window, save the new scheme and redraw the image.
 
-<hr />
+---
 
 ## Selecting a region to view
 
@@ -45,13 +45,13 @@ The __Display__ tab contains two number boxes that allow you to select a region 
 
 Figure 5a: By default all sequences are visible, with the values in the __Limit region displayed__ number boxes set to 1 and the consensus sequence's length (blue box). 
 
-<hr />
+---
 
 ![Figure 5b](images/figureDisplay8b.jpg)
 
 Figure 5b: Adjusting the values in the __Limit region displayed__ number boxes allows a specific region to be viewed (blue box).
 
-<hr />
+---
 
 ### Set the base pair interval value to start at 1 when zooming in
 
@@ -61,7 +61,7 @@ In Figure 5b a region of 148 to 1588 was selected and the base pair position lab
 
 Figure 6: Checking the __Start at 1bp__ option (blue line) causes the interval label to start at "1 bp" (red line)
 
-<hr />
+---
 
 ## Highlighting coding sequences
 
@@ -71,7 +71,7 @@ By default coding sequences are drawn in as different coloured rectangles overla
 
 Figure 7: Unchecking the __Show__ option (blue line) will stop the coding sequence from being highlighted.
 
-<hr />
+---
 
 ## Drawing exons as boxes with or without rounded corners
 
@@ -81,13 +81,13 @@ By default, the boxes are drawn with rounded corners (red circle in Figure 8a), 
 
 Figure 8a: By default all sequences are drawn with rounded corners (red circle). 
 
-<hr />
+---
 
 ![Figure 8b](images/figureDisplay11b.jpg)
 
 Figure 8b: Unchecking the __Round__ check box (blue line) redraws the images with square corners (red circle in Figure 8b).
 
-<hr />
+---
 
 ## Highlight coding and non-coding sequences by reducing the height of the non-coding sequence boxes
 
@@ -97,13 +97,13 @@ As well as drawing the coding and non-coding sequences in different colours, cod
 
 Figure 9a: By default all sequences are drawn with non-coding sequence represented by narrow rectangles (red box). 
 
-<hr />
+---
 
 ![Figure 9b](images/figureDisplay12b.jpg)
 
 Figure 9b: Unchecking the __Reduce__ check box (blue line) redraws the image with all the boxes the same height (red box in Figure 9b).
 
-<hr />
+---
 
 ## Highlighting a transcripts exon splice sites
 
@@ -115,7 +115,7 @@ Transcripts may share a common exon but differ functionally by utilizing alterna
 
 Figure 10: Selecting a transcript's name from the dropdown list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the splice sites to be highted as a series of vertical dotted lines that allow the use of alternative splice sites to be visualised (black box). 
 
-<hr />
+---
 
 ## Changing the colour of the lines used to highlight the donor and/or acceptor splice sites
 
@@ -131,13 +131,13 @@ The new colour will then be displayed next to the __Colour__ button. Pressing th
 
 Figure 11a: The colour of the lines used to highlight splice sites can be changed by pressing the __Donor__ or __Acceptor__ button (blue line) and selecting the colour using the displayed dialog box.
 
-<hr />
+---
 
 ![Figure 11b](images/figureDisplay14b.jpg)
 
 Figure 11b: Once changed the colour of the acceptor and donor lines are shown next to the appropriate button (blue lines) and the lines are now colour-coded (black box).
 
-<hr />
+---
 
 ## Highlighting a transcript's translational start and stop sites
 
@@ -149,7 +149,7 @@ A gene's transcripts may utilise different translational start and stop sites, t
 
 Figure 12: Selecting a transcript's name from the dropdown list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the start and stop sites to be shown as a series of vertical dotted lines that allow the use of alternative translation start and stop sites to be visualised (black boxes). 
 
-<hr />
+---
 
 ## Changing the colour of the lines used to highlight the translational start and stop sites
 
@@ -165,13 +165,13 @@ The new colour will then be displayed next to the __Colour__ button. Pressing th
 
 Figure 13a: The colour of the lines used to highlight splice sites can be changed by pressing the __Start__ or __Stop__ button (blue line) and selecting the colour using the displayed dialog box.
 
-<hr />
+---
 
 ![Figure 13b](images/figureDisplay16b.jpg)
 
 Figure 13b:  Once changed the colour of the start and stop lines are shown next to the appropriate button (blue lines) will the lines are now colour coded (black boxes).
 
-<hr />
+---
 
 ## Adjusting the thickness of the lines showing splice sites and translational start and stop sites
 
@@ -181,10 +181,10 @@ By default, the lines showing the splice sites and translational start and stop 
 
 Figure 14a: Setting the value of the number control at the bottom of the window (blue line) to 0.5 draws the lines with a width of 0.5 pixels when drawn at 96 DPI (black lines).
 
-<hr />
+---
 
 ![Figure 14b](images/figureDisplay17b.jpg)
 
 Figure 14b: Setting the value of the number control at the bottom of the window (blue line) to 3.0 draws the lines with a width of 3.0 pixels when drawn at 96 DPI (black lines).
  
-<hr />
+---

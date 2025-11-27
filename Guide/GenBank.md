@@ -1,4 +1,4 @@
-# Display of metadata present in the imported genBank files
+# Displaying metadata present in the imported genBank files
 
 The __Sequence features from the GenBank files__ panel at the top of the __features__ tab allows the selection and display of features present in the imported GenBank files (Figure 2). 
 
@@ -6,7 +6,7 @@ The __Sequence features from the GenBank files__ panel at the top of the __featu
 
 The __Sequence features from the GenBank files__ panel allows the selection and display of domains and features present in the imported GenBank files (Figure 2).
 
-<hr />
+---
 
 Pressing the __Create__ button (blue line in Figure 2)displays the __Miscellaneous GenBank feature selection__ window (Figure 3). As the features in a GenBank file are linked to a specific sequence entry, a GenBank sequence accession ID has to be selected from the dropdown list in the top right corner of the window (blue line in Figure 3).
 
@@ -14,7 +14,7 @@ Pressing the __Create__ button (blue line in Figure 2)displays the __Miscellaneo
 
 Figure 3: The  __Miscellaneous GenBank feature selection__ window allows the selection of features present in the imported GenBank files (Figure 2). Selecting an accession ID from the dropdown list (blue line) causes the features linked to this sequence to be displayed.
 
-<hr />
+---
 
 The level of annotation can vary widely between different entries with linked features listed in the list box below the accession selection dropdown list (Figure 4a and 4b).
 
@@ -22,7 +22,7 @@ The level of annotation can vary widely between different entries with linked fe
 
 Figure 4: The  number of features linked to a GenBank entry varies widely.
 
-<hr />
+---
 
 ## Selecting features to display in the image
 
@@ -30,7 +30,7 @@ GenBank files contain metadata on a range of features that vary from single base
 
 ### Selecting multiple feature to be displayed on one line
 
-To display the phosphoserines on a single row, first check each box at the side of the phosphoserines entries. Since there are a number, instead of selecting each one individually, enter "phosphoserine" in the text area to the left of the list (blue line Figure 5) and press the __Check__ button (black line in Figure 5). This will check all entries that contain the entered text. Pressing the __Uncheck__ button will unselect any items.
+To display the phosphoserines on a single row, first check each box at the side of the phosphoserines entries. Since there are a number, instead of selecting each one individually, enter "phosphoserine" in the text area to the left of the list (blue line in Figure 5) and press the __Check__ button (black line in Figure 5). This will check all entries that contain the entered text. Pressing the __Uncheck__ button will unselect any items.
 
 <b>Note:</b> The search function will only work when 3 or more letters have been entered. 
 
@@ -38,7 +38,7 @@ To display the phosphoserines on a single row, first check each box at the side 
 
 Figure 5: If 3 or more letters are entered in the text area to the left of the feature list, the number of items containing the text is shown below (green line). Pressing the __Check__ button (black line) selects all matches in the list. Pressing the __Uncheck__ button (red line) deselects all items. 
 
-<hr />
+---
 
 ### Selecting a single feature to be displayed on one line
 
@@ -48,12 +48,12 @@ The method above can also be used to select a single item. However a single item
 
 Figure 6: A single feature can be selected by scrolling through list of features and manually checking its tick box (Figure 6) 
 
-<hr />
+---
 
 
 ### Setting the colour of items drawn on a single line
 
-Pressing the __Colour__ button (blue line Figure 7) will display either the  __Select colour by name dialog__ and __Windows colour picker dialog__ box depending on which option is selected (red line in Figure 7). These dialog boxes allow you to select a colour as described here: 
+Pressing the __Colour__ button (blue line in Figure 7) will display either the  __Select colour by name dialog__ and __Windows colour picker dialog__ box depending on which option is selected (red line in Figure 7). These dialog boxes allow you to select a colour as described here: 
 
 - [Using the Select colour by name dialog box](SequenceColour.md)
 - [Using the Windows colour picker dialog box](ColourPickerDialog.md)
@@ -64,7 +64,7 @@ Once selected, the area next to the __Colour__ button will be drawn in the selec
 
 Figure 7: Pressing the __Colour button allows you to select the colour the features 
 
-<hr />
+---
 
 ## Saving the features to be drawn
 
@@ -74,7 +74,7 @@ Once a line's features and its colour have being selected, it is saved by enteri
 
 Figure 8: A feature row is saved by entering its display name in the text area (blue line) and pressing __Add__ (black line) 
 
-<hr />
+---
 
 ## Removing a line
 
@@ -84,7 +84,7 @@ Once added, its name is added to the dropdown list (blue line in Figure 9) to th
 
 Figure 9: A feature row is removed by selecting its name ("name" + # + "linked sequence name") in the text area (blue line) and pressing __Remove__ (black line) 
 
-<hr />
+---
 
 ## Accepting the feature edits and redrawing the image
 
@@ -94,4 +94,4 @@ The changes to the collection of the feature lines is only saved if the __Accept
 
 Figure 10: The feature rows are added to the image if the __Accept__ button at the bottom of the __Miscellaneous GenBank feature selection__ window is pressed. 
 
-<hr />
+---

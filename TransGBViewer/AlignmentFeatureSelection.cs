@@ -157,7 +157,7 @@ namespace TransGBViewer
         private string GetAlignmentDomainFeatureName(AlignmentDomainFeature adf)
         {
             string description = "";
-            for (int index = 1; index < 5; index++)
+            for (int index = 1; index < 6; index++)
             {
                 if (cboAnalysisValue.SelectedIndex == index) { description += ", " + adf.Analysis; }
                 if (cboSignatureValue.SelectedIndex == index) { description += ", " + adf.Signature; }

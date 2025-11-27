@@ -1,4 +1,4 @@
-# Display of features linked to the transcripts by UniProt
+# Displaying features linked to the transcripts by UniProt
 
 The __Protein features from UniProt website__ panel (Figure 1) contains the controls required to obtain, select, format and display features linked to transcripts by the UniProt website.
 
@@ -107,7 +107,7 @@ Figure 7b: Multiple features can be selected by entering text in the text area (
 
 ### Selecting the colour used to draw the features on a line
 
-Pressing the __Colour__ button (blue line Figure 7) will display either the  __Select colour by name__ dialog and Windows __Colour picker__ dialog box depending on which option is selected (red line in Figure 7). These dialog boxes allow you to select a colour as described here: 
+Pressing the __Colour__ button (blue line in Figure 7) will display either the  __Select colour by name__ dialog and Windows __Colour picker__ dialog box depending on which option is selected (red line in Figure 7). These dialog boxes allow you to select a colour as described here: 
 
 - [Using the Select colour by name dialog box](SequenceColour.md)
 - [Using the Windows colour picker dialog box](ColourPickerDialog.md)
@@ -128,7 +128,7 @@ Once a line's features and its colour have been selected, it is saved by enterin
 
 Figure 9: A feature row is saved by entering its display name in the text area (blue line) and pressing __Add__ (black line) 
 
-<hr />
+---
 
 ## Removing a line
 
@@ -138,7 +138,7 @@ Once added, its name is added to the dropdown list (blue line in Figure 9) to th
 
 Figure 10: A feature row is removed by selecting its name ("name" + # + "Domain ID" + # + "linked sequence name") in the text area (blue line) and pressing __Remove__ (black line) 
 
-<hr />
+---
 
 ## Accepting the feature edits and redrawing the image
 
@@ -148,4 +148,4 @@ Changes to the collection of feature lines are only saved if the __Accept__ butt
 
 Figure 11: The feature rows are added to the image if the __Accept__ button at the bottom of the __Miscellaneous GenBank feature selection__ window is pressed. 
 
-<hr />
+---
