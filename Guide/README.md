@@ -40,7 +40,7 @@ The __Format__ tab of the  __mRNA Display Options__ window allows the basic form
 
 The __Markers__ tab of the __mRNA Display Options__ window allows symbols and markers to be added to the image to aid its description:
 
-- [Add markers to highlight features](FEATURES.md)
+- [Add markers to highlight features](MARKERS.md)
 
 ## Save the Image to file
 The __Save__ tab of the __mRNA Display Options__ window allows the image to be saved at a range of resolutions from 96 to 900 DPIs.
