@@ -4,13 +4,13 @@ The __Protein features from the InterProScan website__ panel (Figure 1) contains
 
 ![Figure 1](images/figurefeature23.jpg)
 
-Figure 1: Pressing the _get__ button on the __Protein features from the InterProScan website__ panel (Figure 1) displays the __Import InterProScan features__ window (Figure 2).
+Figure 1: Pressing the __get__ button on the __Protein features from the InterProScan website__ panel (Figure 1) displays the __Import InterProScan features__ window (Figure 2).
 
 ---
 
-The __Import InterProScan features__ window contains 4 button need to;
+The __Import InterProScan features__ window contains 4 buttons whose functions are:
 
-- __Import__ button: import InterProScan data form a previously save search (blue lin in Figure 2).
+- __Import__ button: import InterProScan data form a previously saved search (blue line in Figure 2).
 - __Search__ button: query the InterProScan site for features linked to the transcripts (black line in Figure 2).
 - __Save__ button: save the results of a InterProScan search for later use (red line in Figure 2).
 - __Accept__ button: accept any features obtained from InterProScan.
@@ -41,11 +41,11 @@ Figure 3: The __Sequence domain search__ window allows you obtain InterProscan d
 
 ## Preparing for a search
 
-To search the InterProScan site, you most first select a transcript ID from the drop-down list box (blue line in Figure 4). You most also enter an email address in the text area below the drop-down list (black line in Figure 4). This email address is required by InterProScan and appear to be a genuine address as judged by InterProScan. Finally, you need to enter a job title in the lower text area (green line in Figure 4), which may be any text of 3 or more letters. When the required information has been added, the __Submit__ button becomes active. 
+To search the InterProScan site, you must first select a transcript ID from the drop-down list box (blue line in Figure 4). You must also enter an email address in the text area below the drop-down list (black line in Figure 4). This email address is required by InterProScan and appear to be a genuine address as judged by InterProScan. Finally, you need to enter a job title in the lower text area (green line in Figure 4), which may be any text of 3 or more letters. When the required information has been added, the __Submit__ button becomes active. 
 
 ![Figure 4](images/figurefeature26.jpg)
 
-Figure 3: To submit a search to InterpPoScan, you need to select a transcript, supply an email address and give the search a title.
+Figure 4: To submit a search to InterProScan, you need to select a transcript, supply an email address and give the search a title.
 
 ---
 
@@ -60,7 +60,7 @@ Figure 5: If InterProScan rejects the email address this message will be returne
 ---
 
 ### Feedback from a successful search
-As the search is performed feedback is displayed in the large text area. The feedback identifies were the search is as described below:
+As the search is performed feedback is displayed in the large text area. The feedback shows the current stage of the search as described below:
 
 - Initially, the ID of the transcript used in the search is displayed followed by the searches job ID, in Figure 6 this is: iprscan5-R20251126-164123-0617-81808673-p1m (black line in Figure 6).
 - Once submitted, InterProScan is prompted to return the status of the search. In Figure 6, the status is "RUNNING" 5 status requests, before finally returning "FINISHED". If the server is busy the searches initial status may be "QUEUED" (blue line in Figure 6).
@@ -105,7 +105,7 @@ Figure 9: The __Domain selection__ window which allows you to select domain for 
 
 The InterProScan features are linked to a transcript, consequently, you must first select a transcript to which features have been linked using the upper drop-down list (blue line in Figure 9).  
 
-Once a transcript has been selected, the names of the domains linked to it will appear in the second drop-down list (blue box in Figure 10). The the length on position of the domains is indicated by appending the position of the domain's first and last residue. For example, the highlighted domain starts at residue 97 and ends at residue 287.
+Once a transcript has been selected, the names of the domains linked to it will appear in the second drop-down list (blue box in Figure 10). The length on position of the domains is indicated by appending the position of the domain's first and last residue. For example, the highlighted domain starts at residue 97 and ends at residue 287.
 
 ![Figure 10](images/figurefeature32.jpg)
 
@@ -113,7 +113,7 @@ Figure 10: Once a transcript has been selected the second drop-down list will co
 
 ---
 
-Selecting a domain in the drop-down list (blue line in Figure 11) causes it graphical representation of it to be drawn at the bottom of the form (black box in Figure 11).
+Selecting a domain in the drop-down list (blue line in Figure 11) displays a graphical representation of the domain at the bottom of the form (black box in Figure 11).
 
 ![Figure 11](images/figurefeature33.jpg)
 
@@ -138,7 +138,7 @@ Figure 12: The domain's display name is selected using the highlighted drop-down
 
 ---
 
-Each of the drop-down list contains the word 'Hide' and the numbers one to five. If the word 'Hide' is selected, the term linked to that descriptor will not be displayed. However, if a number is selected, the domain's display name will contain the linked descriptor. If numbers are selected in more than one drop-down list, the display name will consist of the descriptors written in the order of the numbers. For example, in Figure 13, the drop-down lists are set as:
+Each drop-down list contains the word 'Hide' and the numbers one to five. If the word 'Hide' is selected, the term linked to that descriptor will not be displayed. However, if a number is selected, the domain's display name will contain the linked descriptor. If numbers are selected in more than one drop-down list, the display name will consist of the descriptors written in the order of the numbers. For example, in Figure 13, the drop-down lists are set as:
 
 - Analysis: 5
 - Signature: Hide
@@ -146,7 +146,7 @@ Each of the drop-down list contains the word 'Hide' and the numbers one to five.
 - InterPro: 2
 - InterPro description: Hide
 
-Consequently the display name starts with the 'signature description', then the 'InterPro ID' value and finally the name of the 'analysis'. If two drop-down list have the same numeric value, the text is selected as follows: Analysis > Signature > Signature description > InterPro > InterPro description. 
+Consequently the display name starts with the 'signature description', then the 'InterPro ID' value and finally the name of the 'analysis'. If two drop-down list share the same numeric value, the text is selected as follows: Analysis > Signature > Signature description > InterPro > InterPro description. 
 
 The display name based on the values in the drop-down list is displayed in text below the drop-down lists (blue line in Figure 13).
 
@@ -158,7 +158,7 @@ Figure 13: The domain's display name based on the selection in the drop-down lis
 
 ## Manually entering the domain's display name
 
-Since the the values linked to the domain can be cryptic (Signature ID or InterPro ID) or to long to be easily displayed (Signature description or InterPro description), it is possible to manually enter a display name by typing it into the text area below the drop-down lists (blue lin in Figure 14). This value will be overwritten if the value of any of the drop-down lists are changed and will only be come permanent when the domain is selected to be displayed (see below).
+Since the the values linked to the domain can be cryptic (Signature ID or InterPro ID) or to long to be easily displayed (Signature description or InterPro description), it is possible to manually enter a display name by typing it into the text area below the drop-down lists (blue line in Figure 14). This value will be overwritten if the value of any of the drop-down lists are changed and will only be come permanent when the domain is selected to be displayed (see below).
 
 
 ![Figure 14](images/figurefeature36.jpg)
@@ -169,9 +169,9 @@ Figure 14: The domain's display name can be set by entering it in the text area 
 
 ## modifying the appearance of the domain in the final image
 
-The appearance of the domain in the final image can be modified using the options above the graphically representation of the domain as shown in (Figures 15a to 15d). Initially, all the options are selected producing a green domain with a border and rounded corners Figure 15a). 
+The appearance of the domain in the final image can be modified using the options above the graphically representation of the domain as shown in (Figures 15a to 15d). By default, all the options are selected, producing a green domain with a border and rounded corners (Figure 15a). 
 
-<b>Note:</b> Both of the __Draw border__ and __Fill shape__ options can not be deselected at the same time.
+<b>Note:</b> You cannot deselect both __Draw border__ and __Fill shape__ options can at the same time.
 
 ![Figure 15a](images/figurefeature37a.jpg)
 
@@ -197,7 +197,7 @@ Figure 15d: Deselecting the __Fill shape__ option draws the domain without a bla
 
 ---
 
-The final option is to change the colour used to fill the domain, this is set by pressing the __Colour__ button (blue line in Figure 16). By default, the domains  are coloured green. To change their colour press the __Coluor__ button (blue line in Figure 16a). This will display a window called  __Select the domain's fill colour__ (Figure 16b). This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 16b) or with the Windows colour picker dialog window if the __Colour dialog box__ option is selected (green line in Figure 16b) and the __Colour__ button is pressed (red line in Figure 16b).
+The final option is to change the colour used to fill the domain, this is set by pressing the __Colour__ button (blue line in Figure 16). By default, the domains  are coloured green. To change their colour press the __Colour__ button (blue line in Figure 16a). This will display a window called  __Select the domain's fill colour__ (Figure 16b). This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 16b) or with the Windows colour picker dialog window if the __Colour dialog box__ option is selected (green line in Figure 16b) and the __Colour__ button is pressed (red line in Figure 16b).
 
 - [Using the Select colour by name dialog](equenceColour.md)
 - [Using the Windows colour picker dialog](ColourPickerDialog.md)
@@ -212,7 +212,7 @@ Figure 16a: The colour of domains can be changed by pressing the __Colour__ butt
 
 ![Figure 16b](images/figurefeature38b.jpg)
 
-Figure 16b:  Once changed the colour of the start and stop lines are shown next to the appropriate button (blue lines) will the lines are now colour coded (black boxes).
+Figure 16b:  Once changed the colour is shown next to the __Colour__ button (red line).
 
 ---
 
@@ -224,7 +224,7 @@ Figure 16c:  When the __Accept__ on the __Select the domain's fill colour__ wind
 
 ## Saving the domain's formatting and selecting it to be displayed in the final image
 
-Once the domain's display name and format has been set, it can be selected to be included in the final image. This is done by pressing the __Add__ at the top of the form (blue line in Figure 17a). Once add, when ever that domain is selected in the domains drop-down list the name on the __Add__ button changes to __Update__ (blue line in Figure 17b) and the __Remove__ button becomes active (black line in Figure 17b). Press the __Update__ button replaces all previous formatting and display name with those currently selected. 
+Once the domain's display name and format has been set, it can be selected to be included in the final image. This is done by pressing the __Add__ at the top of the form (blue line in Figure 17a). Once added, whenever that domain is selected in the domains drop-down list the name on the __Add__ button changes to __Update__ (blue line in Figure 17b) and the __Remove__ button becomes active (black line in Figure 17b). Press the __Update__ button replaces all previous formatting and display name with those currently selected. 
 
 ![Figure 17a](images/figurefeature39a.jpg)
 
@@ -244,7 +244,7 @@ To deselect a domain, select it in the domain name drop-down list and press the 
 
 ![Figure 18](images/figurefeature40.jpg)
 
-Figure 18: Pressing the __Add__ button saves the formatting and set the domain to be drawn in the final image.
+Figure 18: Pressing the __Remove__ button saves the formatting and set the domain to be drawn in the final image.
 
 ---
 
@@ -252,7 +252,7 @@ Figure 18: Pressing the __Add__ button saves the formatting and set the domain t
 
 Pressing the __Accept__ button closes the __Domain selection__ window and redraws the image.
 
-![Figure 19](images/figurefeature41.jpg)
+![Figure 19](images/figurefeature41b.jpg)
 
 Figure 19: Pressing the __Accept__ button closes the __Domain selection__ window and redraws the transcript image with the InterProScan domains.
 

@@ -169,16 +169,21 @@ namespace TransGBViewer
             y += currentTop;
 
             Left = (int)((float)Left / scaleDPI.scale);
-            x -= currentLeft;
-            currentLeft = Left;
-            x += currentLeft;
+            if (currentLeft == 0)
+            { currentLeft = Left; }
+            else
+            {
+                x -= currentLeft;
+                currentLeft = Left;
+                x += currentLeft;
+            }
         }
 
         public string LinkedName { get => linkedName; set => linkedName = value; }
         public int ViewFrom { get => viewFrom; set => viewFrom = value; }
         public int ViewTo { get => viewTo; set => viewTo = value; }
         public float Place { get => place; set => place = value; }        
-        public float X { get => x; set => x = value; }
+        public float X { get { return x; } set { x = value; } }
         public float Y { get => y; set => y = value; }
         public int CurrentTop { get => currentTop; set => currentTop = value; }
         public int CurrentLeft { get => currentLeft ; set => currentLeft = value; }

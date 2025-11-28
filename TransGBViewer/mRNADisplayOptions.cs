@@ -770,9 +770,7 @@ namespace TransGBViewer
             gLabels.Clear(Color.White);
 
             Point limitRegion = parameters.Zoom;
-
-            //parameters.LabelWidth = (int)(parameters.LabelWidth * scale.scale);
-
+                   
             int numberOfGaps = getNumberOfGapsInAllSequences(limitRegion);
             int sequenceWidth = limitRegion.Y + 1 - limitRegion.X - numberOfGaps;
 
@@ -853,9 +851,6 @@ namespace TransGBViewer
                 g.SmoothingMode = SmoothingMode.None;
                 if (parameters.ShowExonLimits != "None")
                 { DrawSpliceSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowExonLimits, allSequences, limits); }
-
-            //    if (parameters.ShowORFLimits != "None")
-            //    { DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits); }
             }
             finally
             { g.SmoothingMode = SmoothingMode.AntiAlias; }
@@ -937,9 +932,7 @@ namespace TransGBViewer
             try
             {
                 g.SmoothingMode = SmoothingMode.None;
-                //if (parameters.ShowExonLimits != "None")
-                //{ DrawSpliceSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowExonLimits, allSequences, limits); }
-
+                
                 if (parameters.ShowORFLimits != "None")
                 { DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits); }
             }
@@ -1234,7 +1227,7 @@ namespace TransGBViewer
                     Top = DrawFeatureLabels(g, gLabels, parameters.FeatureFont, display, parameters.DrawingArea.Width, scale.i[5], Top, scale, key);
                 }
 
-                parameters.FeatureRows[key] = height;
+                parameters.FeatureRows[key] = Top;
 
                 List<Point> exons = parameters.Exons[name];
                 foreach (Point exon in exons)
@@ -1326,7 +1319,7 @@ namespace TransGBViewer
                         Top = DrawFeatureLabels(g, gLabels, parameters.FeatureFont, display, parameters.DrawingArea.Width, scale.i[5], Top, scale, key);
                     }
 
-                    parameters.FeatureRows[name] = height;
+                    parameters.FeatureRows[label] = Top;
 
                     if (parameters.Exons.ContainsKey(name) == true)
                     {
@@ -1448,6 +1441,8 @@ namespace TransGBViewer
                         { display += AddSupercript(legends[name]); }
                         Top = DrawFeatureLabels(g, gLabels, parameters.FeatureFont, display, parameters.DrawingArea.Width, scale.i[5], Top, scale, key);
                     }
+
+                    parameters.FeatureRows[feature.DisplayName] = Top;
 
                     int mRNAStart = parameters.CDSs[name].X + ((feature.Start - 1) * 3);
                     int mRNAEnd = parameters.CDSs[name].X + ((feature.End - 1) * 3);
@@ -2221,6 +2216,7 @@ namespace TransGBViewer
 
         private void DrawCurrentFeatureMarker()
         {
+            setShowButton();
             if (currentGeneFeatureMarker != null && currentGeneFeatureMarker.DrawMe == true)
             { ReDraw(); }
         }
@@ -2299,6 +2295,13 @@ namespace TransGBViewer
         {
             currentGeneFeatureMarker.Height = (int)nudGeneFeatureH.Value;
             DrawCurrentFeatureMarker();
+        }
+        private void setShowButton()
+        {
+            if (currentGeneFeatureMarker.DrawMe == false)
+            { btnDrawCurrentGeneFeatureMarker.PerformClick(); }
+            if (currentGeneFeatureMarker.X == 0 && currentGeneFeatureMarker.DrawMe == true) 
+            { currentGeneFeatureMarker.X = parameters.LabelWidth; }
         }
 
         private void btnDrawCurrentGeneFeatureMarker_Click(object sender, EventArgs e)
@@ -2611,7 +2614,7 @@ namespace TransGBViewer
                 default:
                     currentGeneFeatureMarker.SetShapePoints(ShapeType.NotSet);
                     break;
-            }
+            }            
             DrawCurrentFeatureMarker();
         }
         #endregion

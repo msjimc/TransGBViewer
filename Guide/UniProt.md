@@ -144,7 +144,7 @@ Figure 10: A feature row is removed by selecting its name ("name" + # + "Domain 
 
 Changes to the collection of feature lines are only saved if the __Accept__ button at the bottom of the __Miscellaneous GenBank feature selection__ window is press. 
 
-![Figure 11](images/figurefeature22.jpg)
+![Figure 11](images/figurefeature22b.jpg)
 
 Figure 11: The feature rows are added to the image if the __Accept__ button at the bottom of the __Miscellaneous GenBank feature selection__ window is pressed. 
 
