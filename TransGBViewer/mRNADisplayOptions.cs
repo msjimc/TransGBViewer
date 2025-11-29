@@ -2251,14 +2251,26 @@ namespace TransGBViewer
             if (currentGeneFeatureMarker == null) { return; }
             if (chlGenefeatureMouseClick.Checked == false) { return; }
 
-            nudGeneFeatureX.Maximum = parameters.DrawingArea.Width - parameters.LabelWidth;
-            nudGeneFeatureY.Maximum = parameters.DrawingArea.Height;
+            int X = (int)nudGeneFeatureX.Value;
+            int Y = (int)nudGeneFeatureY.Value;
 
-            nudGeneFeatureX.Value = location.X - parameters.LabelWidth;
-            nudGeneFeatureY.Value = location.Y;
-            //currentGeneFeatureMarker.X = location.X;
-            //currentGeneFeatureMarker.Y = location.Y;
-            DrawCurrentFeatureMarker();
+            try
+            {
+                nudGeneFeatureX.Maximum = parameters.DrawingArea.Width - parameters.LabelWidth;
+                nudGeneFeatureY.Maximum = parameters.DrawingArea.Height;
+
+                nudGeneFeatureX.Value = location.X - parameters.LabelWidth;
+                nudGeneFeatureY.Value = location.Y;
+                //currentGeneFeatureMarker.X = location.X;
+                //currentGeneFeatureMarker.Y = location.Y;
+                DrawCurrentFeatureMarker();
+            }
+            catch
+            {
+                nudGeneFeatureX.Value = X;
+                nudGeneFeatureY.Value = Y;
+            }
+            
         }
 
         private void btnGeneFeatureFillColour_Click(object sender, EventArgs e)
