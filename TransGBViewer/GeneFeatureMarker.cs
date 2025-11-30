@@ -60,6 +60,7 @@ namespace TransGBViewer
             copy.ViewTo = viewTo;
             copy.LinkedName = linkedName;
             copy.Place = place;
+            copy.SolidFill = solidFill;
             return copy;
         }
 

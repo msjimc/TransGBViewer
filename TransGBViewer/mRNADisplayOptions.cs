@@ -777,10 +777,9 @@ namespace TransGBViewer
             int gapWidth = numberOfGaps * scale.i[parameters.IntronGap];
             float scaleFactor = (width - gapWidth - scale.scale * (30 + parameters.LabelWidth)) / sequenceWidth;
 
-            Draw(g, gLabels, bmp, scale, scaleFactor, limitRegion);
+            Draw(g, gLabels, bmp, bmpLabels, scale, scaleFactor, limitRegion);
 
-            if (parameters.LabelWidth > 0)
-            { g.DrawImage(bmpLabels, 0, 0); }
+           
             return bmp;
         }
 
@@ -839,7 +838,7 @@ namespace TransGBViewer
             return legend;
         }
 
-        private Bitmap Draw(Graphics g, Graphics gLabels, Bitmap bmp, scalar scale, float scalefactor, Point limits)
+        private Bitmap Draw(Graphics g, Graphics gLabels, Bitmap bmp, Bitmap bmpLabels, scalar scale, float scalefactor, Point limits)
         {
             int height = scale.i[10];
             Dictionary<string, int> legends = getReferencedAccessionID();
@@ -940,6 +939,10 @@ namespace TransGBViewer
             { g.SmoothingMode = SmoothingMode.AntiAlias; }
 
             g.FillRectangle(Brushes.White, 0, height, parameters.DrawingArea.Width, parameters.DrawingArea.Height - height);
+
+
+            if (parameters.LabelWidth > 0)
+            { g.DrawImage(bmpLabels, 0, 0); }
 
             DrawGeneFeatures(g, scalefactor, scale);
             setcboFeatureTopsList();
@@ -2361,20 +2364,7 @@ namespace TransGBViewer
         {
             string key = cboGeneFeatureName.Text.Trim();
             if (key.Length < 3) { return; }
-            //int imageWidth = parameters.DrawingArea.Width;
-            //int Xoffset = 0;
-            //switch (parameters.LegendsLocation)
-            //{
-            //    case DrawLabels.left:
-            //        imageWidth -= parameters.LabelWidth;
-            //        Xoffset = parameters.LabelWidth;
-            //        break;
-            //    case DrawLabels.above:
-            //        imageWidth = parameters.DrawingArea.Width; ;
-            //        Xoffset = 0;
-            //        break;
-            //}
-
+            
             float[] basePlace = getLocationFromX(parameters.Zoom.X, parameters.Zoom.Y, currentGeneFeatureMarker.X, interfaceScale, parameters.LabelWidth, parameters.IntronGap);
 
             if (parameters.GeneFeatureMarkers.ContainsKey(key) == true)
@@ -2497,6 +2487,7 @@ namespace TransGBViewer
                     float offset = 0;
                     if (gfm.MRNABasePlace[1] != float.MinValue)
                     { offset = (float)(parameters.IntronGap * gfm.MRNABasePlace[1]) / 100; }
+                    if (float.IsNaN(offset) == true) { offset = 0; }
 
                     float X = scaleDPI.i[15] + offset + (getXOffset(parameters.Zoom.X, (int)gfm.MRNABasePlace[0], scale, scaleDPI) + (scaleDPI.scale * parameters.LabelWidth));
 
@@ -2504,6 +2495,8 @@ namespace TransGBViewer
 
                     gfm.UpdateTop((int)parameters.FeatureRows[gfm.LinkedName], scaleDPI);
                     PointF[] shape = gfm.GetResizedfeaturePoints(scaleDPI);
+
+                    
 
                     if (gfm.ShapeType == ShapeType.Box)
                     { g.DrawPolygon(new Pen(gfm.Colour, scaleDPI.i[2]), shape); }
