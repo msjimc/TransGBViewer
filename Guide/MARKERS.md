@@ -27,7 +27,7 @@ Figure 3a
 
 Figure 3b
 
-Figure 3: The shape of the marker is set using the upper right hand drop-down list (blue box in Figure 3a). The possible shapes are shown in Figure 3b: the __Fill__ option draws the markers as a solid shape (upper row) or the shape's border (lower row). 
+Figure 3: The shape of the marker is set using the upper right-hand drop-down list (blue box in Figure 3a). The possible shapes are shown in Figure 3b: the __Fill__ option draws the markers as a solid shape (upper row) or the shape's border (lower row). 
   
 ---
 

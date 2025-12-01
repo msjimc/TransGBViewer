@@ -79,7 +79,7 @@ Figure 5: Once a domain has been selected it is then possible to select the type
 
 ---
 
-The large check box list below the feature type drop-down list will then be populated with various features. Some feature types hold only a few entries (Figure 6a) while other may hold so many you need to scroll through the list (Figure 6b). 
+The large checkbox list below the feature type drop-down list will then be populated with various features. Some feature types hold only a few entries (Figure 6a) while other may hold so many you need to scroll through the list (Figure 6b). 
 
 ![Figure 6](images/figurefeature17.jpg)
 
