@@ -162,7 +162,7 @@ namespace TransGBViewer
                         mRNADSU.AddStatusText("Error message received: stopping"); 
                         return resultsPairs; 
                     }
-                    mRNADSU.AddStatusText("Not ready, wait 5 sec and before trying again");
+                    mRNADSU.AddStatusText("Not ready, wait 5 sec before trying again");
                     Thread.Sleep(5000); // Wait 5 seconds before retrying
                 }
                 mRNADSU.AddStatusText("Received results");
