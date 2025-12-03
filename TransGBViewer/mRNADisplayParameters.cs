@@ -20,6 +20,8 @@ namespace TransGBViewer
         private Dictionary<string, string> sequenceDNA = new Dictionary<string, string>();
         private Dictionary<string, Color> sequenceExonColour = new Dictionary<string, Color>(); 
         private Dictionary<string, Color> sequenceCDSColour = new Dictionary<string, Color>();
+        private Dictionary<string, int[]> codons = new Dictionary<string, int[]>();
+        private Dictionary<string, List<ReadingFrame>> exonWithFrame = new Dictionary<string, List<ReadingFrame>>();
         private Dictionary<string, Point> cdss = new Dictionary<string, Point>();
         private Dictionary<string, List<Point>> exons = new Dictionary<string, List<Point>>();
         private Dictionary<string, List<mRNADisplayMiscFeature>> miscFeaturesAll = new Dictionary<string, List<mRNADisplayMiscFeature>>();
@@ -168,6 +170,8 @@ namespace TransGBViewer
         public Dictionary<string, List<Point> > Exons { get { return exons; } set { exons = value; } }
         public Dictionary<string,Color> SequenceExonColour { get { return sequenceExonColour; } set { sequenceExonColour = value; } }
         public Dictionary<string, Color> SequenceCDSColour { get { return sequenceCDSColour; } set { sequenceCDSColour = value; } }
+        public Dictionary<string, int[]> Codons { get { return codons; } set { codons = value; } }
+        public Dictionary<string, List<ReadingFrame>> ExonWithFrame { get { return exonWithFrame; } set { exonWithFrame = value; } }
         public Dictionary<string, exonGraphNode> ExonSet { get { return exonSet; } set { exonSet = value; } }
         public string AllSequences { get { return sequenceBase; } set { sequenceBase = value.Trim(); setZoomValues(); } }      
         public Dictionary<string, List<mRNADisplayMiscFeature>> MiscellaneousFeatureGBSet { get { return miscellaneousFeatureGBSet; } set {  miscellaneousFeatureGBSet = value; } }

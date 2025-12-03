@@ -86,6 +86,8 @@
             label12 = new Label();
             tabPage1 = new TabPage();
             groupBox1 = new GroupBox();
+            chkFrame = new CheckBox();
+            label51 = new Label();
             btnSelectSequence = new Button();
             chkFolder = new CheckBox();
             label1 = new Label();
@@ -127,6 +129,8 @@
             chkGenefeatureSolid = new CheckBox();
             cboFeatureTops = new ComboBox();
             chlGenefeatureMouseClick = new CheckBox();
+            cboGeneFeatureShapetype = new ComboBox();
+            label33 = new Label();
             btnDrawCurrentGeneFeatureMarker = new Button();
             btnGeneFeatureDelete = new Button();
             cboGeneFeatureName = new ComboBox();
@@ -135,7 +139,6 @@
             nudGeneFeatureW = new NumericUpDown();
             label37 = new Label();
             label38 = new Label();
-            cboGeneFeatureShapetype = new ComboBox();
             btnGeneFeatureFillColour = new Button();
             nudGeneFeatureY = new NumericUpDown();
             nudGeneFeatureX = new NumericUpDown();
@@ -148,7 +151,6 @@
             label40 = new Label();
             label39 = new Label();
             label34 = new Label();
-            label33 = new Label();
             label32 = new Label();
             label31 = new Label();
             tabPage7 = new TabPage();
@@ -158,6 +160,9 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
+            label52 = new Label();
+            comboBox1 = new ComboBox();
+            btnFrameColours = new Button();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -220,6 +225,9 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(label52);
+            groupBox2.Controls.Add(btnFrameColours);
             groupBox2.Controls.Add(nudLineWidth);
             groupBox2.Controls.Add(label26);
             groupBox2.Controls.Add(pAcceptor);
@@ -261,7 +269,7 @@
             // 
             nudLineWidth.DecimalPlaces = 1;
             nudLineWidth.Increment = new decimal(new int[] { 1, 0, 0, 65536 });
-            nudLineWidth.Location = new Point(241, 322);
+            nudLineWidth.Location = new Point(241, 334);
             nudLineWidth.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
             nudLineWidth.Minimum = new decimal(new int[] { 5, 0, 0, 65536 });
             nudLineWidth.Name = "nudLineWidth";
@@ -272,7 +280,7 @@
             // 
             // label26
             // 
-            label26.Location = new Point(6, 315);
+            label26.Location = new Point(6, 327);
             label26.Name = "label26";
             label26.Size = new Size(229, 30);
             label26.TabIndex = 39;
@@ -280,7 +288,7 @@
             // 
             // pAcceptor
             // 
-            pAcceptor.Location = new Point(310, 212);
+            pAcceptor.Location = new Point(310, 233);
             pAcceptor.Name = "pAcceptor";
             pAcceptor.Size = new Size(12, 23);
             pAcceptor.TabIndex = 29;
@@ -290,7 +298,7 @@
             // 
             chkCoordindatesAt1bp.AutoSize = true;
             chkCoordindatesAt1bp.CheckAlign = ContentAlignment.MiddleRight;
-            chkCoordindatesAt1bp.Location = new Point(302, 83);
+            chkCoordindatesAt1bp.Location = new Point(302, 77);
             chkCoordindatesAt1bp.Name = "chkCoordindatesAt1bp";
             chkCoordindatesAt1bp.Size = new Size(89, 19);
             chkCoordindatesAt1bp.TabIndex = 38;
@@ -301,7 +309,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(6, 84);
+            label25.Location = new Point(6, 78);
             label25.Name = "label25";
             label25.Size = new Size(195, 15);
             label25.TabIndex = 37;
@@ -310,7 +318,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(314, 54);
+            label23.Location = new Point(316, 49);
             label23.Name = "label23";
             label23.Size = new Size(18, 15);
             label23.TabIndex = 35;
@@ -318,7 +326,7 @@
             // 
             // nudZoomTo
             // 
-            nudZoomTo.Location = new Point(334, 52);
+            nudZoomTo.Location = new Point(334, 47);
             nudZoomTo.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomTo.Name = "nudZoomTo";
             nudZoomTo.Size = new Size(57, 23);
@@ -328,7 +336,7 @@
             // 
             // nudZoomFrom
             // 
-            nudZoomFrom.Location = new Point(241, 52);
+            nudZoomFrom.Location = new Point(241, 47);
             nudZoomFrom.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.Name = "nudZoomFrom";
             nudZoomFrom.Size = new Size(69, 23);
@@ -339,7 +347,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(6, 54);
+            label22.Location = new Point(6, 49);
             label22.Name = "label22";
             label22.Size = new Size(127, 15);
             label22.TabIndex = 32;
@@ -347,7 +355,7 @@
             // 
             // pStop
             // 
-            pStop.Location = new Point(316, 280);
+            pStop.Location = new Point(310, 298);
             pStop.Name = "pStop";
             pStop.Size = new Size(12, 23);
             pStop.TabIndex = 31;
@@ -355,7 +363,7 @@
             // 
             // pStart
             // 
-            pStart.Location = new Point(241, 280);
+            pStart.Location = new Point(223, 298);
             pStart.Name = "pStart";
             pStart.Size = new Size(12, 23);
             pStart.TabIndex = 30;
@@ -363,7 +371,7 @@
             // 
             // pDonor
             // 
-            pDonor.Location = new Point(241, 212);
+            pDonor.Location = new Point(223, 233);
             pDonor.Name = "pDonor";
             pDonor.Size = new Size(12, 23);
             pDonor.TabIndex = 28;
@@ -371,9 +379,9 @@
             // 
             // btnORFStop
             // 
-            btnORFStop.Location = new Point(336, 280);
+            btnORFStop.Location = new Point(324, 298);
             btnORFStop.Name = "btnORFStop";
-            btnORFStop.Size = new Size(55, 23);
+            btnORFStop.Size = new Size(67, 23);
             btnORFStop.TabIndex = 27;
             btnORFStop.Text = "Stop";
             btnORFStop.UseVisualStyleBackColor = true;
@@ -381,9 +389,9 @@
             // 
             // btnORFStart
             // 
-            btnORFStart.Location = new Point(260, 280);
+            btnORFStart.Location = new Point(241, 298);
             btnORFStart.Name = "btnORFStart";
-            btnORFStart.Size = new Size(50, 23);
+            btnORFStart.Size = new Size(63, 23);
             btnORFStart.TabIndex = 26;
             btnORFStart.Text = "Start";
             btnORFStart.UseVisualStyleBackColor = true;
@@ -392,15 +400,15 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Location = new Point(6, 284);
+            label21.Location = new Point(6, 302);
             label21.Name = "label21";
-            label21.Size = new Size(220, 15);
+            label21.Size = new Size(200, 15);
             label21.TabIndex = 25;
-            label21.Text = "Set the Start and stop codon line colours";
+            label21.Text = "Set Start and stop codon line colours";
             // 
             // btnAcceptor
             // 
-            btnAcceptor.Location = new Point(327, 212);
+            btnAcceptor.Location = new Point(327, 233);
             btnAcceptor.Name = "btnAcceptor";
             btnAcceptor.Size = new Size(67, 23);
             btnAcceptor.TabIndex = 24;
@@ -410,9 +418,9 @@
             // 
             // btnDonor
             // 
-            btnDonor.Location = new Point(256, 212);
+            btnDonor.Location = new Point(241, 233);
             btnDonor.Name = "btnDonor";
-            btnDonor.Size = new Size(50, 23);
+            btnDonor.Size = new Size(63, 23);
             btnDonor.TabIndex = 23;
             btnDonor.Text = "Donor";
             btnDonor.UseVisualStyleBackColor = true;
@@ -421,7 +429,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Location = new Point(6, 216);
+            label20.Location = new Point(6, 237);
             label20.Name = "label20";
             label20.Size = new Size(161, 15);
             label20.TabIndex = 22;
@@ -430,7 +438,7 @@
             // cboORFLimits
             // 
             cboORFLimits.FormattingEnabled = true;
-            cboORFLimits.Location = new Point(241, 251);
+            cboORFLimits.Location = new Point(241, 269);
             cboORFLimits.Name = "cboORFLimits";
             cboORFLimits.Size = new Size(150, 23);
             cboORFLimits.TabIndex = 21;
@@ -438,7 +446,7 @@
             // 
             // label19
             // 
-            label19.Location = new Point(6, 242);
+            label19.Location = new Point(6, 260);
             label19.Name = "label19";
             label19.Size = new Size(229, 32);
             label19.TabIndex = 20;
@@ -447,7 +455,7 @@
             // cboSpliceSites
             // 
             cboSpliceSites.FormattingEnabled = true;
-            cboSpliceSites.Location = new Point(241, 183);
+            cboSpliceSites.Location = new Point(241, 204);
             cboSpliceSites.Name = "cboSpliceSites";
             cboSpliceSites.Size = new Size(150, 23);
             cboSpliceSites.TabIndex = 19;
@@ -459,7 +467,7 @@
             chkReduce.CheckAlign = ContentAlignment.MiddleRight;
             chkReduce.Checked = true;
             chkReduce.CheckState = CheckState.Checked;
-            chkReduce.Location = new Point(326, 159);
+            chkReduce.Location = new Point(326, 153);
             chkReduce.Name = "chkReduce";
             chkReduce.Size = new Size(65, 19);
             chkReduce.TabIndex = 18;
@@ -473,7 +481,7 @@
             chkRound.CheckAlign = ContentAlignment.MiddleRight;
             chkRound.Checked = true;
             chkRound.CheckState = CheckState.Checked;
-            chkRound.Location = new Point(330, 134);
+            chkRound.Location = new Point(330, 128);
             chkRound.Name = "chkRound";
             chkRound.Size = new Size(61, 19);
             chkRound.TabIndex = 15;
@@ -487,7 +495,7 @@
             chkShowCodingSequences.CheckAlign = ContentAlignment.MiddleRight;
             chkShowCodingSequences.Checked = true;
             chkShowCodingSequences.CheckState = CheckState.Checked;
-            chkShowCodingSequences.Location = new Point(336, 108);
+            chkShowCodingSequences.Location = new Point(336, 102);
             chkShowCodingSequences.Name = "chkShowCodingSequences";
             chkShowCodingSequences.Size = new Size(55, 19);
             chkShowCodingSequences.TabIndex = 14;
@@ -508,7 +516,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(6, 135);
+            label10.Location = new Point(6, 129);
             label10.Name = "label10";
             label10.Size = new Size(171, 15);
             label10.TabIndex = 10;
@@ -517,7 +525,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(6, 186);
+            label9.Location = new Point(6, 207);
             label9.Name = "label9";
             label9.Size = new Size(229, 15);
             label9.TabIndex = 9;
@@ -526,7 +534,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(6, 160);
+            label7.Location = new Point(6, 154);
             label7.Name = "label7";
             label7.Size = new Size(241, 15);
             label7.TabIndex = 7;
@@ -535,7 +543,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(6, 109);
+            label6.Location = new Point(6, 103);
             label6.Name = "label6";
             label6.Size = new Size(155, 15);
             label6.TabIndex = 6;
@@ -793,6 +801,8 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(chkFrame);
+            groupBox1.Controls.Add(label51);
             groupBox1.Controls.Add(btnSelectSequence);
             groupBox1.Controls.Add(chkFolder);
             groupBox1.Controls.Add(label1);
@@ -802,6 +812,25 @@
             groupBox1.Size = new Size(397, 363);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // chkFrame
+            // 
+            chkFrame.AutoSize = true;
+            chkFrame.Location = new Point(138, 112);
+            chkFrame.Name = "chkFrame";
+            chkFrame.Size = new Size(82, 19);
+            chkFrame.TabIndex = 4;
+            chkFrame.Text = "checkBox1";
+            chkFrame.UseVisualStyleBackColor = true;
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Location = new Point(23, 116);
+            label51.Name = "label51";
+            label51.Size = new Size(44, 15);
+            label51.TabIndex = 3;
+            label51.Text = "label51";
             // 
             // btnSelectSequence
             // 
@@ -1255,6 +1284,25 @@
             chlGenefeatureMouseClick.UseVisualStyleBackColor = true;
             chlGenefeatureMouseClick.CheckedChanged += chlGenefeatureMouseClick_CheckedChanged;
             // 
+            // cboGeneFeatureShapetype
+            // 
+            cboGeneFeatureShapetype.FormattingEnabled = true;
+            cboGeneFeatureShapetype.Items.AddRange(new object[] { "Select", "Arrow (Down)", "Arrow (Left)", "Arrow (Right)", "Arrow (Up)", "Box", "Circle", "Cross (Diagonal)", "Cross (Vertical)", "Diamond", "Hexagon", "Octagon", "Pentagon", "Rectangle (Horizontal)", "Rectangle (Vertical)", "Square", "Star", "Triangle (Down)", "Triangle (Left)", "Triangle (Right)", "Triangle (Up)", "Vertical line" });
+            cboGeneFeatureShapetype.Location = new Point(254, 22);
+            cboGeneFeatureShapetype.Name = "cboGeneFeatureShapetype";
+            cboGeneFeatureShapetype.Size = new Size(143, 23);
+            cboGeneFeatureShapetype.TabIndex = 42;
+            cboGeneFeatureShapetype.SelectedIndexChanged += cboGeneFeatureShapetype_SelectedIndexChanged;
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Location = new Point(6, 25);
+            label33.Name = "label33";
+            label33.Size = new Size(166, 15);
+            label33.TabIndex = 30;
+            label33.Text = "Select the shape of the marker";
+            // 
             // btnDrawCurrentGeneFeatureMarker
             // 
             btnDrawCurrentGeneFeatureMarker.Location = new Point(340, 207);
@@ -1336,16 +1384,6 @@
             label38.Size = new Size(21, 15);
             label38.TabIndex = 43;
             label38.Text = "W:";
-            // 
-            // cboGeneFeatureShapetype
-            // 
-            cboGeneFeatureShapetype.FormattingEnabled = true;
-            cboGeneFeatureShapetype.Items.AddRange(new object[] { "Select", "Arrow (Down)", "Arrow (Left)", "Arrow (Right)", "Arrow (Up)", "Box", "Circle", "Cross (Diagonal)", "Cross (Vertical)", "Diamond", "Hexagon", "Octagon", "Pentagon", "Rectangle (Horizontal)", "Rectangle (Vertical)", "Square", "Star", "Triangle (Down)", "Triangle (Left)", "Triangle (Right)", "Triangle (Up)", "Vertical line" });
-            cboGeneFeatureShapetype.Location = new Point(254, 22);
-            cboGeneFeatureShapetype.Name = "cboGeneFeatureShapetype";
-            cboGeneFeatureShapetype.Size = new Size(143, 23);
-            cboGeneFeatureShapetype.TabIndex = 42;
-            cboGeneFeatureShapetype.SelectedIndexChanged += cboGeneFeatureShapetype_SelectedIndexChanged;
             // 
             // btnGeneFeatureFillColour
             // 
@@ -1451,15 +1489,6 @@
             label34.TabIndex = 31;
             label34.Text = "Set the marker's width (W) and height (H)";
             // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Location = new Point(6, 25);
-            label33.Name = "label33";
-            label33.Size = new Size(166, 15);
-            label33.TabIndex = 30;
-            label33.Text = "Select the shape of the marker";
-            // 
             // label32
             // 
             label32.AutoSize = true;
@@ -1546,6 +1575,32 @@
             label43.Size = new Size(304, 46);
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Location = new Point(6, 179);
+            label52.Name = "label52";
+            label52.Size = new Size(191, 15);
+            label52.TabIndex = 41;
+            label52.Text = "HighLight sequences in frame with";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(310, 175);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(81, 23);
+            comboBox1.TabIndex = 42;
+            // 
+            // btnFrameColours
+            // 
+            btnFrameColours.Location = new Point(241, 174);
+            btnFrameColours.Name = "btnFrameColours";
+            btnFrameColours.Size = new Size(63, 23);
+            btnFrameColours.TabIndex = 43;
+            btnFrameColours.Text = "Change";
+            btnFrameColours.UseVisualStyleBackColor = true;
             // 
             // mRNADisplayOptions
             // 
@@ -1737,5 +1792,11 @@
         private Label label46;
         private Button btnCreateInterProScanFeaturesSets;
         private Label label49;
+        private CheckBox chkFrame;
+        private Label label51;
+        private PictureBox pictureBox1;
+        private Button btnFrameColours;
+        private ComboBox comboBox1;
+        private Label label52;
     }
 }

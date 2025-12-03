@@ -82,6 +82,8 @@ namespace TransGBViewer
             InitalizeFormatAndDisplayTab();
             ReDraw();
 
+
+            setFrame();
         }
 
         private void ReadGenBankFile(string FileName)
@@ -193,7 +195,7 @@ namespace TransGBViewer
         private string[] GetTranslation(FileProcessing fp)
         {
             string line = "";
-            string[] translation = { "",""};
+            string[] translation = { "", "" };
             while (fp.Peek() > 0 && fp.Peek() != 79)
             {
                 line = fp.ReadLine();
@@ -770,7 +772,7 @@ namespace TransGBViewer
             gLabels.Clear(Color.White);
 
             Point limitRegion = parameters.Zoom;
-                   
+
             int numberOfGaps = getNumberOfGapsInAllSequences(limitRegion);
             int sequenceWidth = limitRegion.Y + 1 - limitRegion.X - numberOfGaps;
 
@@ -779,7 +781,7 @@ namespace TransGBViewer
 
             Draw(g, gLabels, bmp, bmpLabels, scale, scaleFactor, limitRegion);
 
-           
+
             return bmp;
         }
 
@@ -843,6 +845,7 @@ namespace TransGBViewer
             int height = scale.i[10];
             Dictionary<string, int> legends = getReferencedAccessionID();
             int lineTop = height;
+            int intervalTop = 0; 
             string allSequences = parameters.AllSequences;
             List<RectangleF> masks = new List<RectangleF>();
             try
@@ -860,9 +863,10 @@ namespace TransGBViewer
                 {
                     if (parameters.SizeMarkerLocation != SizeMarkerLocation.None)
                     {
+                        intervalTop = height;
                         if (height > 0) { height += scale.i[10]; }
                         height = DrawSizeMarkers(g, scale, scalefactor, height - scale.i[10], bmp.Width, limits);
-                        height += scale.i[5];
+                        height += scale.i[5];                        
                     }
                 }
                 else if (dataset == ClassDrawingOrder.Gene_sequences)
@@ -891,6 +895,12 @@ namespace TransGBViewer
                             DrawExons(g, startPoint, endPoint, height, scale.i[20], scale, name, limits);
                             if (parameters.ShowOrf == true || parameters.Reduced == true) { DrawOrf(g, startPoint, endPoint, height, scale.i[20], scale, name, exon, limits); }
                         }
+
+                        if (chkFrame.Checked == true)
+                        {
+                            DrawFrames(g, height, scale.i[20],scalefactor, scale, name, limits);
+                        }
+
                         height += scale.i[25];
                     }
                     height += scale.i[10];
@@ -931,15 +941,18 @@ namespace TransGBViewer
             try
             {
                 g.SmoothingMode = SmoothingMode.None;
-                
+
                 if (parameters.ShowORFLimits != "None")
-                { DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits); }
+                {
+                    DrawORFSites(g, lineTop, parameters.DrawingArea.Height * scale.scale, scale, scalefactor, parameters.ShowORFLimits, allSequences, limits);
+                    if (intervalTop > 0) { intervalTop += scale.i[10]; }
+                    DrawSizeMarkers(g, scale, scalefactor, intervalTop - scale.i[10], bmp.Width, limits);
+                }
             }
             finally
             { g.SmoothingMode = SmoothingMode.AntiAlias; }
 
             g.FillRectangle(Brushes.White, 0, height, parameters.DrawingArea.Width, parameters.DrawingArea.Height - height);
-
 
             if (parameters.LabelWidth > 0)
             { g.DrawImage(bmpLabels, 0, 0); }
@@ -1047,6 +1060,31 @@ namespace TransGBViewer
             {
                 Pen pen = new Pen(Color.Black, scale.f[1]);
                 CommonGraphicTasks.DrawBordersRectangle(g, shape, pen, parameters.Rounded, scale, 2);
+            }
+        }
+
+        private void DrawFrames(Graphics g, int Top, int height,float scalefactor, scalar scale, string name, Point limits)
+        {
+            Color[] frameColours = { Color.LightBlue, Color.Pink, Color.Orange };
+
+            string allSequences = parameters.AllSequences;
+            List<ReadingFrame> exons = parameters.ExonWithFrame[name];
+            foreach (ReadingFrame exon in exons)
+            {
+                string sequence = allSequences.Substring(exon.start, exon.end + 1 - exon.start);
+                int placeInAllsequences = allSequences.IndexOf(sequence);
+                int numberofGapsbeforeSequence = getNumberOfGapsInAllSequences(new Point(limits.X, placeInAllsequences));
+                float startPoint = scale.i[parameters.LabelWidth] + scale.i[15] + (numberofGapsbeforeSequence * scale.i[parameters.IntronGap]) +
+                    ((placeInAllsequences - limits.X - numberofGapsbeforeSequence) * scalefactor);
+                float endPoint = startPoint + (sequence.Length * scalefactor);
+
+                RectangleF shape = new RectangleF(startPoint, Top, endPoint - startPoint, height);
+                CommonGraphicTasks.DrawRectangle(g, shape, new SolidBrush(frameColours[exon.frame-5]), parameters.Rounded, scale, 2, true);
+                if (parameters.DrawExonBorders == true)
+                {
+                    Pen pen = new Pen(Color.Black, scale.f[1]);
+                    CommonGraphicTasks.DrawBordersRectangle(g, shape, pen, parameters.Rounded, scale, 2);
+                }
             }
         }
 
@@ -2273,7 +2311,7 @@ namespace TransGBViewer
                 nudGeneFeatureX.Value = X;
                 nudGeneFeatureY.Value = Y;
             }
-            
+
         }
 
         private void btnGeneFeatureFillColour_Click(object sender, EventArgs e)
@@ -2315,7 +2353,7 @@ namespace TransGBViewer
         {
             if (currentGeneFeatureMarker.DrawMe == false)
             { btnDrawCurrentGeneFeatureMarker.PerformClick(); }
-            if (currentGeneFeatureMarker.X == 0 && currentGeneFeatureMarker.DrawMe == true) 
+            if (currentGeneFeatureMarker.X == 0 && currentGeneFeatureMarker.DrawMe == true)
             { currentGeneFeatureMarker.X = parameters.LabelWidth; }
         }
 
@@ -2364,7 +2402,7 @@ namespace TransGBViewer
         {
             string key = cboGeneFeatureName.Text.Trim();
             if (key.Length < 3) { return; }
-            
+
             float[] basePlace = getLocationFromX(parameters.Zoom.X, parameters.Zoom.Y, currentGeneFeatureMarker.X, interfaceScale, parameters.LabelWidth, parameters.IntronGap);
 
             if (parameters.GeneFeatureMarkers.ContainsKey(key) == true)
@@ -2496,7 +2534,7 @@ namespace TransGBViewer
                     gfm.UpdateTop((int)parameters.FeatureRows[gfm.LinkedName], scaleDPI);
                     PointF[] shape = gfm.GetResizedfeaturePoints(scaleDPI);
 
-                    
+
 
                     if (gfm.ShapeType == ShapeType.Box)
                     { g.DrawPolygon(new Pen(gfm.Colour, scaleDPI.i[2]), shape); }
@@ -2619,7 +2657,7 @@ namespace TransGBViewer
                 default:
                     currentGeneFeatureMarker.SetShapePoints(ShapeType.NotSet);
                     break;
-            }            
+            }
             DrawCurrentFeatureMarker();
         }
         #endregion
@@ -2737,6 +2775,109 @@ namespace TransGBViewer
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void setFrame()
+        {
+            string compName = "NM_001126117";
+            int lengthOfConsnsus = parameters.AllSequences.Length;
+
+            foreach (string name in parameters.SequenceNames)
+            {
+                Point orf = parameters.CDSs[name];
+                int[] frame = Enumerable.Repeat(9, lengthOfConsnsus).ToArray();
+                List<Point> exonPoints = parameters.Exons[name];
+                int codon = 1;
+                foreach (Point exon in exonPoints)
+                {
+                    Point adjustedExon = new Point(exon.X, exon.Y);
+                    if (adjustedExon.X < orf.X) { adjustedExon.X = orf.X; }
+                    if (adjustedExon.Y > orf.Y) { adjustedExon.Y = orf.Y; }
+                    if (adjustedExon.X < adjustedExon.Y)
+                    {
+                        string sequence = parameters.getExonSequence(name, adjustedExon);
+                        int placeInAllsequences = parameters.AllSequences.IndexOf(sequence);
+                        int numberofGapsbeforeSequence = getNumberOfGapsInAllSequences(new Point(0, placeInAllsequences));
+
+                        for (int index = 0; index < sequence.Length; index++)
+                        {
+                            int place = index + placeInAllsequences;
+                            frame[place] = codon++;
+                            if (codon == 4) { codon = 1; }
+                        }
+                    }
+                    parameters.Codons[name] = frame;
+                }
+
+            }
+            SetOpenreadingframes("NM_001126117");
+        }
+
+        private void SetOpenreadingframes(string baseSequenceName)
+        {
+
+            int[] mainFrame = (int[])parameters.Codons[baseSequenceName].Clone(); ;
+            List<ReadingFrame> data = new List<ReadingFrame>();
+
+            foreach (string key in parameters.Codons.Keys)
+            {
+                ReadingFrame rf = new ReadingFrame(0, 0, 0);
+
+                data = new List<ReadingFrame>();
+
+                int lastValue = 4;
+                int[] otherFrame = parameters.Codons[key];
+                int answer = 0;
+                for (int index = 0; index < otherFrame.Length; index++)
+                {
+                    if (parameters.AllSequences[index] == ' ')
+                    { answer = 0; }
+                    else if (otherFrame[index] != 9 && mainFrame[index] != 9)
+                    {
+                        int diff = otherFrame[index] - mainFrame[index];
+                        if (diff == 0)
+                        { answer = 5; }
+                        else if (diff == -1 || diff == 2)
+                        { answer = 6; }
+                        else
+                        { answer = 7; }
+                    }
+                    else { answer = 4; }
+
+                    if (answer != lastValue)
+                    {
+                        if (otherFrame[index] == 0 && rf.frame > 4)//end of exon
+                        {
+                            rf.end = index - 1;
+                            data.Add(rf.Clone());
+                            rf = new ReadingFrame();
+                            lastValue = answer;
+                        }
+                        else if (answer > 4 && rf.frame != answer) // start of new block
+                        {
+                            if (answer > 4)
+                            {
+                                rf.frame = answer;
+                                rf.start = index;
+                                lastValue = answer;
+                            }
+                        }
+                        else if (answer <= 4 && rf.frame > 4) // end of block
+                        {
+                            rf.end = index - 1;
+                            data.Add(rf.Clone());
+                            rf = new ReadingFrame();
+                            lastValue = answer;
+                        }
+                    }
+                }
+                if (rf.start > 0)
+                {
+                    rf.end = otherFrame.Length - 1;
+                    data.Add(rf.Clone());
+                }
+                parameters.ExonWithFrame[key] = data.ToList();                
+            }
         }
     }
 }

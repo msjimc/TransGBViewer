@@ -415,8 +415,8 @@ namespace TransGBViewer
             return answer;
         }
         public Dictionary<string, string> Sequences { get { return sequences; } set { sequences = value; } }
-        public Dictionary<string, Point> CDSs { get { return cdss; } set { cdss = value; } }
         public List<string> SequenceNames { get { return sequenceNames; } set { sequenceNames = value; } }
+        public Dictionary<string, Point> CDSs { get { return cdss; } set { cdss = value; } }
         public Dictionary<string, string> DisplayNames { get { return displayNames; } set { displayNames = value; } }
         public string ConsensusStrict { get { return consensusStrict; } set { consensusStrict = value; } }
         public string ConsensusType { get { return consensusType; } set { consensusType = value; } }

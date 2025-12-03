@@ -150,6 +150,29 @@ namespace TransGBViewer
 
     }
 
+   public struct ReadingFrame
+    {
+        public int start;
+        public int end;
+        public int frame;
+
+        public ReadingFrame(int Start, int End, int Frame)
+        {
+            start = Start;
+            end = End;
+            frame = Frame;
+        }
+
+        public ReadingFrame Clone()
+        {
+            ReadingFrame rf = new ReadingFrame(start, end, frame);
+            return rf;
+        }
+
+        public Point Region()
+        { return new Point(start, end); }
+    }
+
     public struct GenBankProteinFeature
     {
         public Point Location;
