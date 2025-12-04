@@ -32,6 +32,9 @@
             btnClose = new Button();
             tabPage2 = new TabPage();
             groupBox2 = new GroupBox();
+            cboFrame = new ComboBox();
+            label52 = new Label();
+            btnFrameColours = new Button();
             nudLineWidth = new NumericUpDown();
             label26 = new Label();
             pAcceptor = new PictureBox();
@@ -86,8 +89,6 @@
             label12 = new Label();
             tabPage1 = new TabPage();
             groupBox1 = new GroupBox();
-            chkFrame = new CheckBox();
-            label51 = new Label();
             btnSelectSequence = new Button();
             chkFolder = new CheckBox();
             label1 = new Label();
@@ -160,9 +161,6 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
-            label52 = new Label();
-            comboBox1 = new ComboBox();
-            btnFrameColours = new Button();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -225,7 +223,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(cboFrame);
             groupBox2.Controls.Add(label52);
             groupBox2.Controls.Add(btnFrameColours);
             groupBox2.Controls.Add(nudLineWidth);
@@ -264,6 +262,36 @@
             groupBox2.Size = new Size(397, 363);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
+            // 
+            // cboFrame
+            // 
+            cboFrame.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFrame.DropDownWidth = 150;
+            cboFrame.FormattingEnabled = true;
+            cboFrame.Location = new Point(244, 175);
+            cboFrame.Name = "cboFrame";
+            cboFrame.Size = new Size(81, 23);
+            cboFrame.TabIndex = 42;
+            cboFrame.SelectedIndexChanged += cboFrame_SelectedIndexChanged;
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Location = new Point(6, 179);
+            label52.Name = "label52";
+            label52.Size = new Size(188, 15);
+            label52.TabIndex = 41;
+            label52.Text = "Highlight sequences in frame with";
+            // 
+            // btnFrameColours
+            // 
+            btnFrameColours.Location = new Point(331, 175);
+            btnFrameColours.Name = "btnFrameColours";
+            btnFrameColours.Size = new Size(63, 23);
+            btnFrameColours.TabIndex = 43;
+            btnFrameColours.Text = "Change";
+            btnFrameColours.UseVisualStyleBackColor = true;
+            btnFrameColours.Click += btnFrameColours_Click;
             // 
             // nudLineWidth
             // 
@@ -801,8 +829,6 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(chkFrame);
-            groupBox1.Controls.Add(label51);
             groupBox1.Controls.Add(btnSelectSequence);
             groupBox1.Controls.Add(chkFolder);
             groupBox1.Controls.Add(label1);
@@ -812,25 +838,6 @@
             groupBox1.Size = new Size(397, 363);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            // 
-            // chkFrame
-            // 
-            chkFrame.AutoSize = true;
-            chkFrame.Location = new Point(138, 112);
-            chkFrame.Name = "chkFrame";
-            chkFrame.Size = new Size(82, 19);
-            chkFrame.TabIndex = 4;
-            chkFrame.Text = "checkBox1";
-            chkFrame.UseVisualStyleBackColor = true;
-            // 
-            // label51
-            // 
-            label51.AutoSize = true;
-            label51.Location = new Point(23, 116);
-            label51.Name = "label51";
-            label51.Size = new Size(44, 15);
-            label51.TabIndex = 3;
-            label51.Text = "label51";
             // 
             // btnSelectSequence
             // 
@@ -1576,32 +1583,6 @@
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
             // 
-            // label52
-            // 
-            label52.AutoSize = true;
-            label52.Location = new Point(6, 179);
-            label52.Name = "label52";
-            label52.Size = new Size(191, 15);
-            label52.TabIndex = 41;
-            label52.Text = "HighLight sequences in frame with";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(310, 175);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(81, 23);
-            comboBox1.TabIndex = 42;
-            // 
-            // btnFrameColours
-            // 
-            btnFrameColours.Location = new Point(241, 174);
-            btnFrameColours.Name = "btnFrameColours";
-            btnFrameColours.Size = new Size(63, 23);
-            btnFrameColours.TabIndex = 43;
-            btnFrameColours.Text = "Change";
-            btnFrameColours.UseVisualStyleBackColor = true;
-            // 
             // mRNADisplayOptions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1792,11 +1773,9 @@
         private Label label46;
         private Button btnCreateInterProScanFeaturesSets;
         private Label label49;
-        private CheckBox chkFrame;
-        private Label label51;
         private PictureBox pictureBox1;
         private Button btnFrameColours;
-        private ComboBox comboBox1;
+        private ComboBox cboFrame;
         private Label label52;
     }
 }

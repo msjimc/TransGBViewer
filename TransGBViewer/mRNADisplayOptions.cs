@@ -845,7 +845,7 @@ namespace TransGBViewer
             int height = scale.i[10];
             Dictionary<string, int> legends = getReferencedAccessionID();
             int lineTop = height;
-            int intervalTop = 0; 
+            int intervalTop = 0;
             string allSequences = parameters.AllSequences;
             List<RectangleF> masks = new List<RectangleF>();
             try
@@ -866,7 +866,7 @@ namespace TransGBViewer
                         intervalTop = height;
                         if (height > 0) { height += scale.i[10]; }
                         height = DrawSizeMarkers(g, scale, scalefactor, height - scale.i[10], bmp.Width, limits);
-                        height += scale.i[5];                        
+                        height += scale.i[5];
                     }
                 }
                 else if (dataset == ClassDrawingOrder.Gene_sequences)
@@ -878,10 +878,14 @@ namespace TransGBViewer
                         if (parameters.LegendsLocation != DrawLabels.none)
                         {
                             string display = parameters.SequenceDisplayNames[name];
+                            if (name == cboFrame.Text)
+                            { display += "*"; }
+                            
                             if (legends.ContainsKey(name) == true)
                             { display += AddSupercript(legends[name]); }
                             height = DrawFeatureLabels(g, gLabels, parameters.IDFont, display, bmp.Width, scale.i[5], height, scale, name);
                         }
+
                         parameters.FeatureRows[parameters.SequenceDisplayNames[name]] = height;
                         foreach (Point exon in exonPoints)
                         {
@@ -896,10 +900,8 @@ namespace TransGBViewer
                             if (parameters.ShowOrf == true || parameters.Reduced == true) { DrawOrf(g, startPoint, endPoint, height, scale.i[20], scale, name, exon, limits); }
                         }
 
-                        if (chkFrame.Checked == true)
-                        {
-                            DrawFrames(g, height, scale.i[20],scalefactor, scale, name, limits);
-                        }
+                        if (parameters.ExonWithFrame.Count > 0)
+                        { DrawFrames(g, height, scale.i[20], scalefactor, scale, name, limits); }
 
                         height += scale.i[25];
                     }
@@ -1063,9 +1065,9 @@ namespace TransGBViewer
             }
         }
 
-        private void DrawFrames(Graphics g, int Top, int height,float scalefactor, scalar scale, string name, Point limits)
+        private void DrawFrames(Graphics g, int Top, int height, float scalefactor, scalar scale, string name, Point limits)
         {
-            Color[] frameColours = { Color.LightBlue, Color.Pink, Color.Orange };
+            Color[] frameColours = parameters.ReadingFrameColours;
 
             string allSequences = parameters.AllSequences;
             List<ReadingFrame> exons = parameters.ExonWithFrame[name];
@@ -1079,7 +1081,7 @@ namespace TransGBViewer
                 float endPoint = startPoint + (sequence.Length * scalefactor);
 
                 RectangleF shape = new RectangleF(startPoint, Top, endPoint - startPoint, height);
-                CommonGraphicTasks.DrawRectangle(g, shape, new SolidBrush(frameColours[exon.frame-5]), parameters.Rounded, scale, 2, true);
+                CommonGraphicTasks.DrawRectangle(g, shape, new SolidBrush(frameColours[exon.frame - 5]), parameters.Rounded, scale, 2, true);
                 if (parameters.DrawExonBorders == true)
                 {
                     Pen pen = new Pen(Color.Black, scale.f[1]);
@@ -1957,11 +1959,16 @@ namespace TransGBViewer
             cboORFLimits.Items.Add("None");
             cboORFLimits.Items.Add("All");
 
+            cboFrame.Items.Clear();
+            cboFrame.Items.Add("None");
+
             if (parameters != null)
             {
                 cboORFLimits.Items.AddRange(parameters.SequenceNames.ToArray());
                 cboSpliceSites.Items.AddRange(parameters.SequenceNames.ToArray());
+                cboFrame.Items.AddRange(parameters.SequenceNames.ToArray());
             }
+            cboFrame.SelectedIndex = 0;
             cboORFLimits.SelectedIndex = 0;
             cboSpliceSites.SelectedIndex = 0;
             cboCoordinates.SelectedIndex = 1;
@@ -2778,8 +2785,7 @@ namespace TransGBViewer
         }
 
         private void setFrame()
-        {
-            string compName = "NM_001126117";
+        {            
             int lengthOfConsnsus = parameters.AllSequences.Length;
 
             foreach (string name in parameters.SequenceNames)
@@ -2815,8 +2821,10 @@ namespace TransGBViewer
 
         private void SetOpenreadingframes(string baseSequenceName)
         {
+            parameters.ExonWithFrame = new Dictionary<string, List<ReadingFrame>>();
+            if (baseSequenceName == "None") { return; }
+            int[] mainFrame = (int[])parameters.Codons[baseSequenceName].Clone();
 
-            int[] mainFrame = (int[])parameters.Codons[baseSequenceName].Clone(); ;
             List<ReadingFrame> data = new List<ReadingFrame>();
 
             foreach (string key in parameters.Codons.Keys)
@@ -2876,7 +2884,24 @@ namespace TransGBViewer
                     rf.end = otherFrame.Length - 1;
                     data.Add(rf.Clone());
                 }
-                parameters.ExonWithFrame[key] = data.ToList();                
+                parameters.ExonWithFrame[key] = data.ToList();
+            }
+        }
+
+        private void cboFrame_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetOpenreadingframes(cboFrame.Text);
+            ReDraw();
+        }
+
+        private void btnFrameColours_Click(object sender, EventArgs e)
+        {
+            Color[] frameColours = parameters.ReadingFrameColours;
+            mRNAFrameColourSelector mRNAFCS = new mRNAFrameColourSelector(frameColours);
+            if (mRNAFCS.ShowDialog() == DialogResult.OK)
+            {
+                parameters.ReadingFrameColours = mRNAFCS.GetFrameColours;
+                ReDraw();
             }
         }
     }

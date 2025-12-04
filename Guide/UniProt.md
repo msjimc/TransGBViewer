@@ -25,7 +25,7 @@ Pressing the __Search__ button (green line in Figure 1) opens the __Domain Searc
 When performing the searches, this window will be locked (and __TransGBViewer__ will be unresponsive) while it awaits a response from the websites. 
 
 The search consists of up to four steps:
-- If the transcript is linked to a protein ID in the GenBank file, __TransGBViewer__ will use that ID
+- If the transcript is linked to a protein ID in the GenBank file, __TransGBViewer__ will use these IDs
 - If no protein ID is linked to the transcript, then:
     - Collect the transcript's GenBank accession IDs and retrieve the linked NCBI sequence IDs from the NCBI site. (These are not the GenBank DNA or protein accession IDs).
     - Submit the NCBI sequence IDs to the NCBI to retrieve the linked GenBank protein accession ID.

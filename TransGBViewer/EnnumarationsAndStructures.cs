@@ -256,7 +256,7 @@ namespace TransGBViewer
 
     class MinimumRequiredParameters
     {
-        private List<string> sequenceNames;
+        private List<string> sequenceNames = new List<string>();
         private Dictionary<string, List<string>> mRNAToProteinKey = new Dictionary<string, List<string>>();
         private Dictionary<string, ProteinDomainFeature> miscellaneousFeatureUniprotAll = new Dictionary<string, ProteinDomainFeature>();
         private Dictionary<string, mRNAUniProtAlignment> mRNAUniProtAlignmentLimits = new Dictionary<string, mRNAUniProtAlignment>();

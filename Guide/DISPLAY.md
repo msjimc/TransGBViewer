@@ -105,6 +105,39 @@ Figure 9b: Unchecking the __Reduce__ checkbox (blue line) redraws the image with
 
 ---
 
+## Highlighting out-of-frame coding sequences
+
+<b>Note:</b> The images in Figures 10b and 10c were created using a modified GenBank file in which 1 and 2 bases were added to the position start codon in NM_001126117 and NM_001126115 respectively. For the transcript NM_001126118, the position of the 5th exon was moved 1 base pair upstream to create a frame shift for just that exon.
+
+By default, it is only possible to see which sequences are shared between different transcripts. However, it's possible that the use of an alternative start site or  alternative splicing may lead to local or global changes in the phase of the open reading frames. Due to the size of the image compared to the length of the transcripts, small but significant differences are not readily apparent; consequently, it is possible to select a transcript and compare the reading frame of its open reading frame to that of the other transcripts. 
+
+To select a transcript to whose open reading frame the other open reading frames are compared, select its GenBank ID from the dropdown list to the right of the __Highlight sequences in frame with__ label (blue box in Figure 10a). Once selected, an __*__ will appear by the transcript's display name in the image (black line in Figure 10a), and the open reading frames of the other transcripts will become colour-coded. Only the equivalent coding sequences in the other transcripts will be modified. 
+
+
+![Figure 10a](images/figureDisplay20a.jpg)
+
+Figure 10a: The transcript ID NM_001126118 was selected from the dropdown list (blue box). 
+
+---
+![Figure 10b](images/figureDisplay20b.jpg)
+
+Figure 10b: Unchecking the __Reduce__ checkbox (blue line) redraws the image with all the boxes the same height (red box in Figure 9b).
+
+---
+
+![Figure 10c](images/Readingframes.png)
+
+Figure 10c: Comparison of the codon usage between a selected sequence and three identical sequences in which the reading frame has been transposed 0, 1 and 2 bases upstream.
+
+---
+
+The colour of the coding sequences is determined by the offset between its codon usage and the selected transcript's codon usage, as shown in Figure 10c. The colours used to indicate the reading frames' phase can be modified by pressing the __Change__ button. Pressing this button will open the __Reading frame colour selection__ window (Figure 10b). Pressing the appropriate __Select__ button will allow you to select a colour using either the colour's Windows internal colour name or the Windows __Color Picker__ dialog box as described below: 
+
+- [Using the Select colour by name dialog box](SequenceColour.md)
+- [Using the Windows colour picker dialog box](ColourPickerDialog.md)
+
+Once the colour(s) has been selected, pressing the __Accept__ button will accept the modifications and redraw the image (Figure 10b), while pressing __Cancel__ will discard the changes.
+
 ## Highlighting a transcript's exon splice sites
 
 Transcripts may share a common exon but differ functionally by utilising alternative splice sites within that exon. To aid the visualisation of these situations, it is possible to highlight exon boundaries for one or all transcripts using the __Highlight splice sites of selected sequence__ option (Figure 10). When a transcript is selected from the dropdown list (blue line in Figure 10), its splice sites are highlighted as a series of vertical dotted lines that span the entire height of the image (excluding the base pair position). 
