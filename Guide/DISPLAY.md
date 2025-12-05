@@ -114,12 +114,12 @@ By default, it is only possible to see which sequences are shared between differ
 To select a transcript to whose open reading frame the other open reading frames are compared, select its GenBank ID from the dropdown list to the right of the __Highlight sequences in frame with__ label (blue box in Figure 10a). Once selected, an __*__ will appear by the transcript's display name in the image (black line in Figure 10a), and the open reading frames of the other transcripts will become colour-coded. Only the equivalent coding sequences in the other transcripts will be modified. 
 
 
-![Figure 10a](images/figureDisplay20a.jpg)
+![Figure 10a](images/figureDisplay18a.jpg)
 
 Figure 10a: The transcript ID NM_001126118 was selected from the dropdown list (blue box). 
 
 ---
-![Figure 10b](images/figureDisplay20b.jpg)
+![Figure 10b](images/figureDisplay18b.jpg)
 
 Figure 10b: Unchecking the __Reduce__ checkbox (blue line) redraws the image with all the boxes the same height (red box in Figure 9b).
 
@@ -140,84 +140,84 @@ Once the colour(s) has been selected, pressing the __Accept__ button will accept
 
 ## Highlighting a transcript's exon splice sites
 
-Transcripts may share a common exon but differ functionally by utilising alternative splice sites within that exon. To aid the visualisation of these situations, it is possible to highlight exon boundaries for one or all transcripts using the __Highlight splice sites of selected sequence__ option (Figure 10). When a transcript is selected from the dropdown list (blue line in Figure 10), its splice sites are highlighted as a series of vertical dotted lines that span the entire height of the image (excluding the base pair position). 
+Transcripts may share a common exon but differ functionally by utilising alternative splice sites within that exon. To aid the visualisation of these situations, it is possible to highlight exon boundaries for one or all transcripts using the __Highlight splice sites of selected sequence__ option (Figure 11). When a transcript is selected from the dropdown list (blue line in Figure 11), its splice sites are highlighted as a series of vertical dotted lines that span the entire height of the image (excluding the base pair position). 
 
 <b>Note:</b> Visualisation of alternative splice sites is aided by inserting a small gap at the site of an intron ([described here](../Guide/FORMAT.md#adjust-size-of-gap-signifying-an-intron-option)), and the image is zoomed in to the splice site ([described here](../Guide/DISPLAY.md#selecting-a-region-to-view)).
 
-![Figure 10](images/figureDisplay13.jpg)
+![Figure 11](images/figureDisplay13.jpg)
 
-Figure 10: Selecting a transcript's name from the dropdown list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the splice sites to be highlighted as a series of vertical dotted lines that allow the use of alternative splice sites to be visualised (black box). 
+Figure 11: Selecting a transcript's name from the dropdown list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the splice sites to be highlighted as a series of vertical dotted lines that allow the use of alternative splice sites to be visualised (black box). 
 
 ---
 
 ## Changing the colour of the lines used to highlight the donor and/or acceptor splice sites
 
-By default, the lines highlighting the splice sites are black; however, their colours can be changed by pressing the appropriate __Donor__ or __Acceptor__ button (blue line in Figure 11a). This will display a window called either  __Select the donor line colour__ or __Select the acceptor line colour__. This window in turn allow a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 11a) or using the Windows __colour picker dialog__ window if the __Colour dialod box__  option is selected (green line in Figure 11) when the __Colour__ button is pressed (red line in Figure 11).
+By default, the lines highlighting the splice sites are black; however, their colours can be changed by pressing the appropriate __Donor__ or __Acceptor__ button (blue line in Figure 12a). This will display a window called either  __Select the donor line colour__ or __Select the acceptor line colour__. This window in turn allow a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 12a) or using the Windows __colour picker dialog__ window if the __Colour dialod box__  option is selected (green line in Figure 12) when the __Colour__ button is pressed (red line in Figure 12).
 
 - [Using the Select colour by name dialog](equenceColour.md)
 - [Using the Windows colour picker dialog](ColourPickerDialog.md)
 
-The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will then accept the changes and modify the blocks of colour next to the __Donor__ or __Acceptor__ buttons (blue lines in Figure 11b) and the image (black box in Figure 11b).
+The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will then accept the changes and modify the blocks of colour next to the __Donor__ or __Acceptor__ buttons (blue lines in Figure 12b) and the image (black box in Figure 12b).
 
 
-![Figure 11a](images/figureDisplay14a.jpg)
+![Figure 12a](images/figureDisplay14a.jpg)
 
-Figure 11a: The colour of the lines used to highlight splice sites can be changed by pressing the __Donor__ or __Acceptor__ button (blue line) and selecting the colour using the displayed dialog box.
+Figure 12a: The colour of the lines used to highlight splice sites can be changed by pressing the __Donor__ or __Acceptor__ button (blue line) and selecting the colour using the displayed dialog box.
 
 ---
 
-![Figure 11b](images/figureDisplay14b.jpg)
+![Figure 12b](images/figureDisplay14b.jpg)
 
-Figure 11b: Once changed, the colours of the acceptor and donor lines are shown next to the appropriate button (blue lines), and the lines are now colour-coded (black box).
+Figure 12b: Once changed, the colours of the acceptor and donor lines are shown next to the appropriate button (blue lines), and the lines are now colour-coded (black box).
 
 ---
 
 ## Highlighting a transcript's translational start and stop sites
 
-A gene's transcripts may utilise different translational start and stop sites; to aid their visualisation,  it is possible to highlight the start and stop sites of one or all of the transcripts using the __Highlight the translational start and stop sites of selected sequence__ option (blue line in Figure 12). When a transcript is selected from the dropdown list its translational start and stop sites are highlighted as a pair of vertical dotted lines that span the entire height of the image (excluding the base pair position label). 
+A gene's transcripts may utilise different translational start and stop sites; to aid their visualisation,  it is possible to highlight the start and stop sites of one or all of the transcripts using the __Highlight the translational start and stop sites of selected sequence__ option (blue line in Figure 13). When a transcript is selected from the dropdown list its translational start and stop sites are highlighted as a pair of vertical dotted lines that span the entire height of the image (excluding the base pair position label). 
 
 <b>Note:</b> Visualisation of translational start and stop sites is aided by zooming in to the splice site ([described here](../Guide/DISPLAY.md#selecting-a-region-to-view)).
 
-![Figure 12](images/figureDisplay15a.jpg)
+![Figure 13](images/figureDisplay15a.jpg)
 
-Figure 12: Selecting a transcript's name from the dropdown list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the start and stop sites to be shown as a series of vertical dotted lines that allow the use of alternative translation start and stop sites to be visualised (black boxes). 
+Figure 13: Selecting a transcript's name from the dropdown list box (blue line) to the right of the __Highlight splice sites of selected sequence__ label causes the start and stop sites to be shown as a series of vertical dotted lines that allow the use of alternative translation start and stop sites to be visualised (black boxes). 
 
 ---
 
 ## Changing the colour of the lines used to highlight the translational start and stop sites
 
-By default, the lines highlighting the translational start and stop are black; however, their colours can be changed by pressing the appropriate __Start__ or __Stop__ button (blue line in Figure 13a). This will display a window called either the __Select the start codon line colour__ or the __Select the stop codon line colour__. This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 13a) or with the Windows __colour picker dialog__ window if the __Colour dialog box__ option is selected (green line in Figure 13a) and the __Colour__ button is pressed (red line in Figure 13a).
+By default, the lines highlighting the translational start and stop are black; however, their colours can be changed by pressing the appropriate __Start__ or __Stop__ button (blue line in Figure 14a). This will display a window called either the __Select the start codon line colour__ or the __Select the stop codon line colour__. This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 14a) or with the Windows __colour picker dialog__ window if the __Colour dialog box__ option is selected (green line in Figure 14a) and the __Colour__ button is pressed (red line in Figure 14a).
 
 - [Using the Select colour by name dialog](equenceColour.md)
 - [Using the Windows colour picker dialog](ColourPickerDialog.md)
 
-The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will close the window, change the coloured square next to the __Start__ or __Stop__ buttons (blue lines in Figure 11b), and redraw the image (black box in Figure 11b).
+The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will close the window, change the coloured square next to the __Start__ or __Stop__ buttons (blue lines in Figure 14b), and redraw the image (black box in Figure 14b).
 
 
-![Figure 13a](images/figureDisplay16a.jpg)
+![Figure 14a](images/figureDisplay16a.jpg)
 
-Figure 13a: The colour of the lines used to highlight translational start and stop sites can be changed by pressing the __Start__ or __Stop__ button (blue line) and selecting the colour using the displayed dialog box.
+Figure 14a: The colour of the lines used to highlight translational start and stop sites can be changed by pressing the __Start__ or __Stop__ button (blue line) and selecting the colour using the displayed dialog box.
 
 ---
 
-![Figure 13b](images/figureDisplay16b.jpg)
+![Figure 14b](images/figureDisplay16b.jpg)
 
-Figure 13b:  Once changed, the colour of the start and stop lines is shown next to the appropriate button (blue lines), and the lines' colours are changed (black boxes).
+Figure 14b:  Once changed, the colour of the start and stop lines is shown next to the appropriate button (blue lines), and the lines' colours are changed (black boxes).
 
 ---
 
 ## Adjusting the thickness of the lines showing splice sites and translational start and stop sites
 
-By default, the lines showing the splice sites and translational start and stop sites are 1.5 pixels wide (on a 96 DPI image). While this thickness is easily seen, it may be difficult to identify the lines' colour. Consequently, it's possible to adjust the line thickness from 0.5 (Figure 14a) to 3 pixels (Figure 14b) (at 96 DPI) using the line thickness control (blue line in Figures 14a and 14b). 
+By default, the lines showing the splice sites and translational start and stop sites are 1.5 pixels wide (on a 96 DPI image). While this thickness is easily seen, it may be difficult to identify the lines' colour. Consequently, it's possible to adjust the line thickness from 0.5 (Figure 15a) to 3 pixels (Figure 15b) (at 96 DPI) using the line thickness control (blue line in Figures 15a and 15b). 
 
-![Figure 14a](images/figureDisplay17a.jpg)
+![Figure 15a](images/figureDisplay17a.jpg)
 
-Figure 14a: Setting the value of the number control at the bottom of the window (blue line) to 0.5 draws the lines with a width of 0.5 pixels when drawn at 96 DPI (black lines).
+Figure 15a: Setting the value of the number control at the bottom of the window (blue line) to 0.5 draws the lines with a width of 0.5 pixels when drawn at 96 DPI (black lines).
 
 ---
 
-![Figure 14b](images/figureDisplay17b.jpg)
+![Figure 15b](images/figureDisplay17b.jpg)
 
-Figure 14b: Setting the value of the number control at the bottom of the window (blue line) to 3.0 draws the lines with a width of 3.0 pixels when drawn at 96 DPI (black lines).
+Figure 15b: Setting the value of the number control at the bottom of the window (blue line) to 3.0 draws the lines with a width of 3.0 pixels when drawn at 96 DPI (black lines).
  
 ---
