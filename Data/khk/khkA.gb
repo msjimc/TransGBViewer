@@ -1,0 +1,259 @@
+LOCUS       NM_000221               2397 bp    mRNA    linear   PRI 29-APR-2025
+DEFINITION  Homo sapiens ketohexokinase (KHK), transcript variant a, mRNA.
+ACCESSION   NM_000221
+VERSION     NM_000221.3
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2397)
+  AUTHORS   Park,S.H., Helsley,R.N., Fadhul,T., Willoughby,J.L.S., Noetzli,L.,
+            Tu,H.C., Solheim,M.H., Fujisaka,S., Pan,H., Dreyfuss,J.M., Bons,J.,
+            Rose,J., King,C.D., Schilling,B., Lusis,A.J., Pan,C., Gupta,M.,
+            Kulkarni,R.N., Fitzgerald,K., Kern,P.A., Divanovic,S., Kahn,C.R.
+            and Softic,S.
+  TITLE     Fructose induced KHK-C can increase ER stress independent of its
+            effect on lipogenesis to drive liver disease in diet-induced and
+            genetic models of NAFLD
+  JOURNAL   Metabolism 145, 155591 (2023)
+   PUBMED   37230214
+  REMARK    GeneRIF: Fructose induced KHK-C can increase ER stress independent
+            of its effect on lipogenesis to drive liver disease in diet-induced
+            and genetic models of NAFLD.
+REFERENCE   2  (bases 1 to 2397)
+  AUTHORS   Shen,Z., Li,Z., Liu,Y., Li,Y., Feng,X., Zhan,Y., Lin,M., Fang,C.,
+            Fang,Y. and Deng,H.
+  TITLE     GLUT5-KHK axis-mediated fructose metabolism drives proliferation
+            and chemotherapy resistance of colorectal cancer
+  JOURNAL   Cancer Lett 534, 215617 (2022)
+   PUBMED   35257833
+  REMARK    GeneRIF: GLUT5-KHK axis-mediated fructose metabolism drives
+            proliferation and chemotherapy resistance of colorectal cancer.
+REFERENCE   3  (bases 1 to 2397)
+  AUTHORS   Deng,Q., Wu,M. and Deng,J.
+  TITLE     USP36 promotes tumor growth of non-small cell lung cancer via
+            increasing KHK-A expression by regulating c-MYC-hnRNPH1/H2 axis
+  JOURNAL   Hum Cell 35 (2), 694-704 (2022)
+   PUBMED   35133629
+  REMARK    GeneRIF: USP36 promotes tumor growth of non-small cell lung cancer
+            via increasing KHK-A expression by regulating c-MYC-hnRNPH1/H2
+            axis.
+REFERENCE   4  (bases 1 to 2397)
+  AUTHORS   Johnston,J.A., Nelson,D.R., Bhatnagar,P., Curtis,S.E., Chen,Y. and
+            MacKrell,J.G.
+  TITLE     Prevalence and cardiometabolic correlates of ketohexokinase gene
+            variants among UK Biobank participants
+  JOURNAL   PLoS One 16 (2), e0247683 (2021)
+   PUBMED   33621267
+  REMARK    GeneRIF: Prevalence and cardiometabolic correlates of
+            ketohexokinase gene variants among UK Biobank participants.
+            Publication Status: Online-Only
+REFERENCE   5  (bases 1 to 2397)
+  AUTHORS   Kim,J., Kang,J., Kang,Y.L., Woo,J., Kim,Y., Huh,J. and Park,J.W.
+  TITLE     Ketohexokinase-A acts as a nuclear protein kinase that mediates
+            fructose-induced metastasis in breast cancer
+  JOURNAL   Nat Commun 11 (1), 5436 (2020)
+   PUBMED   33116123
+  REMARK    GeneRIF: Ketohexokinase-A acts as a nuclear protein kinase that
+            mediates fructose-induced metastasis in breast cancer.
+            Publication Status: Online-Only
+REFERENCE   6  (bases 1 to 2397)
+  AUTHORS   Simpson,J.C., Wellenreuther,R., Poustka,A., Pepperkok,R. and
+            Wiemann,S.
+  TITLE     Systematic subcellular localization of novel proteins identified by
+            large-scale cDNA sequencing
+  JOURNAL   EMBO Rep 1 (3), 287-292 (2000)
+   PUBMED   11256614
+REFERENCE   7  (bases 1 to 2397)
+  AUTHORS   Hayward,B.E. and Bonthron,D.T.
+  TITLE     Structure and alternative splicing of the ketohexokinase gene
+  JOURNAL   Eur J Biochem 257 (1), 85-91 (1998)
+   PUBMED   9799106
+REFERENCE   8  (bases 1 to 2397)
+  AUTHORS   Hayward,B.E., Fantes,J.A., Warner,J.P., Intody,S., Leek,J.P.,
+            Markham,A.F. and Bonthron,D.T.
+  TITLE     Co-localization of the ketohexokinase and glucokinase regulator
+            genes to a 500-kb region of chromosome 2p23
+  JOURNAL   Mamm Genome 7 (6), 454-458 (1996)
+   PUBMED   8662230
+REFERENCE   9  (bases 1 to 2397)
+  AUTHORS   Bonthron,D.T., Brady,N., Donaldson,I.A. and Steinmann,B.
+  TITLE     Molecular basis of essential fructosuria: molecular cloning and
+            mutational analysis of human ketohexokinase (fructokinase)
+  JOURNAL   Hum Mol Genet 3 (9), 1627-1631 (1994)
+   PUBMED   7833921
+REFERENCE   10 (bases 1 to 2397)
+  AUTHORS   Bais,R., James,H.M., Rofe,A.M. and Conyers,R.A.
+  TITLE     The purification and properties of human liver ketohexokinase. A
+            role for ketohexokinase and fructose-bisphosphate aldolase in the
+            metabolic production of oxalate from xylitol
+  JOURNAL   Biochem J 230 (1), 53-60 (1985)
+   PUBMED   2996495
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AC013403.9.
+            
+            On May 31, 2019 this sequence version replaced NM_000221.2.
+            
+            Summary: This gene encodes ketohexokinase that catalyzes conversion
+            of fructose to fructose-1-phosphate. The product of this gene is
+            the first enzyme with a specialized pathway that catabolizes
+            dietary fructose. Alternatively spliced transcript variants
+            encoding different isoforms have been identified. [provided by
+            RefSeq, Jul 2008].
+            
+            Transcript Variant: This variant utilizes the alternate exon 3a and
+            encodes isoform a, which exhibits lower enzymatic activity than
+            isoform b.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: SRR1803612.137324.1,
+                                           SRR1803617.29009.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA1965299, SAMEA1966682
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            COMPLETENESS: complete on the 3' end.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-580               AC013403.9         27472-28051
+            581-697             AC013403.9         33032-33148
+            698-832             AC013403.9         35177-35311
+            833-905             AC013403.9         37429-37501
+            906-1052            AC013403.9         38203-38349
+            1053-1141           AC013403.9         39896-39984
+            1142-1299           AC013403.9         40120-40277
+            1300-2397           AC013403.9         40365-41462
+FEATURES             Location/Qualifiers
+     source          1..2397
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="2"
+                     /map="2p23.3"
+     gene            1..2397
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /note="ketohexokinase"
+                     /db_xref="GeneID:3795"
+                     /db_xref="HGNC:HGNC:6315"
+                     /db_xref="MIM:614058"
+     exon            1..580
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    273..275
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /note="upstream in-frame stop codon"
+     CDS             489..1385
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /EC_number="2.7.1.3"
+                     /note="isoform a is encoded by transcript variant a;
+                     hepatic fructokinase; testicular tissue protein Li 102"
+                     /codon_start=1
+                     /product="ketohexokinase isoform a"
+                     /protein_id="NP_000212.1"
+                     /db_xref="CCDS:CCDS1734.1"
+                     /db_xref="GeneID:3795"
+                     /db_xref="HGNC:HGNC:6315"
+                     /db_xref="MIM:614058"
+                     /translation="MEEKQILCVGLVVLDVISLVDKYPKEDSEIRCLSQRWQRGGNAS
+                     NSCTVLSLLGAPCAFMGSMAPGHVADFVLDDLRRYSVDLRYTVFQTTGSVPIATVIIN
+                     EASGSRTILYYDRSLPDVSATDFEKVDLTQFKWIHIEGRNASEQVKMLQRIDAHNTRQ
+                     PPEQKIRVSVEVEKPREELFQLFGYGDVVFVSKDVAKHLGFQSAEEALRGLYGRVRKG
+                     AVLVCAWAEEGADALGPDGKLLHSDAFPPPRVVDTLGAGDTFNASVIFSLSQGRSVQE
+                     ALRFGCQVAGKKCGLQGFDGIV"
+     exon            581..697
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     exon            698..832
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     exon            833..905
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     exon            906..1052
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1053..1141
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1142..1299
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1300..2397
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      1584..1589
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /note="hexamer: AATAAA"
+     polyA_site      1604
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /note="major polyA site"
+     regulatory      2366..2371
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+                     /note="hexamer: TATAAA"
+     polyA_site      2378
+                     /gene="KHK"
+                     /gene_synonym="FRUCTU"
+ORIGIN      
+        1 aggcagggct gcagatgcga ggcccagctg tacctcgcgt gtcccgggtc gggagtcgga
+       61 gacgcaggtg caggagagtg cggggcaagt agcgcatttt ctctttgcat tctcgagatc
+      121 gcttagccgc gctttaaaaa ggtttgcatc agctgtgagt ccatctgaca agcgaggaaa
+      181 ctaaggctga gaagtgggag gcgttgccat ctgcaggccc aggcaacctg ctacgggaag
+      241 accggggacc aagacctctg ggttggcttt cctagacccg ctcgggtctt cgggtgtcgc
+      301 gaggaagggc cctgctcctt tcgttccctg cacccctggc cgctgcaggt ggctccctgg
+      361 aggaggagct cccacgcgga ggaggagcca gggcagctgg gagcggggac accatcctcc
+      421 tggataagag gcagaggccg ggaggaaccc cgtcagccgg gcgggcagga agctctggga
+      481 gtagcctcat ggaagagaag cagatcctgt gcgtggggct agtggtgctg gacgtcatca
+      541 gcctggtgga caagtaccct aaggaggact cggagataag gtgtttgtcc cagagatggc
+      601 agcgcggagg caacgcgtcc aactcctgca ccgttctctc cctgctcgga gccccctgtg
+      661 ccttcatggg ctcaatggct cctggccatg ttgctgattt tgtcctggat gacctccgcc
+      721 gctattctgt ggacctacgc tacacagtct ttcagaccac aggctccgtc cccatcgcca
+      781 cggtcatcat caacgaggcc agtggtagcc gcaccatcct atactatgac aggagcctgc
+      841 cagatgtgtc tgctacagac tttgagaagg ttgatctgac ccagttcaag tggatccaca
+      901 ttgagggccg gaacgcatcg gagcaggtga agatgctgca gcggatagac gcacacaaca
+      961 ccaggcagcc tccagagcag aagatccggg tgtccgtgga ggtggagaag ccacgagagg
+     1021 agctcttcca gctgtttggc tacggagacg tggtgtttgt cagcaaagat gtggccaagc
+     1081 acttggggtt ccagtcagca gaggaagcct tgaggggctt gtatggtcgt gtgaggaaag
+     1141 gggctgtgct tgtctgtgcc tgggctgagg agggcgccga cgccctgggc cctgatggca
+     1201 aattgctcca ctcggatgct ttcccgccac cccgcgtggt ggatacactg ggagctggag
+     1261 acaccttcaa tgcctccgtc atcttcagcc tctcccaggg gaggagcgtg caggaagcac
+     1321 tgagattcgg gtgccaggtg gccggcaaga agtgtggcct gcagggcttt gatggcatcg
+     1381 tgtgagagca ggtgccggct cctcacacac catggagact accattgcgg ctgcatcgcc
+     1441 ttctcccctc catccagcct ggcgtccagg ttgccctgtt caggggacag atgcaagctg
+     1501 tggggaggac tctgcctgtg tcctgtgttc cccacaggga gaggctctgg ggggatggct
+     1561 gggggatgca gagcctcaga gcaaataaat cttcctcaga gccagcttct cctctcaatg
+     1621 tctgaactgc tctggctggg cattcctgag gctctgactc ttcgatcctc cctctttgtg
+     1681 tccattcccc aaattaacct ctccgcccag gcccagagga ggggctgcct gggctagagc
+     1741 agcgagaagt gccctgggct tgccaccagc tctgccctgg ctggggagga cactcggtgc
+     1801 cccacaccca gtgaacctgc caaagaaacc gtgagagctc ttcggggccc tgcgttgtgc
+     1861 agactctatt cccacagctc agaagctggg agtccacacc gctgagctga actgacaggc
+     1921 cagtgggggg caggggtgcg cctcctctgc cctgcccacc agcctgtgat ttgatggggt
+     1981 cttcattgtc cagaaatacc tcctcccgct gactgcccca gagcctgaaa gtctcaccct
+     2041 tggagcccac cttggaatta agggcgtgcc tcagccacaa atgtgaccca ggatacagag
+     2101 tgttgctgtc ctcagggagg tccgatctgg aacacatatt ggaattgggg ccaactccaa
+     2161 tatagggtgg gtaaggcctt ataatgtaaa gagcatataa tgtaaagggc tttagagtga
+     2221 gacagacctg gattaaaatc tgccatttaa ttagctgcat atcaccttag ggtacagcac
+     2281 ttaacgcaat ctgcctcaat ttcttcatct gtcaaatgga accaattctg cttggctaca
+     2341 gaattattgt gaggataaaa tcatatataa aatgcccagc atgatgcctg atgtgta
+//
+

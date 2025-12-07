@@ -2816,7 +2816,7 @@ namespace TransGBViewer
                 }
 
             }
-            SetOpenreadingframes("NM_001126117");
+            SetOpenreadingframes("None");
         }
 
         private void SetOpenreadingframes(string baseSequenceName)

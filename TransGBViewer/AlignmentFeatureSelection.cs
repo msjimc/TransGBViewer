@@ -94,25 +94,11 @@ namespace TransGBViewer
             chkDrawBorder.Checked = adf.DrawBorder;
             chkFillShape.Checked = adf.FillShape;
             chkRoundedDomains.Checked = adf.Rounded;
-            //switch (adf.DomainNameLocation)
-            //{
-            //    case DomainNameLocation.none:
-            //        cboNameLocation.SelectedIndex = 0;
-            //        break;
-            //    case DomainNameLocation.Above:
-            //        cboNameLocation.SelectedIndex = 2;
-            //        break;
-            //    case DomainNameLocation.left:
-            //        cboNameLocation.SelectedIndex = 3;
-            //        break;
-            //    case DomainNameLocation.inside:
-            //        cboNameLocation.SelectedIndex = 1;
-            //        break;
-            //}
-            //MakeDisplayName();
+            
             SetButtons();
             adf.DisplayName = displayName;
             txtDisplayName.Text = displayName;
+            DrawExampleDomain();
         }
 
         private void cboAnalysisValue_SelectedIndexChanged(object sender, EventArgs e)
@@ -265,7 +251,7 @@ namespace TransGBViewer
             if (cboSequenceNames.SelectedIndex == 0 || cboFeatureName.SelectedIndex < 1) { return; }
             AlignmentDomainFeature adf = parameters.Domains[cboSequenceNames.Text][cboFeatureName.SelectedIndex - 1];
             adf.DisplayName = txtDisplayName.Text.Trim();
-            string key = cboFeatureName.Text.Trim();
+            string key = cboFeatureName.Text.Trim() + "#" + cboSequenceNames.Text.Trim();
 
             if (selection.ContainsKey(key) == false)
             { selection.Add(key, adf.Copy()); }
@@ -275,7 +261,7 @@ namespace TransGBViewer
 
         private void SetButtons()
         {
-            string key = cboFeatureName.Text.Trim();
+            string key = cboFeatureName.Text.Trim() + "#" + cboSequenceNames.Text.Trim();
             btnRemove.Enabled = selection.ContainsKey(key);
             if (selection.ContainsKey(key) == true)
             { btnAdd.Text = "Update"; }
@@ -286,7 +272,7 @@ namespace TransGBViewer
         private void btnRemove_Click(object sender, EventArgs e)
         {
             if (cboSequenceNames.SelectedIndex == 0 || cboFeatureName.SelectedIndex < 1) { return; }
-            string key = cboFeatureName.Text.Trim();
+            string key = cboFeatureName.Text.Trim() + "#" + cboSequenceNames.Text.Trim();
             if (selection.ContainsKey(key) == true)
             { selection.Remove(key); }
             SetButtons();

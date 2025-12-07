@@ -1,0 +1,14 @@
+NM_000221
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Pfam	PF00294	pfkB family carbohydrate kinase	4	289	3.0E-27	T	07-12-2025	IPR011611	Carbohydrate kinase PfkB	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Phobius	SIGNAL_PEPTIDE_C_REGION	C-terminal region of a signal peptide.	15	22	-	T	07-12-2025	-	-	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	SUPERFAMILY	SSF53613	Ribokinase-like	1	293	4.68E-51	T	07-12-2025	IPR029056	Ribokinase-like	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Phobius	SIGNAL_PEPTIDE	Signal peptide region	1	22	-	T	07-12-2025	-	-	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	PANTHER	PTHR42774	PHOSPHOTRANSFERASE SYSTEM TRANSPORT PROTEIN	1	237	8.2E-91	T	07-12-2025	IPR052562	Ketohexokinase-related	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	FunFam	G3DSA:3.40.1190.20:FF:000018	Ketohexokinase	3	298	5.1E-172	T	07-12-2025	-	-	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Phobius	SIGNAL_PEPTIDE_H_REGION	Hydrophobic region of a signal peptide.	6	14	-	T	07-12-2025	-	-	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Phobius	SIGNAL_PEPTIDE_N_REGION	N-terminal region of a signal peptide.	1	5	-	T	07-12-2025	-	-	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Phobius	NON_CYTOPLASMIC_DOMAIN	Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.	23	298	-	T	07-12-2025	-	-	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	CDD	cd01939	Ketohexokinase	5	295	1.08297E-157	T	07-12-2025	IPR034093	Ketohexokinase	-	-
+NM_000221	7d5703277cbe1c708ab96a4f3f4c1cd9	298	Gene3D	G3DSA:3.40.1190.20	-	3	298	1.5E-91	T	07-12-2025	IPR029056	Ribokinase-like	-	-
+
+

@@ -35,6 +35,8 @@ namespace TransGBViewer
         {
             try
             {
+                btnSubmit.Enabled = false;
+
                 AddStatusText(" ");
                 thisSequence = cboNames.Text.Trim();
                 var client = new HttpClient();
@@ -87,6 +89,8 @@ namespace TransGBViewer
 
             }
             catch { AddStatusText("An error occured getting domain data"); }
+
+            btnSubmit.Enabled = true;
 
             if (domains.Count > 0) { btnAccept.Enabled = true; } else { btnAccept.Enabled = false; }
         }
