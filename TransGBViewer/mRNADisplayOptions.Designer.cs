@@ -205,7 +205,7 @@
             btnClose.Location = new Point(16, 415);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(75, 23);
-            btnClose.TabIndex = 1;
+            btnClose.TabIndex = 53;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
@@ -268,10 +268,10 @@
             cboFrame.DropDownStyle = ComboBoxStyle.DropDownList;
             cboFrame.DropDownWidth = 150;
             cboFrame.FormattingEnabled = true;
-            cboFrame.Location = new Point(244, 175);
+            cboFrame.Location = new Point(241, 175);
             cboFrame.Name = "cboFrame";
-            cboFrame.Size = new Size(81, 23);
-            cboFrame.TabIndex = 42;
+            cboFrame.Size = new Size(84, 23);
+            cboFrame.TabIndex = 17;
             cboFrame.SelectedIndexChanged += cboFrame_SelectedIndexChanged;
             // 
             // label52
@@ -288,7 +288,7 @@
             btnFrameColours.Location = new Point(331, 175);
             btnFrameColours.Name = "btnFrameColours";
             btnFrameColours.Size = new Size(63, 23);
-            btnFrameColours.TabIndex = 43;
+            btnFrameColours.TabIndex = 18;
             btnFrameColours.Text = "Change";
             btnFrameColours.UseVisualStyleBackColor = true;
             btnFrameColours.Click += btnFrameColours_Click;
@@ -302,7 +302,7 @@
             nudLineWidth.Minimum = new decimal(new int[] { 5, 0, 0, 65536 });
             nudLineWidth.Name = "nudLineWidth";
             nudLineWidth.Size = new Size(150, 23);
-            nudLineWidth.TabIndex = 40;
+            nudLineWidth.TabIndex = 25;
             nudLineWidth.Value = new decimal(new int[] { 15, 0, 0, 65536 });
             nudLineWidth.ValueChanged += nudLineWidth_ValueChanged;
             // 
@@ -329,7 +329,7 @@
             chkCoordindatesAt1bp.Location = new Point(302, 77);
             chkCoordindatesAt1bp.Name = "chkCoordindatesAt1bp";
             chkCoordindatesAt1bp.Size = new Size(89, 19);
-            chkCoordindatesAt1bp.TabIndex = 38;
+            chkCoordindatesAt1bp.TabIndex = 13;
             chkCoordindatesAt1bp.Text = "Start at 1 bp";
             chkCoordindatesAt1bp.UseVisualStyleBackColor = true;
             chkCoordindatesAt1bp.CheckedChanged += chkCoordindatesAt1bp_CheckedChanged;
@@ -358,7 +358,7 @@
             nudZoomTo.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomTo.Name = "nudZoomTo";
             nudZoomTo.Size = new Size(57, 23);
-            nudZoomTo.TabIndex = 34;
+            nudZoomTo.TabIndex = 12;
             nudZoomTo.Value = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomTo.ValueChanged += nudZoomTo_ValueChanged;
             // 
@@ -368,7 +368,7 @@
             nudZoomFrom.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.Name = "nudZoomFrom";
             nudZoomFrom.Size = new Size(69, 23);
-            nudZoomFrom.TabIndex = 33;
+            nudZoomFrom.TabIndex = 11;
             nudZoomFrom.Value = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.ValueChanged += nudZoomFrom_ValueChanged;
             // 
@@ -410,7 +410,7 @@
             btnORFStop.Location = new Point(324, 298);
             btnORFStop.Name = "btnORFStop";
             btnORFStop.Size = new Size(67, 23);
-            btnORFStop.TabIndex = 27;
+            btnORFStop.TabIndex = 24;
             btnORFStop.Text = "Stop";
             btnORFStop.UseVisualStyleBackColor = true;
             btnORFStop.Click += btnORFStop_Click;
@@ -420,7 +420,7 @@
             btnORFStart.Location = new Point(241, 298);
             btnORFStart.Name = "btnORFStart";
             btnORFStart.Size = new Size(63, 23);
-            btnORFStart.TabIndex = 26;
+            btnORFStart.TabIndex = 23;
             btnORFStart.Text = "Start";
             btnORFStart.UseVisualStyleBackColor = true;
             btnORFStart.Click += btnORFStart_Click;
@@ -439,7 +439,7 @@
             btnAcceptor.Location = new Point(327, 233);
             btnAcceptor.Name = "btnAcceptor";
             btnAcceptor.Size = new Size(67, 23);
-            btnAcceptor.TabIndex = 24;
+            btnAcceptor.TabIndex = 21;
             btnAcceptor.Text = "Acceptor";
             btnAcceptor.UseVisualStyleBackColor = true;
             btnAcceptor.Click += btnAcceptor_Click;
@@ -449,7 +449,7 @@
             btnDonor.Location = new Point(241, 233);
             btnDonor.Name = "btnDonor";
             btnDonor.Size = new Size(63, 23);
-            btnDonor.TabIndex = 23;
+            btnDonor.TabIndex = 20;
             btnDonor.Text = "Donor";
             btnDonor.UseVisualStyleBackColor = true;
             btnDonor.Click += btnDonor_Click;
@@ -469,7 +469,7 @@
             cboORFLimits.Location = new Point(241, 269);
             cboORFLimits.Name = "cboORFLimits";
             cboORFLimits.Size = new Size(150, 23);
-            cboORFLimits.TabIndex = 21;
+            cboORFLimits.TabIndex = 22;
             cboORFLimits.SelectedIndexChanged += cboORFLimits_SelectedIndexChanged;
             // 
             // label19
@@ -498,7 +498,7 @@
             chkReduce.Location = new Point(326, 153);
             chkReduce.Name = "chkReduce";
             chkReduce.Size = new Size(65, 19);
-            chkReduce.TabIndex = 18;
+            chkReduce.TabIndex = 16;
             chkReduce.Text = "Reduce";
             chkReduce.UseVisualStyleBackColor = true;
             chkReduce.CheckedChanged += chkReduce_CheckedChanged;
@@ -536,7 +536,7 @@
             btnSequenceColours.Location = new Point(334, 18);
             btnSequenceColours.Name = "btnSequenceColours";
             btnSequenceColours.Size = new Size(57, 23);
-            btnSequenceColours.TabIndex = 13;
+            btnSequenceColours.TabIndex = 10;
             btnSequenceColours.Text = "Select";
             btnSequenceColours.UseVisualStyleBackColor = true;
             btnSequenceColours.Click += btnSequenceColours_Click;
@@ -592,7 +592,7 @@
             nudIntronGap.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             nudIntronGap.Name = "nudIntronGap";
             nudIntronGap.Size = new Size(88, 23);
-            nudIntronGap.TabIndex = 16;
+            nudIntronGap.TabIndex = 9;
             nudIntronGap.ValueChanged += nudIntronGap_ValueChanged;
             // 
             // label8
@@ -618,7 +618,7 @@
             btnFont.Location = new Point(309, 227);
             btnFont.Name = "btnFont";
             btnFont.Size = new Size(88, 23);
-            btnFont.TabIndex = 3;
+            btnFont.TabIndex = 7;
             btnFont.Text = "Select";
             btnFont.UseVisualStyleBackColor = true;
             btnFont.Click += btnFont_Click;
@@ -628,7 +628,7 @@
             btnCreateMiscellaneousSets.Location = new Point(319, 35);
             btnCreateMiscellaneousSets.Name = "btnCreateMiscellaneousSets";
             btnCreateMiscellaneousSets.Size = new Size(75, 23);
-            btnCreateMiscellaneousSets.TabIndex = 22;
+            btnCreateMiscellaneousSets.TabIndex = 26;
             btnCreateMiscellaneousSets.Text = "Create";
             btnCreateMiscellaneousSets.UseVisualStyleBackColor = true;
             btnCreateMiscellaneousSets.Click += btnCreateMiscellaneousSets_Click;
@@ -649,7 +649,7 @@
             nudLabelWidth.Minimum = new decimal(new int[] { 50, 0, 0, 0 });
             nudLabelWidth.Name = "nudLabelWidth";
             nudLabelWidth.Size = new Size(88, 23);
-            nudLabelWidth.TabIndex = 1;
+            nudLabelWidth.TabIndex = 6;
             nudLabelWidth.Value = new decimal(new int[] { 140, 0, 0, 0 });
             nudLabelWidth.ValueChanged += nudLabelWidth_ValueChanged;
             // 
@@ -704,7 +704,7 @@
             btnFeatureFont.Location = new Point(309, 256);
             btnFeatureFont.Name = "btnFeatureFont";
             btnFeatureFont.Size = new Size(88, 23);
-            btnFeatureFont.TabIndex = 19;
+            btnFeatureFont.TabIndex = 8;
             btnFeatureFont.Text = "Select";
             btnFeatureFont.UseVisualStyleBackColor = true;
             btnFeatureFont.Click += btnFeatureFont_Click;
@@ -725,7 +725,7 @@
             cboLabels.Location = new Point(309, 169);
             cboLabels.Name = "cboLabels";
             cboLabels.Size = new Size(88, 23);
-            cboLabels.TabIndex = 18;
+            cboLabels.TabIndex = 5;
             cboLabels.SelectedIndexChanged += cboLabels_SelectedIndexChanged;
             // 
             // label17
@@ -743,7 +743,7 @@
             nudLabelRotation.Maximum = new decimal(new int[] { 90, 0, 0, 0 });
             nudLabelRotation.Name = "nudLabelRotation";
             nudLabelRotation.Size = new Size(88, 23);
-            nudLabelRotation.TabIndex = 7;
+            nudLabelRotation.TabIndex = 4;
             nudLabelRotation.ValueChanged += nudLabelRotation_ValueChanged;
             // 
             // label15
@@ -762,7 +762,7 @@
             nudMinorTick.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
             nudMinorTick.Name = "nudMinorTick";
             nudMinorTick.Size = new Size(88, 23);
-            nudMinorTick.TabIndex = 5;
+            nudMinorTick.TabIndex = 3;
             nudMinorTick.Value = new decimal(new int[] { 20, 0, 0, 0 });
             nudMinorTick.ValueChanged += nudMinorTick_ValueChanged;
             // 
@@ -774,7 +774,7 @@
             nudMajorTick.Minimum = new decimal(new int[] { 100, 0, 0, 0 });
             nudMajorTick.Name = "nudMajorTick";
             nudMajorTick.Size = new Size(88, 23);
-            nudMajorTick.TabIndex = 4;
+            nudMajorTick.TabIndex = 2;
             nudMajorTick.Value = new decimal(new int[] { 100, 0, 0, 0 });
             nudMajorTick.ValueChanged += nudMajorTick_ValueChanged;
             // 
@@ -874,7 +874,7 @@
             btnSearchInternet.Location = new Point(322, 62);
             btnSearchInternet.Name = "btnSearchInternet";
             btnSearchInternet.Size = new Size(75, 23);
-            btnSearchInternet.TabIndex = 4;
+            btnSearchInternet.TabIndex = 28;
             btnSearchInternet.Text = "Search";
             btnSearchInternet.UseVisualStyleBackColor = true;
             btnSearchInternet.Click += btnSearchInternet_Click;
@@ -935,7 +935,7 @@
             btnCreateInterProScanFeaturesSets.Location = new Point(322, 52);
             btnCreateInterProScanFeaturesSets.Name = "btnCreateInterProScanFeaturesSets";
             btnCreateInterProScanFeaturesSets.Size = new Size(75, 23);
-            btnCreateInterProScanFeaturesSets.TabIndex = 28;
+            btnCreateInterProScanFeaturesSets.TabIndex = 32;
             btnCreateInterProScanFeaturesSets.Text = "Create";
             btnCreateInterProScanFeaturesSets.UseVisualStyleBackColor = true;
             btnCreateInterProScanFeaturesSets.Click += btnCreateInterProScanFeaturesSets_Click;
@@ -953,7 +953,7 @@
             btnImportInterProScan.Location = new Point(322, 15);
             btnImportInterProScan.Name = "btnImportInterProScan";
             btnImportInterProScan.Size = new Size(75, 23);
-            btnImportInterProScan.TabIndex = 1;
+            btnImportInterProScan.TabIndex = 31;
             btnImportInterProScan.Text = "Get";
             btnImportInterProScan.UseVisualStyleBackColor = true;
             btnImportInterProScan.Click += btnImportInterProScan_Click;
@@ -986,7 +986,7 @@
             chkLinkFeaturesToSequences.Location = new Point(322, 18);
             chkLinkFeaturesToSequences.Name = "chkLinkFeaturesToSequences";
             chkLinkFeaturesToSequences.Size = new Size(48, 19);
-            chkLinkFeaturesToSequences.TabIndex = 1;
+            chkLinkFeaturesToSequences.TabIndex = 33;
             chkLinkFeaturesToSequences.Text = "Link";
             chkLinkFeaturesToSequences.UseVisualStyleBackColor = true;
             chkLinkFeaturesToSequences.CheckedChanged += chkLinkFeaturesToSequences_CheckedChanged;
@@ -1073,7 +1073,7 @@
             btnCreateUniProtsets.Location = new Point(322, 126);
             btnCreateUniProtsets.Name = "btnCreateUniProtsets";
             btnCreateUniProtsets.Size = new Size(75, 23);
-            btnCreateUniProtsets.TabIndex = 26;
+            btnCreateUniProtsets.TabIndex = 30;
             btnCreateUniProtsets.Text = "Create";
             btnCreateUniProtsets.UseVisualStyleBackColor = true;
             btnCreateUniProtsets.Click += btnCreateUniProtsets_Click;
@@ -1115,7 +1115,7 @@
             btnResetSequenceNamesAndOrder.Location = new Point(318, 81);
             btnResetSequenceNamesAndOrder.Name = "btnResetSequenceNamesAndOrder";
             btnResetSequenceNamesAndOrder.Size = new Size(75, 23);
-            btnResetSequenceNamesAndOrder.TabIndex = 3;
+            btnResetSequenceNamesAndOrder.TabIndex = 38;
             btnResetSequenceNamesAndOrder.Text = "Reset";
             btnResetSequenceNamesAndOrder.UseVisualStyleBackColor = true;
             btnResetSequenceNamesAndOrder.Click += btnResetSequenceNamesAndOrder_Click;
@@ -1134,7 +1134,7 @@
             btnChangeSequenceNamesAndOrder.Location = new Point(318, 37);
             btnChangeSequenceNamesAndOrder.Name = "btnChangeSequenceNamesAndOrder";
             btnChangeSequenceNamesAndOrder.Size = new Size(75, 23);
-            btnChangeSequenceNamesAndOrder.TabIndex = 1;
+            btnChangeSequenceNamesAndOrder.TabIndex = 37;
             btnChangeSequenceNamesAndOrder.Text = "Change";
             btnChangeSequenceNamesAndOrder.UseVisualStyleBackColor = true;
             btnChangeSequenceNamesAndOrder.Click += btnChangeSequenceNamesAndOrder_Click;
@@ -1167,7 +1167,7 @@
             lvLayout.Location = new Point(52, 39);
             lvLayout.Name = "lvLayout";
             lvLayout.Size = new Size(345, 133);
-            lvLayout.TabIndex = 4;
+            lvLayout.TabIndex = 34;
             lvLayout.UseCompatibleStateImageBehavior = false;
             lvLayout.View = View.Details;
             // 
@@ -1181,7 +1181,7 @@
             btnLayoutDown.Location = new Point(6, 111);
             btnLayoutDown.Name = "btnLayoutDown";
             btnLayoutDown.Size = new Size(37, 23);
-            btnLayoutDown.TabIndex = 7;
+            btnLayoutDown.TabIndex = 36;
             btnLayoutDown.UseVisualStyleBackColor = true;
             btnLayoutDown.Click += btnLayoutDown_Click;
             // 
@@ -1190,7 +1190,7 @@
             btnLayoutUp.Location = new Point(6, 82);
             btnLayoutUp.Name = "btnLayoutUp";
             btnLayoutUp.Size = new Size(37, 23);
-            btnLayoutUp.TabIndex = 6;
+            btnLayoutUp.TabIndex = 35;
             btnLayoutUp.UseVisualStyleBackColor = true;
             btnLayoutUp.Click += btnLayoutUp_Click;
             // 
@@ -1266,7 +1266,7 @@
             chkGenefeatureSolid.Location = new Point(207, 24);
             chkGenefeatureSolid.Name = "chkGenefeatureSolid";
             chkGenefeatureSolid.Size = new Size(41, 19);
-            chkGenefeatureSolid.TabIndex = 53;
+            chkGenefeatureSolid.TabIndex = 39;
             chkGenefeatureSolid.Text = "Fill";
             chkGenefeatureSolid.UseVisualStyleBackColor = true;
             chkGenefeatureSolid.CheckedChanged += chkGenefeatureSolid_CheckedChanged;
@@ -1277,7 +1277,7 @@
             cboFeatureTops.Location = new Point(254, 57);
             cboFeatureTops.Name = "cboFeatureTops";
             cboFeatureTops.Size = new Size(143, 23);
-            cboFeatureTops.TabIndex = 52;
+            cboFeatureTops.TabIndex = 41;
             cboFeatureTops.SelectedIndexChanged += cboFeatureTops_SelectedIndexChanged;
             // 
             // chlGenefeatureMouseClick
@@ -1286,7 +1286,7 @@
             chlGenefeatureMouseClick.Location = new Point(254, 115);
             chlGenefeatureMouseClick.Name = "chlGenefeatureMouseClick";
             chlGenefeatureMouseClick.Size = new Size(89, 19);
-            chlGenefeatureMouseClick.TabIndex = 51;
+            chlGenefeatureMouseClick.TabIndex = 44;
             chlGenefeatureMouseClick.Text = "Mouse click";
             chlGenefeatureMouseClick.UseVisualStyleBackColor = true;
             chlGenefeatureMouseClick.CheckedChanged += chlGenefeatureMouseClick_CheckedChanged;
@@ -1298,7 +1298,7 @@
             cboGeneFeatureShapetype.Location = new Point(254, 22);
             cboGeneFeatureShapetype.Name = "cboGeneFeatureShapetype";
             cboGeneFeatureShapetype.Size = new Size(143, 23);
-            cboGeneFeatureShapetype.TabIndex = 42;
+            cboGeneFeatureShapetype.TabIndex = 40;
             cboGeneFeatureShapetype.SelectedIndexChanged += cboGeneFeatureShapetype_SelectedIndexChanged;
             // 
             // label33
@@ -1315,7 +1315,7 @@
             btnDrawCurrentGeneFeatureMarker.Location = new Point(340, 207);
             btnDrawCurrentGeneFeatureMarker.Name = "btnDrawCurrentGeneFeatureMarker";
             btnDrawCurrentGeneFeatureMarker.Size = new Size(59, 23);
-            btnDrawCurrentGeneFeatureMarker.TabIndex = 50;
+            btnDrawCurrentGeneFeatureMarker.TabIndex = 48;
             btnDrawCurrentGeneFeatureMarker.Text = "Draw";
             btnDrawCurrentGeneFeatureMarker.UseVisualStyleBackColor = true;
             btnDrawCurrentGeneFeatureMarker.Click += btnDrawCurrentGeneFeatureMarker_Click;
@@ -1326,7 +1326,7 @@
             btnGeneFeatureDelete.Location = new Point(340, 312);
             btnGeneFeatureDelete.Name = "btnGeneFeatureDelete";
             btnGeneFeatureDelete.Size = new Size(57, 23);
-            btnGeneFeatureDelete.TabIndex = 49;
+            btnGeneFeatureDelete.TabIndex = 52;
             btnGeneFeatureDelete.Text = "Delete";
             btnGeneFeatureDelete.UseVisualStyleBackColor = true;
             btnGeneFeatureDelete.Click += btnGeneFeatureDelete_Click;
@@ -1337,7 +1337,7 @@
             cboGeneFeatureName.Location = new Point(254, 236);
             cboGeneFeatureName.Name = "cboGeneFeatureName";
             cboGeneFeatureName.Size = new Size(143, 23);
-            cboGeneFeatureName.TabIndex = 48;
+            cboGeneFeatureName.TabIndex = 49;
             cboGeneFeatureName.SelectedIndexChanged += cboGeneFeatureName_SelectedIndexChanged;
             cboGeneFeatureName.TextChanged += cboGeneFeatureName_TextChanged;
             // 
@@ -1347,7 +1347,7 @@
             btnGeneFeatureAddUpdate.Location = new Point(340, 279);
             btnGeneFeatureAddUpdate.Name = "btnGeneFeatureAddUpdate";
             btnGeneFeatureAddUpdate.Size = new Size(57, 23);
-            btnGeneFeatureAddUpdate.TabIndex = 47;
+            btnGeneFeatureAddUpdate.TabIndex = 51;
             btnGeneFeatureAddUpdate.Text = "Add";
             btnGeneFeatureAddUpdate.UseVisualStyleBackColor = true;
             btnGeneFeatureAddUpdate.Click += btnGeneFeatureAddUpdate_Click;
@@ -1397,7 +1397,7 @@
             btnGeneFeatureFillColour.Location = new Point(340, 178);
             btnGeneFeatureFillColour.Name = "btnGeneFeatureFillColour";
             btnGeneFeatureFillColour.Size = new Size(59, 23);
-            btnGeneFeatureFillColour.TabIndex = 41;
+            btnGeneFeatureFillColour.TabIndex = 47;
             btnGeneFeatureFillColour.Text = "Colour";
             btnGeneFeatureFillColour.UseVisualStyleBackColor = true;
             btnGeneFeatureFillColour.Click += btnGeneFeatureFillColour_Click;
@@ -1407,7 +1407,7 @@
             nudGeneFeatureY.Location = new Point(340, 86);
             nudGeneFeatureY.Name = "nudGeneFeatureY";
             nudGeneFeatureY.Size = new Size(57, 23);
-            nudGeneFeatureY.TabIndex = 40;
+            nudGeneFeatureY.TabIndex = 43;
             nudGeneFeatureY.ValueChanged += nudGeneFeatureY_ValueChanged;
             // 
             // nudGeneFeatureX
@@ -1415,7 +1415,7 @@
             nudGeneFeatureX.Location = new Point(254, 86);
             nudGeneFeatureX.Name = "nudGeneFeatureX";
             nudGeneFeatureX.Size = new Size(57, 23);
-            nudGeneFeatureX.TabIndex = 39;
+            nudGeneFeatureX.TabIndex = 42;
             nudGeneFeatureX.ValueChanged += nudGeneFeatureX_ValueChanged;
             // 
             // label36
