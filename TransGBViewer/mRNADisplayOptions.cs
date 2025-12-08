@@ -14,6 +14,7 @@ using System.Reflection.Emit;
 using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -82,8 +83,8 @@ namespace TransGBViewer
             InitalizeFormatAndDisplayTab();
             ReDraw();
 
-
             setFrame();
+            MakeListOfSwappableExons();
         }
 
         private void ReadGenBankFile(string FileName)
@@ -612,6 +613,7 @@ namespace TransGBViewer
             }
             return newSequence.ToString().Substring(1);
         }
+
         private string GetLongestTranscriptWithGaps()
         {
 
@@ -725,6 +727,96 @@ namespace TransGBViewer
             return (trackingScore, parameters.ExonSet[hit], hitIndex);
         }
 
+        private void MakeListOfSwappableExons()
+        {
+            String[] allExons = parameters.AllSequences.Split(' ');
+            List<Point> swappable = new List<Point>();
+            for (int indexToMoveBack = 0; indexToMoveBack < allExons.Length - 1; indexToMoveBack++)
+            {
+                string newOrder = "";
+                for (int index = 0; index < allExons.Length; index++)
+                {
+                    if (index == indexToMoveBack)
+                    { newOrder += " " + allExons[index + 1] + " " + allExons[index]; }
+                    else if (index != indexToMoveBack + 1)
+                    { newOrder += " " + allExons[index]; }
+                }
+
+                if (TestOrder(newOrder) == true)
+                { swappable.Add(new Point(indexToMoveBack, indexToMoveBack + 1)); }
+            }
+
+            cblMoveableAlternativeExons.Items.Clear();
+            foreach (Point p in swappable)
+            {
+                string item = "";
+                item = (p.X + 1).ToString() + " <--> " + (p.Y + 1).ToString();
+                cblMoveableAlternativeExons.Items.Add(item, false);
+            }
+        }
+
+        private bool TestOrder(string newOrder)
+        {
+            foreach (string key in parameters.Exons.Keys)
+            {
+                int lastIndex = -1;
+                List<Point> exons = parameters.Exons[key];
+                foreach (Point exon in exons)
+                {
+                    string exonSequence = parameters.getExonSequence(key, exon);
+                    int index = newOrder.IndexOf(exonSequence);
+                    if (index == -1)
+                    { return false; }
+                    else if (index <= lastIndex)
+                    { return false; }
+                    lastIndex = index;
+                }
+            }
+            return true;
+        }
+
+        private void cblMoveableAlternativeExons_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (e.NewValue == CheckState.Checked)
+            {
+                for (int i = 0; i < cblMoveableAlternativeExons.Items.Count; i++)
+                {
+                    if (i != e.Index)
+                    { cblMoveableAlternativeExons.SetItemChecked(i, false); }
+                }
+                btnMove.Enabled = true;
+            }
+            else { btnMove.Enabled = false; }
+            
+        }
+
+        private void btnMove_Click(object sender, EventArgs e)
+        {
+            if (cblMoveableAlternativeExons.CheckedItems.Count > 0)
+            {
+                int selectedIndex = cblMoveableAlternativeExons.CheckedIndices[0];
+                string name = cblMoveableAlternativeExons.Items[selectedIndex].ToString();
+
+                string[] items = name.Split(' ');
+                int indexToMoveBack = Convert.ToInt32(items[0]) - 1;
+
+                string newOrder = "";
+                String[] allExons = parameters.AllSequences.Split(' ');
+                for (int index = 0; index < allExons.Length; index++)
+                {
+                    if (index == indexToMoveBack)
+                    { newOrder += " " + allExons[index + 1] + " " + allExons[index]; }
+                    else if (index != indexToMoveBack + 1)
+                    { newOrder += " " + allExons[index]; }
+                }
+
+                parameters.AllSequences= newOrder.Trim();
+            }
+
+
+            ReDraw();
+            MakeListOfSwappableExons();
+        }
 
         #endregion
 
@@ -880,7 +972,7 @@ namespace TransGBViewer
                             string display = parameters.SequenceDisplayNames[name];
                             if (name == cboFrame.Text)
                             { display += "*"; }
-                            
+
                             if (legends.ContainsKey(name) == true)
                             { display += AddSupercript(legends[name]); }
                             height = DrawFeatureLabels(g, gLabels, parameters.IDFont, display, bmp.Width, scale.i[5], height, scale, name);
@@ -2785,7 +2877,7 @@ namespace TransGBViewer
         }
 
         private void setFrame()
-        {            
+        {
             int lengthOfConsnsus = parameters.AllSequences.Length;
 
             foreach (string name in parameters.SequenceNames)
@@ -2904,5 +2996,6 @@ namespace TransGBViewer
                 ReDraw();
             }
         }
+                
     }
 }

@@ -119,6 +119,7 @@ To select a transcript to whose open reading frame the other open reading frames
 Figure 10a: The transcript ID NM_001126118 was selected from the dropdown list (blue box). 
 
 ---
+
 ![Figure 10b](images/figureDisplay18b.jpg)
 
 Figure 10b: Unchecking the __Reduce__ checkbox (blue line) redraws the image with all the boxes the same height (red box in Figure 9b).

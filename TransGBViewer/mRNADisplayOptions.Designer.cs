@@ -89,6 +89,9 @@
             label12 = new Label();
             tabPage1 = new TabPage();
             groupBox1 = new GroupBox();
+            btnMove = new Button();
+            cblMoveableAlternativeExons = new CheckedListBox();
+            label51 = new Label();
             btnSelectSequence = new Button();
             chkFolder = new CheckBox();
             label1 = new Label();
@@ -161,6 +164,7 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
+            groupBox12 = new GroupBox();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -197,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).BeginInit();
             tabPage7.SuspendLayout();
             groupBox10.SuspendLayout();
+            groupBox12.SuspendLayout();
             SuspendLayout();
             // 
             // btnClose
@@ -818,6 +823,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(groupBox12);
             tabPage1.Controls.Add(groupBox1);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
@@ -832,12 +838,40 @@
             groupBox1.Controls.Add(btnSelectSequence);
             groupBox1.Controls.Add(chkFolder);
             groupBox1.Controls.Add(label1);
-            groupBox1.Dock = DockStyle.Fill;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(397, 363);
+            groupBox1.Size = new Size(397, 92);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            groupBox1.Text = "Import transcript data";
+            // 
+            // btnMove
+            // 
+            btnMove.Enabled = false;
+            btnMove.Location = new Point(319, 122);
+            btnMove.Name = "btnMove";
+            btnMove.Size = new Size(75, 23);
+            btnMove.TabIndex = 5;
+            btnMove.Text = "Move";
+            btnMove.UseVisualStyleBackColor = true;
+            btnMove.Click += btnMove_Click;
+            // 
+            // cblMoveableAlternativeExons
+            // 
+            cblMoveableAlternativeExons.FormattingEnabled = true;
+            cblMoveableAlternativeExons.Location = new Point(254, 22);
+            cblMoveableAlternativeExons.Name = "cblMoveableAlternativeExons";
+            cblMoveableAlternativeExons.Size = new Size(140, 94);
+            cblMoveableAlternativeExons.TabIndex = 4;
+            cblMoveableAlternativeExons.ItemCheck += cblMoveableAlternativeExons_ItemCheck;
+            // 
+            // label51
+            // 
+            label51.Location = new Point(9, 22);
+            label51.Name = "label51";
+            label51.Size = new Size(239, 53);
+            label51.TabIndex = 3;
+            label51.Text = "Move an alternatively spliced exon downstream by slecting it's index in the list and pressing the 'Move' button";
             // 
             // btnSelectSequence
             // 
@@ -1583,6 +1617,18 @@
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
             // 
+            // groupBox12
+            // 
+            groupBox12.Controls.Add(btnMove);
+            groupBox12.Controls.Add(cblMoveableAlternativeExons);
+            groupBox12.Controls.Add(label51);
+            groupBox12.Location = new Point(3, 101);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new Size(397, 262);
+            groupBox12.TabIndex = 1;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Adjust alternatively spliced exon order";
+            // 
             // mRNADisplayOptions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1640,6 +1686,7 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).EndInit();
             tabPage7.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
+            groupBox12.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1777,5 +1824,9 @@
         private Button btnFrameColours;
         private ComboBox cboFrame;
         private Label label52;
+        private Label label51;
+        private Button btnMove;
+        private CheckedListBox cblMoveableAlternativeExons;
+        private GroupBox groupBox12;
     }
 }
