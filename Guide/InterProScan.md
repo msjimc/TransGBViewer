@@ -1,6 +1,6 @@
 # Displaying features linked to the transcripts by InterProScan
 
-The __Protein features from the InterProScan website__ panel (Figure 1) contains the controls required to obtain, select, format and display features linked to the transcripts by the UniProt website. Pressing the __Get__ button (blue line in Figure 1) displays the __Import InterProScan features__ window (Figure 2).
+The __Protein features from the InterProScan website__ panel (Figure 1) contains the controls required to obtain, select, format and display features linked to the transcripts by the InterProScan website. Pressing the __Get__ button (blue line in Figure 1) displays the __Import InterProScan features__ window (Figure 2).
 
 ![Figure 1](images/figurefeature23.jpg)
 
@@ -100,7 +100,7 @@ Pressing the  __Create__ button in the __Protein features from the InterProScan 
 
 ![Figure 9](images/figurefeature31.jpg)
 
-Figure 9: The __Domain selection__ window allows you to select domains for display.
+Figure 9: The __Domain selection options__ window allows you to select domains for display.
 
 ---
 
@@ -188,7 +188,7 @@ Figure 15b: Deselecting the __Rounded corners__ option draws the domain with squ
 
 ![Figure 15c](images/figurefeature37c.jpg)
 
-Figure 15c: Deselecting the __Draw border__ option draws the domain without a black border (blue arrow in Figure 15b).
+Figure 15c: Deselecting the __Draw border__ option draws the domain without a black border (blue arrow in Figure 15c).
 
 ---
 
