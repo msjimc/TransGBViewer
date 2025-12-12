@@ -55,11 +55,11 @@ Description of the feedback text
 
 ## Selecting and formatting UniProt features 
 
-To add UniProt data aligned to the transcript sequences, press the __Create__ button, which will open the __Miscellaneous GenBank feature selection__ window (Figure 3).
+To add UniProt data aligned to the transcript sequences, press the __Create__ button, which will open the __Create sets of UniProt features__ window (Figure 3).
 
 ![Figure 3](images/figurefeature14.jpg)
 
-Figure 3: The __Miscellaneous GenBank feature selection__ window.
+Figure 3: The __Create sets of UniProt features__ window.
 
 ---
 
@@ -115,7 +115,7 @@ Pressing the __Colour__ button (blue line in Figure 7) will display either the  
 - [Using the Select colour by name dialog box](SequenceColour.md)
 - [Using the Windows colour picker dialog box](ColourPickerDialog.md)
 
-Once selected, the area next to the __Colour__ button will be drawn in the selected colour (black line in Figure 7).
+Once selected, the area next to the __Colour__ button will be drawn in the selected colour (black line in Figure 8).
 
 ![Figure 8](images/figurefeature19.jpg)
 
@@ -135,7 +135,7 @@ Figure 9: A feature row is saved by entering its display name in the text area (
 
 ## Removing a line
 
-When a data line has been saved, its name is added to the dropdown list (blue line in Figure 9) to the right of the remove button (black line in Figure 9). A line's name consists of its display name, the domain's ID and the linked sequence's ID in the format \<name\>#\<Domain ID>#\<linked sequence name\>. Selecting a name from the dropdown list and pressing __Remove__ will delete the line.
+When a data line has been saved, its name is added to the dropdown list (blue line in Figure 10) to the right of the remove button (black line in Figure 10). A line's name consists of its display name, the domain's ID and the linked sequence's ID in the format \<name\>#\<Domain ID>#\<linked sequence name\>. Selecting a name from the dropdown list and pressing __Remove__ will delete the line.
 
 ![Figure 10](images/figurefeature21.jpg)
 
