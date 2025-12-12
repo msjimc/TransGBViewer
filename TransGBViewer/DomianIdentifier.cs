@@ -30,7 +30,7 @@ namespace TransGBViewer
                     if (known.ContainsKey(id))
                     {
                         results[id] = known[id];
-                        owner.AddStatusText(id + " aready linked to " + results[id]);
+                        owner.AddStatusText(id + " already linked to " + results[id]);
                         retrievedData = true;
                     }
                     else
