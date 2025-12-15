@@ -16,7 +16,7 @@ Figure 2: The __Markers__ tab allows you to add, modify and delete symbols from 
 
 ## Selecting the marker's shape
 
-The shape of the marker is set using the drop-down list in the top right corner of the __Markers__ tab (blue box in Figure 3a) with the possible shapes shown in Figure 3b. While Figure 3b shows the markers as solid shapes, deselecting the __Fill__ tick box (red line in Figure 3a) only draws just the shape's border.
+The shape of the marker is set using the drop-down list in the top right corner of the __Markers__ tab (blue box in Figure 3a) with the possible shapes shown in Figure 3b. The __Fill__ tick box value (red line in Figure 3a)  determines if the marker is drawn as a solid shape or only draws just the shape's border (Figure 3b).
 
 ![Figure 3a](images/figuremarker2.jpg)
 
@@ -32,7 +32,7 @@ Figure 3: The shape of the marker is set using the upper right-hand drop-down li
 
 ## Selecting the transcript/feature line used to anchor the position of a marker
 
-Since the order of the transcripts and GenBank, UniProt and IntroProScan features to be changed can be changed (see the [Layout](LAYOUT.md) tab), a marker's position is locked relative to the position of a transcript/feature line. This line is selected using the second drop-down list, which contains a list of the currently displayed names (blue box in Figure 4). Ideally, the marker should be linked to the data line it is annotating.  
+Since the order of the transcripts and GenBank, UniProt and IntroProScan features can be changed (see the [Layout](LAYOUT.md) tab), a marker's position is locked relative to the position of a transcript/feature line. This line is selected using the second drop-down list, which contains a list of the currently displayed names (blue box in Figure 4). Ideally, the marker should be linked to the data line it is annotating.  
 
 ![Figure 4](images/figuremarker3.jpg)
 
