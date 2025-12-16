@@ -2,6 +2,10 @@
 
 ![Figure 1](images/figureSave.jpg)
 
+Figure 1: the __Save__ tab.
+
+---
+
 The __Save__ tab of the ___mRNA Display Options___ window allows the image to be saved to a file at a range of resolutions from 96 to 900 DPI (Figure 1).
 
 
