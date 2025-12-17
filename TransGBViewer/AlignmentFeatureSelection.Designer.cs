@@ -107,7 +107,7 @@
             txtDisplayName.Location = new Point(275, 239);
             txtDisplayName.Name = "txtDisplayName";
             txtDisplayName.Size = new Size(302, 23);
-            txtDisplayName.TabIndex = 3;
+            txtDisplayName.TabIndex = 21;
             // 
             // btnRemove
             // 
@@ -115,7 +115,7 @@
             btnRemove.Location = new Point(502, 80);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(75, 23);
-            btnRemove.TabIndex = 30;
+            btnRemove.TabIndex = 7;
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = true;
             btnRemove.Click += btnRemove_Click;
@@ -126,7 +126,7 @@
             btnAdd.Location = new Point(421, 80);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 23);
-            btnAdd.TabIndex = 28;
+            btnAdd.TabIndex = 6;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
@@ -136,7 +136,7 @@
             label12.Location = new Point(6, 77);
             label12.Name = "label12";
             label12.Size = new Size(313, 31);
-            label12.TabIndex = 27;
+            label12.TabIndex = 5;
             label12.Text = "To add, update or remove the selected domain press 'Add', 'Update' or 'Remove'";
             // 
             // label11
@@ -145,7 +145,7 @@
             label11.Location = new Point(6, 301);
             label11.Name = "label11";
             label11.Size = new Size(76, 15);
-            label11.TabIndex = 26;
+            label11.TabIndex = 0;
             label11.Text = "Domain style";
             // 
             // pStyle
@@ -163,7 +163,7 @@
             btnFillColour.Location = new Point(521, 268);
             btnFillColour.Name = "btnFillColour";
             btnFillColour.Size = new Size(56, 23);
-            btnFillColour.TabIndex = 24;
+            btnFillColour.TabIndex = 26;
             btnFillColour.Text = "Colour";
             btnFillColour.UseVisualStyleBackColor = true;
             btnFillColour.Click += btnFillColour_Click;
@@ -177,7 +177,7 @@
             chkFillShape.Location = new Point(440, 271);
             chkFillShape.Name = "chkFillShape";
             chkFillShape.Size = new Size(75, 19);
-            chkFillShape.TabIndex = 21;
+            chkFillShape.TabIndex = 25;
             chkFillShape.Text = "Fill shape";
             chkFillShape.UseVisualStyleBackColor = true;
             chkFillShape.CheckedChanged += chkFillShape_CheckedChanged;
@@ -191,7 +191,7 @@
             chkDrawBorder.Location = new Point(334, 271);
             chkDrawBorder.Name = "chkDrawBorder";
             chkDrawBorder.Size = new Size(91, 19);
-            chkDrawBorder.TabIndex = 20;
+            chkDrawBorder.TabIndex = 24;
             chkDrawBorder.Text = "Draw border";
             chkDrawBorder.UseVisualStyleBackColor = true;
             chkDrawBorder.CheckedChanged += chkDrawBorder_CheckedChanged;
@@ -205,7 +205,7 @@
             chkRoundedDomains.Location = new Point(206, 272);
             chkRoundedDomains.Name = "chkRoundedDomains";
             chkRoundedDomains.Size = new Size(116, 19);
-            chkRoundedDomains.TabIndex = 19;
+            chkRoundedDomains.TabIndex = 23;
             chkRoundedDomains.Text = "Rounded corners";
             chkRoundedDomains.UseVisualStyleBackColor = true;
             chkRoundedDomains.CheckedChanged += chkRoundedDomains_CheckedChanged;
@@ -216,7 +216,7 @@
             label10.Location = new Point(6, 272);
             label10.Name = "label10";
             label10.Size = new Size(194, 15);
-            label10.TabIndex = 18;
+            label10.TabIndex = 22;
             label10.Text = "Select the domains style and colour";
             // 
             // label9
@@ -225,7 +225,7 @@
             label9.Location = new Point(6, 242);
             label9.Name = "label9";
             label9.Size = new Size(263, 15);
-            label9.TabIndex = 16;
+            label9.TabIndex = 20;
             label9.Text = "Enter an alternative display name for the domain";
             // 
             // lblDescription
@@ -234,7 +234,7 @@
             lblDescription.Location = new Point(6, 217);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(571, 19);
-            lblDescription.TabIndex = 15;
+            lblDescription.TabIndex = 19;
             lblDescription.Text = "Description: -";
             // 
             // cboInterproDescriptionValue
@@ -246,7 +246,7 @@
             cboInterproDescriptionValue.Location = new Point(521, 191);
             cboInterproDescriptionValue.Name = "cboInterproDescriptionValue";
             cboInterproDescriptionValue.Size = new Size(56, 23);
-            cboInterproDescriptionValue.TabIndex = 14;
+            cboInterproDescriptionValue.TabIndex = 18;
             cboInterproDescriptionValue.SelectedIndexChanged += cboInterproDescriptionValue_SelectedIndexChanged;
             // 
             // label8
@@ -256,7 +256,7 @@
             label8.Location = new Point(396, 194);
             label8.Name = "label8";
             label8.Size = new Size(111, 15);
-            label8.TabIndex = 13;
+            label8.TabIndex = 17;
             label8.Text = "InterPro description";
             // 
             // cboInterProValue
@@ -268,7 +268,7 @@
             cboInterProValue.Location = new Point(285, 191);
             cboInterProValue.Name = "cboInterProValue";
             cboInterProValue.Size = new Size(56, 23);
-            cboInterProValue.TabIndex = 12;
+            cboInterProValue.TabIndex = 16;
             cboInterProValue.SelectedIndexChanged += cboInterProValue_SelectedIndexChanged;
             // 
             // label7
@@ -278,7 +278,7 @@
             label7.Location = new Point(230, 194);
             label7.Name = "label7";
             label7.Size = new Size(49, 15);
-            label7.TabIndex = 11;
+            label7.TabIndex = 15;
             label7.Text = "InterPro";
             // 
             // cboSignitureDescriptionValue
@@ -290,7 +290,7 @@
             cboSignitureDescriptionValue.Location = new Point(521, 162);
             cboSignitureDescriptionValue.Name = "cboSignitureDescriptionValue";
             cboSignitureDescriptionValue.Size = new Size(56, 23);
-            cboSignitureDescriptionValue.TabIndex = 10;
+            cboSignitureDescriptionValue.TabIndex = 14;
             cboSignitureDescriptionValue.SelectedIndexChanged += cboSignitureDescriptionValue_SelectedIndexChanged;
             // 
             // label6
@@ -300,7 +300,7 @@
             label6.Location = new Point(396, 165);
             label6.Name = "label6";
             label6.Size = new Size(119, 15);
-            label6.TabIndex = 9;
+            label6.TabIndex = 13;
             label6.Text = "Signature description";
             // 
             // cboSignatureValue
@@ -312,7 +312,7 @@
             cboSignatureValue.Location = new Point(285, 162);
             cboSignatureValue.Name = "cboSignatureValue";
             cboSignatureValue.Size = new Size(56, 23);
-            cboSignatureValue.TabIndex = 8;
+            cboSignatureValue.TabIndex = 12;
             cboSignatureValue.SelectedIndexChanged += cboSignatureValue_SelectedIndexChanged;
             // 
             // label5
@@ -322,7 +322,7 @@
             label5.Location = new Point(224, 165);
             label5.Name = "label5";
             label5.Size = new Size(57, 15);
-            label5.TabIndex = 7;
+            label5.TabIndex = 11;
             label5.Text = "Signature";
             // 
             // cboAnalysisValue
@@ -334,7 +334,7 @@
             cboAnalysisValue.Location = new Point(88, 162);
             cboAnalysisValue.Name = "cboAnalysisValue";
             cboAnalysisValue.Size = new Size(56, 23);
-            cboAnalysisValue.TabIndex = 6;
+            cboAnalysisValue.TabIndex = 10;
             cboAnalysisValue.SelectedIndexChanged += cboAnalysisValue_SelectedIndexChanged;
             // 
             // label4
@@ -344,7 +344,7 @@
             label4.Location = new Point(29, 165);
             label4.Name = "label4";
             label4.Size = new Size(53, 15);
-            label4.TabIndex = 5;
+            label4.TabIndex = 9;
             label4.Text = "Analysis:";
             // 
             // label3
@@ -353,7 +353,7 @@
             label3.Location = new Point(6, 118);
             label3.Name = "label3";
             label3.Size = new Size(571, 35);
-            label3.TabIndex = 4;
+            label3.TabIndex = 8;
             label3.Text = "Create the text used to describe the feature in the display. Select a value to the right of the parameter: 1 while add the text first, while 5 will add it last (hide will ignore the text).";
             // 
             // label2
@@ -373,7 +373,7 @@
             cboFeatureName.Location = new Point(285, 51);
             cboFeatureName.Name = "cboFeatureName";
             cboFeatureName.Size = new Size(292, 23);
-            cboFeatureName.TabIndex = 2;
+            cboFeatureName.TabIndex = 4;
             cboFeatureName.SelectedIndexChanged += cboFeatureName_SelectedIndexChanged;
             // 
             // cboSequenceNames
@@ -384,7 +384,7 @@
             cboSequenceNames.Location = new Point(285, 22);
             cboSequenceNames.Name = "cboSequenceNames";
             cboSequenceNames.Size = new Size(292, 23);
-            cboSequenceNames.TabIndex = 1;
+            cboSequenceNames.TabIndex = 2;
             cboSequenceNames.SelectedIndexChanged += cboSequenceNames_SelectedIndexChanged;
             // 
             // label1
@@ -393,7 +393,7 @@
             label1.Location = new Point(6, 25);
             label1.Name = "label1";
             label1.Size = new Size(259, 15);
-            label1.TabIndex = 0;
+            label1.TabIndex = 1;
             label1.Text = "Select the sequence used to retrieve the domain";
             // 
             // btnAccept

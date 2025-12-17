@@ -52,7 +52,7 @@
             groupBox5.Location = new Point(12, 12);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(465, 117);
-            groupBox5.TabIndex = 7;
+            groupBox5.TabIndex = 0;
             groupBox5.TabStop = false;
             groupBox5.Text = "Search InterProScan for domains";
             // 
@@ -61,7 +61,7 @@
             btnImportSearch.Location = new Point(384, 22);
             btnImportSearch.Name = "btnImportSearch";
             btnImportSearch.Size = new Size(75, 23);
-            btnImportSearch.TabIndex = 7;
+            btnImportSearch.TabIndex = 1;
             btnImportSearch.Text = "Import";
             btnImportSearch.UseVisualStyleBackColor = true;
             btnImportSearch.Click += btnImportSearch_Click;
@@ -72,7 +72,7 @@
             label42.Location = new Point(6, 26);
             label42.Name = "label42";
             label42.Size = new Size(270, 15);
-            label42.TabIndex = 6;
+            label42.TabIndex = 0;
             label42.Text = "To import a previously saved search press 'Import'";
             // 
             // btnSaveDomainString
@@ -100,7 +100,7 @@
             btnSearch.Location = new Point(384, 51);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(75, 23);
-            btnSearch.TabIndex = 1;
+            btnSearch.TabIndex = 3;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
             btnSearch.Click += btnSearch_Click;
@@ -110,7 +110,7 @@
             label39.Location = new Point(6, 41);
             label39.Name = "label39";
             label39.Size = new Size(352, 33);
-            label39.TabIndex = 0;
+            label39.TabIndex = 2;
             label39.Text = "To search InterProScan for domain in a sequence in the alignment press 'Search'";
             // 
             // btnAccept
@@ -119,7 +119,7 @@
             btnAccept.Location = new Point(315, 138);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
-            btnAccept.TabIndex = 8;
+            btnAccept.TabIndex = 1;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             btnAccept.Click += btnAccept_Click;
@@ -130,7 +130,7 @@
             btnCancel.Location = new Point(396, 138);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 9;
+            btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 

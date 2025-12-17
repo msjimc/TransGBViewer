@@ -88,10 +88,11 @@
             cboCoordinates = new ComboBox();
             label12 = new Label();
             tabPage1 = new TabPage();
-            groupBox1 = new GroupBox();
+            groupBox12 = new GroupBox();
             btnMove = new Button();
             cblMoveableAlternativeExons = new CheckedListBox();
             label51 = new Label();
+            groupBox1 = new GroupBox();
             btnSelectSequence = new Button();
             chkFolder = new CheckBox();
             label1 = new Label();
@@ -164,7 +165,6 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
-            groupBox12 = new GroupBox();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -182,6 +182,7 @@
             ((System.ComponentModel.ISupportInitialize)nudMinorTick).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudMajorTick).BeginInit();
             tabPage1.SuspendLayout();
+            groupBox12.SuspendLayout();
             groupBox1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage4.SuspendLayout();
@@ -201,7 +202,6 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).BeginInit();
             tabPage7.SuspendLayout();
             groupBox10.SuspendLayout();
-            groupBox12.SuspendLayout();
             SuspendLayout();
             // 
             // btnClose
@@ -276,7 +276,7 @@
             cboFrame.Location = new Point(241, 175);
             cboFrame.Name = "cboFrame";
             cboFrame.Size = new Size(84, 23);
-            cboFrame.TabIndex = 17;
+            cboFrame.TabIndex = 15;
             cboFrame.SelectedIndexChanged += cboFrame_SelectedIndexChanged;
             // 
             // label52
@@ -285,7 +285,7 @@
             label52.Location = new Point(6, 179);
             label52.Name = "label52";
             label52.Size = new Size(188, 15);
-            label52.TabIndex = 41;
+            label52.TabIndex = 14;
             label52.Text = "Highlight sequences in frame with";
             // 
             // btnFrameColours
@@ -293,7 +293,7 @@
             btnFrameColours.Location = new Point(331, 175);
             btnFrameColours.Name = "btnFrameColours";
             btnFrameColours.Size = new Size(63, 23);
-            btnFrameColours.TabIndex = 18;
+            btnFrameColours.TabIndex = 16;
             btnFrameColours.Text = "Change";
             btnFrameColours.UseVisualStyleBackColor = true;
             btnFrameColours.Click += btnFrameColours_Click;
@@ -307,7 +307,7 @@
             nudLineWidth.Minimum = new decimal(new int[] { 5, 0, 0, 65536 });
             nudLineWidth.Name = "nudLineWidth";
             nudLineWidth.Size = new Size(150, 23);
-            nudLineWidth.TabIndex = 25;
+            nudLineWidth.TabIndex = 28;
             nudLineWidth.Value = new decimal(new int[] { 15, 0, 0, 65536 });
             nudLineWidth.ValueChanged += nudLineWidth_ValueChanged;
             // 
@@ -316,7 +316,7 @@
             label26.Location = new Point(6, 327);
             label26.Name = "label26";
             label26.Size = new Size(229, 30);
-            label26.TabIndex = 39;
+            label26.TabIndex = 27;
             label26.Text = "Set the width of lines highlighting the ends of the ORF and exon";
             // 
             // pAcceptor
@@ -334,7 +334,7 @@
             chkCoordindatesAt1bp.Location = new Point(302, 77);
             chkCoordindatesAt1bp.Name = "chkCoordindatesAt1bp";
             chkCoordindatesAt1bp.Size = new Size(89, 19);
-            chkCoordindatesAt1bp.TabIndex = 13;
+            chkCoordindatesAt1bp.TabIndex = 7;
             chkCoordindatesAt1bp.Text = "Start at 1 bp";
             chkCoordindatesAt1bp.UseVisualStyleBackColor = true;
             chkCoordindatesAt1bp.CheckedChanged += chkCoordindatesAt1bp_CheckedChanged;
@@ -345,7 +345,7 @@
             label25.Location = new Point(6, 78);
             label25.Name = "label25";
             label25.Size = new Size(195, 15);
-            label25.TabIndex = 37;
+            label25.TabIndex = 6;
             label25.Text = "Start sequence coordindates at 1 bp";
             // 
             // label23
@@ -354,7 +354,7 @@
             label23.Location = new Point(316, 49);
             label23.Name = "label23";
             label23.Size = new Size(18, 15);
-            label23.TabIndex = 35;
+            label23.TabIndex = 4;
             label23.Text = "to";
             // 
             // nudZoomTo
@@ -363,7 +363,7 @@
             nudZoomTo.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomTo.Name = "nudZoomTo";
             nudZoomTo.Size = new Size(57, 23);
-            nudZoomTo.TabIndex = 12;
+            nudZoomTo.TabIndex = 5;
             nudZoomTo.Value = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomTo.ValueChanged += nudZoomTo_ValueChanged;
             // 
@@ -373,7 +373,7 @@
             nudZoomFrom.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.Name = "nudZoomFrom";
             nudZoomFrom.Size = new Size(69, 23);
-            nudZoomFrom.TabIndex = 11;
+            nudZoomFrom.TabIndex = 3;
             nudZoomFrom.Value = new decimal(new int[] { 1, 0, 0, 0 });
             nudZoomFrom.ValueChanged += nudZoomFrom_ValueChanged;
             // 
@@ -383,7 +383,7 @@
             label22.Location = new Point(6, 49);
             label22.Name = "label22";
             label22.Size = new Size(127, 15);
-            label22.TabIndex = 32;
+            label22.TabIndex = 2;
             label22.Text = "Limit Region displayed";
             // 
             // pStop
@@ -415,7 +415,7 @@
             btnORFStop.Location = new Point(324, 298);
             btnORFStop.Name = "btnORFStop";
             btnORFStop.Size = new Size(67, 23);
-            btnORFStop.TabIndex = 24;
+            btnORFStop.TabIndex = 26;
             btnORFStop.Text = "Stop";
             btnORFStop.UseVisualStyleBackColor = true;
             btnORFStop.Click += btnORFStop_Click;
@@ -425,7 +425,7 @@
             btnORFStart.Location = new Point(241, 298);
             btnORFStart.Name = "btnORFStart";
             btnORFStart.Size = new Size(63, 23);
-            btnORFStart.TabIndex = 23;
+            btnORFStart.TabIndex = 25;
             btnORFStart.Text = "Start";
             btnORFStart.UseVisualStyleBackColor = true;
             btnORFStart.Click += btnORFStart_Click;
@@ -436,7 +436,7 @@
             label21.Location = new Point(6, 302);
             label21.Name = "label21";
             label21.Size = new Size(200, 15);
-            label21.TabIndex = 25;
+            label21.TabIndex = 24;
             label21.Text = "Set Start and stop codon line colours";
             // 
             // btnAcceptor
@@ -465,7 +465,7 @@
             label20.Location = new Point(6, 237);
             label20.Name = "label20";
             label20.Size = new Size(161, 15);
-            label20.TabIndex = 22;
+            label20.TabIndex = 19;
             label20.Text = "Set the splice site line colours";
             // 
             // cboORFLimits
@@ -474,7 +474,7 @@
             cboORFLimits.Location = new Point(241, 269);
             cboORFLimits.Name = "cboORFLimits";
             cboORFLimits.Size = new Size(150, 23);
-            cboORFLimits.TabIndex = 22;
+            cboORFLimits.TabIndex = 23;
             cboORFLimits.SelectedIndexChanged += cboORFLimits_SelectedIndexChanged;
             // 
             // label19
@@ -482,7 +482,7 @@
             label19.Location = new Point(6, 260);
             label19.Name = "label19";
             label19.Size = new Size(229, 32);
-            label19.TabIndex = 20;
+            label19.TabIndex = 22;
             label19.Text = "Highlight the translational start and stop sites of selected sequence";
             // 
             // cboSpliceSites
@@ -491,7 +491,7 @@
             cboSpliceSites.Location = new Point(241, 204);
             cboSpliceSites.Name = "cboSpliceSites";
             cboSpliceSites.Size = new Size(150, 23);
-            cboSpliceSites.TabIndex = 19;
+            cboSpliceSites.TabIndex = 18;
             cboSpliceSites.SelectedIndexChanged += cboSpliceSites_SelectedIndexChanged;
             // 
             // chkReduce
@@ -503,7 +503,7 @@
             chkReduce.Location = new Point(326, 153);
             chkReduce.Name = "chkReduce";
             chkReduce.Size = new Size(65, 19);
-            chkReduce.TabIndex = 16;
+            chkReduce.TabIndex = 13;
             chkReduce.Text = "Reduce";
             chkReduce.UseVisualStyleBackColor = true;
             chkReduce.CheckedChanged += chkReduce_CheckedChanged;
@@ -517,7 +517,7 @@
             chkRound.Location = new Point(330, 128);
             chkRound.Name = "chkRound";
             chkRound.Size = new Size(61, 19);
-            chkRound.TabIndex = 15;
+            chkRound.TabIndex = 11;
             chkRound.Text = "Round";
             chkRound.UseVisualStyleBackColor = true;
             chkRound.CheckedChanged += chkRound_CheckedChanged;
@@ -531,7 +531,7 @@
             chkShowCodingSequences.Location = new Point(336, 102);
             chkShowCodingSequences.Name = "chkShowCodingSequences";
             chkShowCodingSequences.Size = new Size(55, 19);
-            chkShowCodingSequences.TabIndex = 14;
+            chkShowCodingSequences.TabIndex = 9;
             chkShowCodingSequences.Text = "Show";
             chkShowCodingSequences.UseVisualStyleBackColor = true;
             chkShowCodingSequences.CheckedChanged += chkShowCodingSequences_CheckedChanged;
@@ -541,7 +541,7 @@
             btnSequenceColours.Location = new Point(334, 18);
             btnSequenceColours.Name = "btnSequenceColours";
             btnSequenceColours.Size = new Size(57, 23);
-            btnSequenceColours.TabIndex = 10;
+            btnSequenceColours.TabIndex = 1;
             btnSequenceColours.Text = "Select";
             btnSequenceColours.UseVisualStyleBackColor = true;
             btnSequenceColours.Click += btnSequenceColours_Click;
@@ -561,7 +561,7 @@
             label9.Location = new Point(6, 207);
             label9.Name = "label9";
             label9.Size = new Size(229, 15);
-            label9.TabIndex = 9;
+            label9.TabIndex = 17;
             label9.Text = "Highlight splice sites of selected sequence";
             // 
             // label7
@@ -570,7 +570,7 @@
             label7.Location = new Point(6, 154);
             label7.Name = "label7";
             label7.Size = new Size(241, 15);
-            label7.TabIndex = 7;
+            label7.TabIndex = 12;
             label7.Text = "Reduce the height of non-coding sequences";
             // 
             // label6
@@ -579,7 +579,7 @@
             label6.Location = new Point(6, 103);
             label6.Name = "label6";
             label6.Size = new Size(155, 15);
-            label6.TabIndex = 6;
+            label6.TabIndex = 8;
             label6.Text = "Highlight coding sequences";
             // 
             // label4
@@ -588,7 +588,7 @@
             label4.Location = new Point(6, 22);
             label4.Name = "label4";
             label4.Size = new Size(172, 15);
-            label4.TabIndex = 2;
+            label4.TabIndex = 0;
             label4.Text = "Set the colour of the sequences";
             // 
             // nudIntronGap
@@ -597,7 +597,7 @@
             nudIntronGap.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             nudIntronGap.Name = "nudIntronGap";
             nudIntronGap.Size = new Size(88, 23);
-            nudIntronGap.TabIndex = 9;
+            nudIntronGap.TabIndex = 17;
             nudIntronGap.ValueChanged += nudIntronGap_ValueChanged;
             // 
             // label8
@@ -606,7 +606,7 @@
             label8.Location = new Point(6, 309);
             label8.Name = "label8";
             label8.Size = new Size(206, 15);
-            label8.TabIndex = 8;
+            label8.TabIndex = 16;
             label8.Text = "Adjust size of gap signifying an intron";
             // 
             // label11
@@ -615,7 +615,7 @@
             label11.Location = new Point(6, 231);
             label11.Name = "label11";
             label11.Size = new Size(225, 15);
-            label11.TabIndex = 11;
+            label11.TabIndex = 12;
             label11.Text = "Select font used to write sequence names";
             // 
             // btnFont
@@ -623,7 +623,7 @@
             btnFont.Location = new Point(309, 227);
             btnFont.Name = "btnFont";
             btnFont.Size = new Size(88, 23);
-            btnFont.TabIndex = 7;
+            btnFont.TabIndex = 13;
             btnFont.Text = "Select";
             btnFont.UseVisualStyleBackColor = true;
             btnFont.Click += btnFont_Click;
@@ -633,7 +633,7 @@
             btnCreateMiscellaneousSets.Location = new Point(319, 35);
             btnCreateMiscellaneousSets.Name = "btnCreateMiscellaneousSets";
             btnCreateMiscellaneousSets.Size = new Size(75, 23);
-            btnCreateMiscellaneousSets.TabIndex = 26;
+            btnCreateMiscellaneousSets.TabIndex = 1;
             btnCreateMiscellaneousSets.Text = "Create";
             btnCreateMiscellaneousSets.UseVisualStyleBackColor = true;
             btnCreateMiscellaneousSets.Click += btnCreateMiscellaneousSets_Click;
@@ -643,7 +643,7 @@
             label5.Location = new Point(9, 23);
             label5.Name = "label5";
             label5.Size = new Size(310, 35);
-            label5.TabIndex = 21;
+            label5.TabIndex = 0;
             label5.Text = "Create sets of miscellaneous features imported from the GenBank files to view across a number of lines";
             // 
             // nudLabelWidth
@@ -654,7 +654,7 @@
             nudLabelWidth.Minimum = new decimal(new int[] { 50, 0, 0, 0 });
             nudLabelWidth.Name = "nudLabelWidth";
             nudLabelWidth.Size = new Size(88, 23);
-            nudLabelWidth.TabIndex = 6;
+            nudLabelWidth.TabIndex = 11;
             nudLabelWidth.Value = new decimal(new int[] { 140, 0, 0, 0 });
             nudLabelWidth.ValueChanged += nudLabelWidth_ValueChanged;
             // 
@@ -664,7 +664,7 @@
             label3.Location = new Point(6, 199);
             label3.Name = "label3";
             label3.Size = new Size(127, 15);
-            label3.TabIndex = 0;
+            label3.TabIndex = 10;
             label3.Text = "Adjust label width area";
             // 
             // tabPage3
@@ -701,7 +701,7 @@
             groupBox3.Location = new Point(0, 0);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(403, 369);
-            groupBox3.TabIndex = 2;
+            groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
             // 
             // btnFeatureFont
@@ -709,7 +709,7 @@
             btnFeatureFont.Location = new Point(309, 256);
             btnFeatureFont.Name = "btnFeatureFont";
             btnFeatureFont.Size = new Size(88, 23);
-            btnFeatureFont.TabIndex = 8;
+            btnFeatureFont.TabIndex = 15;
             btnFeatureFont.Text = "Select";
             btnFeatureFont.UseVisualStyleBackColor = true;
             btnFeatureFont.Click += btnFeatureFont_Click;
@@ -720,7 +720,7 @@
             label28.Location = new Point(6, 264);
             label28.Name = "label28";
             label28.Size = new Size(212, 15);
-            label28.TabIndex = 20;
+            label28.TabIndex = 14;
             label28.Text = "Select font used to write feature names";
             // 
             // cboLabels
@@ -730,7 +730,7 @@
             cboLabels.Location = new Point(309, 169);
             cboLabels.Name = "cboLabels";
             cboLabels.Size = new Size(88, 23);
-            cboLabels.TabIndex = 5;
+            cboLabels.TabIndex = 9;
             cboLabels.SelectedIndexChanged += cboLabels_SelectedIndexChanged;
             // 
             // label17
@@ -739,7 +739,7 @@
             label17.Location = new Point(6, 172);
             label17.Name = "label17";
             label17.Size = new Size(171, 15);
-            label17.TabIndex = 17;
+            label17.TabIndex = 8;
             label17.Text = "Select the location of the labels";
             // 
             // nudLabelRotation
@@ -748,7 +748,7 @@
             nudLabelRotation.Maximum = new decimal(new int[] { 90, 0, 0, 0 });
             nudLabelRotation.Name = "nudLabelRotation";
             nudLabelRotation.Size = new Size(88, 23);
-            nudLabelRotation.TabIndex = 4;
+            nudLabelRotation.TabIndex = 7;
             nudLabelRotation.ValueChanged += nudLabelRotation_ValueChanged;
             // 
             // label15
@@ -767,7 +767,7 @@
             nudMinorTick.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
             nudMinorTick.Name = "nudMinorTick";
             nudMinorTick.Size = new Size(88, 23);
-            nudMinorTick.TabIndex = 3;
+            nudMinorTick.TabIndex = 5;
             nudMinorTick.Value = new decimal(new int[] { 20, 0, 0, 0 });
             nudMinorTick.ValueChanged += nudMinorTick_ValueChanged;
             // 
@@ -779,7 +779,7 @@
             nudMajorTick.Minimum = new decimal(new int[] { 100, 0, 0, 0 });
             nudMajorTick.Name = "nudMajorTick";
             nudMajorTick.Size = new Size(88, 23);
-            nudMajorTick.TabIndex = 2;
+            nudMajorTick.TabIndex = 3;
             nudMajorTick.Value = new decimal(new int[] { 100, 0, 0, 0 });
             nudMajorTick.ValueChanged += nudMajorTick_ValueChanged;
             // 
@@ -789,7 +789,7 @@
             label14.Location = new Point(6, 82);
             label14.Name = "label14";
             label14.Size = new Size(157, 15);
-            label14.TabIndex = 3;
+            label14.TabIndex = 4;
             label14.Text = "Select the minor tick interval";
             // 
             // label13
@@ -833,6 +833,46 @@
             tabPage1.Text = "Import";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // groupBox12
+            // 
+            groupBox12.Controls.Add(btnMove);
+            groupBox12.Controls.Add(cblMoveableAlternativeExons);
+            groupBox12.Controls.Add(label51);
+            groupBox12.Location = new Point(3, 101);
+            groupBox12.Name = "groupBox12";
+            groupBox12.Size = new Size(397, 262);
+            groupBox12.TabIndex = 1;
+            groupBox12.TabStop = false;
+            groupBox12.Text = "Adjust alternatively spliced exon order";
+            // 
+            // btnMove
+            // 
+            btnMove.Enabled = false;
+            btnMove.Location = new Point(319, 122);
+            btnMove.Name = "btnMove";
+            btnMove.Size = new Size(75, 23);
+            btnMove.TabIndex = 2;
+            btnMove.Text = "Move";
+            btnMove.UseVisualStyleBackColor = true;
+            btnMove.Click += btnMove_Click;
+            // 
+            // cblMoveableAlternativeExons
+            // 
+            cblMoveableAlternativeExons.FormattingEnabled = true;
+            cblMoveableAlternativeExons.Location = new Point(254, 22);
+            cblMoveableAlternativeExons.Name = "cblMoveableAlternativeExons";
+            cblMoveableAlternativeExons.Size = new Size(140, 94);
+            cblMoveableAlternativeExons.TabIndex = 1;
+            cblMoveableAlternativeExons.ItemCheck += cblMoveableAlternativeExons_ItemCheck;
+            // 
+            // label51
+            // 
+            label51.Location = new Point(9, 22);
+            label51.Name = "label51";
+            label51.Size = new Size(239, 53);
+            label51.TabIndex = 0;
+            label51.Text = "Move an alternatively spliced exon downstream by slecting it's index in the list and pressing the 'Move' button";
+            // 
             // groupBox1
             // 
             groupBox1.Controls.Add(btnSelectSequence);
@@ -844,34 +884,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Import transcript data";
-            // 
-            // btnMove
-            // 
-            btnMove.Enabled = false;
-            btnMove.Location = new Point(319, 122);
-            btnMove.Name = "btnMove";
-            btnMove.Size = new Size(75, 23);
-            btnMove.TabIndex = 5;
-            btnMove.Text = "Move";
-            btnMove.UseVisualStyleBackColor = true;
-            btnMove.Click += btnMove_Click;
-            // 
-            // cblMoveableAlternativeExons
-            // 
-            cblMoveableAlternativeExons.FormattingEnabled = true;
-            cblMoveableAlternativeExons.Location = new Point(254, 22);
-            cblMoveableAlternativeExons.Name = "cblMoveableAlternativeExons";
-            cblMoveableAlternativeExons.Size = new Size(140, 94);
-            cblMoveableAlternativeExons.TabIndex = 4;
-            cblMoveableAlternativeExons.ItemCheck += cblMoveableAlternativeExons_ItemCheck;
-            // 
-            // label51
-            // 
-            label51.Location = new Point(9, 22);
-            label51.Name = "label51";
-            label51.Size = new Size(239, 53);
-            label51.TabIndex = 3;
-            label51.Text = "Move an alternatively spliced exon downstream by slecting it's index in the list and pressing the 'Move' button";
             // 
             // btnSelectSequence
             // 
@@ -908,7 +920,7 @@
             btnSearchInternet.Location = new Point(322, 62);
             btnSearchInternet.Name = "btnSearchInternet";
             btnSearchInternet.Size = new Size(75, 23);
-            btnSearchInternet.TabIndex = 28;
+            btnSearchInternet.TabIndex = 4;
             btnSearchInternet.Text = "Search";
             btnSearchInternet.UseVisualStyleBackColor = true;
             btnSearchInternet.Click += btnSearchInternet_Click;
@@ -959,7 +971,7 @@
             groupBox11.Location = new Point(0, 235);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new Size(403, 81);
-            groupBox11.TabIndex = 3;
+            groupBox11.TabIndex = 2;
             groupBox11.TabStop = false;
             groupBox11.Text = "Protein features from the InterProScan website";
             // 
@@ -969,7 +981,7 @@
             btnCreateInterProScanFeaturesSets.Location = new Point(322, 52);
             btnCreateInterProScanFeaturesSets.Name = "btnCreateInterProScanFeaturesSets";
             btnCreateInterProScanFeaturesSets.Size = new Size(75, 23);
-            btnCreateInterProScanFeaturesSets.TabIndex = 32;
+            btnCreateInterProScanFeaturesSets.TabIndex = 3;
             btnCreateInterProScanFeaturesSets.Text = "Create";
             btnCreateInterProScanFeaturesSets.UseVisualStyleBackColor = true;
             btnCreateInterProScanFeaturesSets.Click += btnCreateInterProScanFeaturesSets_Click;
@@ -979,7 +991,7 @@
             label49.Location = new Point(9, 40);
             label49.Name = "label49";
             label49.Size = new Size(310, 35);
-            label49.TabIndex = 27;
+            label49.TabIndex = 2;
             label49.Text = "Create sets of InterProScan features downloaded from the internet to view on a series of lines";
             // 
             // btnImportInterProScan
@@ -987,7 +999,7 @@
             btnImportInterProScan.Location = new Point(322, 15);
             btnImportInterProScan.Name = "btnImportInterProScan";
             btnImportInterProScan.Size = new Size(75, 23);
-            btnImportInterProScan.TabIndex = 31;
+            btnImportInterProScan.TabIndex = 0;
             btnImportInterProScan.Text = "Get";
             btnImportInterProScan.UseVisualStyleBackColor = true;
             btnImportInterProScan.Click += btnImportInterProScan_Click;
@@ -998,7 +1010,7 @@
             label46.Location = new Point(9, 19);
             label46.Name = "label46";
             label46.Size = new Size(201, 15);
-            label46.TabIndex = 0;
+            label46.TabIndex = 1;
             label46.Text = "Seacrch InterProScan for the features";
             // 
             // groupBox6
@@ -1008,7 +1020,7 @@
             groupBox6.Location = new Point(0, 322);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(403, 44);
-            groupBox6.TabIndex = 2;
+            groupBox6.TabIndex = 3;
             groupBox6.TabStop = false;
             groupBox6.Text = "Options";
             // 
@@ -1020,7 +1032,7 @@
             chkLinkFeaturesToSequences.Location = new Point(322, 18);
             chkLinkFeaturesToSequences.Name = "chkLinkFeaturesToSequences";
             chkLinkFeaturesToSequences.Size = new Size(48, 19);
-            chkLinkFeaturesToSequences.TabIndex = 33;
+            chkLinkFeaturesToSequences.TabIndex = 1;
             chkLinkFeaturesToSequences.Text = "Link";
             chkLinkFeaturesToSequences.UseVisualStyleBackColor = true;
             chkLinkFeaturesToSequences.CheckedChanged += chkLinkFeaturesToSequences_CheckedChanged;
@@ -1041,7 +1053,7 @@
             groupBox5.Location = new Point(3, 3);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(397, 66);
-            groupBox5.TabIndex = 1;
+            groupBox5.TabIndex = 0;
             groupBox5.TabStop = false;
             groupBox5.Text = "Sequence features from the GenBank files";
             // 
@@ -1058,7 +1070,7 @@
             groupBox4.Location = new Point(0, 75);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(403, 154);
-            groupBox4.TabIndex = 0;
+            groupBox4.TabIndex = 1;
             groupBox4.TabStop = false;
             groupBox4.Text = "Protein features from the Uniprot website";
             // 
@@ -1068,7 +1080,7 @@
             label48.Location = new Point(9, 95);
             label48.Name = "label48";
             label48.Size = new Size(165, 15);
-            label48.TabIndex = 30;
+            label48.TabIndex = 5;
             label48.Text = "Save the response as a text file";
             // 
             // btnSaveUniProtKB
@@ -1077,7 +1089,7 @@
             btnSaveUniProtKB.Location = new Point(322, 91);
             btnSaveUniProtKB.Name = "btnSaveUniProtKB";
             btnSaveUniProtKB.Size = new Size(75, 23);
-            btnSaveUniProtKB.TabIndex = 29;
+            btnSaveUniProtKB.TabIndex = 6;
             btnSaveUniProtKB.Text = "Save";
             btnSaveUniProtKB.UseVisualStyleBackColor = true;
             btnSaveUniProtKB.Click += btnSaveUniProtKB_Click;
@@ -1088,7 +1100,7 @@
             label47.Location = new Point(9, 26);
             label47.Name = "label47";
             label47.Size = new Size(270, 15);
-            label47.TabIndex = 28;
+            label47.TabIndex = 1;
             label47.Text = "To import a previously saved search press 'Import'";
             // 
             // btnImportUniprotKB
@@ -1096,7 +1108,7 @@
             btnImportUniprotKB.Location = new Point(322, 22);
             btnImportUniprotKB.Name = "btnImportUniprotKB";
             btnImportUniprotKB.Size = new Size(75, 23);
-            btnImportUniprotKB.TabIndex = 27;
+            btnImportUniprotKB.TabIndex = 2;
             btnImportUniprotKB.Text = "Import";
             btnImportUniprotKB.UseVisualStyleBackColor = true;
             btnImportUniprotKB.Click += btnImportUniprotKB_Click;
@@ -1107,7 +1119,7 @@
             btnCreateUniProtsets.Location = new Point(322, 126);
             btnCreateUniProtsets.Name = "btnCreateUniProtsets";
             btnCreateUniProtsets.Size = new Size(75, 23);
-            btnCreateUniProtsets.TabIndex = 30;
+            btnCreateUniProtsets.TabIndex = 0;
             btnCreateUniProtsets.Text = "Create";
             btnCreateUniProtsets.UseVisualStyleBackColor = true;
             btnCreateUniProtsets.Click += btnCreateUniProtsets_Click;
@@ -1117,7 +1129,7 @@
             label18.Location = new Point(6, 116);
             label18.Name = "label18";
             label18.Size = new Size(310, 35);
-            label18.TabIndex = 25;
+            label18.TabIndex = 7;
             label18.Text = "Create sets of Uniprot features downloaded from the internet to view on a series of lines";
             // 
             // tabPage6
@@ -1149,7 +1161,7 @@
             btnResetSequenceNamesAndOrder.Location = new Point(318, 81);
             btnResetSequenceNamesAndOrder.Name = "btnResetSequenceNamesAndOrder";
             btnResetSequenceNamesAndOrder.Size = new Size(75, 23);
-            btnResetSequenceNamesAndOrder.TabIndex = 38;
+            btnResetSequenceNamesAndOrder.TabIndex = 3;
             btnResetSequenceNamesAndOrder.Text = "Reset";
             btnResetSequenceNamesAndOrder.UseVisualStyleBackColor = true;
             btnResetSequenceNamesAndOrder.Click += btnResetSequenceNamesAndOrder_Click;
@@ -1168,7 +1180,7 @@
             btnChangeSequenceNamesAndOrder.Location = new Point(318, 37);
             btnChangeSequenceNamesAndOrder.Name = "btnChangeSequenceNamesAndOrder";
             btnChangeSequenceNamesAndOrder.Size = new Size(75, 23);
-            btnChangeSequenceNamesAndOrder.TabIndex = 37;
+            btnChangeSequenceNamesAndOrder.TabIndex = 1;
             btnChangeSequenceNamesAndOrder.Text = "Change";
             btnChangeSequenceNamesAndOrder.UseVisualStyleBackColor = true;
             btnChangeSequenceNamesAndOrder.Click += btnChangeSequenceNamesAndOrder_Click;
@@ -1201,7 +1213,7 @@
             lvLayout.Location = new Point(52, 39);
             lvLayout.Name = "lvLayout";
             lvLayout.Size = new Size(345, 133);
-            lvLayout.TabIndex = 34;
+            lvLayout.TabIndex = 1;
             lvLayout.UseCompatibleStateImageBehavior = false;
             lvLayout.View = View.Details;
             // 
@@ -1215,7 +1227,7 @@
             btnLayoutDown.Location = new Point(6, 111);
             btnLayoutDown.Name = "btnLayoutDown";
             btnLayoutDown.Size = new Size(37, 23);
-            btnLayoutDown.TabIndex = 36;
+            btnLayoutDown.TabIndex = 3;
             btnLayoutDown.UseVisualStyleBackColor = true;
             btnLayoutDown.Click += btnLayoutDown_Click;
             // 
@@ -1224,7 +1236,7 @@
             btnLayoutUp.Location = new Point(6, 82);
             btnLayoutUp.Name = "btnLayoutUp";
             btnLayoutUp.Size = new Size(37, 23);
-            btnLayoutUp.TabIndex = 35;
+            btnLayoutUp.TabIndex = 2;
             btnLayoutUp.UseVisualStyleBackColor = true;
             btnLayoutUp.Click += btnLayoutUp_Click;
             // 
@@ -1233,7 +1245,7 @@
             label50.Location = new Point(6, 19);
             label50.Name = "label50";
             label50.Size = new Size(388, 39);
-            label50.TabIndex = 5;
+            label50.TabIndex = 0;
             label50.Text = "Select the feature's name and press the required buttons to the left.";
             // 
             // tabPage5
@@ -1300,7 +1312,7 @@
             chkGenefeatureSolid.Location = new Point(207, 24);
             chkGenefeatureSolid.Name = "chkGenefeatureSolid";
             chkGenefeatureSolid.Size = new Size(41, 19);
-            chkGenefeatureSolid.TabIndex = 39;
+            chkGenefeatureSolid.TabIndex = 1;
             chkGenefeatureSolid.Text = "Fill";
             chkGenefeatureSolid.UseVisualStyleBackColor = true;
             chkGenefeatureSolid.CheckedChanged += chkGenefeatureSolid_CheckedChanged;
@@ -1311,7 +1323,7 @@
             cboFeatureTops.Location = new Point(254, 57);
             cboFeatureTops.Name = "cboFeatureTops";
             cboFeatureTops.Size = new Size(143, 23);
-            cboFeatureTops.TabIndex = 41;
+            cboFeatureTops.TabIndex = 4;
             cboFeatureTops.SelectedIndexChanged += cboFeatureTops_SelectedIndexChanged;
             // 
             // chlGenefeatureMouseClick
@@ -1320,7 +1332,7 @@
             chlGenefeatureMouseClick.Location = new Point(254, 115);
             chlGenefeatureMouseClick.Name = "chlGenefeatureMouseClick";
             chlGenefeatureMouseClick.Size = new Size(89, 19);
-            chlGenefeatureMouseClick.TabIndex = 44;
+            chlGenefeatureMouseClick.TabIndex = 11;
             chlGenefeatureMouseClick.Text = "Mouse click";
             chlGenefeatureMouseClick.UseVisualStyleBackColor = true;
             chlGenefeatureMouseClick.CheckedChanged += chlGenefeatureMouseClick_CheckedChanged;
@@ -1332,7 +1344,7 @@
             cboGeneFeatureShapetype.Location = new Point(254, 22);
             cboGeneFeatureShapetype.Name = "cboGeneFeatureShapetype";
             cboGeneFeatureShapetype.Size = new Size(143, 23);
-            cboGeneFeatureShapetype.TabIndex = 40;
+            cboGeneFeatureShapetype.TabIndex = 2;
             cboGeneFeatureShapetype.SelectedIndexChanged += cboGeneFeatureShapetype_SelectedIndexChanged;
             // 
             // label33
@@ -1341,7 +1353,7 @@
             label33.Location = new Point(6, 25);
             label33.Name = "label33";
             label33.Size = new Size(166, 15);
-            label33.TabIndex = 30;
+            label33.TabIndex = 0;
             label33.Text = "Select the shape of the marker";
             // 
             // btnDrawCurrentGeneFeatureMarker
@@ -1349,7 +1361,7 @@
             btnDrawCurrentGeneFeatureMarker.Location = new Point(340, 207);
             btnDrawCurrentGeneFeatureMarker.Name = "btnDrawCurrentGeneFeatureMarker";
             btnDrawCurrentGeneFeatureMarker.Size = new Size(59, 23);
-            btnDrawCurrentGeneFeatureMarker.TabIndex = 48;
+            btnDrawCurrentGeneFeatureMarker.TabIndex = 20;
             btnDrawCurrentGeneFeatureMarker.Text = "Draw";
             btnDrawCurrentGeneFeatureMarker.UseVisualStyleBackColor = true;
             btnDrawCurrentGeneFeatureMarker.Click += btnDrawCurrentGeneFeatureMarker_Click;
@@ -1360,7 +1372,7 @@
             btnGeneFeatureDelete.Location = new Point(340, 312);
             btnGeneFeatureDelete.Name = "btnGeneFeatureDelete";
             btnGeneFeatureDelete.Size = new Size(57, 23);
-            btnGeneFeatureDelete.TabIndex = 52;
+            btnGeneFeatureDelete.TabIndex = 26;
             btnGeneFeatureDelete.Text = "Delete";
             btnGeneFeatureDelete.UseVisualStyleBackColor = true;
             btnGeneFeatureDelete.Click += btnGeneFeatureDelete_Click;
@@ -1371,7 +1383,7 @@
             cboGeneFeatureName.Location = new Point(254, 236);
             cboGeneFeatureName.Name = "cboGeneFeatureName";
             cboGeneFeatureName.Size = new Size(143, 23);
-            cboGeneFeatureName.TabIndex = 49;
+            cboGeneFeatureName.TabIndex = 22;
             cboGeneFeatureName.SelectedIndexChanged += cboGeneFeatureName_SelectedIndexChanged;
             cboGeneFeatureName.TextChanged += cboGeneFeatureName_TextChanged;
             // 
@@ -1381,7 +1393,7 @@
             btnGeneFeatureAddUpdate.Location = new Point(340, 279);
             btnGeneFeatureAddUpdate.Name = "btnGeneFeatureAddUpdate";
             btnGeneFeatureAddUpdate.Size = new Size(57, 23);
-            btnGeneFeatureAddUpdate.TabIndex = 51;
+            btnGeneFeatureAddUpdate.TabIndex = 24;
             btnGeneFeatureAddUpdate.Text = "Add";
             btnGeneFeatureAddUpdate.UseVisualStyleBackColor = true;
             btnGeneFeatureAddUpdate.Click += btnGeneFeatureAddUpdate_Click;
@@ -1393,7 +1405,7 @@
             nudGeneFeatureH.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudGeneFeatureH.Name = "nudGeneFeatureH";
             nudGeneFeatureH.Size = new Size(57, 23);
-            nudGeneFeatureH.TabIndex = 46;
+            nudGeneFeatureH.TabIndex = 16;
             nudGeneFeatureH.Value = new decimal(new int[] { 20, 0, 0, 0 });
             nudGeneFeatureH.ValueChanged += nudGeneFeatureH_ValueChanged;
             // 
@@ -1404,7 +1416,7 @@
             nudGeneFeatureW.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudGeneFeatureW.Name = "nudGeneFeatureW";
             nudGeneFeatureW.Size = new Size(57, 23);
-            nudGeneFeatureW.TabIndex = 45;
+            nudGeneFeatureW.TabIndex = 14;
             nudGeneFeatureW.Value = new decimal(new int[] { 20, 0, 0, 0 });
             nudGeneFeatureW.ValueChanged += nudGeneFeatureW_ValueChanged;
             // 
@@ -1414,7 +1426,7 @@
             label37.Location = new Point(317, 151);
             label37.Name = "label37";
             label37.Size = new Size(19, 15);
-            label37.TabIndex = 44;
+            label37.TabIndex = 15;
             label37.Text = "H:";
             // 
             // label38
@@ -1423,7 +1435,7 @@
             label38.Location = new Point(231, 151);
             label38.Name = "label38";
             label38.Size = new Size(21, 15);
-            label38.TabIndex = 43;
+            label38.TabIndex = 13;
             label38.Text = "W:";
             // 
             // btnGeneFeatureFillColour
@@ -1431,7 +1443,7 @@
             btnGeneFeatureFillColour.Location = new Point(340, 178);
             btnGeneFeatureFillColour.Name = "btnGeneFeatureFillColour";
             btnGeneFeatureFillColour.Size = new Size(59, 23);
-            btnGeneFeatureFillColour.TabIndex = 47;
+            btnGeneFeatureFillColour.TabIndex = 18;
             btnGeneFeatureFillColour.Text = "Colour";
             btnGeneFeatureFillColour.UseVisualStyleBackColor = true;
             btnGeneFeatureFillColour.Click += btnGeneFeatureFillColour_Click;
@@ -1441,7 +1453,7 @@
             nudGeneFeatureY.Location = new Point(340, 86);
             nudGeneFeatureY.Name = "nudGeneFeatureY";
             nudGeneFeatureY.Size = new Size(57, 23);
-            nudGeneFeatureY.TabIndex = 43;
+            nudGeneFeatureY.TabIndex = 9;
             nudGeneFeatureY.ValueChanged += nudGeneFeatureY_ValueChanged;
             // 
             // nudGeneFeatureX
@@ -1449,7 +1461,7 @@
             nudGeneFeatureX.Location = new Point(254, 86);
             nudGeneFeatureX.Name = "nudGeneFeatureX";
             nudGeneFeatureX.Size = new Size(57, 23);
-            nudGeneFeatureX.TabIndex = 42;
+            nudGeneFeatureX.TabIndex = 7;
             nudGeneFeatureX.ValueChanged += nudGeneFeatureX_ValueChanged;
             // 
             // label36
@@ -1458,7 +1470,7 @@
             label36.Location = new Point(317, 88);
             label36.Name = "label36";
             label36.Size = new Size(17, 15);
-            label36.TabIndex = 38;
+            label36.TabIndex = 8;
             label36.Text = "Y:";
             // 
             // label35
@@ -1467,7 +1479,7 @@
             label35.Location = new Point(231, 88);
             label35.Name = "label35";
             label35.Size = new Size(17, 15);
-            label35.TabIndex = 37;
+            label35.TabIndex = 6;
             label35.Text = "X:";
             // 
             // label27
@@ -1476,7 +1488,7 @@
             label27.Location = new Point(6, 60);
             label27.Name = "label27";
             label27.Size = new Size(132, 15);
-            label27.TabIndex = 36;
+            label27.TabIndex = 3;
             label27.Text = "Link marker to a feature";
             // 
             // label42
@@ -1485,7 +1497,7 @@
             label42.Location = new Point(6, 215);
             label42.Name = "label42";
             label42.Size = new Size(115, 15);
-            label42.TabIndex = 35;
+            label42.TabIndex = 19;
             label42.Text = "Draw current marker";
             // 
             // label41
@@ -1493,7 +1505,7 @@
             label41.Location = new Point(6, 302);
             label41.Name = "label41";
             label41.Size = new Size(242, 33);
-            label41.TabIndex = 34;
+            label41.TabIndex = 25;
             label41.Text = "Press the 'Delete' button to remove the marker";
             // 
             // label30
@@ -1501,7 +1513,7 @@
             label30.Location = new Point(6, 116);
             label30.Name = "label30";
             label30.Size = new Size(242, 35);
-            label30.TabIndex = 27;
+            label30.TabIndex = 10;
             label30.Text = "Select tthe approximate location by clicking on the image";
             // 
             // label40
@@ -1509,7 +1521,7 @@
             label40.Location = new Point(6, 269);
             label40.Name = "label40";
             label40.Size = new Size(242, 33);
-            label40.TabIndex = 33;
+            label40.TabIndex = 23;
             label40.Text = "Press the 'Add'/'Update' button to save the marker";
             // 
             // label39
@@ -1518,7 +1530,7 @@
             label39.Location = new Point(6, 239);
             label39.Name = "label39";
             label39.Size = new Size(135, 15);
-            label39.TabIndex = 32;
+            label39.TabIndex = 21;
             label39.Text = "Enter the marker's name";
             // 
             // label34
@@ -1527,7 +1539,7 @@
             label34.Location = new Point(6, 151);
             label34.Name = "label34";
             label34.Size = new Size(226, 15);
-            label34.TabIndex = 31;
+            label34.TabIndex = 12;
             label34.Text = "Set the marker's width (W) and height (H)";
             // 
             // label32
@@ -1536,7 +1548,7 @@
             label32.Location = new Point(3, 182);
             label32.Name = "label32";
             label32.Size = new Size(143, 15);
-            label32.TabIndex = 29;
+            label32.TabIndex = 17;
             label32.Text = "Select the marker's colour";
             // 
             // label31
@@ -1545,7 +1557,7 @@
             label31.Location = new Point(6, 88);
             label31.Name = "label31";
             label31.Size = new Size(176, 15);
-            label31.TabIndex = 28;
+            label31.TabIndex = 5;
             label31.Text = "Modify the X and Y coordinates:";
             // 
             // tabPage7
@@ -1579,7 +1591,7 @@
             cboImageDPI.Location = new Point(316, 21);
             cboImageDPI.Name = "cboImageDPI";
             cboImageDPI.Size = new Size(75, 23);
-            cboImageDPI.TabIndex = 5;
+            cboImageDPI.TabIndex = 1;
             cboImageDPI.SelectedIndexChanged += cboImageDPI_SelectedIndexChanged;
             // 
             // label45
@@ -1587,7 +1599,7 @@
             label45.Location = new Point(6, 40);
             label45.Name = "label45";
             label45.Size = new Size(304, 30);
-            label45.TabIndex = 4;
+            label45.TabIndex = 2;
             label45.Text = "Screen resolution is typically set to 96 DPI and journals require values of 300 or higher ";
             // 
             // btnSaveImage
@@ -1596,7 +1608,7 @@
             btnSaveImage.Location = new Point(316, 82);
             btnSaveImage.Name = "btnSaveImage";
             btnSaveImage.Size = new Size(75, 23);
-            btnSaveImage.TabIndex = 3;
+            btnSaveImage.TabIndex = 4;
             btnSaveImage.Text = "Save";
             btnSaveImage.UseVisualStyleBackColor = true;
             btnSaveImage.Click += btnSaveImage_Click;
@@ -1606,7 +1618,7 @@
             label44.Location = new Point(6, 86);
             label44.Name = "label44";
             label44.Size = new Size(304, 30);
-            label44.TabIndex = 2;
+            label44.TabIndex = 3;
             label44.Text = "To save image press 'Save' and enter the image's file name";
             // 
             // label43
@@ -1616,18 +1628,6 @@
             label43.Size = new Size(304, 46);
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
-            // 
-            // groupBox12
-            // 
-            groupBox12.Controls.Add(btnMove);
-            groupBox12.Controls.Add(cblMoveableAlternativeExons);
-            groupBox12.Controls.Add(label51);
-            groupBox12.Location = new Point(3, 101);
-            groupBox12.Name = "groupBox12";
-            groupBox12.Size = new Size(397, 262);
-            groupBox12.TabIndex = 1;
-            groupBox12.TabStop = false;
-            groupBox12.Text = "Adjust alternatively spliced exon order";
             // 
             // mRNADisplayOptions
             // 
@@ -1661,6 +1661,7 @@
             ((System.ComponentModel.ISupportInitialize)nudMinorTick).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudMajorTick).EndInit();
             tabPage1.ResumeLayout(false);
+            groupBox12.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             tabControl1.ResumeLayout(false);
@@ -1686,7 +1687,6 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).EndInit();
             tabPage7.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
-            groupBox12.ResumeLayout(false);
             ResumeLayout(false);
         }
 

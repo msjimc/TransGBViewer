@@ -72,7 +72,7 @@
             label2.Location = new Point(6, 101);
             label2.Name = "label2";
             label2.Size = new Size(819, 15);
-            label2.TabIndex = 8;
+            label2.TabIndex = 3;
             label2.Text = "To include a sequence in the image, select it in the lefthand list and press the '>' button. To remove it select it in the righthand list and press the '<' button.";
             // 
             // btnRemove
@@ -80,7 +80,7 @@
             btnRemove.Location = new Point(389, 219);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(58, 23);
-            btnRemove.TabIndex = 7;
+            btnRemove.TabIndex = 6;
             btnRemove.Text = "<";
             btnRemove.UseVisualStyleBackColor = true;
             btnRemove.Click += btnRemove_Click;
@@ -90,7 +90,7 @@
             btnAdd.Location = new Point(389, 190);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(58, 23);
-            btnAdd.TabIndex = 6;
+            btnAdd.TabIndex = 5;
             btnAdd.Text = ">";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
@@ -101,7 +101,7 @@
             lvUser.Location = new Point(464, 119);
             lvUser.Name = "lvUser";
             lvUser.Size = new Size(361, 216);
-            lvUser.TabIndex = 5;
+            lvUser.TabIndex = 7;
             lvUser.UseCompatibleStateImageBehavior = false;
             lvUser.View = View.Details;
             lvUser.SelectedIndexChanged += lvUser_SelectedIndexChanged;
@@ -153,7 +153,7 @@
             txtNewName.Location = new Point(6, 66);
             txtNewName.Name = "txtNewName";
             txtNewName.Size = new Size(822, 23);
-            txtNewName.TabIndex = 3;
+            txtNewName.TabIndex = 2;
             txtNewName.TextChanged += txtNewName_TextChanged;
             // 
             // label1
@@ -163,7 +163,7 @@
             label1.Location = new Point(6, 19);
             label1.Name = "label1";
             label1.Size = new Size(629, 15);
-            label1.TabIndex = 2;
+            label1.TabIndex = 0;
             label1.Text = "To rename a selected transcripts, select it in the dropdown box below and then type the prefered name in the text area.";
             // 
             // cboTranscript
@@ -182,7 +182,7 @@
             btnCancel.Location = new Point(765, 359);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 1;
+            btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -192,7 +192,7 @@
             btnAccept.Location = new Point(684, 359);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
-            btnAccept.TabIndex = 2;
+            btnAccept.TabIndex = 1;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             btnAccept.Click += btnAccept_Click;

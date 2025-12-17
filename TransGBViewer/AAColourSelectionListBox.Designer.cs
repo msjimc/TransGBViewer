@@ -47,7 +47,7 @@
             btnCancel.Location = new Point(264, 174);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 7;
+            btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -58,7 +58,7 @@
             btnAccept.Location = new Point(183, 174);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
-            btnAccept.TabIndex = 6;
+            btnAccept.TabIndex = 1;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             btnAccept.Click += btnAccept_Click;
@@ -73,7 +73,7 @@
             groupBox1.Location = new Point(10, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(325, 152);
-            groupBox1.TabIndex = 5;
+            groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Select";
             // 
@@ -82,7 +82,7 @@
             label1.Location = new Point(8, 19);
             label1.Name = "label1";
             label1.Size = new Size(311, 31);
-            label1.TabIndex = 6;
+            label1.TabIndex = 0;
             label1.Text = "Start to write the colour's name in the text area below and the select from the suggested names";
             // 
             // txtSuggestion
@@ -90,7 +90,7 @@
             txtSuggestion.Location = new Point(6, 65);
             txtSuggestion.Name = "txtSuggestion";
             txtSuggestion.Size = new Size(313, 23);
-            txtSuggestion.TabIndex = 4;
+            txtSuggestion.TabIndex = 1;
             txtSuggestion.TextChanged += txtSuggestion_TextChanged;
             // 
             // p1Example
@@ -108,7 +108,7 @@
             cboColours.Location = new Point(6, 94);
             cboColours.Name = "cboColours";
             cboColours.Size = new Size(313, 23);
-            cboColours.TabIndex = 0;
+            cboColours.TabIndex = 2;
             cboColours.SelectedIndexChanged += cboColours_SelectedIndexChanged;
             // 
             // AAColourSelectionListBox

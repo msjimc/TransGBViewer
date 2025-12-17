@@ -95,7 +95,7 @@
             rdoCustomDialogBox.Location = new Point(403, 268);
             rdoCustomDialogBox.Name = "rdoCustomDialogBox";
             rdoCustomDialogBox.Size = new Size(96, 19);
-            rdoCustomDialogBox.TabIndex = 20;
+            rdoCustomDialogBox.TabIndex = 12;
             rdoCustomDialogBox.Text = "Colour picker";
             rdoCustomDialogBox.UseVisualStyleBackColor = true;
             // 
@@ -107,7 +107,7 @@
             rdoNameColour.Location = new Point(311, 268);
             rdoNameColour.Name = "rdoNameColour";
             rdoNameColour.Size = new Size(73, 19);
-            rdoNameColour.TabIndex = 19;
+            rdoNameColour.TabIndex = 11;
             rdoNameColour.TabStop = true;
             rdoNameColour.Text = "By Name";
             rdoNameColour.UseVisualStyleBackColor = true;
@@ -127,7 +127,7 @@
             btnColourSelection.Location = new Point(534, 268);
             btnColourSelection.Name = "btnColourSelection";
             btnColourSelection.Size = new Size(75, 23);
-            btnColourSelection.TabIndex = 17;
+            btnColourSelection.TabIndex = 13;
             btnColourSelection.Text = "Colour";
             btnColourSelection.UseVisualStyleBackColor = true;
             btnColourSelection.Click += btnColourSelection_Click;
@@ -138,7 +138,7 @@
             label7.Location = new Point(6, 267);
             label7.Name = "label7";
             label7.Size = new Size(297, 46);
-            label7.TabIndex = 16;
+            label7.TabIndex = 10;
             label7.Text = "To set the colour of the features, first select whether you wish to pick the colour by name or via a custom colour dialog box  and then press 'Colour'";
             // 
             // label6
@@ -147,7 +147,7 @@
             label6.Location = new Point(6, 354);
             label6.Name = "label6";
             label6.Size = new Size(285, 34);
-            label6.TabIndex = 15;
+            label6.TabIndex = 17;
             label6.Text = "To delete a set of features select its name from the dropdown list and press 'Remove'";
             // 
             // cboList
@@ -158,7 +158,7 @@
             cboList.Location = new Point(390, 365);
             cboList.Name = "cboList";
             cboList.Size = new Size(219, 23);
-            cboList.TabIndex = 14;
+            cboList.TabIndex = 19;
             cboList.SelectedIndexChanged += cboList_SelectedIndexChanged;
             // 
             // btnUncheck
@@ -166,7 +166,7 @@
             btnUncheck.Location = new Point(220, 170);
             btnUncheck.Name = "btnUncheck";
             btnUncheck.Size = new Size(75, 23);
-            btnUncheck.TabIndex = 13;
+            btnUncheck.TabIndex = 9;
             btnUncheck.Text = "Uncheck";
             btnUncheck.UseVisualStyleBackColor = true;
             btnUncheck.Click += btnUncheck_Click;
@@ -177,7 +177,7 @@
             label5.Location = new Point(6, 170);
             label5.Name = "label5";
             label5.Size = new Size(113, 15);
-            label5.TabIndex = 12;
+            label5.TabIndex = 8;
             label5.Text = "Uncheck all features";
             // 
             // btnCheck
@@ -185,7 +185,7 @@
             btnCheck.Location = new Point(220, 137);
             btnCheck.Name = "btnCheck";
             btnCheck.Size = new Size(75, 23);
-            btnCheck.TabIndex = 11;
+            btnCheck.TabIndex = 7;
             btnCheck.Text = "Check";
             btnCheck.UseVisualStyleBackColor = true;
             btnCheck.Click += btnCheck_Click;
@@ -196,7 +196,7 @@
             lblSearchHitcount.Location = new Point(6, 141);
             lblSearchHitcount.Name = "lblSearchHitcount";
             lblSearchHitcount.Size = new Size(93, 15);
-            lblSearchHitcount.TabIndex = 10;
+            lblSearchHitcount.TabIndex = 6;
             lblSearchHitcount.Text = "Number of hits: ";
             // 
             // txtSearchTerm
@@ -204,7 +204,7 @@
             txtSearchTerm.Location = new Point(6, 109);
             txtSearchTerm.Name = "txtSearchTerm";
             txtSearchTerm.Size = new Size(289, 23);
-            txtSearchTerm.TabIndex = 9;
+            txtSearchTerm.TabIndex = 5;
             txtSearchTerm.TextChanged += txtSearchTerm_TextChanged;
             // 
             // label4
@@ -213,7 +213,7 @@
             label4.Location = new Point(6, 91);
             label4.Name = "label4";
             label4.Size = new Size(289, 15);
-            label4.TabIndex = 8;
+            label4.TabIndex = 4;
             label4.Text = "Select features containing this test in their description";
             // 
             // btnRemove
@@ -223,7 +223,7 @@
             btnRemove.Location = new Point(309, 365);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(75, 23);
-            btnRemove.TabIndex = 7;
+            btnRemove.TabIndex = 18;
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = true;
             btnRemove.Click += btnRemove_Click;
@@ -235,7 +235,7 @@
             btnAdd.Location = new Point(309, 321);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 23);
-            btnAdd.TabIndex = 6;
+            btnAdd.TabIndex = 15;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
@@ -247,7 +247,7 @@
             clbFeatures.Location = new Point(309, 60);
             clbFeatures.Name = "clbFeatures";
             clbFeatures.Size = new Size(300, 202);
-            clbFeatures.TabIndex = 5;
+            clbFeatures.TabIndex = 3;
             clbFeatures.ItemCheck += clbFeatures_ItemCheck;
             // 
             // label3
@@ -256,7 +256,7 @@
             label3.Location = new Point(6, 60);
             label3.Name = "label3";
             label3.Size = new Size(224, 15);
-            label3.TabIndex = 4;
+            label3.TabIndex = 2;
             label3.Text = "Select the features to be shown in this set";
             // 
             // txtSetName
@@ -265,7 +265,7 @@
             txtSetName.Location = new Point(390, 321);
             txtSetName.Name = "txtSetName";
             txtSetName.Size = new Size(219, 23);
-            txtSetName.TabIndex = 3;
+            txtSetName.TabIndex = 16;
             txtSetName.TextChanged += txtSetName_TextChanged;
             // 
             // label2
@@ -274,7 +274,7 @@
             label2.Location = new Point(6, 321);
             label2.Name = "label2";
             label2.Size = new Size(297, 31);
-            label2.TabIndex = 2;
+            label2.TabIndex = 14;
             label2.Text = "Enter the display name for the set of feature to be displayed on this line";
             // 
             // cboAccessionIDs
@@ -303,7 +303,7 @@
             btnCancel.Location = new Point(552, 413);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 4;
+            btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -314,7 +314,7 @@
             btnAccept.Location = new Point(471, 413);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
-            btnAccept.TabIndex = 3;
+            btnAccept.TabIndex = 1;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             // 

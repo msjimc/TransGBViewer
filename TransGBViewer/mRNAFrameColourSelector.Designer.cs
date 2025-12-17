@@ -58,7 +58,7 @@
             btnCancel.Location = new Point(503, 179);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 10;
+            btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -69,7 +69,7 @@
             btnAccept.Location = new Point(422, 179);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
-            btnAccept.TabIndex = 9;
+            btnAccept.TabIndex = 1;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             // 
@@ -92,7 +92,7 @@
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(566, 161);
-            groupBox1.TabIndex = 8;
+            groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Colour selection";
             // 
@@ -101,7 +101,7 @@
             btnPlusTwo.Location = new Point(485, 121);
             btnPlusTwo.Name = "btnPlusTwo";
             btnPlusTwo.Size = new Size(75, 23);
-            btnPlusTwo.TabIndex = 66;
+            btnPlusTwo.TabIndex = 9;
             btnPlusTwo.Text = "Select";
             btnPlusTwo.UseVisualStyleBackColor = true;
             btnPlusTwo.Click += btnPlusTwo_Click;
@@ -111,7 +111,7 @@
             btnPlusOne.Location = new Point(485, 92);
             btnPlusOne.Name = "btnPlusOne";
             btnPlusOne.Size = new Size(75, 23);
-            btnPlusOne.TabIndex = 65;
+            btnPlusOne.TabIndex = 7;
             btnPlusOne.Text = "Select";
             btnPlusOne.UseVisualStyleBackColor = true;
             btnPlusOne.Click += btnPlusOne_Click;
@@ -121,7 +121,7 @@
             btnPlusZero.Location = new Point(485, 63);
             btnPlusZero.Name = "btnPlusZero";
             btnPlusZero.Size = new Size(75, 23);
-            btnPlusZero.TabIndex = 64;
+            btnPlusZero.TabIndex = 5;
             btnPlusZero.Text = "Select";
             btnPlusZero.UseVisualStyleBackColor = true;
             btnPlusZero.Click += btnPlusZero_Click;
@@ -148,7 +148,7 @@
             label3.Location = new Point(316, 125);
             label3.Name = "label3";
             label3.Size = new Size(98, 15);
-            label3.TabIndex = 60;
+            label3.TabIndex = 8;
             label3.Text = "+2 reading frame";
             // 
             // label2
@@ -157,7 +157,7 @@
             label2.Location = new Point(316, 96);
             label2.Name = "label2";
             label2.Size = new Size(98, 15);
-            label2.TabIndex = 59;
+            label2.TabIndex = 6;
             label2.Text = "+1 reading frame";
             // 
             // label1
@@ -166,7 +166,7 @@
             label1.Location = new Point(322, 67);
             label1.Name = "label1";
             label1.Size = new Size(92, 15);
-            label1.TabIndex = 58;
+            label1.TabIndex = 4;
             label1.Text = "The same frame";
             // 
             // pPlusZero
@@ -183,7 +183,7 @@
             lblInstructions.Location = new Point(6, 67);
             lblInstructions.Name = "lblInstructions";
             lblInstructions.Size = new Size(296, 15);
-            lblInstructions.TabIndex = 55;
+            lblInstructions.TabIndex = 3;
             lblInstructions.Text = "Select the colour of the open reading frames that have:";
             // 
             // rdoDialog
@@ -192,7 +192,7 @@
             rdoDialog.Location = new Point(441, 15);
             rdoDialog.Name = "rdoDialog";
             rdoDialog.Size = new Size(119, 19);
-            rdoDialog.TabIndex = 54;
+            rdoDialog.TabIndex = 2;
             rdoDialog.Text = "Colour dialog box";
             rdoDialog.UseVisualStyleBackColor = true;
             // 
@@ -203,7 +203,7 @@
             rdoList.Location = new Point(316, 15);
             rdoList.Name = "rdoList";
             rdoList.Size = new Size(95, 19);
-            rdoList.TabIndex = 53;
+            rdoList.TabIndex = 1;
             rdoList.TabStop = true;
             rdoList.Text = "List of names";
             rdoList.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@
             label6.Location = new Point(6, 19);
             label6.Name = "label6";
             label6.Size = new Size(235, 37);
-            label6.TabIndex = 52;
+            label6.TabIndex = 0;
             label6.Text = "Select the colour using a dialog box or a list of predefined names:";
             // 
             // mRNAFrameColourSelector

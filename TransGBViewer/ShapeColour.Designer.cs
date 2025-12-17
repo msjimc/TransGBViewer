@@ -49,7 +49,7 @@
             btnCancel.Location = new Point(500, 120);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 7;
+            btnCancel.TabIndex = 2;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -60,7 +60,7 @@
             btnAccept.Location = new Point(419, 120);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
-            btnAccept.TabIndex = 6;
+            btnAccept.TabIndex = 1;
             btnAccept.Text = "Accept";
             btnAccept.UseVisualStyleBackColor = true;
             // 
@@ -76,7 +76,7 @@
             groupBox1.Location = new Point(14, 14);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(561, 100);
-            groupBox1.TabIndex = 5;
+            groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Colour selection";
             // 
@@ -85,7 +85,7 @@
             btnBackground.Location = new Point(474, 63);
             btnBackground.Name = "btnBackground";
             btnBackground.Size = new Size(81, 23);
-            btnBackground.TabIndex = 57;
+            btnBackground.TabIndex = 4;
             btnBackground.Text = "Colour";
             btnBackground.UseVisualStyleBackColor = true;
             btnBackground.Click += btnBackground_Click;
@@ -104,7 +104,7 @@
             lblInstructions.Location = new Point(6, 67);
             lblInstructions.Name = "lblInstructions";
             lblInstructions.Size = new Size(295, 15);
-            lblInstructions.TabIndex = 55;
+            lblInstructions.TabIndex = 3;
             lblInstructions.Text = "Set the shape's colour  by pressing the 'Colour' button.";
             // 
             // rdoDialog
@@ -112,8 +112,8 @@
             rdoDialog.AutoSize = true;
             rdoDialog.Location = new Point(416, 15);
             rdoDialog.Name = "rdoDialog";
-            rdoDialog.Size = new Size(132, 19);
-            rdoDialog.TabIndex = 54;
+            rdoDialog.Size = new Size(119, 19);
+            rdoDialog.TabIndex = 2;
             rdoDialog.Text = "Colour dialog box";
             rdoDialog.UseVisualStyleBackColor = true;
             // 
@@ -124,7 +124,7 @@
             rdoList.Location = new Point(281, 15);
             rdoList.Name = "rdoList";
             rdoList.Size = new Size(95, 19);
-            rdoList.TabIndex = 53;
+            rdoList.TabIndex = 1;
             rdoList.TabStop = true;
             rdoList.Text = "List of names";
             rdoList.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@
             label6.Location = new Point(6, 19);
             label6.Name = "label6";
             label6.Size = new Size(235, 37);
-            label6.TabIndex = 52;
+            label6.TabIndex = 0;
             label6.Text = "Select the colour using a dialog box or a list of predefined names:";
             // 
             // ShapeColour
