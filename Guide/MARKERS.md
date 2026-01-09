@@ -83,7 +83,7 @@ By default, the markers are coloured black. To change their colour, press the __
 - [Using the Select colour by name dialog](SequenceColour.md)
 - [Using the Windows colour picker dialog](ColourPickerDialog.md)
 
-The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will close the window and change the colour used to draw the marker (black box in Figure 16c).
+The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will close the window and change the colour used to draw the marker (black box in Figure 7c).
 
 ![Figure 7a](images/figuremarker6a.jpg)
 
