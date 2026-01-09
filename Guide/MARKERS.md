@@ -118,3 +118,36 @@ Figure 8b
 Figure 8: An unsaved marker can be hidden or displayed by toggling the __Hide__/__Draw__ button (blue lines in Figures 8a and 8b).
 
 ---
+
+
+## Adding  a marker to the permanent marker collection
+
+So far the marker is only temporary and before and image is saved to file, the marker should be added to ___TransGBViewer's___ permanent marker collection. This is done by entering a name, longer than 2 characters, in the drop-down list box (blue line in Figure 9a) above the __Add__ button (red line in Figure 9a). TThis will active the __Add__ button, which if pressed will add the marker to the collection. Its name will also appear in the drop-down list (blue line in figure 9b) and the box around the marker will be removed (Figure 9b).
+
+<br />
+
+![Figure 9a](images/figuremarker9a.jpg)
+
+*Figure 9a: Entering a name in the drop-down list (blue line) and pressing the __Add__ button adds the marker to the permanent marker collection.*
+
+---
+
+<br />
+
+![Figure 9b](images/figuremarker9b.jpg)
+
+*Figure 9b: Once added to the permanent collection the box around the marker is removed and its name appears in the drop-down list (blue line)*.
+
+---
+
+## Removing a marker from the permanent collection
+
+To delete a marker, select its name in the drop-down list (blue line in Figure 10) will active the __Delete__ button and pressing it will remove the marker (red line in Figure 10).
+
+<br />
+
+![Figure 10](images/figuremarker10.jpg)
+
+*Figure 10: Selecting the marker's name in the drop-down list and pressing __Delete__ will remove the marker.*
+
+---
