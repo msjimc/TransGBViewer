@@ -78,7 +78,7 @@ Figure 6: The marker can be resized (red box in 6a and 6b) using the __W__ and _
 
 ### Selecting the marker's colour
 
-To change the colour used to draw the marker, press the __Colour__ button (blue line in Figure 16). By default, the markers are coloured black. To change their colour, press the __Colour__ button (blue line in Figure 7a). This will display the  __Feature colour selection__ window (Figure 7b). This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 7b) or with the Windows colour picker dialog window if the __Colour dialog box__ option is selected (green line in Figure 7b) when the __Colour__ button is pressed (red line in Figure 7b).
+By default, the markers are coloured black. To change their colour, press the __Colour__ button (blue line in Figure 7a). This will display the  __Feature colour selection__ window (Figure 7b). This window allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 7b) or with the Windows colour picker dialog window if the __Colour dialog box__ option is selected (green line in Figure 7b) when the __Colour__ button is pressed (red line in Figure 7b).
 
 - [Using the Select colour by name dialog](equenceColour.md)
 - [Using the Windows colour picker dialog](ColourPickerDialog.md)
