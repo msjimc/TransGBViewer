@@ -2,7 +2,7 @@
 
 ![Figure 1](images/figureSave.jpg)
 
-Figure 1: the __Save__ tab.
+Figure 1: The __Save__ tab.
 
 ---
 

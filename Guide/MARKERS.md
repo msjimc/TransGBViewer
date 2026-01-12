@@ -16,7 +16,7 @@ Figure 2: The __Markers__ tab allows you to add, modify and delete symbols from 
 
 ## Selecting the marker's shape
 
-The shape of the marker is set using the drop-down list in the top right corner of the __Markers__ tab (blue box in Figure 3a) with the possible shapes shown in Figure 3b. The __Fill__ tick box value (red line in Figure 3a)  determines if the marker is drawn as a solid shape or only draws just the shape's border (Figure 3b).
+The shape of the marker is set using the drop-down list in the top right corner of the __Markers__ tab (blue box in Figure 3a), with the possible shapes shown in Figure 3b. The __Fill__ tick box value (red line in Figure 3a)  determines if the marker is drawn as a solid shape or only draws just the shape's border (Figure 3b).
 
 ![Figure 3a](images/figuremarker2.jpg)
 
@@ -105,7 +105,7 @@ Figure 7c:  When the __Accept__ button in the __Feature colour selection__ windo
 
 ## Hiding and displaying an unsaved marker
 
-Once the marker's position, linked sequence and shape have been selected, the marker is drawn. To hide a marker, you can either set the linked sequence and shape to _Select_ in the appropriate drop-down list or press the __Hide__ button (blue lines in Figure 8a). This will change the button's label to __Draw__ and the marker will not be displayed (blue lines in Figure 8b).
+Once the marker's position, linked sequence and shape have been selected, the marker is drawn. To hide a marker, you can either set the linked sequence and shape to _Select_ in the appropriate drop-down list or press the __Hide__ button (blue lines in Figure 8a). This will change the button's label to __Draw__, and the marker will not be displayed (blue lines in Figure 8b).
 
 ![Figure 8a](images/figuremarker7a.jpg)
 
@@ -122,7 +122,7 @@ Figure 8: An unsaved marker can be hidden or displayed by toggling the __Hide__/
 
 ## Adding  a marker to the permanent marker collection
 
-So far the marker is only temporary and before and image is saved to file, the marker should be added to ___TransGBViewer's___ permanent marker collection. This is done by entering a name, longer than 2 characters, in the drop-down list box (blue line in Figure 9a) above the __Add__ button (red line in Figure 9a). TThis will active the __Add__ button, which if pressed will add the marker to the collection. Its name will also appear in the drop-down list (blue line in figure 9b) and the box around the marker will be removed (Figure 9b).
+So far the marker is only temporary, and before an image is saved to file, the marker should be added to ___TransGBViewer's___ permanent marker collection. This is done by entering a name, longer than 2 characters, in the drop-down list box (blue line in Figure 9a) above the __Add__ button (red line in Figure 9a). This will activate the __Add__ button, which if pressed will add the marker to the collection. Its name will also appear in the drop-down list (blue line in Figure 9b), and the box around the marker will be removed (Figure 9b).
 
 <br />
 
@@ -136,13 +136,13 @@ So far the marker is only temporary and before and image is saved to file, the m
 
 ![Figure 9b](images/figuremarker9b.jpg)
 
-*Figure 9b: Once added to the permanent collection the box around the marker is removed and its name appears in the drop-down list (blue line)*.
+*Figure 9b: Once added to the permanent collection, the box around the marker is removed, and its name appears in the drop-down list (blue line)*.
 
 ---
 
 ## Removing a marker from the permanent collection
 
-To delete a marker, select its name in the drop-down list (blue line in Figure 10) will active the __Delete__ button and pressing it will remove the marker (red line in Figure 10).
+To delete a marker, select its name in the drop-down list (blue line in Figure 10), which will activate the __Delete__, button and pressing it will remove the marker (red line in Figure 10).
 
 <br />
 
