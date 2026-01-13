@@ -1,3 +1,15 @@
+## List of contents
+- [Displaying metadata present in the imported GenBank files](GenBank.md#displaying-metadata-present-in-the-imported-genbank-files)
+  - [Selecting features to display in the image](GenBank.md#selecting-features-to-display-in-the-image)
+    - [Selecting multiples feature to be displayed on one line](GenBank.md#selecting-multiples-feature-to-be-displayed-on-one-line)
+    - [Selecting a single feature to be displayed on one line](GenBank.md#selecting-a-single-feature-to-be-displayed-on-one-line)
+    - [Setting the colour of items drawn on a single line](GenBank.md#setting-the-colour-of-items-drawn-on-a-single-line)
+  - [Saving the features to be drawn](GenBank.md#saving-the-features-to-be-drawn)
+  - [Removing a line](GenBank.md#removing-a-line)
+  - [Accepting the feature edits and redrawing the image](GenBank.md#accepting-the-feature-edits-and-redrawing-the-image)
+
+---
+
 # Displaying metadata present in the imported GenBank files
 
 The __Sequence features from the GenBank files__ panel at the top of the __features__ tab allow the selection and display of features present in the imported GenBank files (Figure 21). 

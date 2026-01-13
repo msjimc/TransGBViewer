@@ -1,3 +1,17 @@
+## List of contents
+- [Adjusting the order of each class of features](LAYOUT.md#adjusting-the-order-of-each-class-of-features)
+  - [Changing the order of the feature classes of the image](LAYOUT.md#changing-the-order-of-the-feature-classes-of-the-image)
+  - [The sequence order and display name panel](LAYOUT.md#the-sequence-order-and-display-name-panel)
+  - [Modifying the transcripts displayed](LAYOUT.md#modifying-the-transcripts-displayed)
+  - [The "Rename transcripts" form](LAYOUT.md#the-rename-transcripts-form)
+    - [Reordering and omitting transcripts](LAYOUT.md#reordering-and-omitting-transcripts)
+      - [Moving sequences from one list to the other](LAYOUT.md#moving-sequences-from-one-list-to-the-other)
+      - [Setting the order and omitting transcripts](LAYOUT.md#setting-the-order-and-omitting-transcripts)
+    - [Renaming a transcript](LAYOUT.md#renaming-a-transcript)
+  - [Resetting the transcript display names, order and reselecting omitted transcripts](LAYOUT.md#resetting-the-transcript-display-names-order-and-reselecting-omitted-transcripts)
+
+---
+
 # Adjusting the order of each class of features
 
 ![Figure 1](images/figureLayout1.jpg)

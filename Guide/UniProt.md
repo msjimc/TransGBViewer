@@ -1,3 +1,19 @@
+## List of contents
+- [Displaying features linked to the transcripts by UniProt](UniProt.md#displaying-features-linked-to-the-transcripts-by-uniprot)
+  - [Retrieving a previously saved search result](UniProt.md#retrieving-a-previously-saved-search-result)
+  - [Searching the UniProt website for features linked to the transcripts](UniProt.md#searching-the-uniprot-website-for-features-linked-to-the-transcripts)
+    - [Feedback description](UniProt.md#feedback-description)
+  - [Selecting and formatting UniProt features](UniProt.md#selecting-and-formatting-uniprot-features)
+    - [Selecting a UniProt domain](UniProt.md#selecting-a-uniprot-domain)
+    - [Selecting a feature type](UniProt.md#selecting-a-feature-type)
+    - [Selecting one or more features to display on a line](UniProt.md#selecting-one-or-more-features-to-display-on-a-line)
+    - [Selecting the colour used to draw the features on a line](UniProt.md#selecting-the-colour-used-to-draw-the-features-on-a-line)
+  - [Saving the features to be drawn](UniProt.md#saving-the-features-to-be-drawn)
+  - [Removing a line](UniProt.md#removing-a-line)
+  - [Accepting the feature edits and redrawing the image](UniProt.md#accepting-the-feature-edits-and-redrawing-the-image)
+   
+---
+
 # Displaying features linked to the transcripts by UniProt
 
 The __Protein features from the UniProt website__ panel (Figure 1) contain the controls required to obtain, select, format and display features linked to transcripts by the UniProt website.

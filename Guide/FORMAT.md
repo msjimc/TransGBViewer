@@ -1,3 +1,17 @@
+## List of contents
+- [The Format tab: adjusting the image's format](FORMAT.md#the-format-tab-adjusting-the-images-format)
+  - [Format of the coordinate labels](FORMAT.md#format-of-the-coordinate-labels)
+  - ["Display sequence coordinates" options](FORMAT.md#display-sequence-coordinates-options)
+  - ["Select the major tick interval" option](FORMAT.md#select-the-major-tick-interval-option)
+  - ["Select the minor tick interval" option](FORMAT.md#select-the-minor-tick-interval-option)
+  - ["Set the angle of rotation of the coordinate text" option](FORMAT.md#set-the-angle-of-rotation-of-the-coordinate-text-option)
+  - [Sequence label formatting](FORMAT.md#sequence-label-formatting)
+  - ["Select the location of the labels" option](FORMAT.md#select-the-location-of-the-labels-option)
+  - ["Adjust label width area" option](FORMAT.md#adjust-label-width-area-option)
+  - ["Select font used to write sequence names" and "Select font used to write feature names" options](FORMAT.md#select-font-used-to-write-sequence-names-and-select-font-used-to-write-feature-names-options)
+  - ["Adjust size of gap signifying an intron" option](FORMAT.md#adjust-size-of-gap-signifying-an-intron-option)
+
+---
 
 # The Format tab: adjusting the image's format
 

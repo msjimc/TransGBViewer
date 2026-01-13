@@ -1,3 +1,22 @@
+## List of contents
+- [Displaying features linked to the transcripts by InterProScan](InterProScan.md#displaying-features-linked-to-the-transcripts-by-interproscan)
+  - [Retrieving a previously saved search result](InterProScan.md#retrieving-a-previously-saved-search-result)
+  - [Saving a successful search](InterProScan.md#saving-a-successful-search)
+  - [Obtaining features linked to protein sequences in the transcripts](InterProScan.md#obtaining-features-linked-to-protein-sequences-in-the-transcripts)
+  - [Preparing for a search](InterProScan.md#preparing-for-a-search)
+  - [Performing a search](InterProScan.md#performing-a-search)
+    - [Feedback from a successful search](InterProScan.md#feedback-from-a-successful-search)
+  - [Accepting the results](InterProScan.md#accepting-the-results)
+  - [Selecting features for display](InterProScan.md#selecting-features-for-display)
+  - [Setting the domain's display name using values linked to the domain](InterProScan.md#setting-the-domains-display-name-using-values-linked-to-the-domain)
+  - [Manually entering the domain's display name](InterProScan.md#manually-entering-the-domains-display-name)
+  - [Modifying the appearance of the domain in the final image](InterProScan.md#modifying-the-appearance-of-the-domain-in-the-final-image)
+  - [Saving the domain's formatting and selecting it to be displayed in the final image](InterProScan.md#saving-the-domains-formatting-and-selecting-it-to-be-displayed-in-the-final-image)
+  - [Deselecting a domain selected to be drawn](InterProScan.md#deselecting-a-domain-selected-to-be-drawn)
+  - [Redrawing the transcripts with the InterProScan domains](InterProScan.md#redrawing-the-transcripts-with-the-interproscan-domains)
+
+---
+
 # Displaying features linked to the transcripts by InterProScan
 
 The __Protein features from the InterProScan website__ panel (Figure 1) contains the controls required to obtain, select, format and display features linked to the transcripts by the InterProScan website. Pressing the __Get__ button (blue line in Figure 1) displays the __Import InterProScan features__ window (Figure 2).

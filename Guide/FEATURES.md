@@ -1,3 +1,12 @@
+## List of contents
+- [Adding metadata to displayed transcripts](FEATURES.md#adding-metadata-to-displayed-transcripts)
+  - [Display of metadata present in the imported GenBank files](FEATURES.md#display-of-metadata-present-in-the-imported-genbank-files)
+  - [Display of features linked to the transcripts by UniProt](FEATURES.md#display-of-features-linked-to-the-transcripts-by-uniprot)
+  - [Display of features identified by InterProScan using a transcript's protein sequence](FEATURES.md#display-of-features-identified-by-interproscan-using-a-transcripts-protein-sequence)
+  - [Visually linking GenBank, UniProt and InterProScan features to the transcript used to identify them](FEATURES.md#visually-linking-genbank-uniprot-and-interproscan-features-to-the-transcript-used-to-identify-them)
+ 
+ ---
+
 # Adding metadata to displayed transcripts
 
 ![Figure 1](images/figureFeature1.jpg)

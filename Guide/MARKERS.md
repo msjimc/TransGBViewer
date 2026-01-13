@@ -1,4 +1,18 @@
-# Manually annotating the transcript and feature image
+## List of contents
+- [Manually annotating the transcripts and features in the image](MARKERS.md#manually-annotating-the-transcripts-and-features-in-the-image)
+  - [Selecting the marker's shape](MARKERS.md#selecting-the-markers-shape)
+  - [Selecting the transcript/feature line used to anchor the position of a marker](MARKERS.md#selecting-the-transcriptfeature-line-used-to-anchor-the-position-of-a-marker)
+  - [Setting the position of a marker in the image](MARKERS.md#setting-the-position-of-a-marker-in-the-image)
+  - [Displaying a marker](MARKERS.md#displaying-a-marker)
+  - [Adjusting the size of the marker](MARKERS.md#adjusting-the-size-of-the-marker)
+    - [Selecting the marker's colour](MARKERS.md#selecting-the-markers-colour)
+  - [Hiding and displaying an unsaved marker](MARKERS.md#hiding-and-displaying-an-unsaved-marker)
+  - [Adding  a marker to the permanent marker collection](MARKERS.md#adding-a-marker-to-the-permanent-marker-collection)
+  - [Removing a marker from the permanent collection](MARKERS.md#removing-a-marker-from-the-permanent-collection)
+
+---
+
+# Manually annotating the transcripts and features in the image
 
 ![Figure 1](images/figuremarker0.jpg)
 

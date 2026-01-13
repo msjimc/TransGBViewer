@@ -1,3 +1,20 @@
+## List of contents
+- [Adjusting how sequences are displayed](DISPLAY.md#adjusting-how-sequences-are-displayed)
+  - [Changing the colours used to draw the sequences](DISPLAY.md#changing-the-colours-used-to-draw-the-sequences)
+  - [Selecting a region to view](DISPLAY.md#selecting-a-region-to-view)
+    - [Start the base pair interval value at 1 when zooming in](DISPLAY.md#start-the-base-pair-interval-value-at-1-when-zooming-in)
+  - [Highlighting coding sequences](DISPLAY.md#highlighting-coding-sequences)
+  - [Drawing exons as boxes with or without rounded corners](DISPLAY.md#drawing-exons-as-boxes-with-or-without-rounded-corners)
+  - [Highlight coding and non-coding sequences by reducing the height of the non-coding sequence boxes](DISPLAY.md#highlight-coding-and-non-coding-sequences-by-reducing-the-height-of-the-non-coding-sequence-boxes)
+  - [Highlighting out-of-frame coding sequences](DISPLAY.md#highlighting-out-of-frame-coding-sequences)
+  - [Highlighting a transcript's exon splice sites](DISPLAY.md#highlighting-a-transcripts-exon-splice-sites)
+  - [Changing the colour of the lines used to highlight the donor and/or acceptor splice sites](DISPLAY.md#changing-the-colour-of-the-lines-used-to-highlight-the-donor-andor-acceptor-splice-sites)
+  - [Highlighting a transcript's translational start and stop sites](DISPLAY.md#highlighting-a-transcripts-translational-start-and-stop-sites)
+  - [Changing the colour of the lines used to highlight the translational start and stop sites](DISPLAY.md#changing-the-colour-of-the-lines-used-to-highlight-the-translational-start-and-stop-sites)
+  - [Adjusting the thickness of the lines showing splice sites and translational start and stop sites](DISPLAY.md#adjusting-the-thickness-of-the-lines-showing-splice-sites-and-translational-start-and-stop-sites)
+ 
+ ---
+
 # Adjusting how sequences are displayed
 
 ![Figure 1](images/figureDisplay1.jpg)

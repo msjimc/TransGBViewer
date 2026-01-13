@@ -1,3 +1,8 @@
+## List of contents
+- [Saving an image to file](SAVE.md#saving-an-image-to-file)
+
+---
+
 # Saving an image to file
 
 ![Figure 1](images/figureSave.jpg)
