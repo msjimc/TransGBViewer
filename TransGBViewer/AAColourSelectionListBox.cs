@@ -35,18 +35,18 @@ namespace TransGBViewer
 
         private void AAColourSelectionListBox_Load(object sender, EventArgs e)
         {
-            List<Color> predefinedColors = Enum.GetValues(typeof(KnownColor)).Cast<KnownColor>().Select(c => Color.FromKnownColor(c)).ToList();
+            List<Color> predefinedColors = Enum.GetValues(typeof(KnownColor))
+                                        .Cast<KnownColor>()
+                                        .Select(Color.FromKnownColor)
+                                        .Where(c => !c.IsSystemColor)
+                                        .ToList();
+            var sorted = predefinedColors.OrderBy(c => c.Name).ToList(); 
 
-            bool ignore = true;
             colourNameslist = new AutoCompleteStringCollection();
-            foreach (var color in predefinedColors)
+            foreach (var color in sorted)
             {
-                if (color.Name.ToString() == "AliceBlue") { ignore = false; }
-                if (ignore == false)
-                {
-                    cboColours.Items.Add(color.Name.ToString());
-                    colourNameslist.Add(color.Name.ToString());
-                }
+                cboColours.Items.Add(color.Name.ToString());
+                colourNameslist.Add(color.Name.ToString());
             }
 
             int index=0;
