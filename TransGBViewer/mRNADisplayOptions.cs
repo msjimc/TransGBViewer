@@ -79,12 +79,95 @@ namespace TransGBViewer
                 mRNADV.Show();
             }
 
+
+            checkForExons();
+
             makeAllTranscriptSequence();
             InitalizeFormatAndDisplayTab();
             ReDraw();
 
             setFrame();
             MakeListOfSwappableExons();
+
+            
+
+        }
+
+        private void checkForExons()
+        {
+            List<string> noExons = new List<string>();
+            foreach (string name in parameters.SequenceNames)
+            {
+                if (parameters.Exons.ContainsKey(name) == false)
+                { noExons.Add(name); }
+            }
+            string list = "";
+            if (noExons.Count > 1)
+            {
+                for (int index = 0; index < noExons.Count - 1; index++)
+                { list += noExons[index] + ", "; }
+                list = list.Substring(0, list.Length - 1) + " and " + noExons[noExons.Count - 1];
+            }
+            else if (noExons.Count == 1)
+            {
+                list = (noExons[0]);
+            }
+            else { return; }
+
+            if (MessageBox.Show("These sequences have no exon data, do you want to try to create it?" + "\r\n" + list, "No exon data", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                makeExonsList(noExons);
+            }
+
+        }
+
+        private void makeExonsList(List<string> noExons)
+        {
+            string SequenceBase = GetLongestTranscriptWithGaps();
+            string[] exonSeqs = SequenceBase.Split(' ');
+            string SequenceBaseGapless = SequenceBase.Replace(" ", "");
+
+            foreach (string name in noExons)
+            {
+                List<Point> possibleExons = new List<Point>();               
+                foreach (string exonSeq in exonSeqs)
+                {
+                    if (exonSeq != "")
+                    {
+                        string alignedBase = "";
+                        string alignedTest = "";
+                        int score = 0;
+                        string debugstring = parameters.SequenceDNA[name];
+                        (alignedBase, alignedTest, score) = SequenceAlignment.LocalDNAAlignment(exonSeq, parameters.SequenceDNA[name]);
+                        //string result = "bad";
+                        if ((float)score / 2 > (float)alignedTest.Length * 0.9)
+                        {
+                            string exon = alignedBase.Replace("-", "").Trim();
+                            int place = parameters.SequenceDNA[name].IndexOf(exon);
+                            if (place > -1)
+                            {
+                                Point p = new Point(place + 1, place + exon.Length);
+                                possibleExons.Add(p);
+                            }
+                        }
+                    }
+                }
+                
+                possibleExons = possibleExons.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
+                List<Point> missedBits = new List<Point>();
+                for (int index = 0; index < possibleExons.Count - 1; index++)
+                {
+                    if (possibleExons[index + 1].X > possibleExons[index].Y + 10)
+                    { missedBits.Add(new Point(possibleExons[index].Y + 1, possibleExons[index + 1].X - 1)); }
+                }
+                if (missedBits.Count > 0)
+                { 
+                    possibleExons.AddRange(missedBits);
+                    possibleExons = possibleExons.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
+                }
+                parameters.Exons[name] = possibleExons;
+            }
+
         }
 
         private void ReadGenBankFile(string FileName)
@@ -234,6 +317,7 @@ namespace TransGBViewer
             if (index > 0)
             {
                 bit = bit.Replace("<", "").Replace(">", "").Replace("complement(", "").Replace(")", "").Trim();
+                index = bit.IndexOf("..");
                 int start = Convert.ToInt32(bit.Substring(0, index));
                 int end = Convert.ToInt32(bit.Substring(index + 2));
                 return new Point(start, end);
@@ -355,6 +439,14 @@ namespace TransGBViewer
             Dictionary<string, exonGraphNode> exonSetDict = new Dictionary<string, exonGraphNode>();
             foreach (string name in parameters.SequenceNames)
             {
+                //if (parameters.Exons.ContainsKey(name) == false)
+                //{
+                //    Point e = new Point(1, parameters.SequenceDNA[name].Length - 1);
+                //    List<Point> es = new List<Point>();
+                //    es.Add(e);
+                //    parameters.Exons.Add(name, es);
+                //}
+                if (parameters.Exons.ContainsKey(name) == false) continue;
                 List<Point> exons = parameters.Exons[name];
                 foreach (Point exon in exons)
                 {
@@ -381,8 +473,10 @@ namespace TransGBViewer
 
         private List<exonGraphNode> LinkExonGraph(Dictionary<string, exonGraphNode> exonSetDict)
         {
+            
             foreach (string name in parameters.SequenceNames)
             {
+                if (parameters.Exons.ContainsKey(Name) == false) continue;
                 List<Point> exons = parameters.Exons[name];
                 string previousSequence = "";
                 string sequence = "";
@@ -424,6 +518,7 @@ namespace TransGBViewer
 
             foreach (string name in parameters.SequenceNames)
             {
+                if (parameters.Exons.ContainsKey(name) == false) continue;
                 List<Point> exons = parameters.Exons[name];
                 if (orderedList.Count == 0)
                 {
@@ -435,6 +530,7 @@ namespace TransGBViewer
                     }
                     foreach (string name2 in parameters.SequenceNames)
                     {
+                        if (parameters.Exons.ContainsKey(name2) == false) continue;
                         List<Point> exons2 = parameters.Exons[name];
                         string sequence = parameters.SequenceDNA[name2].Substring(parameters.Exons[name2][0].X - 1, parameters.Exons[name2][0].Y - parameters.Exons[name2][0].X + 1);
                         exonGraphNode exon = exonSet[sequence];
@@ -465,7 +561,6 @@ namespace TransGBViewer
             {
                 orderedList[index].order = index;
             }
-
         }
 
         private int relativePosition(exonGraphNode exon, exonGraphNode exonTest, List<exonGraphNode> listOfExons)
@@ -554,6 +649,7 @@ namespace TransGBViewer
             string newSequence = sequenceBase;
             foreach (string name in parameters.SequenceNames)
             {
+                if (parameters.Exons.ContainsKey(name) == false) continue;
                 List<Point> exons = parameters.Exons[name];
                 foreach (Point exon in exons)
                 {
@@ -966,6 +1062,7 @@ namespace TransGBViewer
                     int currentHeight = height;
                     foreach (string name in parameters.SequenceDisplayNames.Keys)
                     {
+                        if (parameters.Exons.ContainsKey(name) == false) continue;
                         List<Point> exonPoints = parameters.Exons[name];
                         if (parameters.LegendsLocation != DrawLabels.none)
                         {
@@ -2882,6 +2979,7 @@ namespace TransGBViewer
 
             foreach (string name in parameters.SequenceNames)
             {
+                if (parameters.CDSs.ContainsKey(name) == false) continue;
                 Point orf = parameters.CDSs[name];
                 int[] frame = Enumerable.Repeat(9, lengthOfConsnsus).ToArray();
                 List<Point> exonPoints = parameters.Exons[name];

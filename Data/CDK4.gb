@@ -1,0 +1,2075 @@
+LOCUS       MW444824                 428 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 31 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444824
+VERSION     MW444824.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 428)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 428)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..428
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..428
+                     /gene="CDK4"
+     CDS             142..414
+                     /gene="CDK4"
+                     /note="isoform 31 is encoded by transcript variant 37"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 31"
+                     /protein_id="UAL80560.1"
+                     /translation="MWSVGCIFAEMFRRNLIGLPPEDDWPRDVSLPRGAFPPRGPRPV
+                     QSVVPEMEESGAQLLLEMLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggttgt tacactctgg taccgagctc ccgaagttct tctgcagtcc
+      121 acatatgcaa cacctgtgga catgtggagt gttggctgta tctttgcaga gatgtttcgt
+      181 cgaaacctga ttgggctgcc tccagaggat gactggcctc gagatgtatc cctgccccgt
+      241 ggagcctttc cccccagagg gccccgccca gtgcagtcgg tggtacctga gatggaggag
+      301 tcgggagcac agctgctgct ggaaatgctg acttttaacc cacacaagcg aatctctgcc
+      361 tttcgagctc tgcagcactc ttatctacat aaggatgaag gtaatccgga gtgagcaatg
+      421 gagtggct
+//
+
+LOCUS       NM_000075               1865 bp    mRNA    linear   PRI 09-APR-2026
+DEFINITION  Homo sapiens cyclin dependent kinase 4 (CDK4), mRNA.
+ACCESSION   NM_000075 NM_032913
+VERSION     NM_000075.4
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1865)
+  AUTHORS   Schaffer,L.V., Hu,M., Qian,G., Moon,K.M., Pal,A., Soni,N.,
+            Latham,A.P., Pontano Vaites,L., Tsai,D., Mattson,N.M., Licon,K.,
+            Bachelder,R., Cesnik,A., Gaur,I., Le,T., Leineweber,W., Palar,A.,
+            Pulido,E., Qin,Y., Zhao,X., Churas,C., Lenkiewicz,J., Chen,J.,
+            Ono,K., Pratt,D., Zage,P., Echeverria,I., Sali,A., Harper,J.W.,
+            Gygi,S.P., Foster,L.J., Huttlin,E.L., Lundberg,E. and Ideker,T.
+  TITLE     Multimodal cell maps as a foundation for structural and functional
+            genomics
+  JOURNAL   Nature 642 (8066), 222-231 (2025)
+   PUBMED   40205054
+  REMARK    Erratum:[Nature. 2025 Oct;646(8086):E16. doi:
+            10.1038/s41586-025-09648-x. PMID: 41039152]
+REFERENCE   2  (bases 1 to 1865)
+  AUTHORS   Mount,H.O., Urbanus,M.L., Sheykhkarimli,D., Cote,A.G., Laval,F.,
+            Coppin,G., Kishore,N., Li,R., Spirohn-Fitzgerald,K., Petersen,M.O.,
+            Knapp,J.J., Kim,D.-K., Twizere,J.-C., Calderwood,M.A., Vidal,M.,
+            Roth,F.P. and Ensminger,A.W.
+  TITLE     A comprehensive two-hybrid analysis to explore the Legionella
+            pneumophila effector-effector interactome
+  JOURNAL   mSystems 9 (12), e0100424 (2024)
+   PUBMED   39526800
+REFERENCE   3  (bases 1 to 1865)
+  AUTHORS   Li,J., Zhao,L., Wu,Z., Huang,S., Wang,J., Chang,Y., Liu,L., Jin,H.,
+            Lu,J., Huang,C., Xie,Q., Huang,H. and Su,Z.
+  TITLE     SelK promotes glioblastoma cell proliferation by inhibiting
+            beta-TrCP1 mediated ubiquitin-dependent degradation of CDK4
+  JOURNAL   J Exp Clin Cancer Res 43 (1), 231 (2024)
+   PUBMED   39155374
+  REMARK    GeneRIF: SelK promotes glioblastoma cell proliferation by
+            inhibiting beta-TrCP1 mediated ubiquitin-dependent degradation of
+            CDK4.
+            Publication Status: Online-Only
+REFERENCE   4  (bases 1 to 1865)
+  AUTHORS   Liu,X., Li,W., Yi,L., Wang,J., Liu,W., Cheng,H. and Ren,S.
+  TITLE     CDK4/6 inhibitors dephosphorylate RNF26 to stabilize TSC1 and
+            increase the sensitivity of ccRCC to mTOR inhibitors
+  JOURNAL   Br J Cancer 131 (3), 444-456 (2024)
+   PUBMED   38890443
+REFERENCE   5  (bases 1 to 1865)
+  AUTHORS   Feng,B., Wang,X., Qiu,D., Sun,H., Deng,J., Tan,Y., Ji,K., Xu,S.,
+            Zhang,S. and Tang,C.
+  TITLE     DDX18 Facilitates the Tumorigenesis of Lung Adenocarcinoma by
+            Promoting Cell Cycle Progression through the Upregulation of CDK4
+  JOURNAL   Int J Mol Sci 25 (9), 4953 (2024)
+   PUBMED   38732173
+  REMARK    GeneRIF: DDX18 Facilitates the Tumorigenesis of Lung Adenocarcinoma
+            by Promoting Cell Cycle Progression through the Upregulation of
+            CDK4.
+            Publication Status: Online-Only
+REFERENCE   6  (bases 1 to 1865)
+  AUTHORS   Hall,M., Bates,S. and Peters,G.
+  TITLE     Evidence for different modes of action of cyclin-dependent kinase
+            inhibitors: p15 and p16 bind to kinases, p21 and p27 bind to
+            cyclins
+  JOURNAL   Oncogene 11 (8), 1581-1588 (1995)
+   PUBMED   7478582
+REFERENCE   7  (bases 1 to 1865)
+  AUTHORS   Tassan,J.P., Jaquenoud,M., Leopold,P., Schultz,S.J. and Nigg,E.A.
+  TITLE     Identification of human cyclin-dependent kinase 8, a putative
+            protein kinase partner for cyclin C
+  JOURNAL   Proc Natl Acad Sci U S A 92 (19), 8871-8875 (1995)
+   PUBMED   7568034
+REFERENCE   8  (bases 1 to 1865)
+  AUTHORS   Medema,R.H., Herrera,R.E., Lam,F. and Weinberg,R.A.
+  TITLE     Growth suppression by p16ink4 requires functional retinoblastoma
+            protein
+  JOURNAL   Proc Natl Acad Sci U S A 92 (14), 6289-6293 (1995)
+   PUBMED   7603984
+REFERENCE   9  (bases 1 to 1865)
+  AUTHORS   Mitchell,E.L., White,G.R., Santibanez-Koref,M.F., Varley,J.M. and
+            Heighway,J.
+  TITLE     Mapping of gene loci in the Q13-Q15 region of chromosome 12
+  JOURNAL   Chromosome Res 3 (4), 261-262 (1995)
+   PUBMED   7606365
+REFERENCE   10 (bases 1 to 1865)
+  AUTHORS   Hanks,S.K.
+  TITLE     Homology probing: identification of cDNA clones encoding members of
+            the protein-serine kinase family
+  JOURNAL   Proc Natl Acad Sci U S A 84 (2), 388-392 (1987)
+   PUBMED   2948189
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from BI832658.1, BC003644.2,
+            AC025165.27 and BQ773564.1.
+            
+            On Nov 22, 2018 this sequence version replaced NM_000075.3.
+            
+            Summary: The protein encoded by this gene is a member of the
+            Ser/Thr protein kinase family. This protein is highly similar to
+            the gene products of S. cerevisiae cdc28 and S. pombe cdc2. It is a
+            catalytic subunit of the protein kinase complex that is important
+            for cell cycle G1 phase progression. The activity of this kinase is
+            restricted to the G1-S phase, which is controlled by the regulatory
+            subunits D-type cyclins and CDK inhibitor p16(INK4a). This kinase
+            was shown to be responsible for the phosphorylation of
+            retinoblastoma gene product (Rb). Mutations in this gene as well as
+            in its related proteins including D-type cyclins, p16(INK4a) and Rb
+            were all found to be associated with tumorigenesis of a variety of
+            cancers. Multiple polyadenylation sites of this gene have been
+            reported. [provided by RefSeq, Jul 2008].
+            
+            Sequence Note: This RefSeq record was created from transcript and
+            genomic sequence data to make the sequence consistent with the
+            reference genome assembly. The genomic coordinates used for the
+            transcript record were based on transcript alignments.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: SRR1660805.53469.1,
+                                           SRR1163658.534659.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA1968189, SAMEA1968540
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match     :: ENST00000257904.11/ ENSP00000257904.5
+            RefSeq Select criteria :: based on single protein-coding transcript
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: full length.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-16                BI832658.1         138-153
+            17-1372             BC003644.2         1-1356
+            1373-1666           AC025165.27        141845-142138       c
+            1667-1865           BQ773564.1         19-217              c
+FEATURES             Location/Qualifiers
+     source          1..1865
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /map="12q14.1"
+     gene            1..1865
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="cyclin dependent kinase 4"
+                     /db_xref="GeneID:1019"
+                     /db_xref="HGNC:HGNC:1773"
+                     /db_xref="MIM:123829"
+     exon            1..136
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    99..101
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="upstream in-frame stop codon"
+     exon            137..373
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             156..1067
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /EC_number="2.7.11.22"
+                     /note="cell division protein kinase 4"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4"
+                     /protein_id="NP_000066.1"
+                     /db_xref="CCDS:CCDS8953.1"
+                     /db_xref="GeneID:1019"
+                     /db_xref="HGNC:HGNC:1773"
+                     /db_xref="MIM:123829"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKDLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFG
+                     LARIYSYQMALTPVVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNS
+                     EADQLGKIFDLIGLPPEDDWPRDVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEML
+                     TFNPHKRISAFRALQHSYLHKDEGNPE"
+     misc_feature    159..161
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="N-acetylalanine.
+                     /evidence=ECO:0007744|PubMed:19413330; propagated from
+                     UniProtKB/Swiss-Prot (P11802.2); acetylation site"
+     misc_feature    303..323
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="propagated from UniProtKB/Swiss-Prot (P11802.2);
+                     Region: Required for binding D-type cyclins"
+     misc_feature    669..671
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0000269|PubMed:16782892,
+                     ECO:0000269|PubMed:19237555, ECO:0000269|PubMed:19237565,
+                     ECO:0000269|PubMed:19487459, ECO:0007744|PubMed:19369195;
+                     propagated from UniProtKB/Swiss-Prot (P11802.2);
+                     phosphorylation site"
+     exon            374..509
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            510..677
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            678..787
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            788..838
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            839..974
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     exon            975..1865
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      1347..1352
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="hexamer: AATAAT"
+     polyA_site      1348
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="major polyA site"
+     polyA_site      1351
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+     polyA_site      1447
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+     regulatory      1846..1851
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+                     /note="hexamer: AATATA"
+     polyA_site      1861
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+     polyA_site      1865
+                     /gene="CDK4"
+                     /gene_synonym="CMM3; MCPH31; PSK-J3"
+ORIGIN      
+        1 agcttgcggc ctgtgtctat ggtcgggccc tctgcgtcca gctgctccgg accgagctcg
+       61 ggtgtatggg gccgtaggaa ccggctccgg ggccccgata acgggccgcc cccacagcac
+      121 cccgggctgg cgtgagggtc tcccttgatc tgagaatggc tacctctcga tatgagccag
+      181 tggctgaaat tggtgtcggt gcctatggga cagtgtacaa ggcccgtgat ccccacagtg
+      241 gccactttgt ggccctcaag agtgtgagag tccccaatgg aggaggaggt ggaggaggcc
+      301 ttcccatcag cacagttcgt gaggtggctt tactgaggcg actggaggct tttgagcatc
+      361 ccaatgttgt ccggctgatg gacgtctgtg ccacatcccg aactgaccgg gagatcaagg
+      421 taaccctggt gtttgagcat gtagaccagg acctaaggac atatctggac aaggcacccc
+      481 caccaggctt gccagccgaa acgatcaagg atctgatgcg ccagtttcta agaggcctag
+      541 atttccttca tgccaattgc atcgttcacc gagatctgaa gccagagaac attctggtga
+      601 caagtggtgg aacagtcaag ctggctgact ttggcctggc cagaatctac agctaccaga
+      661 tggcacttac acccgtggtt gttacactct ggtaccgagc tcccgaagtt cttctgcagt
+      721 ccacatatgc aacacctgtg gacatgtgga gtgttggctg tatctttgca gagatgtttc
+      781 gtcgaaagcc tctcttctgt ggaaactctg aagccgacca gttgggcaaa atctttgacc
+      841 tgattgggct gcctccagag gatgactggc ctcgagatgt atccctgccc cgtggagcct
+      901 ttccccccag agggccccgc ccagtgcagt cggtggtacc tgagatggag gagtcgggag
+      961 cacagctgct gctggaaatg ctgactttta acccacacaa gcgaatctct gcctttcgag
+     1021 ctctgcagca ctcttatcta cataaggatg aaggtaatcc ggagtgagca atggagtggc
+     1081 tgccatggaa ggaagaaaag ctgccatttc ccttctggac actgagaggg caatctttgc
+     1141 ctttatctct gaggctatgg agggtcctcc tccatctttc tacagagatt actttgctgc
+     1201 cttaatgaca ttcccctccc acctctcctt ttgaggcttc tccttctcct tcccatttct
+     1261 ctacactaag gggtatgttc cctcttgtcc ctttccctac ctttatattt ggggtccttt
+     1321 tttatacagg aaaaacaaaa caaagaaata atggtctttt tttttttttt aatgtttctt
+     1381 cctctgtttg gctttgccat tgtgcgattt ggaaaaacca cttggaagaa gggactttcc
+     1441 tgcaaaacct taaagactgg ttaaattaca gggcctagga agtcagtgga gccccttgac
+     1501 tgacaaagct tagaaaggaa ctgaaattgc ttctttgaat atggatttta ggcggggcgt
+     1561 ggtggctcac gcctataatc ccagcacgtt gggaggccaa cgcgggtgga tcacctgagg
+     1621 tcaggagttc gagaccagcc tgactaacat ggtgaaaccc tgtctctact aaaaatacaa
+     1681 aattagtcag gcgtggtggt gcacacctgt aatcccagct acttgggaga ctgaggcagg
+     1741 aggatcgctt gaacccggga ggcagaggtt gcggtgagcc gagatcatgc cattgcactc
+     1801 cagcctgggc aacagagcaa gactctgtgt caaaaaaaaa aaaagaatat agatttttaa
+     1861 atggc
+//
+
+LOCUS       MW444822                 479 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 30 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444822
+VERSION     MW444822.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 479)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 479)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..479
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..479
+                     /gene="CDK4"
+     CDS             142..465
+                     /gene="CDK4"
+                     /note="isoform 30 is encoded by transcript variant 35"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 30"
+                     /protein_id="UAL80559.1"
+                     /translation="MWSVGCIFAEMFRRKPLFCGNSEADQLGKIFDLIGLPPEDDWPR
+                     DVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEMLTFNPHKRISAFRALQHSYLHKD
+                     EGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggttgt tacactctgg taccgagctc ccgaagttct tctgcagtcc
+      121 acatatgcaa cacctgtgga catgtggagt gttggctgta tctttgcaga gatgtttcgt
+      181 cgaaagcctc tcttctgtgg aaactctgaa gccgaccagt tgggcaaaat ctttgacctg
+      241 attgggctgc ctccagagga tgactggcct cgagatgtat ccctgccccg tggagccttt
+      301 ccccccagag ggccccgccc agtgcagtcg gtggtacctg agatggagga gtcgggagca
+      361 cagctgctgc tggaaatgct gacttttaac ccacacaagc gaatctctgc ctttcgagct
+      421 ctgcagcact cttatctaca taaggatgaa ggtaatccgg agtgagcaat ggagtggct
+//
+
+LOCUS       MW444821                 350 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 29 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444821
+VERSION     MW444821.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 350)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 350)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..350
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..350
+                     /gene="CDK4"
+     CDS             82..336
+                     /gene="CDK4"
+                     /note="isoform 29 is encoded by transcript variant 34"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 29"
+                     /protein_id="UAL80558.1"
+                     /translation="MRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARI
+                     YSYQMALTPVEMLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggatct gatgcgccag tttctaagag gcctagattt ccttcatgcc
+      121 aattgcatcg ttcaccgaga tctgaagcca gagaacattc tggtgacaag tggtggaaca
+      181 gtcaagctgg ctgactttgg cctggccaga atctacagct accagatggc acttacaccc
+      241 gtggaaatgc tgacttttaa cccacacaag cgaatctctg cctttcgagc tctgcagcac
+      301 tcttatctac ataaggatga aggtaatccg gagtgagcaa tggagtggct
+//
+
+LOCUS       MW444819                 460 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 28 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444819
+VERSION     MW444819.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 460)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 460)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..460
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..460
+                     /gene="CDK4"
+     CDS             82..363
+                     /gene="CDK4"
+                     /note="isoform 28 is encoded by transcript variant 32"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 28"
+                     /protein_id="UAL80557.1"
+                     /translation="MRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARI
+                     YSYQMALTPVVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggatct gatgcgccag tttctaagag gcctagattt ccttcatgcc
+      121 aattgcatcg ttcaccgaga tctgaagcca gagaacattc tggtgacaag tggtggaaca
+      181 gtcaagctgg ctgactttgg cctggccaga atctacagct accagatggc acttacaccc
+      241 gtggttgtta cactctggta ccgagctccc gaagttcttc tgcagtccac atatgcaaca
+      301 cctgtggaca tgtggagtgt tggctgtatc tttgcagaga tgtttcgtcg aaagaaatgc
+      361 tgacttttaa cccacacaag cgaatctctg cctttcgagc tctgcagcac tcttatctac
+      421 ataaggatga aggtaatccg gagtgagcaa tggagtggct
+//
+
+LOCUS       MW444818                 647 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 27 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444818
+VERSION     MW444818.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 647)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 647)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..647
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..647
+                     /gene="CDK4"
+     CDS             82..633
+                     /gene="CDK4"
+                     /note="isoform 27 is encoded by transcript variant 31"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 27"
+                     /protein_id="UAL80556.1"
+                     /translation="MRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARI
+                     YSYQMALTPVVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNSEADQ
+                     LGKIFDLIGLPPEDDWPRDVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEMLTFNP
+                     HKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggatct gatgcgccag tttctaagag gcctagattt ccttcatgcc
+      121 aattgcatcg ttcaccgaga tctgaagcca gagaacattc tggtgacaag tggtggaaca
+      181 gtcaagctgg ctgactttgg cctggccaga atctacagct accagatggc acttacaccc
+      241 gtggttgtta cactctggta ccgagctccc gaagttcttc tgcagtccac atatgcaaca
+      301 cctgtggaca tgtggagtgt tggctgtatc tttgcagaga tgtttcgtcg aaagcctctc
+      361 ttctgtggaa actctgaagc cgaccagttg ggcaaaatct ttgacctgat tgggctgcct
+      421 ccagaggatg actggcctcg agatgtatcc ctgccccgtg gagcctttcc ccccagaggg
+      481 ccccgcccag tgcagtcggt ggtacctgag atggaggagt cgggagcaca gctgctgctg
+      541 gaaatgctga cttttaaccc acacaagcga atctctgcct ttcgagctct gcagcactct
+      601 tatctacata aggatgaagg taatccggag tgagcaatgg agtggct
+//
+
+LOCUS       MW444817                 318 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 26 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444817
+VERSION     MW444817.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 318)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 318)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..318
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..318
+                     /gene="CDK4"
+     CDS             80..304
+                     /gene="CDK4"
+                     /note="isoform 26 is encoded by transcript variant 30"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 26"
+                     /protein_id="UAL80555.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     EMLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggaaatgctg acttttaacc cacacaagcg
+      241 aatctctgcc tttcgagctc tgcagcactc ttatctacat aaggatgaag gtaatccgga
+      301 gtgagcaatg gagtggct
+//
+
+LOCUS       MW444814                 428 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 25 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444814
+VERSION     MW444814.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 428)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 428)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..428
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..428
+                     /gene="CDK4"
+     CDS             80..331
+                     /gene="CDK4"
+                     /note="isoform 25 is encoded by transcript variant 27"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 25"
+                     /protein_id="UAL80554.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     VVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggttgttaca ctctggtacc gagctcccga
+      241 agttcttctg cagtccacat atgcaacacc tgtggacatg tggagtgttg gctgtatctt
+      301 tgcagagatg tttcgtcgaa agaaatgctg acttttaacc cacacaagcg aatctctgcc
+      361 tttcgagctc tgcagcactc ttatctacat aaggatgaag gtaatccgga gtgagcaatg
+      421 gagtggct
+//
+
+LOCUS       MW444813                 479 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 24 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444813
+VERSION     MW444813.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 479)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 479)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..479
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..479
+                     /gene="CDK4"
+     CDS             80..382
+                     /gene="CDK4"
+                     /note="isoform 24 is encoded by transcript variant 26"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 24"
+                     /protein_id="UAL80553.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     VVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNSEADQLGKIFEKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggttgttaca ctctggtacc gagctcccga
+      241 agttcttctg cagtccacat atgcaacacc tgtggacatg tggagtgttg gctgtatctt
+      301 tgcagagatg tttcgtcgaa agcctctctt ctgtggaaac tctgaagccg accagttggg
+      361 caaaatcttt gagaaatgct gacttttaac ccacacaagc gaatctctgc ctttcgagct
+      421 ctgcagcact cttatctaca taaggatgaa ggtaatccgg agtgagcaat ggagtggct
+//
+
+LOCUS       MW444812                 615 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 23 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444812
+VERSION     MW444812.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 615)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 615)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..615
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..615
+                     /gene="CDK4"
+     CDS             80..601
+                     /gene="CDK4"
+                     /note="isoform 23 is encoded by transcript variant 25"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 23"
+                     /protein_id="UAL80552.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     VVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNSEADQLGKIFDLIGL
+                     PPEDDWPRDVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEMLTFNPHKRISAFRAL
+                     QHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggttgttaca ctctggtacc gagctcccga
+      241 agttcttctg cagtccacat atgcaacacc tgtggacatg tggagtgttg gctgtatctt
+      301 tgcagagatg tttcgtcgaa agcctctctt ctgtggaaac tctgaagccg accagttggg
+      361 caaaatcttt gacctgattg ggctgcctcc agaggatgac tggcctcgag atgtatccct
+      421 gccccgtgga gcctttcccc ccagagggcc ccgcccagtg cagtcggtgg tacctgagat
+      481 ggaggagtcg ggagcacagc tgctgctgga aatgctgact tttaacccac acaagcgaat
+      541 ctctgccttt cgagctctgc agcactctta tctacataag gatgaaggta atccggagtg
+      601 agcaatggag tggct
+//
+
+LOCUS       MW444811                 486 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 22 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444811
+VERSION     MW444811.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 486)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 486)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..486
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..486
+                     /gene="CDK4"
+     CDS             80..472
+                     /gene="CDK4"
+                     /note="isoform 22 is encoded by transcript variant 24"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 22"
+                     /protein_id="UAL80551.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVEM
+                     LTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg aaatgctgac ttttaaccca cacaagcgaa tctctgcctt
+      421 tcgagctctg cagcactctt atctacataa ggatgaaggt aatccggagt gagcaatgga
+      481 gtggct
+//
+
+LOCUS       MW444810                 537 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 21 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444810
+VERSION     MW444810.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 537)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 537)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..537
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..537
+                     /gene="CDK4"
+     CDS             80..403
+                     /gene="CDK4"
+                     /note="isoform 21 is encoded by transcript variant 23"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 21"
+                     /protein_id="UAL80550.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVAS
+                     LLWKL"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg cctctcttct gtggaaactc tgaagccgac cagttgggca
+      421 aaatctttga gaaatgctga cttttaaccc acacaagcga atctctgcct ttcgagctct
+      481 gcagcactct tatctacata aggatgaagg taatccggag tgagcaatgg agtggct
+//
+
+LOCUS       MW444809                 673 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 20 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444809
+VERSION     MW444809.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 673)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 673)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..673
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..673
+                     /gene="CDK4"
+     CDS             80..403
+                     /gene="CDK4"
+                     /note="isoform 20 is encoded by transcript variant 22"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 20"
+                     /protein_id="UAL80549.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVAS
+                     LLWKL"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg cctctcttct gtggaaactc tgaagccgac cagttgggca
+      421 aaatctttga cctgattggg ctgcctccag aggatgactg gcctcgagat gtatccctgc
+      481 cccgtggagc ctttcccccc agagggcccc gcccagtgca gtcggtggta cctgagatgg
+      541 aggagtcggg agcacagctg ctgctggaaa tgctgacttt taacccacac aagcgaatct
+      601 ctgcctttcg agctctgcag cactcttatc tacataagga tgaaggtaat ccggagtgag
+      661 caatggagtg gct
+//
+
+LOCUS       MW444808                 596 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 19 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444808
+VERSION     MW444808.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 596)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 596)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..596
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..596
+                     /gene="CDK4"
+     CDS             80..499
+                     /gene="CDK4"
+                     /note="isoform 19 is encoded by transcript variant 21"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 19"
+                     /protein_id="UAL80548.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVVV
+                     TLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg ttgttacact ctggtaccga gctcccgaag ttcttctgca
+      421 gtccacatat gcaacacctg tggacatgtg gagtgttggc tgtatctttg cagagatgtt
+      481 tcgtcgaaag aaatgctgac ttttaaccca cacaagcgaa tctctgcctt tcgagctctg
+      541 cagcactctt atctacataa ggatgaaggt aatccggagt gagcaatgga gtggct
+//
+
+LOCUS       MW444807                 732 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 18 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444807
+VERSION     MW444807.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 732)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 732)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..732
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..732
+                     /gene="CDK4"
+     CDS             80..718
+                     /gene="CDK4"
+                     /note="isoform 18 is encoded by transcript variant 20"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 18"
+                     /protein_id="UAL80547.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVVV
+                     TLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRNLIGLPPEDDWPRDVSLPRGAFPP
+                     RGPRPVQSVVPEMEESGAQLLLEMLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg ttgttacact ctggtaccga gctcccgaag ttcttctgca
+      421 gtccacatat gcaacacctg tggacatgtg gagtgttggc tgtatctttg cagagatgtt
+      481 tcgtcgaaac ctgattgggc tgcctccaga ggatgactgg cctcgagatg tatccctgcc
+      541 ccgtggagcc tttcccccca gagggccccg cccagtgcag tcggtggtac ctgagatgga
+      601 ggagtcggga gcacagctgc tgctggaaat gctgactttt aacccacaca agcgaatctc
+      661 tgcctttcga gctctgcagc actcttatct acataaggat gaaggtaatc cggagtgagc
+      721 aatggagtgg ct
+//
+
+LOCUS       MW444806                 647 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 17 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444806
+VERSION     MW444806.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 647)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 647)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..647
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..647
+                     /gene="CDK4"
+     CDS             80..550
+                     /gene="CDK4"
+                     /note="isoform 17 is encoded by transcript variant 19"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 17"
+                     /protein_id="UAL80546.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVVV
+                     TLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNSEADQLGKIFEKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg ttgttacact ctggtaccga gctcccgaag ttcttctgca
+      421 gtccacatat gcaacacctg tggacatgtg gagtgttggc tgtatctttg cagagatgtt
+      481 tcgtcgaaag cctctcttct gtggaaactc tgaagccgac cagttgggca aaatctttga
+      541 gaaatgctga cttttaaccc acacaagcga atctctgcct ttcgagctct gcagcactct
+      601 tatctacata aggatgaagg taatccggag tgagcaatgg agtggct
+//
+
+LOCUS       MW444805                 783 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 16 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444805
+VERSION     MW444805.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 783)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 783)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..783
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..783
+                     /gene="CDK4"
+     CDS             80..769
+                     /gene="CDK4"
+                     /note="isoform 16 is encoded by transcript variant 18"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 16"
+                     /protein_id="UAL80545.1"
+                     /translation="MDVCATSRTDREIKVTLVFEHVDQDLRTYLDKAPPPGLPAETIK
+                     DLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFGLARIYSYQMALTPVVV
+                     TLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNSEADQLGKIFDLIGLPP
+                     EDDWPRDVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEMLTFNPHKRISAFRALQH
+                     SYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgaggctga tggacgtctg tgccacatcc cgaactgacc gggagatcaa
+      121 ggtaaccctg gtgtttgagc atgtagacca ggacctaagg acatatctgg acaaggcacc
+      181 cccaccaggc ttgccagccg aaacgatcaa ggatctgatg cgccagtttc taagaggcct
+      241 agatttcctt catgccaatt gcatcgttca ccgagatctg aagccagaga acattctggt
+      301 gacaagtggt ggaacagtca agctggctga ctttggcctg gccagaatct acagctacca
+      361 gatggcactt acacccgtgg ttgttacact ctggtaccga gctcccgaag ttcttctgca
+      421 gtccacatat gcaacacctg tggacatgtg gagtgttggc tgtatctttg cagagatgtt
+      481 tcgtcgaaag cctctcttct gtggaaactc tgaagccgac cagttgggca aaatctttga
+      541 cctgattggg ctgcctccag aggatgactg gcctcgagat gtatccctgc cccgtggagc
+      601 ctttcccccc agagggcccc gcccagtgca gtcggtggta cctgagatgg aggagtcggg
+      661 agcacagctg ctgctggaaa tgctgacttt taacccacac aagcgaatct ctgcctttcg
+      721 agctctgcag cactcttatc tacataagga tgaaggtaat ccggagtgag caatggagtg
+      781 gct
+//
+
+LOCUS       MW444804                 419 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 15 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444804
+VERSION     MW444804.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 419)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 419)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..419
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..419
+                     /gene="CDK4"
+     CDS             95..322
+                     /gene="CDK4"
+                     /note="isoform 15 is encoded by transcript variant 17"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 15"
+                     /protein_id="UAL80544.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggaaatgct gacttttaac ccacacaagc gaatctctgc ctttcgagct
+      361 ctgcagcact cttatctaca taaggatgaa ggtaatccgg agtgagcaat ggagtggct
+//
+
+LOCUS       MW444803                 470 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 14 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444803
+VERSION     MW444803.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 470)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 470)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..470
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..470
+                     /gene="CDK4"
+     CDS             95..373
+                     /gene="CDK4"
+                     /note="isoform 14 is encoded by transcript variant 16"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 14"
+                     /protein_id="UAL80543.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRPLFCGNSEADQLGKIFEKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggcctctct tctgtggaaa ctctgaagcc gaccagttgg gcaaaatctt
+      361 tgagaaatgc tgacttttaa cccacacaag cgaatctctg cctttcgagc tctgcagcac
+      421 tcttatctac ataaggatga aggtaatccg gagtgagcaa tggagtggct
+//
+
+LOCUS       MW444802                 606 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 13 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444802
+VERSION     MW444802.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 606)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 606)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..606
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..606
+                     /gene="CDK4"
+     CDS             95..592
+                     /gene="CDK4"
+                     /note="isoform 13 is encoded by transcript variant 15"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 13"
+                     /protein_id="UAL80542.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRPLFCGNSEADQLGKIFDLIGLPPEDDWPR
+                     DVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEMLTFNPHKRISAFRALQHSYLHKD
+                     EGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggcctctct tctgtggaaa ctctgaagcc gaccagttgg gcaaaatctt
+      361 tgacctgatt gggctgcctc cagaggatga ctggcctcga gatgtatccc tgccccgtgg
+      421 agcctttccc cccagagggc cccgcccagt gcagtcggtg gtacctgaga tggaggagtc
+      481 gggagcacag ctgctgctgg aaatgctgac ttttaaccca cacaagcgaa tctctgcctt
+      541 tcgagctctg cagcactctt atctacataa ggatgaaggt aatccggagt gagcaatgga
+      601 gtggct
+//
+
+LOCUS       MW444801                 529 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 12 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444801
+VERSION     MW444801.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 529)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 529)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..529
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..529
+                     /gene="CDK4"
+     CDS             95..439
+                     /gene="CDK4"
+                     /note="isoform 12 is encoded by transcript variant 14"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 12"
+                     /protein_id="UAL80541.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLLHSGTELPKFFCSPHMQHLWTCGVLAVS
+                     LQRCFVERNADF"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggttgttac actctggtac cgagctcccg aagttcttct gcagtccaca
+      361 tatgcaacac ctgtggacat gtggagtgtt ggctgtatct ttgcagagat gtttcgtcga
+      421 aagaaatgct gacttttaac ccacacaagc gaatctctgc ctttcgagct ctgcagcact
+      481 cttatctaca taaggatgaa ggtaatccgg agtgagcaat ggagtggct
+//
+
+LOCUS       MW444800                 580 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 11 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444800
+VERSION     MW444800.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 580)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 580)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..580
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..580
+                     /gene="CDK4"
+     CDS             95..490
+                     /gene="CDK4"
+                     /note="isoform 11 is encoded by transcript variant 13"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 11"
+                     /protein_id="UAL80540.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLLHSGTELPKFFCSPHMQHLWTCGVLAVS
+                     LQRCFVESLSSVETLKPTSWAKSLRNADF"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggttgttac actctggtac cgagctcccg aagttcttct gcagtccaca
+      361 tatgcaacac ctgtggacat gtggagtgtt ggctgtatct ttgcagagat gtttcgtcga
+      421 aagcctctct tctgtggaaa ctctgaagcc gaccagttgg gcaaaatctt tgagaaatgc
+      481 tgacttttaa cccacacaag cgaatctctg cctttcgagc tctgcagcac tcttatctac
+      541 ataaggatga aggtaatccg gagtgagcaa tggagtggct
+//
+
+LOCUS       MW444799                 716 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin dependent kinase 4 transcript variant 12 (CDK4)
+            mRNA, partial sequence.
+ACCESSION   MW444799
+VERSION     MW444799.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 716)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 716)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..716
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            <1..>716
+                     /gene="CDK4"
+                     /note="cyclin dependent kinase 4 transcript variant 12"
+     misc_feature    <1..>716
+                     /gene="CDK4"
+                     /note="primary ORF has stop codon >50 nucleotides from the
+                     terminal splice site; nonsense-mediated decay (NMD)
+                     candidate"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggttgttac actctggtac cgagctcccg aagttcttct gcagtccaca
+      361 tatgcaacac ctgtggacat gtggagtgtt ggctgtatct ttgcagagat gtttcgtcga
+      421 aagcctctct tctgtggaaa ctctgaagcc gaccagttgg gcaaaatctt tgacctgatt
+      481 gggctgcctc cagaggatga ctggcctcga gatgtatccc tgccccgtgg agcctttccc
+      541 cccagagggc cccgcccagt gcagtcggtg gtacctgaga tggaggagtc gggagcacag
+      601 ctgctgctgg aaatgctgac ttttaaccca cacaagcgaa tctctgcctt tcgagctctg
+      661 cagcactctt atctacataa ggatgaaggt aatccggagt gagcaatgga gtggct
+//
+
+LOCUS       MW444798                 697 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin dependent kinase 4 transcript variant 11 (CDK4)
+            mRNA, partial sequence.
+ACCESSION   MW444798
+VERSION     MW444798.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 697)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 697)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..697
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            <1..>697
+                     /gene="CDK4"
+                     /note="cyclin dependent kinase 4 transcript variant 11"
+     misc_feature    <1..>697
+                     /gene="CDK4"
+                     /note="primary ORF has stop codon >50 nucleotides from the
+                     terminal splice site; nonsense-mediated decay (NMD)
+                     candidate"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggatctgat gcgccagttt ctaagaggcc tagatttcct tcatgccaat
+      361 tgcatcgttc accgagatct gaagccagag aacattctgg tgacaagtgg tggaacagtc
+      421 aagctggctg actttggcct ggccagaatc tacagctacc agatggcact tacacccgtg
+      481 gttgttacac tctggtaccg agctcccgaa gttcttctgc agtccacata tgcaacacct
+      541 gtggacatgt ggagtgttgg ctgtatcttt gcagagatgt ttcgtcgaaa gaaatgctga
+      601 cttttaaccc acacaagcga atctctgcct ttcgagctct gcagcactct tatctacata
+      661 aggatgaagg taatccggag tgagcaatgg agtggct
+//
+
+LOCUS       MW444797                 555 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 10 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444797
+VERSION     MW444797.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 555)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 555)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..555
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..555
+                     /gene="CDK4"
+     CDS             95..541
+                     /gene="CDK4"
+                     /note="isoform 10 is encoded by transcript variant 10"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 10"
+                     /protein_id="UAL80539.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKEMLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaagga aatgctgact tttaacccac acaagcgaat
+      481 ctctgccttt cgagctctgc agcactctta tctacataag gatgaaggta atccggagtg
+      541 agcaatggag tggct
+//
+
+LOCUS       MW444796                 742 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 9 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444796
+VERSION     MW444796.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 742)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 742)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..742
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..742
+                     /gene="CDK4"
+     CDS             95..472
+                     /gene="CDK4"
+                     /note="isoform 9 is encoded by transcript variant 9"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 9"
+                     /protein_id="UAL80538.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKASLLWKL"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaaggc ctctcttctg tggaaactct gaagccgacc
+      481 agttgggcaa aatctttgac ctgattgggc tgcctccaga ggatgactgg cctcgagatg
+      541 tatccctgcc ccgtggagcc tttcccccca gagggccccg cccagtgcag tcggtggtac
+      601 ctgagatgga ggagtcggga gcacagctgc tgctggaaat gctgactttt aacccacaca
+      661 agcgaatctc tgcctttcga gctctgcagc actcttatct acataaggat gaaggtaatc
+      721 cggagtgagc aatggagtgg ct
+//
+
+LOCUS       MW444795                 665 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 8 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444795
+VERSION     MW444795.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 665)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 665)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..665
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..665
+                     /gene="CDK4"
+     CDS             95..568
+                     /gene="CDK4"
+                     /note="isoform 8 is encoded by transcript variant 8"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 8"
+                     /protein_id="UAL80537.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaaggt tgttacactc tggtaccgag ctcccgaagt
+      481 tcttctgcag tccacatatg caacacctgt ggacatgtgg agtgttggct gtatctttgc
+      541 agagatgttt cgtcgaaaga aatgctgact tttaacccac acaagcgaat ctctgccttt
+      601 cgagctctgc agcactctta tctacataag gatgaaggta atccggagtg agcaatggag
+      661 tggct
+//
+
+LOCUS       MW444794                 852 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 7 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444794
+VERSION     MW444794.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 852)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 852)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..852
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..852
+                     /gene="CDK4"
+     CDS             95..838
+                     /gene="CDK4"
+                     /note="isoform 7 is encoded by transcript variant 7"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 7"
+                     /protein_id="UAL80536.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCG
+                     NSEADQLGKIFDLIGLPPEDDWPRDVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLE
+                     MLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaaggt tgttacactc tggtaccgag ctcccgaagt
+      481 tcttctgcag tccacatatg caacacctgt ggacatgtgg agtgttggct gtatctttgc
+      541 agagatgttt cgtcgaaagc ctctcttctg tggaaactct gaagccgacc agttgggcaa
+      601 aatctttgac ctgattgggc tgcctccaga ggatgactgg cctcgagatg tatccctgcc
+      661 ccgtggagcc tttcccccca gagggccccg cccagtgcag tcggtggtac ctgagatgga
+      721 ggagtcggga gcacagctgc tgctggaaat gctgactttt aacccacaca agcgaatctc
+      781 tgcctttcga gctctgcagc actcttatct acataaggat gaaggtaatc cggagtgagc
+      841 aatggagtgg ct
+//
+
+LOCUS       MW444793                 723 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 6 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444793
+VERSION     MW444793.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 723)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 723)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..723
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..723
+                     /gene="CDK4"
+     CDS             95..709
+                     /gene="CDK4"
+                     /note="isoform 6 is encoded by transcript variant 6"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 6"
+                     /protein_id="UAL80535.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKDLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFG
+                     LARIYSYQMALTPVEMLTFNPHKRISAFRALQHSYLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaagga tctgatgcgc cagtttctaa gaggcctaga
+      481 tttccttcat gccaattgca tcgttcaccg agatctgaag ccagagaaca ttctggtgac
+      541 aagtggtgga acagtcaagc tggctgactt tggcctggcc agaatctaca gctaccagat
+      601 ggcacttaca cccgtggaaa tgctgacttt taacccacac aagcgaatct ctgcctttcg
+      661 agctctgcag cactcttatc tacataagga tgaaggtaat ccggagtgag caatggagtg
+      721 gct
+//
+
+LOCUS       MW444792                 910 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 5 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444792
+VERSION     MW444792.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 910)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 910)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..910
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..910
+                     /gene="CDK4"
+     CDS             95..640
+                     /gene="CDK4"
+                     /note="isoform 5 is encoded by transcript variant 5"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 5"
+                     /protein_id="UAL80534.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKDLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFG
+                     LARIYSYQMALTPVASLLWKL"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaagga tctgatgcgc cagtttctaa gaggcctaga
+      481 tttccttcat gccaattgca tcgttcaccg agatctgaag ccagagaaca ttctggtgac
+      541 aagtggtgga acagtcaagc tggctgactt tggcctggcc agaatctaca gctaccagat
+      601 ggcacttaca cccgtggcct ctcttctgtg gaaactctga agccgaccag ttgggcaaaa
+      661 tctttgacct gattgggctg cctccagagg atgactggcc tcgagatgta tccctgcccc
+      721 gtggagcctt tccccccaga gggccccgcc cagtgcagtc ggtggtacct gagatggagg
+      781 agtcgggagc acagctgctg ctggaaatgc tgacttttaa cccacacaag cgaatctctg
+      841 cctttcgagc tctgcagcac tcttatctac ataaggatga aggtaatccg gagtgagcaa
+      901 tggagtggct
+//
+
+LOCUS       MW444791                 833 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 4 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444791
+VERSION     MW444791.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 833)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 833)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..833
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..833
+                     /gene="CDK4"
+     CDS             95..736
+                     /gene="CDK4"
+                     /note="isoform 4 is encoded by transcript variant 4"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 4"
+                     /protein_id="UAL80533.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKDLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFG
+                     LARIYSYQMALTPVVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaagga tctgatgcgc cagtttctaa gaggcctaga
+      481 tttccttcat gccaattgca tcgttcaccg agatctgaag ccagagaaca ttctggtgac
+      541 aagtggtgga acagtcaagc tggctgactt tggcctggcc agaatctaca gctaccagat
+      601 ggcacttaca cccgtggttg ttacactctg gtaccgagct cccgaagttc ttctgcagtc
+      661 cacatatgca acacctgtgg acatgtggag tgttggctgt atctttgcag agatgtttcg
+      721 tcgaaagaaa tgctgacttt taacccacac aagcgaatct ctgcctttcg agctctgcag
+      781 cactcttatc tacataagga tgaaggtaat ccggagtgag caatggagtg gct
+//
+
+LOCUS       MW444790                 969 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 3 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444790
+VERSION     MW444790.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 969)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 969)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..969
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..969
+                     /gene="CDK4"
+     CDS             95..955
+                     /gene="CDK4"
+                     /note="isoform 3 is encoded by transcript variant 3"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 3"
+                     /protein_id="UAL80532.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKDLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFG
+                     LARIYSYQMALTPVVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRNLIGLPPE
+                     DDWPRDVSLPRGAFPPRGPRPVQSVVPEMEESGAQLLLEMLTFNPHKRISAFRALQHS
+                     YLHKDEGNPE"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaagga tctgatgcgc cagtttctaa gaggcctaga
+      481 tttccttcat gccaattgca tcgttcaccg agatctgaag ccagagaaca ttctggtgac
+      541 aagtggtgga acagtcaagc tggctgactt tggcctggcc agaatctaca gctaccagat
+      601 ggcacttaca cccgtggttg ttacactctg gtaccgagct cccgaagttc ttctgcagtc
+      661 cacatatgca acacctgtgg acatgtggag tgttggctgt atctttgcag agatgtttcg
+      721 tcgaaacctg attgggctgc ctccagagga tgactggcct cgagatgtat ccctgccccg
+      781 tggagccttt ccccccagag ggccccgccc agtgcagtcg gtggtacctg agatggagga
+      841 gtcgggagca cagctgctgc tggaaatgct gacttttaac ccacacaagc gaatctctgc
+      901 ctttcgagct ctgcagcact cttatctaca taaggatgaa ggtaatccgg agtgagcaat
+      961 ggagtggct
+//
+
+LOCUS       MW444789                 884 bp    mRNA    linear   PRI 18-SEP-2021
+DEFINITION  Homo sapiens cyclin-dependent kinase 4 isoform 2 (CDK4) mRNA,
+            complete cds.
+ACCESSION   MW444789
+VERSION     MW444789.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 884)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     An innovative third-generation sequencing methodology coupled with
+            RACE-Seq unveils the complete genomic and transcriptional landscape
+            of cyclin dependent kinase 4 (CDK4) in human malignancies
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 884)
+  AUTHORS   Adamopoulos,P.G., Tsiakanikas,P., Athanasopoulou,K. and Scorilas,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2021) Biochemistry and Molecular Biology,
+            National and Kapodistrian University of Athens, Panepistimiopolis,
+            Athens 15701, Greece
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..884
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+     gene            1..884
+                     /gene="CDK4"
+     CDS             95..787
+                     /gene="CDK4"
+                     /note="isoform 2 is encoded by transcript variant 2"
+                     /codon_start=1
+                     /product="cyclin-dependent kinase 4 isoform 2"
+                     /protein_id="UAL80531.1"
+                     /translation="MATSRYEPVAEIGVGAYGTVYKARDPHSGHFVALKSVRVPNGGG
+                     GGGGLPISTVREVALLRRLEAFEHPNVVRLMDVCATSRTDREIKVTLVFEHVDQDLRT
+                     YLDKAPPPGLPAETIKDLMRQFLRGLDFLHANCIVHRDLKPENILVTSGGTVKLADFG
+                     LARIYSYQMALTPVVVTLWYRAPEVLLQSTYATPVDMWSVGCIFAEMFRRKPLFCGNS
+                     EADQLGKIFEKC"
+ORIGIN      
+        1 gtgtatgggg ccgtaggaac cggctccggg gccccgataa cgggccgccc ccacagcacc
+       61 ccgggctggc gtgagggtct cccttgatct gagaatggct acctctcgat atgagccagt
+      121 ggctgaaatt ggtgtcggtg cctatgggac agtgtacaag gcccgtgatc cccacagtgg
+      181 ccactttgtg gccctcaaga gtgtgagagt ccccaatgga ggaggaggtg gaggaggcct
+      241 tcccatcagc acagttcgtg aggtggcttt actgaggcga ctggaggctt ttgagcatcc
+      301 caatgttgtc cggctgatgg acgtctgtgc cacatcccga actgaccggg agatcaaggt
+      361 aaccctggtg tttgagcatg tagaccagga cctaaggaca tatctggaca aggcaccccc
+      421 accaggcttg ccagccgaaa cgatcaagga tctgatgcgc cagtttctaa gaggcctaga
+      481 tttccttcat gccaattgca tcgttcaccg agatctgaag ccagagaaca ttctggtgac
+      541 aagtggtgga acagtcaagc tggctgactt tggcctggcc agaatctaca gctaccagat
+      601 ggcacttaca cccgtggttg ttacactctg gtaccgagct cccgaagttc ttctgcagtc
+      661 cacatatgca acacctgtgg acatgtggag tgttggctgt atctttgcag agatgtttcg
+      721 tcgaaagcct ctcttctgtg gaaactctga agccgaccag ttgggcaaaa tctttgagaa
+      781 atgctgactt ttaacccaca caagcgaatc tctgcctttc gagctctgca gcactcttat
+      841 ctacataagg atgaaggtaa tccggagtga gcaatggagt ggct
+//
+
