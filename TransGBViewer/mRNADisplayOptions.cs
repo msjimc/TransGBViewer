@@ -88,9 +88,6 @@ namespace TransGBViewer
 
             setFrame();
             MakeListOfSwappableExons();
-
-            
-
         }
 
         private void checkForExons()
@@ -129,7 +126,7 @@ namespace TransGBViewer
 
             foreach (string name in noExons)
             {
-                List<Point> possibleExons = new List<Point>();               
+                List<Point> possibleExons = new List<Point>();
                 foreach (string exonSeq in exonSeqs)
                 {
                     if (exonSeq != "")
@@ -152,7 +149,7 @@ namespace TransGBViewer
                         }
                     }
                 }
-                
+
                 possibleExons = possibleExons.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
                 List<Point> missedBits = new List<Point>();
                 for (int index = 0; index < possibleExons.Count - 1; index++)
@@ -161,7 +158,7 @@ namespace TransGBViewer
                     { missedBits.Add(new Point(possibleExons[index].Y + 1, possibleExons[index + 1].X - 1)); }
                 }
                 if (missedBits.Count > 0)
-                { 
+                {
                     possibleExons.AddRange(missedBits);
                     possibleExons = possibleExons.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
                 }
@@ -473,7 +470,7 @@ namespace TransGBViewer
 
         private List<exonGraphNode> LinkExonGraph(Dictionary<string, exonGraphNode> exonSetDict)
         {
-            
+
             foreach (string name in parameters.SequenceNames)
             {
                 if (parameters.Exons.ContainsKey(Name) == false) continue;
@@ -883,7 +880,7 @@ namespace TransGBViewer
                 btnMove.Enabled = true;
             }
             else { btnMove.Enabled = false; }
-            
+
         }
 
         private void btnMove_Click(object sender, EventArgs e)
@@ -906,7 +903,7 @@ namespace TransGBViewer
                     { newOrder += " " + allExons[index]; }
                 }
 
-                parameters.AllSequences= newOrder.Trim();
+                parameters.AllSequences = newOrder.Trim();
             }
 
 
@@ -2191,6 +2188,11 @@ namespace TransGBViewer
             setUPlvLayout();
 
             cboImageDPI.SelectedIndex = 0;
+
+            cboSequenceTranscriptName.Items.Clear();
+            cboSequenceTranscriptName.Items.Add("Select");
+            cboSequenceTranscriptName.Items.AddRange(parameters.SequenceNames.ToArray());
+            cboSequenceTranscriptName.SelectedIndex = 0;
         }
 
         private void cboLabels_SelectedIndexChanged(object sender, EventArgs e)
@@ -3094,6 +3096,111 @@ namespace TransGBViewer
                 ReDraw();
             }
         }
-                
+
+
+        private void SetSequenceButtonActivity()
+        {
+            btnSequenceAdd.Enabled = false;
+            btnSequencerRmove.Enabled = false;
+
+            if (parameters.SequenceNames.Count == 0) { return; }
+            if (txtSequenceDisplayname.Text.Trim().Length < 3) { return; }
+            if (cboSequenceTranscriptName.SelectedIndex == 0) { return; }
+
+            string key = cboSequenceTranscriptName.Text + "#" + txtSequenceDisplayname.Text.Trim();
+            if (parameters.BindingSites.ContainsKey(key) == true)
+            { btnSequencerRmove.Enabled = true; }
+
+            if (txtSequencesSequence.Text.Trim().Length < 5) { return; }
+            btnSequenceAdd.Enabled = true;
+            
+
+
+        }
+        private void txtSequenceDisplayname_TextChanged(object sender, EventArgs e)
+        {
+            SetSequenceButtonActivity();
+        }
+
+        private void txtSequencesSequence_TextChanged(object sender, EventArgs e)
+        {
+            SetSequenceButtonActivity();
+        }
+
+        private void cboSequenceTranscriptName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetSequenceButtonActivity();
+        }
+
+        private void btnSequenceAdd_Click(object sender, EventArgs e)
+        {
+            string sequence = parameters.SequenceDNA[cboSequenceTranscriptName.Text];
+            List<string> seqs = new List<string>();
+            foreach (string s in txtSequencesSequence.Lines)
+            { 
+                if (s.Trim().Length > 5)
+                seqs.Add(s.Trim().ToLower()); 
+            }
+
+            List<Point> sites = new List<Point>();
+            foreach(string s in seqs)
+            {
+                List<int> hits = IndexOf(sequence, s, 0.9f);
+                if (hits.Count > 0)
+                {
+                    foreach (int place in hits)
+                    { sites.Add(new Point(place + 1, place + s.Length)); }
+                }
+            }
+
+            if (sites.Count > 0)
+            { parameters.BindingSites[cboSequenceTranscriptName.Text + "#" + txtSequenceDisplayname.Text.Trim()] = sites; }
+
+            txtSequencesSequence.Clear();
+            txtSequenceDisplayname.Clear();
+            cboSequenceTranscriptName.SelectedIndex = 0;
+        }
+
+        private void btnSequencerRmove_Click(object sender, EventArgs e)
+        {
+            if (parameters.BindingSites.ContainsKey(cboSequenceTranscriptName.Text + "#" + txtSequenceDisplayname.Text.Trim()) == true)
+            { parameters.BindingSites.Remove(cboSequenceTranscriptName.Text + "#" + txtSequenceDisplayname.Text.Trim()); }
+
+            txtSequencesSequence.Clear();
+            txtSequenceDisplayname.Clear();
+            cboSequenceTranscriptName.SelectedIndex = 0;
+
+        }
+        private static List<int> IndexOf(string target, string sequence, float scoreCutoff)
+        {            
+            int sequencelength = sequence.Length;
+            int score = 0;
+            int bestScore = 0;
+            int bestPlace = -1;
+            List<int> hits = new List<int>();
+            
+            for (int index = 0; index < target.Length - sequence.Length - 1; index++)
+            {
+                for (int inner = 0; inner < sequence.Length; inner++)
+                {
+                    if (sequence[inner] == target[inner + index])
+                    { score++; }
+                }
+                if ((float)score / sequencelength > scoreCutoff)
+                {
+                    if (score == bestScore) { hits.Add(index); }
+                    if (score > bestScore)
+                    {
+                        hits = new List<int>();
+                        hits.Add(index);                        
+                    }
+                    bestScore = score;
+                }
+                score = 0;
+            }
+
+            return hits;
+        }
+
     }
 }

@@ -158,6 +158,19 @@
             label34 = new Label();
             label32 = new Label();
             label31 = new Label();
+            tabPage8 = new TabPage();
+            groupBox13 = new GroupBox();
+            btnSequencerRmove = new Button();
+            label58 = new Label();
+            label57 = new Label();
+            btnSequenceAdd = new Button();
+            label56 = new Label();
+            cboSequenceTranscriptName = new ComboBox();
+            txtSequenceDisplayname = new TextBox();
+            label55 = new Label();
+            label54 = new Label();
+            txtSequencesSequence = new TextBox();
+            label53 = new Label();
             tabPage7 = new TabPage();
             groupBox10 = new GroupBox();
             cboImageDPI = new ComboBox();
@@ -200,6 +213,8 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureW).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureY).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).BeginInit();
+            tabPage8.SuspendLayout();
+            groupBox13.SuspendLayout();
             tabPage7.SuspendLayout();
             groupBox10.SuspendLayout();
             SuspendLayout();
@@ -942,6 +957,7 @@
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage6);
             tabControl1.Controls.Add(tabPage5);
+            tabControl1.Controls.Add(tabPage8);
             tabControl1.Controls.Add(tabPage7);
             tabControl1.Location = new Point(12, 12);
             tabControl1.Name = "tabControl1";
@@ -1560,6 +1576,139 @@
             label31.TabIndex = 5;
             label31.Text = "Modify the X and Y coordinates:";
             // 
+            // tabPage8
+            // 
+            tabPage8.Controls.Add(groupBox13);
+            tabPage8.Location = new Point(4, 24);
+            tabPage8.Name = "tabPage8";
+            tabPage8.Size = new Size(403, 369);
+            tabPage8.TabIndex = 7;
+            tabPage8.Text = "Sequence";
+            tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // groupBox13
+            // 
+            groupBox13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox13.Controls.Add(btnSequencerRmove);
+            groupBox13.Controls.Add(label58);
+            groupBox13.Controls.Add(label57);
+            groupBox13.Controls.Add(btnSequenceAdd);
+            groupBox13.Controls.Add(label56);
+            groupBox13.Controls.Add(cboSequenceTranscriptName);
+            groupBox13.Controls.Add(txtSequenceDisplayname);
+            groupBox13.Controls.Add(label55);
+            groupBox13.Controls.Add(label54);
+            groupBox13.Controls.Add(txtSequencesSequence);
+            groupBox13.Controls.Add(label53);
+            groupBox13.Location = new Point(3, 3);
+            groupBox13.Name = "groupBox13";
+            groupBox13.Size = new Size(397, 363);
+            groupBox13.TabIndex = 0;
+            groupBox13.TabStop = false;
+            groupBox13.Text = "Sequence";
+            // 
+            // btnSequencerRmove
+            // 
+            btnSequencerRmove.Enabled = false;
+            btnSequencerRmove.Location = new Point(316, 334);
+            btnSequencerRmove.Name = "btnSequencerRmove";
+            btnSequencerRmove.Size = new Size(75, 23);
+            btnSequencerRmove.TabIndex = 10;
+            btnSequencerRmove.Text = "Remove";
+            btnSequencerRmove.UseVisualStyleBackColor = true;
+            btnSequencerRmove.Click += btnSequencerRmove_Click;
+            // 
+            // label58
+            // 
+            label58.Location = new Point(6, 307);
+            label58.Name = "label58";
+            label58.Size = new Size(385, 41);
+            label58.TabIndex = 9;
+            label58.Text = "Press \"Remove\" to delete the display line linked to the name in the upper text area ";
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.Location = new Point(6, 278);
+            label57.Name = "label57";
+            label57.Size = new Size(290, 15);
+            label57.TabIndex = 8;
+            label57.Text = "Press \"Add\" to add the sequence site(s) to the display.";
+            // 
+            // btnSequenceAdd
+            // 
+            btnSequenceAdd.Enabled = false;
+            btnSequenceAdd.Location = new Point(316, 274);
+            btnSequenceAdd.Name = "btnSequenceAdd";
+            btnSequenceAdd.Size = new Size(75, 23);
+            btnSequenceAdd.TabIndex = 7;
+            btnSequenceAdd.Text = "Add";
+            btnSequenceAdd.UseVisualStyleBackColor = true;
+            btnSequenceAdd.Click += btnSequenceAdd_Click;
+            // 
+            // label56
+            // 
+            label56.AutoSize = true;
+            label56.Location = new Point(6, 248);
+            label56.Name = "label56";
+            label56.Size = new Size(134, 15);
+            label56.TabIndex = 6;
+            label56.Text = "Target transcript's name";
+            // 
+            // cboSequenceTranscriptName
+            // 
+            cboSequenceTranscriptName.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboSequenceTranscriptName.FormattingEnabled = true;
+            cboSequenceTranscriptName.Location = new Point(194, 245);
+            cboSequenceTranscriptName.Name = "cboSequenceTranscriptName";
+            cboSequenceTranscriptName.Size = new Size(197, 23);
+            cboSequenceTranscriptName.TabIndex = 5;
+            cboSequenceTranscriptName.SelectedIndexChanged += cboSequenceTranscriptName_SelectedIndexChanged;
+            // 
+            // txtSequenceDisplayname
+            // 
+            txtSequenceDisplayname.Location = new Point(194, 83);
+            txtSequenceDisplayname.Name = "txtSequenceDisplayname";
+            txtSequenceDisplayname.Size = new Size(197, 23);
+            txtSequenceDisplayname.TabIndex = 4;
+            txtSequenceDisplayname.TextChanged += txtSequenceDisplayname_TextChanged;
+            // 
+            // label55
+            // 
+            label55.AutoSize = true;
+            label55.Location = new Point(6, 86);
+            label55.Name = "label55";
+            label55.Size = new Size(147, 15);
+            label55.TabIndex = 3;
+            label55.Text = "Enter the display line's title";
+            // 
+            // label54
+            // 
+            label54.Location = new Point(6, 109);
+            label54.Name = "label54";
+            label54.Size = new Size(385, 33);
+            label54.TabIndex = 2;
+            label54.Text = "Enter the sequences below.  For multiple sequences per display line, enter one sequence per line.";
+            // 
+            // txtSequencesSequence
+            // 
+            txtSequencesSequence.Location = new Point(6, 145);
+            txtSequencesSequence.Multiline = true;
+            txtSequencesSequence.Name = "txtSequencesSequence";
+            txtSequencesSequence.ScrollBars = ScrollBars.Both;
+            txtSequencesSequence.Size = new Size(385, 94);
+            txtSequencesSequence.TabIndex = 1;
+            txtSequencesSequence.TextChanged += txtSequencesSequence_TextChanged;
+            // 
+            // label53
+            // 
+            label53.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label53.Location = new Point(6, 25);
+            label53.Name = "label53";
+            label53.Size = new Size(385, 53);
+            label53.TabIndex = 0;
+            label53.Text = resources.GetString("label53.Text");
+            // 
             // tabPage7
             // 
             tabPage7.Controls.Add(groupBox10);
@@ -1685,6 +1834,9 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureW).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureY).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).EndInit();
+            tabPage8.ResumeLayout(false);
+            groupBox13.ResumeLayout(false);
+            groupBox13.PerformLayout();
             tabPage7.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
             ResumeLayout(false);
@@ -1828,5 +1980,18 @@
         private Button btnMove;
         private CheckedListBox cblMoveableAlternativeExons;
         private GroupBox groupBox12;
+        private TabPage tabPage8;
+        private GroupBox groupBox13;
+        private Label label53;
+        private Label label54;
+        private TextBox txtSequencesSequence;
+        private TextBox txtSequenceDisplayname;
+        private Label label55;
+        private Label label56;
+        private ComboBox cboSequenceTranscriptName;
+        private Button btnSequencerRmove;
+        private Label label58;
+        private Label label57;
+        private Button btnSequenceAdd;
     }
 }

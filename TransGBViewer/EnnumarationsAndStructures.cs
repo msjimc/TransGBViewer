@@ -283,5 +283,4 @@ namespace TransGBViewer
         public Dictionary<string, string> AminoAcidSequences { get { return aminoAcidSequences; } set { aminoAcidSequences = value; } }
         public Dictionary<string, List<AlignmentDomainFeature>> Domains { get { return domains; } set { domains = value; } }
     }
-
-}
+     }

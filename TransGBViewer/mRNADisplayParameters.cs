@@ -38,6 +38,8 @@ namespace TransGBViewer
         private Dictionary<string, List<AlignmentDomainFeature>> domains = new Dictionary<string, List<AlignmentDomainFeature>>();
         private Dictionary<string, AlignmentDomainFeature> selected = new Dictionary<string, AlignmentDomainFeature>();
 
+        private Dictionary<string, List<Point>> bindingSites = new Dictionary<string, List<Point>>();
+
         public mRNADisplayParameters()
         {
         }
@@ -185,6 +187,7 @@ namespace TransGBViewer
         public Dictionary<string, List<AlignmentDomainFeature>> Domains { get { return domains; } set { domains = value; } }
         public Dictionary<string, AlignmentDomainFeature> Selected { get { return selected; } set { selected = value; } }
 
+        public Dictionary<string, List<Point>> BindingSites { get { return bindingSites; } set { bindingSites = value; } }
 
         #region Variable parametes
         private int labelWidth = 140;
