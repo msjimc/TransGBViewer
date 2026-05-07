@@ -3292,6 +3292,22 @@ namespace TransGBViewer
                     case 'T':
                         answer += "t";
                         break;
+                    case 's':
+                    case 'S':
+                        answer += "s";
+                        break;
+                    case 'w':
+                    case 'W':
+                        answer += "w";
+                        break;
+                    case 'r':
+                    case 'R':
+                        answer += "r";
+                        break;
+                    case 'y':
+                    case 'Y':
+                        answer += "y";
+                        break;
                 }
             }
             return answer;
@@ -3311,6 +3327,11 @@ namespace TransGBViewer
                 {
                     if (sequence[inner] == target[inner + index])
                     { score++; }
+                    else if ((sequence[inner] == 's' && (target[inner + index] == 'c' || target[inner + index] == 'g')) ||
+                        (sequence[inner] == 'w' && (target[inner + index] == 'a' || target[inner + index] == 't')) ||
+                        (sequence[inner] == 'r' && (target[inner + index] == 'a' || target[inner + index] == 'g')) ||
+                        (sequence[inner] == 'y' && (target[inner + index] == 'c' || target[inner + index] == 't')))
+                    { score += 1; }
                 }
                 if ((float)score / sequencelength > scoreCutoff)
                 {
