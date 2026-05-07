@@ -197,12 +197,21 @@ namespace TransGBViewer
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (lvAlphabet.SelectedItems.Count == 0) { return; }
-            ListViewItem item = lvAlphabet.SelectedItems[0];
-            lvAlphabet.Items.Remove(item);
-            ListViewItem itemNew = new ListViewItem(item.Text.ToString());
-            itemNew.SubItems.Add(item.SubItems[1]);
-            itemNew.SubItems.Add(item.SubItems[2]);
-            lvUser.Items.Add(itemNew);
+            List<ListViewItem> selected = new List<ListViewItem>();
+            for (int index = 0; index < lvAlphabet.SelectedItems.Count; index++)
+            {
+                ListViewItem item = lvAlphabet.SelectedItems[index];
+                selected.Add(item);
+                //lvAlphabet.Items.Remove(item);
+                ListViewItem itemNew = new ListViewItem(item.Text.ToString());
+                itemNew.SubItems.Add(item.SubItems[1]);
+                itemNew.SubItems.Add(item.SubItems[2]);
+                lvUser.Items.Add(itemNew);
+            }
+
+            foreach(ListViewItem item in selected)
+            {lvAlphabet.Items.Remove(item); }
+
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

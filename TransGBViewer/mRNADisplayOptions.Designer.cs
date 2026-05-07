@@ -178,6 +178,9 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
+            label59 = new Label();
+            btnSequenceColour = new Button();
+            p1Sequencecolour = new PictureBox();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -217,6 +220,7 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).BeginInit();
             tabPage7.SuspendLayout();
             groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)p1Sequencecolour).BeginInit();
             SuspendLayout();
             // 
             // btnClose
@@ -235,7 +239,7 @@
             tabPage2.Controls.Add(groupBox2);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(403, 369);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Display";
@@ -842,7 +846,7 @@
             tabPage1.Controls.Add(groupBox1);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(403, 369);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Import";
@@ -1277,14 +1281,17 @@
             // groupBox13
             // 
             groupBox13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox13.Controls.Add(label59);
+            groupBox13.Controls.Add(p1Sequencecolour);
+            groupBox13.Controls.Add(btnSequenceColour);
             groupBox13.Controls.Add(btnSequencerRmove);
             groupBox13.Controls.Add(label58);
-            groupBox13.Controls.Add(label57);
-            groupBox13.Controls.Add(btnSequenceAdd);
-            groupBox13.Controls.Add(label56);
-            groupBox13.Controls.Add(cboSequenceTranscriptName);
-            groupBox13.Controls.Add(txtSequenceDisplayname);
             groupBox13.Controls.Add(label55);
+            groupBox13.Controls.Add(label56);
+            groupBox13.Controls.Add(label57);
+            groupBox13.Controls.Add(cboSequenceTranscriptName);
+            groupBox13.Controls.Add(btnSequenceAdd);
+            groupBox13.Controls.Add(txtSequenceDisplayname);
             groupBox13.Controls.Add(label54);
             groupBox13.Controls.Add(txtSequencesSequence);
             groupBox13.Controls.Add(label53);
@@ -1337,7 +1344,7 @@
             // label56
             // 
             label56.AutoSize = true;
-            label56.Location = new Point(6, 248);
+            label56.Location = new Point(6, 113);
             label56.Name = "label56";
             label56.Size = new Size(134, 15);
             label56.TabIndex = 6;
@@ -1347,7 +1354,7 @@
             // 
             cboSequenceTranscriptName.DropDownStyle = ComboBoxStyle.DropDownList;
             cboSequenceTranscriptName.FormattingEnabled = true;
-            cboSequenceTranscriptName.Location = new Point(194, 245);
+            cboSequenceTranscriptName.Location = new Point(194, 110);
             cboSequenceTranscriptName.Name = "cboSequenceTranscriptName";
             cboSequenceTranscriptName.Size = new Size(197, 23);
             cboSequenceTranscriptName.TabIndex = 5;
@@ -1355,7 +1362,7 @@
             // 
             // txtSequenceDisplayname
             // 
-            txtSequenceDisplayname.Location = new Point(194, 83);
+            txtSequenceDisplayname.Location = new Point(194, 81);
             txtSequenceDisplayname.Name = "txtSequenceDisplayname";
             txtSequenceDisplayname.Size = new Size(197, 23);
             txtSequenceDisplayname.TabIndex = 4;
@@ -1364,7 +1371,7 @@
             // label55
             // 
             label55.AutoSize = true;
-            label55.Location = new Point(6, 86);
+            label55.Location = new Point(6, 84);
             label55.Name = "label55";
             label55.Size = new Size(147, 15);
             label55.TabIndex = 3;
@@ -1372,7 +1379,7 @@
             // 
             // label54
             // 
-            label54.Location = new Point(6, 109);
+            label54.Location = new Point(6, 166);
             label54.Name = "label54";
             label54.Size = new Size(385, 33);
             label54.TabIndex = 2;
@@ -1380,11 +1387,11 @@
             // 
             // txtSequencesSequence
             // 
-            txtSequencesSequence.Location = new Point(6, 145);
+            txtSequencesSequence.Location = new Point(6, 202);
             txtSequencesSequence.Multiline = true;
             txtSequencesSequence.Name = "txtSequencesSequence";
             txtSequencesSequence.ScrollBars = ScrollBars.Both;
-            txtSequencesSequence.Size = new Size(385, 94);
+            txtSequencesSequence.Size = new Size(385, 66);
             txtSequencesSequence.TabIndex = 1;
             txtSequencesSequence.WordWrap = false;
             txtSequencesSequence.TextChanged += txtSequencesSequence_TextChanged;
@@ -1779,6 +1786,33 @@
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
             // 
+            // label59
+            // 
+            label59.AutoSize = true;
+            label59.Location = new Point(6, 143);
+            label59.Name = "label59";
+            label59.Size = new Size(181, 15);
+            label59.TabIndex = 11;
+            label59.Text = "Set the sequence's display colour";
+            // 
+            // btnSequenceColour
+            // 
+            btnSequenceColour.Location = new Point(316, 139);
+            btnSequenceColour.Name = "btnSequenceColour";
+            btnSequenceColour.Size = new Size(75, 23);
+            btnSequenceColour.TabIndex = 11;
+            btnSequenceColour.Text = "Colour";
+            btnSequenceColour.UseVisualStyleBackColor = true;
+            btnSequenceColour.Click += btnSequenceColour_Click;
+            // 
+            // p1Sequencecolour
+            // 
+            p1Sequencecolour.Location = new Point(287, 139);
+            p1Sequencecolour.Name = "p1Sequencecolour";
+            p1Sequencecolour.Size = new Size(23, 23);
+            p1Sequencecolour.TabIndex = 12;
+            p1Sequencecolour.TabStop = false;
+            // 
             // mRNADisplayOptions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1840,6 +1874,7 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).EndInit();
             tabPage7.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)p1Sequencecolour).EndInit();
             ResumeLayout(false);
         }
 
@@ -1973,7 +2008,7 @@
         private Label label46;
         private Button btnCreateInterProScanFeaturesSets;
         private Label label49;
-        private PictureBox pictureBox1;
+        private PictureBox p1Sequencecolour;
         private Button btnFrameColours;
         private ComboBox cboFrame;
         private Label label52;
@@ -1994,5 +2029,7 @@
         private Label label58;
         private Label label57;
         private Button btnSequenceAdd;
+        private Label label59;
+        private Button btnSequenceColour;
     }
 }

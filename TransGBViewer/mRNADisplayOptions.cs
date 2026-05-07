@@ -1014,6 +1014,12 @@ namespace TransGBViewer
                     if (legend.ContainsKey(name) == false)
                     { legend.Add(name, legend.Count + 1); }
                 }
+                foreach (string key in parameters.BindingSites.Keys)
+                {
+                    string name = key.Substring(0, key.LastIndexOf("#"));
+                    if (legend.ContainsKey(name) == false)
+                    { legend.Add(name, legend.Count + 1); }
+                }
             }
             int counter = 1;
             foreach (string name in parameters.SequenceNames)
@@ -1266,6 +1272,7 @@ namespace TransGBViewer
             Color[] frameColours = parameters.ReadingFrameColours;
 
             string allSequences = parameters.AllSequences;
+            if (parameters.ExonWithFrame.ContainsKey(name) == false) { return; }
             List<ReadingFrame> exons = parameters.ExonWithFrame[name];
             foreach (ReadingFrame exon in exons)
             {
@@ -1749,27 +1756,26 @@ namespace TransGBViewer
             {
                 string[] bits = key.Split('#');
                 string name = bits[0];
+                string display = bits[1];
 
                 if (parameters.Exons.ContainsKey(name) == false) continue;
                 List<Point> exonPoints = parameters.Exons[name];
                 if (parameters.LegendsLocation != DrawLabels.none)
                 {
-                    string display = bits[1];
-                    if (name == cboFrame.Text)
-                    { display += "*"; }
-
                     if (legends.ContainsKey(name) == true)
                     { display += AddSupercript(legends[name]); }
                     Top = DrawFeatureLabels(g, gLabels, parameters.IDFont, display, bmp.Width, scale.i[5], Top, scale, name);
                 }
 
-                List<Point> bindingSites = parameters.BindingSites[key];
+                List<BindingSite> bindingSites = parameters.BindingSites[key];
 
-                parameters.FeatureRows[parameters.SequenceDisplayNames[name]] = Top;
-                foreach (Point bs in bindingSites)
+                parameters.FeatureRows[display] = Top;
+                foreach (BindingSite bsc in bindingSites)
                 {
+                    float lastEnd = -1;
+                    Point bs = bsc.Region;
                     foreach (Point exon in exonPoints)
-                    {                       
+                    {
                         string sequence = parameters.getExonSequence(name, exon);
                         int placeInAllsequences = allSequences.IndexOf(sequence);
                         int numberofGapsbeforeSequence = getNumberOfGapsInAllSequences(new Point(limits.X, placeInAllsequences));
@@ -1782,7 +1788,7 @@ namespace TransGBViewer
                         {
                             startPoint = scale.i[parameters.LabelWidth] + scale.i[15] + (numberofGapsbeforeSequence * scale.i[parameters.IntronGap]) +
                             ((placeInAllsequences + (bs.X - exon.X) - limits.X - numberofGapsbeforeSequence) * scalefactor);
-                            endPoint = startPoint + ((bs.Y-bs.X) * scalefactor);
+                            endPoint = startPoint + ((bs.Y - bs.X) * scalefactor);
                             draw = true;
                         }
                         else if (exon.X <= bs.X && exon.Y >= bs.X)
@@ -1790,29 +1796,28 @@ namespace TransGBViewer
                             startPoint = scale.i[parameters.LabelWidth] + scale.i[15] + (numberofGapsbeforeSequence * scale.i[parameters.IntronGap]) +
                                ((placeInAllsequences + (bs.X - exon.X) - limits.X - numberofGapsbeforeSequence) * scalefactor);
                             draw = true;
+                            lastEnd = endPoint;
                         }
                         else if (exon.X <= bs.Y && exon.Y >= bs.Y)
                         {
-                            endPoint = startPoint + ((exon.X - bs.Y) * scalefactor);
+                            if (lastEnd > -1 && parameters.IntronGap > 0)
+                            { g.DrawLine(Pens.Black, lastEnd, Top + ((float)height / 2), startPoint, Top + ((float)height / 2)); lastEnd = -1; }
+                            endPoint = startPoint + ((bs.Y - 1 - exon.X) * scalefactor);
                             draw = true;
                         }
                         if (draw == true)
                         {
-                            RectangleF r = new RectangleF(startPoint, Top + ((float)height / 3), (endPoint - startPoint), ((float)height / 3));
-                            CommonGraphicTasks.DrawRectangle(g, r, Brushes.Red, parameters.Rounded, scale, 2, true);
+                            //RectangleF r = new RectangleF(startPoint, Top + ((float)height / -1), (endPoint - startPoint), ((float)height / 1));
+                            RectangleF r = new RectangleF(startPoint, Top, (endPoint - startPoint), height);
+                            CommonGraphicTasks.DrawRectangle(g, r, new SolidBrush(bsc.FillColour), parameters.Rounded, scale, 2, true);
                             if (parameters.DrawExonBorders == true)
                             { CommonGraphicTasks.DrawBordersRectangle(g, r, Pens.Black, parameters.Rounded, scale, 2); }
-                            Top += scale.i[25];
                         }
                     }
                 }
-
-                if (parameters.ExonWithFrame.Count > 0)
-                { DrawFrames(g, height, scale.i[20], scalefactor, scale, name, limits); }
-
-                //height += scale.i[25];
+                Top += scale.i[25];
             }
-            Top += scale.i[10] +30;
+            Top += scale.i[10];
             FillMask(g, currentHeight, Top, scale, bmp.Width);
             return Top;
         }
@@ -2252,6 +2257,8 @@ namespace TransGBViewer
                 setExampleColourBox(parameters.LineLimitColours[3], pStop);
             }
 
+            setExampleColourBox(Color.Gray, p1Sequencecolour);
+
             if (parameters != null && parameters.AllSequences != "")
             {
                 nudZoomFrom.Minimum = 1;
@@ -2389,7 +2396,7 @@ namespace TransGBViewer
         private void btnDonor_Click(object sender, EventArgs e)
         {
             ShapeColour sc = new ShapeColour(parameters.LineLimitColours[0]);
-            sc.SetText("Select the donor line colour", "To select the lines colour pres the 'Colour' button");
+            sc.SetText("Select the donor line colour", "To select the line's colour press the 'Colour' button");
             if (sc.ShowDialog() == DialogResult.OK)
             {
                 parameters.LineLimitColours[0] = sc.GetShapeColour;
@@ -2419,7 +2426,7 @@ namespace TransGBViewer
         private void btnORFStart_Click(object sender, EventArgs e)
         {
             ShapeColour sc = new ShapeColour(parameters.LineLimitColours[2]);
-            sc.SetText("Select the start codon line colour", "To select the lines colour pres the 'Colour' button");
+            sc.SetText("Select the start codon line colour", "To select the line's colour press the 'Colour' button");
             if (sc.ShowDialog() == DialogResult.OK)
             {
                 parameters.LineLimitColours[2] = sc.GetShapeColour;
@@ -2431,7 +2438,7 @@ namespace TransGBViewer
         private void btnORFStop_Click(object sender, EventArgs e)
         {
             ShapeColour sc = new ShapeColour(parameters.LineLimitColours[3]);
-            sc.SetText("Select the stop codon line colour", "To select the lines colour pres the 'Colour' button");
+            sc.SetText("Select the stop codon line colour", "To select the line's colour press the 'Colour' button");
             if (sc.ShowDialog() == DialogResult.OK)
             {
                 parameters.LineLimitColours[3] = sc.GetShapeColour;
@@ -3185,7 +3192,7 @@ namespace TransGBViewer
         private void SetSequenceButtonActivity()
         {
             btnSequenceAdd.Enabled = false;
-            btnSequencerRmove.Enabled = false;            
+            btnSequencerRmove.Enabled = false;
 
             if (parameters.SequenceNames.Count == 0) { return; }
             if (txtSequenceDisplayname.Text.Trim().Length < 3) { return; }
@@ -3195,8 +3202,8 @@ namespace TransGBViewer
             if (parameters.BindingSites.ContainsKey(key) == true)
             { btnSequencerRmove.Enabled = true; }
 
-            if (CleanSequence(txtSequencesSequence.Text).Length > 5) { return; }
-            btnSequenceAdd.Enabled = true;          
+            if (CleanSequence(txtSequencesSequence.Text).Length < 5) { return; }
+            btnSequenceAdd.Enabled = true;
         }
         private void txtSequenceDisplayname_TextChanged(object sender, EventArgs e)
         {
@@ -3213,6 +3220,7 @@ namespace TransGBViewer
             SetSequenceButtonActivity();
         }
 
+        Color sequenceColour = Color.Gray;
         private void btnSequenceAdd_Click(object sender, EventArgs e)
         {
             string sequence = parameters.SequenceDNA[cboSequenceTranscriptName.Text];
@@ -3221,17 +3229,23 @@ namespace TransGBViewer
             {
                 string cleaned = CleanSequence(s);
                 if (cleaned.Length > 5)
-                seqs.Add(cleaned.Trim().ToLower()); 
+                    seqs.Add(cleaned.Trim().ToLower());
             }
 
-            List<Point> sites = new List<Point>();
-            foreach(string s in seqs)
+            List<BindingSite> sites = new List<BindingSite>();
+            foreach (string s in seqs)
             {
                 List<int> hits = IndexOf(sequence, s, 0.9f);
                 if (hits.Count > 0)
                 {
                     foreach (int place in hits)
-                    { sites.Add(new Point(place + 1, place + s.Length)); }
+                    {
+                        BindingSite bs;
+                        bs.FillColour = sequenceColour;
+                        bs.Region = new Point(place + 1, place + s.Length);
+                        bs.LineColour = Color.Black;
+                        sites.Add(bs);
+                    }
                 }
             }
 
@@ -3258,7 +3272,7 @@ namespace TransGBViewer
         private string CleanSequence(string sequence)
         {
             string answer = "";
-            for(int index =0; index< sequence.Length; index++)
+            for (int index = 0; index < sequence.Length; index++)
             {
                 switch (sequence[index])
                 {
@@ -3284,13 +3298,13 @@ namespace TransGBViewer
         }
 
         private static List<int> IndexOf(string target, string sequence, float scoreCutoff)
-        {            
+        {
             int sequencelength = sequence.Length;
             int score = 0;
             int bestScore = 0;
-            int bestPlace = -1;
-            List<int> hits = new List<int>();
             
+            List<int> hits = new List<int>();
+
             for (int index = 0; index < target.Length - sequence.Length - 1; index++)
             {
                 for (int inner = 0; inner < sequence.Length; inner++)
@@ -3304,7 +3318,7 @@ namespace TransGBViewer
                     if (score > bestScore)
                     {
                         hits = new List<int>();
-                        hits.Add(index);                        
+                        hits.Add(index);
                     }
                     bestScore = score;
                 }
@@ -3314,5 +3328,15 @@ namespace TransGBViewer
             return hits;
         }
 
+        private void btnSequenceColour_Click(object sender, EventArgs e)
+        {
+            ShapeColour sc = new ShapeColour(sequenceColour);
+            sc.SetText("Select the shape's colour ", "To select the shape's colour press the 'Colour' button");
+            if (sc.ShowDialog() == DialogResult.OK)
+            {
+                sequenceColour = sc.GetShapeColour;
+                setExampleColourBox(sequenceColour, p1Sequencecolour);
+           }
+        }
     }
 }

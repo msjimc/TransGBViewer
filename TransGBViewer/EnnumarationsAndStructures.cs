@@ -201,6 +201,13 @@ namespace TransGBViewer
         public int EndOfUniprot;
     }
 
+    public struct BindingSite
+    {
+        public Point Region;
+        public Color FillColour;
+        public Color LineColour;
+    }
+
     public class exonGraphNode
     {
         public int index;
