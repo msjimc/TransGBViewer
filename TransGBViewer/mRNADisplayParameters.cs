@@ -186,7 +186,6 @@ namespace TransGBViewer
         public string SearchString { get { return searchString; } set { searchString = value; } }
         public Dictionary<string, List<AlignmentDomainFeature>> Domains { get { return domains; } set { domains = value; } }
         public Dictionary<string, AlignmentDomainFeature> Selected { get { return selected; } set { selected = value; } }
-
         public Dictionary<string, List<Point>> BindingSites { get { return bindingSites; } set { bindingSites = value; } }
 
         #region Variable parametes
@@ -244,7 +243,7 @@ namespace TransGBViewer
         public Dictionary<string, GeneFeatureMarker> GeneFeatureMarkers { get { return geneFeatureMarkers; } set { geneFeatureMarkers = value; } }
         #endregion
         #region Layout
-        private List<ClassDrawingOrder> layout = new List<ClassDrawingOrder> { ClassDrawingOrder.Interval_markers, ClassDrawingOrder.Gene_sequences, ClassDrawingOrder.GenBank_features, ClassDrawingOrder.Uniprot_features, ClassDrawingOrder.InterProScan_features };
+        private List<ClassDrawingOrder> layout = new List<ClassDrawingOrder> { ClassDrawingOrder.Interval_markers, ClassDrawingOrder.Gene_sequences, ClassDrawingOrder.Sequence, ClassDrawingOrder.GenBank_features, ClassDrawingOrder.Uniprot_features, ClassDrawingOrder.InterProScan_features };
         public List<ClassDrawingOrder> Layout { get { return layout; } set { layout = value; } }
         #endregion
 

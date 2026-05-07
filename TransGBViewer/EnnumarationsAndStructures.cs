@@ -24,7 +24,8 @@ namespace TransGBViewer
         GenBank_features,
         Uniprot_features,
         InterProScan_features,
-        GenBank_protein_features
+        GenBank_protein_features,
+        Sequence
     }
     public enum DisplayOrder
     {

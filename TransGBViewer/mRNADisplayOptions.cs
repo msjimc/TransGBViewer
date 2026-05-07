@@ -1124,6 +1124,16 @@ namespace TransGBViewer
                         FillMask(g, currentHeight, height, scale, bmp.Width);
                     }
                 }
+                else if (dataset == ClassDrawingOrder.Sequence)
+                {
+                    if (parameters.BindingSites.Count > 0)
+                    {
+                        int currentHeight = height;
+                        List<string> named = new List<string>();
+                        height = DrawBindingSites(g, gLabels, height, scale.i[20], scale, scalefactor, named, legends, allSequences, limits, bmp);
+                        FillMask(g, currentHeight, height, scale, bmp.Width);
+                    }
+                }
             }
 
             try
@@ -1732,6 +1742,80 @@ namespace TransGBViewer
             }
         }
 
+        private int DrawBindingSites(Graphics g, Graphics gLabels, int Top, int height, scalar scale, float scalefactor, List<string> named, Dictionary<string, int> legends, string allSequences, Point limits, Bitmap bmp)
+        {
+            int currentHeight = Top;
+            foreach (string key in parameters.BindingSites.Keys)
+            {
+                string[] bits = key.Split('#');
+                string name = bits[0];
+
+                if (parameters.Exons.ContainsKey(name) == false) continue;
+                List<Point> exonPoints = parameters.Exons[name];
+                if (parameters.LegendsLocation != DrawLabels.none)
+                {
+                    string display = bits[1];
+                    if (name == cboFrame.Text)
+                    { display += "*"; }
+
+                    if (legends.ContainsKey(name) == true)
+                    { display += AddSupercript(legends[name]); }
+                    Top = DrawFeatureLabels(g, gLabels, parameters.IDFont, display, bmp.Width, scale.i[5], Top, scale, name);
+                }
+
+                List<Point> bindingSites = parameters.BindingSites[key];
+
+                parameters.FeatureRows[parameters.SequenceDisplayNames[name]] = Top;
+                foreach (Point bs in bindingSites)
+                {
+                    foreach (Point exon in exonPoints)
+                    {                       
+                        string sequence = parameters.getExonSequence(name, exon);
+                        int placeInAllsequences = allSequences.IndexOf(sequence);
+                        int numberofGapsbeforeSequence = getNumberOfGapsInAllSequences(new Point(limits.X, placeInAllsequences));
+                        float startPoint = scale.i[parameters.LabelWidth] + scale.i[15] + (numberofGapsbeforeSequence * scale.i[parameters.IntronGap]) +
+                            ((placeInAllsequences - limits.X - numberofGapsbeforeSequence) * scalefactor);
+                        float endPoint = startPoint + (sequence.Length * scalefactor);
+
+                        bool draw = false;
+                        if (exon.X <= bs.X && exon.Y >= bs.Y)
+                        {
+                            startPoint = scale.i[parameters.LabelWidth] + scale.i[15] + (numberofGapsbeforeSequence * scale.i[parameters.IntronGap]) +
+                            ((placeInAllsequences + (bs.X - exon.X) - limits.X - numberofGapsbeforeSequence) * scalefactor);
+                            endPoint = startPoint + ((bs.Y-bs.X) * scalefactor);
+                            draw = true;
+                        }
+                        else if (exon.X <= bs.X && exon.Y >= bs.X)
+                        {
+                            startPoint = scale.i[parameters.LabelWidth] + scale.i[15] + (numberofGapsbeforeSequence * scale.i[parameters.IntronGap]) +
+                               ((placeInAllsequences + (bs.X - exon.X) - limits.X - numberofGapsbeforeSequence) * scalefactor);
+                            draw = true;
+                        }
+                        else if (exon.X <= bs.Y && exon.Y >= bs.Y)
+                        {
+                            endPoint = startPoint + ((exon.X - bs.Y) * scalefactor);
+                            draw = true;
+                        }
+                        if (draw == true)
+                        {
+                            RectangleF r = new RectangleF(startPoint, Top + ((float)height / 3), (endPoint - startPoint), ((float)height / 3));
+                            CommonGraphicTasks.DrawRectangle(g, r, Brushes.Red, parameters.Rounded, scale, 2, true);
+                            if (parameters.DrawExonBorders == true)
+                            { CommonGraphicTasks.DrawBordersRectangle(g, r, Pens.Black, parameters.Rounded, scale, 2); }
+                            Top += scale.i[25];
+                        }
+                    }
+                }
+
+                if (parameters.ExonWithFrame.Count > 0)
+                { DrawFrames(g, height, scale.i[20], scalefactor, scale, name, limits); }
+
+                //height += scale.i[25];
+            }
+            Top += scale.i[10] +30;
+            FillMask(g, currentHeight, Top, scale, bmp.Width);
+            return Top;
+        }
 
         private int DrawSizeMarkers(Graphics g, scalar scale, float scalefactor, float Top, int imageWidth, Point limitRegion)
         {
@@ -3101,7 +3185,7 @@ namespace TransGBViewer
         private void SetSequenceButtonActivity()
         {
             btnSequenceAdd.Enabled = false;
-            btnSequencerRmove.Enabled = false;
+            btnSequencerRmove.Enabled = false;            
 
             if (parameters.SequenceNames.Count == 0) { return; }
             if (txtSequenceDisplayname.Text.Trim().Length < 3) { return; }
@@ -3111,11 +3195,8 @@ namespace TransGBViewer
             if (parameters.BindingSites.ContainsKey(key) == true)
             { btnSequencerRmove.Enabled = true; }
 
-            if (txtSequencesSequence.Text.Trim().Length < 5) { return; }
-            btnSequenceAdd.Enabled = true;
-            
-
-
+            if (CleanSequence(txtSequencesSequence.Text).Length > 5) { return; }
+            btnSequenceAdd.Enabled = true;          
         }
         private void txtSequenceDisplayname_TextChanged(object sender, EventArgs e)
         {
@@ -3137,9 +3218,10 @@ namespace TransGBViewer
             string sequence = parameters.SequenceDNA[cboSequenceTranscriptName.Text];
             List<string> seqs = new List<string>();
             foreach (string s in txtSequencesSequence.Lines)
-            { 
-                if (s.Trim().Length > 5)
-                seqs.Add(s.Trim().ToLower()); 
+            {
+                string cleaned = CleanSequence(s);
+                if (cleaned.Length > 5)
+                seqs.Add(cleaned.Trim().ToLower()); 
             }
 
             List<Point> sites = new List<Point>();
@@ -3159,6 +3241,7 @@ namespace TransGBViewer
             txtSequencesSequence.Clear();
             txtSequenceDisplayname.Clear();
             cboSequenceTranscriptName.SelectedIndex = 0;
+            ReDraw();
         }
 
         private void btnSequencerRmove_Click(object sender, EventArgs e)
@@ -3169,8 +3252,37 @@ namespace TransGBViewer
             txtSequencesSequence.Clear();
             txtSequenceDisplayname.Clear();
             cboSequenceTranscriptName.SelectedIndex = 0;
-
+            ReDraw();
         }
+
+        private string CleanSequence(string sequence)
+        {
+            string answer = "";
+            for(int index =0; index< sequence.Length; index++)
+            {
+                switch (sequence[index])
+                {
+                    case 'a':
+                    case 'A':
+                        answer += "a";
+                        break;
+                    case 'c':
+                    case 'C':
+                        answer += "c";
+                        break;
+                    case 'g':
+                    case 'G':
+                        answer += "g";
+                        break;
+                    case 't':
+                    case 'T':
+                        answer += "t";
+                        break;
+                }
+            }
+            return answer;
+        }
+
         private static List<int> IndexOf(string target, string sequence, float scoreCutoff)
         {            
             int sequencelength = sequence.Length;
