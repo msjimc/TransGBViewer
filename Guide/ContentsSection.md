@@ -102,6 +102,10 @@
     - [Renaming a transcript](LAYOUT.md#renaming-a-transcript)
   - [Resetting the transcript display names, order and reselecting omitted transcripts](LAYOUT.md#resetting-the-transcript-display-names-order-and-reselecting-omitted-transcripts)
    
+## Highlighting DNA sequences of interest
+## List of contents
+
+
 ## Add markers to highlight specific features
 ## List of contents
 - [Manually annotating the transcripts and features in the image](MARKERS.md#manually-annotating-the-transcripts-and-features-in-the-image)

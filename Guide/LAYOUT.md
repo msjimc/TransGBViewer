@@ -27,6 +27,7 @@ In the previous tabs, you could create an image displaying aligned transcript se
 - GenBank file metadata (green box in Figure 2)
 - UniProt features (red box in Figure 2)
 - InterProScan features (grey box in Figure 2)
+- DNA sequences of interest (not shown)
 
 ![Figure 2](images/figureLayout2.jpg)
 

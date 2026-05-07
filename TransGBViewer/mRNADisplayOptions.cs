@@ -57,7 +57,9 @@ namespace TransGBViewer
                 }
 
                 foreach (string file in genbankFiles)
-                { ReadGenBankFile(file); }
+                { 
+                    ReadGenBankFile(file); 
+                }
 
                 if (genbankFiles.Count == 0)
                 { MessageBox.Show("No GenBank files in folder."); return; }
@@ -434,16 +436,9 @@ namespace TransGBViewer
         private Dictionary<string, exonGraphNode> makeMinimumExonSet()
         {
             Dictionary<string, exonGraphNode> exonSetDict = new Dictionary<string, exonGraphNode>();
-            foreach (string name in parameters.SequenceNames)
-            {
-                //if (parameters.Exons.ContainsKey(name) == false)
-                //{
-                //    Point e = new Point(1, parameters.SequenceDNA[name].Length - 1);
-                //    List<Point> es = new List<Point>();
-                //    es.Add(e);
-                //    parameters.Exons.Add(name, es);
-                //}
-                if (parameters.Exons.ContainsKey(name) == false) continue;
+            foreach (string name in parameters.Exons.Keys)
+            {                
+                
                 List<Point> exons = parameters.Exons[name];
                 foreach (Point exon in exons)
                 {
@@ -473,7 +468,7 @@ namespace TransGBViewer
 
             foreach (string name in parameters.SequenceNames)
             {
-                if (parameters.Exons.ContainsKey(Name) == false) continue;
+                if (parameters.Exons.ContainsKey(name) == false) continue;
                 List<Point> exons = parameters.Exons[name];
                 string previousSequence = "";
                 string sequence = "";
@@ -3072,6 +3067,7 @@ namespace TransGBViewer
 
             foreach (string name in parameters.SequenceNames)
             {
+                if (parameters.Exons.ContainsKey(name) == false) continue;
                 if (parameters.CDSs.ContainsKey(name) == false) continue;
                 Point orf = parameters.CDSs[name];
                 int[] frame = Enumerable.Repeat(9, lengthOfConsnsus).ToArray();
