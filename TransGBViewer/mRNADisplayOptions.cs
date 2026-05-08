@@ -3203,6 +3203,9 @@ namespace TransGBViewer
         }
         private void txtSequenceDisplayname_TextChanged(object sender, EventArgs e)
         {
+            string name = txtSequenceDisplayname.Text.Trim();
+            if (name.Contains("#") == true)
+            { txtSequenceDisplayname.Text = name.Replace("#", ""); }
             SetSequenceButtonActivity();
         }
 
@@ -3329,7 +3332,7 @@ namespace TransGBViewer
                         (sequence[inner] == 'y' && (target[inner + index] == 'c' || target[inner + index] == 't')))
                     { score += 1; }
                 }
-                if ((float)score / sequencelength > scoreCutoff)
+                if ((float)score / sequencelength >= scoreCutoff)
                 {
                     if (score == bestScore) { hits.Add(index); }
                     if (score > bestScore)

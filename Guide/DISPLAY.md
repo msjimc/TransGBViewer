@@ -170,9 +170,9 @@ Figure 11: Selecting a transcript's name from the dropdown list box (blue line) 
 
 ## Changing the colour of the lines used to highlight the donor and/or acceptor splice sites
 
-By default, the lines highlighting the splice sites are black; however, their colours can be changed by pressing the appropriate __Donor__ or __Acceptor__ button (blue line in Figure 12a). This will display a window called either  __Select the donor line colour__ or __Select the acceptor line colour__. This window in turn allow a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 12a) or using the Windows __colour picker dialog__ window if the __Colour dialod box__  option is selected (green line in Figure 12) when the __Colour__ button is pressed (red line in Figure 12).
+By default, the lines highlighting the splice sites are black; however, their colours can be changed by pressing the appropriate __Donor__ or __Acceptor__ button (blue line in Figure 12a). This will display a window called either  __Select the donor line colour__ or __Select the acceptor line colour__. This window in turn allow a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 12a) or using the Windows __colour picker dialog__ window if the __Colour dialog box__  option is selected (green line in Figure 12) when the __Colour__ button is pressed (red line in Figure 12).
 
-- [Using the Select colour by name dialog](equenceColour.md)
+- [Using the Select colour by name dialog](SequenceColour.md)
 - [Using the Windows colour picker dialog](ColourPickerDialog.md)
 
 The new colour will then be displayed next to the __Colour__ button. Pressing the __Accept__ button will then accept the changes and modify the blocks of colour next to the __Donor__ or __Acceptor__ buttons (blue lines in Figure 12b) and the image (black box in Figure 12b).

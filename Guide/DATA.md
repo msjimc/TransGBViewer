@@ -1,7 +1,8 @@
 ## List of contents
 - [Importing sequence data](DATA.md#importing-sequence-data)
-    - [Important point](DATA.md#important-point)
+    - [Important points](DATA.md#important-points)
   - [Data selection](DATA.md#data-selection)
+  - [Importing sequences lacking exon boundary data](#importing-sequences-lacking-exon-boundary-data)
   - [Image description](DATA.md#image-description)
   - [Adjusting the location of alternatively spliced exons](DATA.md#adjusting-the-location-of-alternatively-spliced-exons)
  
@@ -9,9 +10,10 @@
 
 # Importing sequence data
 
-___TransGBViewer___ is designed to display linear mRNA sequence data downloaded from the NCBI website in the GenBank format using the *.gb or *.genbank file extensions. It is possible to import a single file containing multiple entries or a folder of files each containing one or more entries. All sequences should relate to the same gene in a single species.
+- ___TransGBViewer___ is designed to display linear mRNA sequence data downloaded from the NCBI website in the GenBank format using the *.gb or *.genbank file extensions. It is possible to import a single file containing multiple entries or a folder of files each containing one or more entries. All sequences should relate to the same gene in a single species.
+- ___TransGBViewer___ is designed to obtain exon boundary data from the GenBank file, generally speaking entires for accession ID's starting with **NM_** have this data, but other types of sequence such as those linked to ID's starting **MW** may not. Consequently, you should try to import entires with **NM_** IDs. If a set of imported sequences contains entires that lack exon boundary locations __TransGBViewer__ will attempt to identify exons, but this process is not robust and consecutive exons may appear as a single exon. For __TransGBViewer__ to process sequences lacking exon data, at least one of the entires must have this data.
 
-### Important point
+### Important points
  Since the GenBank files do not reference each other, sequence similarities are determined based on homology. Consequently, it is important that the sequences are highly homologous. Only sequences from the same species should be used, and ideally those submitted by the same group or by GenBank's own automated submission system used to annotate reference genomes.
 
 ## Data selection
@@ -31,6 +33,10 @@ Pressing the __Select__ button with the __Folder__ option ticked prompts you to 
 Figure 2: Pressing the __Select__ button with the __Folder__ option checked prompts you to select a folder of files.
 
 ---
+
+## Importing sequences lacking exon boundary data
+
+If one or more entires lack exon data, its name will be displayed in a message box asking if you wish to attempt to identify exons in these sequences. If you select __No__, these sequences will not be displayed, but their names/accession IDs will appear in the drop-down lists. Ideally, you will remove these sequences and reimport the data set.
 
 ## Image description
 
