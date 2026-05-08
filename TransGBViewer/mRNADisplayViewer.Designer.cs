@@ -82,6 +82,7 @@
             Controls.Add(btnClose);
             Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(150, 150);
             Name = "mRNADisplayViewer";
             Text = "Sequence Display";
             FormClosed += mRNADisplayViewer_FormClosed;

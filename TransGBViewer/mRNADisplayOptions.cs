@@ -1981,6 +1981,7 @@ namespace TransGBViewer
 
         private Bitmap Blank()
         {
+            if (mRNADV.WindowState == FormWindowState.Minimized) { return null; }
             Size imageArea = mRNADV.GetDrawingArea();
             Bitmap blank = new Bitmap((int)(imageArea.Width), (int)(imageArea.Height), System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             Graphics g = Graphics.FromImage(blank);
