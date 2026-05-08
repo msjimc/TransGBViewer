@@ -45,8 +45,9 @@ namespace TransGBViewer
             colourNameslist = new AutoCompleteStringCollection();
             foreach (var color in sorted)
             {
-                cboColours.Items.Add(color.Name.ToString());
-                colourNameslist.Add(color.Name.ToString());
+                string name = AddSpace(AddSpace(color.Name.ToString()));
+                cboColours.Items.Add(name);
+                colourNameslist.Add(name);
             }
 
             int index=0;
@@ -60,6 +61,18 @@ namespace TransGBViewer
             txtSuggestion.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtSuggestion.AutoCompleteSource = AutoCompleteSource.CustomSource;
             txtSuggestion.AutoCompleteCustomSource = colourNameslist;
+        }
+
+        private string AddSpace(string text)
+        {
+            string spaced = text.Substring(0, 1);
+            for (int index = 1; index < text.Length; index++)
+            {
+                if (char.IsUpper(text[index]) == true)
+                { spaced += " "; }
+                spaced += text[index].ToString();
+            }
+            return spaced;
         }
 
         private void txtSuggestion_TextChanged(object sender, EventArgs e)
@@ -94,9 +107,9 @@ namespace TransGBViewer
         private void cboColours_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (changingTextColour == true)
-            { textColour = Color.FromName(cboColours.Text); }
+            { textColour = Color.FromName(cboColours.Text.Replace(" ","")); }
             else
-            { backgroundColour = Color.FromName(cboColours.Text); }           
+            { backgroundColour = Color.FromName(cboColours.Text.Replace(" ", "")); }           
 
             Bitmap bmp = new Bitmap(p1Example.Width, p1Example.Height);
             Graphics g = Graphics.FromImage(bmp);
@@ -106,6 +119,7 @@ namespace TransGBViewer
             int x = (bmp.Width - size.Width) / 2;
             int y = (bmp.Height - size.Height) / 2;
             g.DrawString(aa,f,new SolidBrush(textColour), x, y);
+            g.DrawRectangle(Pens.Black, new RectangleF(1, 1, bmp.Width - 2, bmp.Height - 2));
             p1Example.Image = bmp;
             
         }
