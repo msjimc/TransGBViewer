@@ -94,4 +94,4 @@ Figure 5b.
 
 ---
 
-- If a sequence spans a splice site and the intron is highlighted as a gap, the shape identifying the hit is drawn as two fragments joined by a line (Figure 5b).
+- If a sequence spans a splice site and the intron is highlighted with a gap, the shape identifying the hit is drawn as two blocks joined by a line (Figure 5b).
