@@ -1,6 +1,6 @@
 # Using the "Select sequence colour" window
 
-The __Select sequence colour__ window contains a blank text area and a dropdown list that contains all the standard Windows colours. The displayed names are Windows colour variable names and, as such, use the American English spelling and contain no spaces. 
+The __Select sequence colour__ window contains a blank text area and a dropdown list that contains all the standard Windows colours. The displayed names are Windows colour variable names and, as such, use the American English spelling. 
 
 A colour can be selected by either selecting the colour from the names in the dropdown list or by typing its name in the upper text area. As you type, available names will be suggested; accepting one will select the corresponding colour in the dropdown list (Figures 1a and 1b), and the selected colour will also be displayed as a coloured rectangle below the dropdown list.
 

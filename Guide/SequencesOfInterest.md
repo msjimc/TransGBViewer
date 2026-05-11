@@ -1,12 +1,11 @@
 ## List of contents
-- [Highlighting DNA sequences of interest](#highlighting-dna-sequences-of-interest)
+- [Highlighting the location of DNA sequences of interest](#highlighting-the-location-of-dna-sequences-of-interest)
     - [Creating a display line](#creating-a-display-line)
-    - [Hit detection](#sequence-hit-detection)
     - [Removing a display line](#removing-a-display-line)
     - [Hit detection](#hit-detection)
 ---
 
-# Highlighting DNA sequences of interest
+# Highlighting the location of DNA sequences of interest
 
 ## Creating a display line
 
@@ -89,7 +88,7 @@ Figure 5a.
 
 - If two or more sequences are entered together, they will be drawn on the same line (blue shapes in Figure 5a). If they are entered separately, each sequence will be displayed on its own line (red shapes in Figure 5a).
 
-![Figure 5b](images/figuresequence5b.jpg)
+![Figure 5b](images/figureSequence5b.jpg)
 
 Figure 5b.
 

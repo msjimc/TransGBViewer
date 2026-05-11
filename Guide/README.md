@@ -36,7 +36,7 @@ The __Format__ tab of the  __mRNA Display Options__ window allows the basic form
 
  - [Set the image's layout](LAYOUT.md)
 
-## Highlight sequences of interest
+## Highlight the location of sequences of interest
 
   The __Sequence__ tab of the  __mRNA Display Options__ allows the location of sequences of interest such as anti-sense RNA or siRNA binding sites to be shown: 
 
