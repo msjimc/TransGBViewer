@@ -20,6 +20,7 @@ The process by which a line is added to the image that displays the location of 
 Figure 2
 
 ---
+
 - First enter the label you wish the data line to display in the upper text area (green line in Figure 2). This label will also be used to identify the line and so must be unique as well as over three characters long. __Note:__  The __'#'__ cannot be used.
 - Next, select the accession ID of the sequence you know contains the sequence of interest using the drop-down list (blue line in Figure 2).
 - Optional: select the colour used to fill the shape that indicates the location of the sequence by pressing the __Colour__ button (red line in Figure 3).  By default, the shape is grey, as shown by the square to the left of the __Colour__ button. Pressing this button displays a window called __Select the shape's colour__ (Figure 3). This window in turn allows a colour to be selected by either its Windows system name if the __List of names__ option is selected (black line in Figure 12a) or using the Windows __colour picker dialog__ window if the Colour dialog box option is selected (green line in Figure 12) when the Colour button is pressed (red line in Figure 3).   
