@@ -130,14 +130,17 @@
             label50 = new Label();
             tabPage8 = new TabPage();
             groupBox13 = new GroupBox();
+            label59 = new Label();
+            p1Sequencecolour = new PictureBox();
+            btnSequenceColour = new Button();
             btnSequencerRmove = new Button();
             label58 = new Label();
-            label57 = new Label();
-            btnSequenceAdd = new Button();
-            label56 = new Label();
-            cboSequenceTranscriptName = new ComboBox();
-            txtSequenceDisplayname = new TextBox();
             label55 = new Label();
+            label56 = new Label();
+            label57 = new Label();
+            cboSequenceTranscriptName = new ComboBox();
+            btnSequenceAdd = new Button();
+            txtSequenceDisplayname = new TextBox();
             label54 = new Label();
             txtSequencesSequence = new TextBox();
             label53 = new Label();
@@ -178,9 +181,6 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
-            label59 = new Label();
-            btnSequenceColour = new Button();
-            p1Sequencecolour = new PictureBox();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -211,6 +211,7 @@
             groupBox8.SuspendLayout();
             tabPage8.SuspendLayout();
             groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)p1Sequencecolour).BeginInit();
             tabPage5.SuspendLayout();
             groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pGeneFeatureFillColour).BeginInit();
@@ -220,7 +221,6 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).BeginInit();
             tabPage7.SuspendLayout();
             groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)p1Sequencecolour).BeginInit();
             SuspendLayout();
             // 
             // btnClose
@@ -1302,10 +1302,37 @@
             groupBox13.TabStop = false;
             groupBox13.Text = "Sequence";
             // 
+            // label59
+            // 
+            label59.AutoSize = true;
+            label59.Location = new Point(6, 143);
+            label59.Name = "label59";
+            label59.Size = new Size(181, 15);
+            label59.TabIndex = 11;
+            label59.Text = "Set the sequence's display colour";
+            // 
+            // p1Sequencecolour
+            // 
+            p1Sequencecolour.Location = new Point(287, 139);
+            p1Sequencecolour.Name = "p1Sequencecolour";
+            p1Sequencecolour.Size = new Size(23, 23);
+            p1Sequencecolour.TabIndex = 12;
+            p1Sequencecolour.TabStop = false;
+            // 
+            // btnSequenceColour
+            // 
+            btnSequenceColour.Location = new Point(316, 139);
+            btnSequenceColour.Name = "btnSequenceColour";
+            btnSequenceColour.Size = new Size(75, 23);
+            btnSequenceColour.TabIndex = 11;
+            btnSequenceColour.Text = "Colour";
+            btnSequenceColour.UseVisualStyleBackColor = true;
+            btnSequenceColour.Click += btnSequenceColour_Click;
+            // 
             // btnSequencerRmove
             // 
             btnSequencerRmove.Enabled = false;
-            btnSequencerRmove.Location = new Point(316, 334);
+            btnSequencerRmove.Location = new Point(316, 317);
             btnSequencerRmove.Name = "btnSequencerRmove";
             btnSequencerRmove.Size = new Size(75, 23);
             btnSequencerRmove.TabIndex = 10;
@@ -1317,9 +1344,27 @@
             // 
             label58.Location = new Point(6, 307);
             label58.Name = "label58";
-            label58.Size = new Size(385, 41);
+            label58.Size = new Size(290, 33);
             label58.TabIndex = 9;
             label58.Text = "Press \"Remove\" to delete the display line linked to the name in the upper text area ";
+            // 
+            // label55
+            // 
+            label55.AutoSize = true;
+            label55.Location = new Point(6, 84);
+            label55.Name = "label55";
+            label55.Size = new Size(147, 15);
+            label55.TabIndex = 3;
+            label55.Text = "Enter the display line's title";
+            // 
+            // label56
+            // 
+            label56.AutoSize = true;
+            label56.Location = new Point(6, 113);
+            label56.Name = "label56";
+            label56.Size = new Size(134, 15);
+            label56.TabIndex = 6;
+            label56.Text = "Target transcript's name";
             // 
             // label57
             // 
@@ -1329,6 +1374,16 @@
             label57.Size = new Size(290, 15);
             label57.TabIndex = 8;
             label57.Text = "Press \"Add\" to add the sequence site(s) to the display.";
+            // 
+            // cboSequenceTranscriptName
+            // 
+            cboSequenceTranscriptName.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboSequenceTranscriptName.FormattingEnabled = true;
+            cboSequenceTranscriptName.Location = new Point(194, 110);
+            cboSequenceTranscriptName.Name = "cboSequenceTranscriptName";
+            cboSequenceTranscriptName.Size = new Size(197, 23);
+            cboSequenceTranscriptName.TabIndex = 5;
+            cboSequenceTranscriptName.SelectedIndexChanged += cboSequenceTranscriptName_SelectedIndexChanged;
             // 
             // btnSequenceAdd
             // 
@@ -1341,25 +1396,6 @@
             btnSequenceAdd.UseVisualStyleBackColor = true;
             btnSequenceAdd.Click += btnSequenceAdd_Click;
             // 
-            // label56
-            // 
-            label56.AutoSize = true;
-            label56.Location = new Point(6, 113);
-            label56.Name = "label56";
-            label56.Size = new Size(134, 15);
-            label56.TabIndex = 6;
-            label56.Text = "Target transcript's name";
-            // 
-            // cboSequenceTranscriptName
-            // 
-            cboSequenceTranscriptName.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboSequenceTranscriptName.FormattingEnabled = true;
-            cboSequenceTranscriptName.Location = new Point(194, 110);
-            cboSequenceTranscriptName.Name = "cboSequenceTranscriptName";
-            cboSequenceTranscriptName.Size = new Size(197, 23);
-            cboSequenceTranscriptName.TabIndex = 5;
-            cboSequenceTranscriptName.SelectedIndexChanged += cboSequenceTranscriptName_SelectedIndexChanged;
-            // 
             // txtSequenceDisplayname
             // 
             txtSequenceDisplayname.Location = new Point(194, 81);
@@ -1367,15 +1403,6 @@
             txtSequenceDisplayname.Size = new Size(197, 23);
             txtSequenceDisplayname.TabIndex = 4;
             txtSequenceDisplayname.TextChanged += txtSequenceDisplayname_TextChanged;
-            // 
-            // label55
-            // 
-            label55.AutoSize = true;
-            label55.Location = new Point(6, 84);
-            label55.Name = "label55";
-            label55.Size = new Size(147, 15);
-            label55.TabIndex = 3;
-            label55.Text = "Enter the display line's title";
             // 
             // label54
             // 
@@ -1786,33 +1813,6 @@
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
             // 
-            // label59
-            // 
-            label59.AutoSize = true;
-            label59.Location = new Point(6, 143);
-            label59.Name = "label59";
-            label59.Size = new Size(181, 15);
-            label59.TabIndex = 11;
-            label59.Text = "Set the sequence's display colour";
-            // 
-            // btnSequenceColour
-            // 
-            btnSequenceColour.Location = new Point(316, 139);
-            btnSequenceColour.Name = "btnSequenceColour";
-            btnSequenceColour.Size = new Size(75, 23);
-            btnSequenceColour.TabIndex = 11;
-            btnSequenceColour.Text = "Colour";
-            btnSequenceColour.UseVisualStyleBackColor = true;
-            btnSequenceColour.Click += btnSequenceColour_Click;
-            // 
-            // p1Sequencecolour
-            // 
-            p1Sequencecolour.Location = new Point(287, 139);
-            p1Sequencecolour.Name = "p1Sequencecolour";
-            p1Sequencecolour.Size = new Size(23, 23);
-            p1Sequencecolour.TabIndex = 12;
-            p1Sequencecolour.TabStop = false;
-            // 
             // mRNADisplayOptions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1864,6 +1864,7 @@
             tabPage8.ResumeLayout(false);
             groupBox13.ResumeLayout(false);
             groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)p1Sequencecolour).EndInit();
             tabPage5.ResumeLayout(false);
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
@@ -1874,7 +1875,6 @@
             ((System.ComponentModel.ISupportInitialize)nudGeneFeatureX).EndInit();
             tabPage7.ResumeLayout(false);
             groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)p1Sequencecolour).EndInit();
             ResumeLayout(false);
         }
 
