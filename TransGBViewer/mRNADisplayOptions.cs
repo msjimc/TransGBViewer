@@ -3228,6 +3228,8 @@ namespace TransGBViewer
             foreach (string s in txtSequencesSequence.Lines)
             {
                 string cleaned = CleanSequence(s);
+                if (chkReverseComplement.Checked == true)
+                { cleaned = GetReverseComplement(cleaned); }
                 if (cleaned.Length > 5)
                     seqs.Add(cleaned.Trim().ToLower());
             }
@@ -3269,6 +3271,41 @@ namespace TransGBViewer
             ReDraw();
         }
 
+        private string GetReverseComplement(string sequence)
+        {
+            string revComp = "";
+            for (int index = sequence.Length - 1; index >= 0; index--)
+            {
+                char c = sequence[index];
+               switch (c)
+                {
+                    case 'a':
+                        revComp += "t";
+                        break;
+                    case 't':
+                        revComp += "a";
+                        break;
+                    case 'g':
+                        revComp += "c";
+                        break;
+                    case 'c':
+                        revComp += "g";
+                        break;
+                    case 'y':
+                        revComp += "r";
+                        break;
+                    case 'r':
+                        revComp += "y";
+                        break;
+                    default:
+                        revComp += c;
+                        break;
+                }
+
+            }
+            return revComp;
+        }
+
         private string CleanSequence(string sequence)
         {
             string answer = "";
@@ -3307,6 +3344,10 @@ namespace TransGBViewer
                     case 'y':
                     case 'Y':
                         answer += "y";
+                        break;
+                    case 'U':
+                    case 'u':
+                        answer += "t";
                         break;
                 }
             }

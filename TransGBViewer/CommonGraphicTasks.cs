@@ -54,7 +54,7 @@ namespace TransGBViewer
         public static void DrawBordersRectangle(Graphics g, RectangleF r, Pen color, bool rounded, scalar scaleDPI, int diameter, int leftRight)
         {
             diameter = scaleDPI.i[diameter];
-            if (r.Width < scaleDPI.i[4])
+            if (r.Width < scaleDPI.i[2])
             {
                 // skip
             }

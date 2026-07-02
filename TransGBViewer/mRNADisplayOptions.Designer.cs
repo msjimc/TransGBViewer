@@ -181,6 +181,7 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
+            chkReverseComplement = new CheckBox();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -1281,6 +1282,7 @@
             // groupBox13
             // 
             groupBox13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox13.Controls.Add(chkReverseComplement);
             groupBox13.Controls.Add(label59);
             groupBox13.Controls.Add(p1Sequencecolour);
             groupBox13.Controls.Add(btnSequenceColour);
@@ -1332,7 +1334,7 @@
             // btnSequencerRmove
             // 
             btnSequencerRmove.Enabled = false;
-            btnSequencerRmove.Location = new Point(316, 317);
+            btnSequencerRmove.Location = new Point(316, 334);
             btnSequencerRmove.Name = "btnSequencerRmove";
             btnSequencerRmove.Size = new Size(75, 23);
             btnSequencerRmove.TabIndex = 10;
@@ -1342,7 +1344,7 @@
             // 
             // label58
             // 
-            label58.Location = new Point(6, 307);
+            label58.Location = new Point(6, 324);
             label58.Name = "label58";
             label58.Size = new Size(290, 33);
             label58.TabIndex = 9;
@@ -1369,7 +1371,7 @@
             // label57
             // 
             label57.AutoSize = true;
-            label57.Location = new Point(6, 278);
+            label57.Location = new Point(6, 295);
             label57.Name = "label57";
             label57.Size = new Size(290, 15);
             label57.TabIndex = 8;
@@ -1388,7 +1390,7 @@
             // btnSequenceAdd
             // 
             btnSequenceAdd.Enabled = false;
-            btnSequenceAdd.Location = new Point(316, 274);
+            btnSequenceAdd.Location = new Point(316, 291);
             btnSequenceAdd.Name = "btnSequenceAdd";
             btnSequenceAdd.Size = new Size(75, 23);
             btnSequenceAdd.TabIndex = 7;
@@ -1414,7 +1416,7 @@
             // 
             // txtSequencesSequence
             // 
-            txtSequencesSequence.Location = new Point(6, 202);
+            txtSequencesSequence.Location = new Point(6, 219);
             txtSequencesSequence.Multiline = true;
             txtSequencesSequence.Name = "txtSequencesSequence";
             txtSequencesSequence.ScrollBars = ScrollBars.Both;
@@ -1813,6 +1815,17 @@
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
             // 
+            // chkReverseComplement
+            // 
+            chkReverseComplement.AutoSize = true;
+            chkReverseComplement.CheckAlign = ContentAlignment.MiddleRight;
+            chkReverseComplement.Location = new Point(254, 194);
+            chkReverseComplement.Name = "chkReverseComplement";
+            chkReverseComplement.Size = new Size(137, 19);
+            chkReverseComplement.TabIndex = 13;
+            chkReverseComplement.Text = "Reverse complement";
+            chkReverseComplement.UseVisualStyleBackColor = true;
+            // 
             // mRNADisplayOptions
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -2031,5 +2044,6 @@
         private Button btnSequenceAdd;
         private Label label59;
         private Button btnSequenceColour;
+        private CheckBox chkReverseComplement;
     }
 }
