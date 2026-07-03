@@ -130,6 +130,7 @@
             label50 = new Label();
             tabPage8 = new TabPage();
             groupBox13 = new GroupBox();
+            chkReverseComplement = new CheckBox();
             label59 = new Label();
             p1Sequencecolour = new PictureBox();
             btnSequenceColour = new Button();
@@ -181,7 +182,6 @@
             btnSaveImage = new Button();
             label44 = new Label();
             label43 = new Label();
-            chkReverseComplement = new CheckBox();
             tabPage2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudLineWidth).BeginInit();
@@ -230,7 +230,7 @@
             btnClose.Location = new Point(16, 415);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(75, 23);
-            btnClose.TabIndex = 53;
+            btnClose.TabIndex = 1;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
@@ -1304,13 +1304,24 @@
             groupBox13.TabStop = false;
             groupBox13.Text = "Sequence";
             // 
+            // chkReverseComplement
+            // 
+            chkReverseComplement.AutoSize = true;
+            chkReverseComplement.CheckAlign = ContentAlignment.MiddleRight;
+            chkReverseComplement.Location = new Point(254, 194);
+            chkReverseComplement.Name = "chkReverseComplement";
+            chkReverseComplement.Size = new Size(137, 19);
+            chkReverseComplement.TabIndex = 8;
+            chkReverseComplement.Text = "Reverse complement";
+            chkReverseComplement.UseVisualStyleBackColor = true;
+            // 
             // label59
             // 
             label59.AutoSize = true;
             label59.Location = new Point(6, 143);
             label59.Name = "label59";
             label59.Size = new Size(181, 15);
-            label59.TabIndex = 11;
+            label59.TabIndex = 5;
             label59.Text = "Set the sequence's display colour";
             // 
             // p1Sequencecolour
@@ -1326,7 +1337,7 @@
             btnSequenceColour.Location = new Point(316, 139);
             btnSequenceColour.Name = "btnSequenceColour";
             btnSequenceColour.Size = new Size(75, 23);
-            btnSequenceColour.TabIndex = 11;
+            btnSequenceColour.TabIndex = 6;
             btnSequenceColour.Text = "Colour";
             btnSequenceColour.UseVisualStyleBackColor = true;
             btnSequenceColour.Click += btnSequenceColour_Click;
@@ -1337,7 +1348,7 @@
             btnSequencerRmove.Location = new Point(316, 334);
             btnSequencerRmove.Name = "btnSequencerRmove";
             btnSequencerRmove.Size = new Size(75, 23);
-            btnSequencerRmove.TabIndex = 10;
+            btnSequencerRmove.TabIndex = 13;
             btnSequencerRmove.Text = "Remove";
             btnSequencerRmove.UseVisualStyleBackColor = true;
             btnSequencerRmove.Click += btnSequencerRmove_Click;
@@ -1347,7 +1358,7 @@
             label58.Location = new Point(6, 324);
             label58.Name = "label58";
             label58.Size = new Size(290, 33);
-            label58.TabIndex = 9;
+            label58.TabIndex = 12;
             label58.Text = "Press \"Remove\" to delete the display line linked to the name in the upper text area ";
             // 
             // label55
@@ -1356,7 +1367,7 @@
             label55.Location = new Point(6, 84);
             label55.Name = "label55";
             label55.Size = new Size(147, 15);
-            label55.TabIndex = 3;
+            label55.TabIndex = 1;
             label55.Text = "Enter the display line's title";
             // 
             // label56
@@ -1365,7 +1376,7 @@
             label56.Location = new Point(6, 113);
             label56.Name = "label56";
             label56.Size = new Size(134, 15);
-            label56.TabIndex = 6;
+            label56.TabIndex = 3;
             label56.Text = "Target transcript's name";
             // 
             // label57
@@ -1374,7 +1385,7 @@
             label57.Location = new Point(6, 295);
             label57.Name = "label57";
             label57.Size = new Size(290, 15);
-            label57.TabIndex = 8;
+            label57.TabIndex = 10;
             label57.Text = "Press \"Add\" to add the sequence site(s) to the display.";
             // 
             // cboSequenceTranscriptName
@@ -1384,7 +1395,7 @@
             cboSequenceTranscriptName.Location = new Point(194, 110);
             cboSequenceTranscriptName.Name = "cboSequenceTranscriptName";
             cboSequenceTranscriptName.Size = new Size(197, 23);
-            cboSequenceTranscriptName.TabIndex = 5;
+            cboSequenceTranscriptName.TabIndex = 4;
             cboSequenceTranscriptName.SelectedIndexChanged += cboSequenceTranscriptName_SelectedIndexChanged;
             // 
             // btnSequenceAdd
@@ -1393,7 +1404,7 @@
             btnSequenceAdd.Location = new Point(316, 291);
             btnSequenceAdd.Name = "btnSequenceAdd";
             btnSequenceAdd.Size = new Size(75, 23);
-            btnSequenceAdd.TabIndex = 7;
+            btnSequenceAdd.TabIndex = 11;
             btnSequenceAdd.Text = "Add";
             btnSequenceAdd.UseVisualStyleBackColor = true;
             btnSequenceAdd.Click += btnSequenceAdd_Click;
@@ -1403,7 +1414,7 @@
             txtSequenceDisplayname.Location = new Point(194, 81);
             txtSequenceDisplayname.Name = "txtSequenceDisplayname";
             txtSequenceDisplayname.Size = new Size(197, 23);
-            txtSequenceDisplayname.TabIndex = 4;
+            txtSequenceDisplayname.TabIndex = 2;
             txtSequenceDisplayname.TextChanged += txtSequenceDisplayname_TextChanged;
             // 
             // label54
@@ -1411,7 +1422,7 @@
             label54.Location = new Point(6, 166);
             label54.Name = "label54";
             label54.Size = new Size(385, 33);
-            label54.TabIndex = 2;
+            label54.TabIndex = 7;
             label54.Text = "Enter the sequences below.  For multiple sequences per display line, enter one sequence per line.";
             // 
             // txtSequencesSequence
@@ -1421,7 +1432,7 @@
             txtSequencesSequence.Name = "txtSequencesSequence";
             txtSequencesSequence.ScrollBars = ScrollBars.Both;
             txtSequencesSequence.Size = new Size(385, 66);
-            txtSequencesSequence.TabIndex = 1;
+            txtSequencesSequence.TabIndex = 9;
             txtSequencesSequence.WordWrap = false;
             txtSequencesSequence.TextChanged += txtSequencesSequence_TextChanged;
             // 
@@ -1814,17 +1825,6 @@
             label43.Size = new Size(304, 46);
             label43.TabIndex = 0;
             label43.Text = "Select the desired DPI";
-            // 
-            // chkReverseComplement
-            // 
-            chkReverseComplement.AutoSize = true;
-            chkReverseComplement.CheckAlign = ContentAlignment.MiddleRight;
-            chkReverseComplement.Location = new Point(254, 194);
-            chkReverseComplement.Name = "chkReverseComplement";
-            chkReverseComplement.Size = new Size(137, 19);
-            chkReverseComplement.TabIndex = 13;
-            chkReverseComplement.Text = "Reverse complement";
-            chkReverseComplement.UseVisualStyleBackColor = true;
             // 
             // mRNADisplayOptions
             // 
