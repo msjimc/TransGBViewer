@@ -13,7 +13,7 @@
 
 The __Sequence__ tab of the __mRNA Display Options__ window provides controls for the selection and display of sequences entered by the user. These sequences could represent the target site of an anti-sense RNA, a PCR primer binding site or a region of interest  (Figure 1).
 
-The process by which a line is added to the image that displays the location of a sequence of interest consists of four or five steps. 
+The process by which a line is added to the image that displays the location of a sequence of interest consists of four or six steps. 
 
 ![Figure 2](images/figureSequence2.jpg)
 
@@ -35,6 +35,7 @@ Figure 3.
 ---
 
 - Next, enter the sequence(s) of interest into the lower larger text area (black line in Figure 2). These sequences must be in the same sense as the sequence in the transcript and not its reverse complement; consequently, anti-sense RNA or siRNA sequences must be reverse complemented. See the section [Hit detection](#Hit-detection). If you want to display more than one sequence on a display line, enter each sequence on a new line in the text area.
+- If the entered sequence is tht reverse complement of the transcript's sequents tick the __Reverse complement__ check box. This will instruct __TransGBViewer__ to reverse complement the sequence before searching for a hit. __Note:__ If you enter more then one sequence they must all be in the same orientation.
 - Finally, press the __Add__ button (purple line in Figure 2) to import and display the sequences. See Figures 4a and 4b.
 
 
@@ -60,7 +61,7 @@ __Note:__ The display line's text is case sensitive so __Anti-sense RNA__, __ant
 ## Hit detection
 Important points:
 
-- The search sequence can contain the upper and lower case letters: _A_, _C_, _G_ _T_, _R_, _Y_, _S_ and _W_, but not _U_. 
+- The search sequence can contain the upper and lower case letters: _A_, _C_, _G_ _T_, _R_, _Y_, _S_ and _W_. 
 - If a sequence contains _A_, _C_, _G_ _T_, _R_, _Y_, _S_ and _W_ characters, matches score as  1; for example, if __R__ is aligned to an __A__, the match is scored the same as if __A__ were matched to __A__ (See Table 1). 
 
 
@@ -70,6 +71,7 @@ Important points:
 |_C_|_C_|
 |_G_|_G_|
 |_T_|_T_|
+|_U_|_T_|
 |_R_|_A_ or _G_|
 |_Y_|_C_ or _T_|
 |_S_|_C_ or _G_|
