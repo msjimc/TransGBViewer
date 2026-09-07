@@ -26,4 +26,4 @@ ___TransGBViewer___ can be run on most non-ARM POSIX-like systems via WINE, whos
 
 ## Download
 
-The compiled program can be downloaded from [here.](Download/README.md)
+The compiled program can be downloaded from [here.](../TransGBViewer/Download/)
