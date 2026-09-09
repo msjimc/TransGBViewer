@@ -2,9 +2,9 @@
 
 #### Contents
 - [Introduction](#Introduction)
-- [Guide](Guide)
-- [Running on Linux, BSD or macOS](#running-on-linux-bsd-or-macos)
-- [Download](Download)
+- [Guide](Guide/README.md)
+- [Running on Linux, BSD or macOS](https://github.com/msjimc/RunningWindowsProgramsOnLinux)
+- [Download](Download/README.md)
 
 
 ## Introduction
