@@ -161,7 +161,7 @@
             // label7
             // 
             label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.Location = new Point(9, 345);
+            label7.Location = new Point(6, 345);
             label7.Name = "label7";
             label7.Size = new Size(287, 46);
             label7.TabIndex = 14;
@@ -170,7 +170,7 @@
             // label6
             // 
             label6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label6.Location = new Point(9, 424);
+            label6.Location = new Point(6, 424);
             label6.Name = "label6";
             label6.Size = new Size(287, 34);
             label6.TabIndex = 21;
@@ -199,7 +199,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(7, 227);
+            label5.Location = new Point(6, 227);
             label5.Name = "label5";
             label5.Size = new Size(113, 15);
             label5.TabIndex = 12;
@@ -218,7 +218,7 @@
             // lblSearchHitcount
             // 
             lblSearchHitcount.AutoSize = true;
-            lblSearchHitcount.Location = new Point(7, 198);
+            lblSearchHitcount.Location = new Point(6, 198);
             lblSearchHitcount.Name = "lblSearchHitcount";
             lblSearchHitcount.Size = new Size(93, 15);
             lblSearchHitcount.TabIndex = 10;
@@ -226,7 +226,7 @@
             // 
             // txtSearchTerm
             // 
-            txtSearchTerm.Location = new Point(9, 165);
+            txtSearchTerm.Location = new Point(6, 165);
             txtSearchTerm.Name = "txtSearchTerm";
             txtSearchTerm.Size = new Size(287, 23);
             txtSearchTerm.TabIndex = 9;
@@ -235,11 +235,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(9, 147);
+            label4.Location = new Point(6, 147);
             label4.Name = "label4";
             label4.Size = new Size(289, 15);
             label4.TabIndex = 8;
-            label4.Text = "Select features containing this test in their description";
+            label4.Text = "Select features containing this text in their description";
             // 
             // btnRemove
             // 
@@ -296,7 +296,7 @@
             // label8
             // 
             label8.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label8.Location = new Point(9, 391);
+            label8.Location = new Point(6, 391);
             label8.Name = "label8";
             label8.Size = new Size(287, 31);
             label8.TabIndex = 18;

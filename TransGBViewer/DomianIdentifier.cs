@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Linq;
 
 namespace TransGBViewer
 {
@@ -122,23 +123,30 @@ namespace TransGBViewer
             {
                 string refSeqProteinId = string.Join(",", refSeqProteinIdList);
                 var form = new MultipartFormDataContent
-        {
-            { new StringContent("RefSeq_Protein"), "from" },
-            { new StringContent("UniProtKB"), "to" },
-            { new StringContent(refSeqProteinId), "ids" }
-        };
+                {
+                    { new StringContent("RefSeq_Protein"), "from" },
+                    { new StringContent("UniProtKB"), "to" },
+                    { new StringContent(refSeqProteinId), "ids" }
+                };
 
                 var response = client.PostAsync("https://rest.uniprot.org/idmapping/run", form).Result;
                 response.EnsureSuccessStatusCode();
 
                 var jobJson = response.Content.ReadAsStringAsync().Result;
-                var jobId = JObject.Parse(jobJson)["jobId"].ToString();
-                return jobId;
+                using var doc = JsonDocument.Parse(jobJson);
+                if (doc.RootElement.TryGetProperty("jobId", out var jobIdElement))
+                {
+                    var jobId = jobIdElement.GetString();
+                    return jobId;
+                }
+                //var jobId = JObject.Parse(jobJson)["jobId"].ToString();
+                //return jobId;
+                return "";
             }
             catch
             {
                 return "";
-            }            
+            }
 
         }
 
@@ -167,15 +175,24 @@ namespace TransGBViewer
                 }
                 mRNADSU.AddStatusText("Received results");
                 var resultsJson = client.GetStringAsync(resultUrl).Result;
-                var root = JObject.Parse(resultsJson);
-                var results = root["results"];
+
+                //var root = JObject.Parse(resultsJson);
+                //var results = root["results"];
+
+                using var doc = JsonDocument.Parse(resultsJson);
+                var results = doc.RootElement.GetProperty("results");
 
                 List<string> mappings = new List<string>();
 
-                foreach (var entry in results)
+                //foreach (var entry in results.EnumerateArray())
+                foreach (var entry in results.EnumerateArray())
                 {
-                    var fromId = entry["from"]?.ToString();
-                    var toId = entry["to"]?.ToString();
+                    //var fromId = entry["from"]?.ToString();
+                    //var toId = entry["to"]?.ToString();
+
+                    var fromId = entry.TryGetProperty("from", out var fromProp) ? fromProp.GetString() : null;
+                    var toId = entry.TryGetProperty("to", out var toProp) ? toProp.GetString() : null;
+
                     if (!string.IsNullOrEmpty(fromId) && !string.IsNullOrEmpty(toId))
                     {
                         if (mappings.Contains(toId) == false)
