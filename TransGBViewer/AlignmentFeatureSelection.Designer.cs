@@ -32,9 +32,9 @@
             groupBox1 = new GroupBox();
             txtDisplayName = new TextBox();
             btnRemove = new Button();
-            btnAdd = new Button();
             label12 = new Label();
             label11 = new Label();
+            btnAdd = new Button();
             pStyle = new PictureBox();
             btnFillColour = new Button();
             chkFillShape = new CheckBox();
@@ -66,12 +66,12 @@
             // 
             // groupBox1
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.Controls.Add(txtDisplayName);
             groupBox1.Controls.Add(btnRemove);
-            groupBox1.Controls.Add(btnAdd);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(btnAdd);
             groupBox1.Controls.Add(pStyle);
             groupBox1.Controls.Add(btnFillColour);
             groupBox1.Controls.Add(chkFillShape);
@@ -97,14 +97,14 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(583, 376);
+            groupBox1.Size = new Size(583, 373);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Domain selection options";
             // 
             // txtDisplayName
             // 
-            txtDisplayName.Location = new Point(275, 239);
+            txtDisplayName.Location = new Point(275, 202);
             txtDisplayName.Name = "txtDisplayName";
             txtDisplayName.Size = new Size(302, 23);
             txtDisplayName.TabIndex = 21;
@@ -112,46 +112,46 @@
             // btnRemove
             // 
             btnRemove.Enabled = false;
-            btnRemove.Location = new Point(502, 80);
+            btnRemove.Location = new Point(510, 339);
             btnRemove.Name = "btnRemove";
-            btnRemove.Size = new Size(75, 23);
+            btnRemove.Size = new Size(67, 23);
             btnRemove.TabIndex = 7;
             btnRemove.Text = "Remove";
             btnRemove.UseVisualStyleBackColor = true;
             btnRemove.Click += btnRemove_Click;
             // 
-            // btnAdd
-            // 
-            btnAdd.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnAdd.Location = new Point(421, 80);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
-            btnAdd.TabIndex = 6;
-            btnAdd.Text = "Add";
-            btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click;
-            // 
             // label12
             // 
-            label12.Location = new Point(6, 77);
+            label12.Location = new Point(7, 343);
             label12.Name = "label12";
-            label12.Size = new Size(313, 31);
+            label12.Size = new Size(424, 23);
             label12.TabIndex = 5;
-            label12.Text = "To add, update or remove the selected domain press 'Add', 'Update' or 'Remove'";
+            label12.Text = "To add, update or remove this domain press Add, Update or Remove";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(6, 301);
+            label11.Location = new Point(6, 264);
             label11.Name = "label11";
             label11.Size = new Size(76, 15);
             label11.TabIndex = 0;
             label11.Text = "Domain style";
             // 
+            // btnAdd
+            // 
+            btnAdd.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnAdd.Location = new Point(437, 339);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(67, 23);
+            btnAdd.TabIndex = 6;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
             // pStyle
             // 
             pStyle.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pStyle.Location = new Point(88, 296);
+            pStyle.Location = new Point(88, 259);
             pStyle.Name = "pStyle";
             pStyle.Size = new Size(489, 69);
             pStyle.TabIndex = 25;
@@ -160,7 +160,7 @@
             // btnFillColour
             // 
             btnFillColour.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnFillColour.Location = new Point(521, 268);
+            btnFillColour.Location = new Point(521, 231);
             btnFillColour.Name = "btnFillColour";
             btnFillColour.Size = new Size(56, 23);
             btnFillColour.TabIndex = 26;
@@ -174,7 +174,7 @@
             chkFillShape.AutoSize = true;
             chkFillShape.Checked = true;
             chkFillShape.CheckState = CheckState.Checked;
-            chkFillShape.Location = new Point(440, 271);
+            chkFillShape.Location = new Point(440, 234);
             chkFillShape.Name = "chkFillShape";
             chkFillShape.Size = new Size(75, 19);
             chkFillShape.TabIndex = 25;
@@ -188,7 +188,7 @@
             chkDrawBorder.AutoSize = true;
             chkDrawBorder.Checked = true;
             chkDrawBorder.CheckState = CheckState.Checked;
-            chkDrawBorder.Location = new Point(334, 271);
+            chkDrawBorder.Location = new Point(334, 234);
             chkDrawBorder.Name = "chkDrawBorder";
             chkDrawBorder.Size = new Size(91, 19);
             chkDrawBorder.TabIndex = 24;
@@ -202,7 +202,7 @@
             chkRoundedDomains.AutoSize = true;
             chkRoundedDomains.Checked = true;
             chkRoundedDomains.CheckState = CheckState.Checked;
-            chkRoundedDomains.Location = new Point(206, 272);
+            chkRoundedDomains.Location = new Point(206, 235);
             chkRoundedDomains.Name = "chkRoundedDomains";
             chkRoundedDomains.Size = new Size(116, 19);
             chkRoundedDomains.TabIndex = 23;
@@ -213,7 +213,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(6, 272);
+            label10.Location = new Point(6, 235);
             label10.Name = "label10";
             label10.Size = new Size(194, 15);
             label10.TabIndex = 22;
@@ -222,7 +222,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(6, 242);
+            label9.Location = new Point(6, 205);
             label9.Name = "label9";
             label9.Size = new Size(263, 15);
             label9.TabIndex = 20;
@@ -231,7 +231,7 @@
             // lblDescription
             // 
             lblDescription.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            lblDescription.Location = new Point(6, 217);
+            lblDescription.Location = new Point(6, 180);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(571, 19);
             lblDescription.TabIndex = 19;
@@ -243,7 +243,7 @@
             cboInterproDescriptionValue.DropDownStyle = ComboBoxStyle.DropDownList;
             cboInterproDescriptionValue.FormattingEnabled = true;
             cboInterproDescriptionValue.Items.AddRange(new object[] { "Hide", "1", "2", "3", "4", "5" });
-            cboInterproDescriptionValue.Location = new Point(521, 191);
+            cboInterproDescriptionValue.Location = new Point(521, 154);
             cboInterproDescriptionValue.Name = "cboInterproDescriptionValue";
             cboInterproDescriptionValue.Size = new Size(56, 23);
             cboInterproDescriptionValue.TabIndex = 18;
@@ -253,7 +253,7 @@
             // 
             label8.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label8.AutoSize = true;
-            label8.Location = new Point(396, 194);
+            label8.Location = new Point(396, 157);
             label8.Name = "label8";
             label8.Size = new Size(111, 15);
             label8.TabIndex = 17;
@@ -265,7 +265,7 @@
             cboInterProValue.DropDownStyle = ComboBoxStyle.DropDownList;
             cboInterProValue.FormattingEnabled = true;
             cboInterProValue.Items.AddRange(new object[] { "Hide", "1", "2", "3", "4", "5" });
-            cboInterProValue.Location = new Point(285, 191);
+            cboInterProValue.Location = new Point(285, 154);
             cboInterProValue.Name = "cboInterProValue";
             cboInterProValue.Size = new Size(56, 23);
             cboInterProValue.TabIndex = 16;
@@ -275,7 +275,7 @@
             // 
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label7.AutoSize = true;
-            label7.Location = new Point(230, 194);
+            label7.Location = new Point(230, 157);
             label7.Name = "label7";
             label7.Size = new Size(49, 15);
             label7.TabIndex = 15;
@@ -287,7 +287,7 @@
             cboSignitureDescriptionValue.DropDownStyle = ComboBoxStyle.DropDownList;
             cboSignitureDescriptionValue.FormattingEnabled = true;
             cboSignitureDescriptionValue.Items.AddRange(new object[] { "Hide", "1", "2", "3", "4", "5" });
-            cboSignitureDescriptionValue.Location = new Point(521, 162);
+            cboSignitureDescriptionValue.Location = new Point(521, 125);
             cboSignitureDescriptionValue.Name = "cboSignitureDescriptionValue";
             cboSignitureDescriptionValue.Size = new Size(56, 23);
             cboSignitureDescriptionValue.TabIndex = 14;
@@ -297,7 +297,7 @@
             // 
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label6.AutoSize = true;
-            label6.Location = new Point(396, 165);
+            label6.Location = new Point(396, 128);
             label6.Name = "label6";
             label6.Size = new Size(119, 15);
             label6.TabIndex = 13;
@@ -309,7 +309,7 @@
             cboSignatureValue.DropDownStyle = ComboBoxStyle.DropDownList;
             cboSignatureValue.FormattingEnabled = true;
             cboSignatureValue.Items.AddRange(new object[] { "Hide", "1", "2", "3", "4", "5" });
-            cboSignatureValue.Location = new Point(285, 162);
+            cboSignatureValue.Location = new Point(285, 125);
             cboSignatureValue.Name = "cboSignatureValue";
             cboSignatureValue.Size = new Size(56, 23);
             cboSignatureValue.TabIndex = 12;
@@ -319,7 +319,7 @@
             // 
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label5.AutoSize = true;
-            label5.Location = new Point(224, 165);
+            label5.Location = new Point(224, 128);
             label5.Name = "label5";
             label5.Size = new Size(57, 15);
             label5.TabIndex = 11;
@@ -331,7 +331,7 @@
             cboAnalysisValue.DropDownStyle = ComboBoxStyle.DropDownList;
             cboAnalysisValue.FormattingEnabled = true;
             cboAnalysisValue.Items.AddRange(new object[] { "Hide", "1", "2", "3", "4", "5" });
-            cboAnalysisValue.Location = new Point(88, 162);
+            cboAnalysisValue.Location = new Point(88, 125);
             cboAnalysisValue.Name = "cboAnalysisValue";
             cboAnalysisValue.Size = new Size(56, 23);
             cboAnalysisValue.TabIndex = 10;
@@ -341,7 +341,7 @@
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label4.AutoSize = true;
-            label4.Location = new Point(29, 165);
+            label4.Location = new Point(29, 128);
             label4.Name = "label4";
             label4.Size = new Size(53, 15);
             label4.TabIndex = 9;
@@ -350,11 +350,11 @@
             // label3
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label3.Location = new Point(6, 118);
+            label3.Location = new Point(6, 81);
             label3.Name = "label3";
-            label3.Size = new Size(571, 35);
+            label3.Size = new Size(541, 35);
             label3.TabIndex = 8;
-            label3.Text = "Create the text used to describe the feature in the display. Select a value to the right of the parameter: 1 while add the text first, while 5 will add it last (hide will ignore the text).";
+            label3.Text = "Create the text used to describe the feature in the display. Select a value to the right of the parameter: 1 will add the text first, while 5 will add it last (hide will ignore the text).";
             // 
             // label2
             // 
@@ -400,7 +400,7 @@
             // 
             btnAccept.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnAccept.DialogResult = DialogResult.OK;
-            btnAccept.Location = new Point(439, 399);
+            btnAccept.Location = new Point(19, 391);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(75, 23);
             btnAccept.TabIndex = 1;
@@ -411,7 +411,7 @@
             // 
             btnCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnCancel.DialogResult = DialogResult.Cancel;
-            btnCancel.Location = new Point(520, 399);
+            btnCancel.Location = new Point(100, 391);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
             btnCancel.TabIndex = 2;
@@ -422,7 +422,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(602, 434);
+            ClientSize = new Size(602, 424);
             Controls.Add(btnCancel);
             Controls.Add(btnAccept);
             Controls.Add(groupBox1);

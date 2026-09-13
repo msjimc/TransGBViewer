@@ -2274,6 +2274,8 @@ namespace TransGBViewer
             lvLayout.GridLines = true;
             setUPlvLayout();
 
+            chlGenefeatureMouseClick.Checked = true;
+
             cboImageDPI.SelectedIndex = 0;
 
             cboSequenceTranscriptName.Items.Clear();
