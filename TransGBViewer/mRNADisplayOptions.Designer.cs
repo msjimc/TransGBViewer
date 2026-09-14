@@ -1506,7 +1506,7 @@
             ckbOverwrite.Location = new Point(200, 54);
             ckbOverwrite.Name = "ckbOverwrite";
             ckbOverwrite.Size = new Size(52, 19);
-            ckbOverwrite.TabIndex = 57;
+            ckbOverwrite.TabIndex = 4;
             ckbOverwrite.Text = "Solid";
             ckbOverwrite.UseVisualStyleBackColor = true;
             ckbOverwrite.CheckedChanged += ckbOverwrite_CheckedChanged;
@@ -1517,7 +1517,7 @@
             label60.Location = new Point(6, 54);
             label60.Name = "label60";
             label60.Size = new Size(156, 15);
-            label60.TabIndex = 56;
+            label60.TabIndex = 3;
             label60.Text = "Enter the text in the text area";
             // 
             // txtText
@@ -1526,7 +1526,7 @@
             txtText.Location = new Point(254, 51);
             txtText.Name = "txtText";
             txtText.Size = new Size(143, 23);
-            txtText.TabIndex = 55;
+            txtText.TabIndex = 5;
             txtText.TextChanged += txtText_TextChanged;
             // 
             // pGeneFeatureFillColour
@@ -1556,7 +1556,7 @@
             cboFeatureTops.Location = new Point(254, 80);
             cboFeatureTops.Name = "cboFeatureTops";
             cboFeatureTops.Size = new Size(143, 23);
-            cboFeatureTops.TabIndex = 4;
+            cboFeatureTops.TabIndex = 7;
             cboFeatureTops.SelectedIndexChanged += cboFeatureTops_SelectedIndexChanged;
             // 
             // chlGenefeatureMouseClick
@@ -1565,7 +1565,7 @@
             chlGenefeatureMouseClick.Location = new Point(254, 138);
             chlGenefeatureMouseClick.Name = "chlGenefeatureMouseClick";
             chlGenefeatureMouseClick.Size = new Size(89, 19);
-            chlGenefeatureMouseClick.TabIndex = 11;
+            chlGenefeatureMouseClick.TabIndex = 14;
             chlGenefeatureMouseClick.Text = "Mouse click";
             chlGenefeatureMouseClick.UseVisualStyleBackColor = true;
             chlGenefeatureMouseClick.CheckedChanged += chlGenefeatureMouseClick_CheckedChanged;
@@ -1594,7 +1594,7 @@
             btnDrawCurrentGeneFeatureMarker.Location = new Point(340, 230);
             btnDrawCurrentGeneFeatureMarker.Name = "btnDrawCurrentGeneFeatureMarker";
             btnDrawCurrentGeneFeatureMarker.Size = new Size(59, 23);
-            btnDrawCurrentGeneFeatureMarker.TabIndex = 20;
+            btnDrawCurrentGeneFeatureMarker.TabIndex = 23;
             btnDrawCurrentGeneFeatureMarker.Text = "Draw";
             btnDrawCurrentGeneFeatureMarker.UseVisualStyleBackColor = true;
             btnDrawCurrentGeneFeatureMarker.Click += btnDrawCurrentGeneFeatureMarker_Click;
@@ -1605,7 +1605,7 @@
             btnGeneFeatureDelete.Location = new Point(340, 335);
             btnGeneFeatureDelete.Name = "btnGeneFeatureDelete";
             btnGeneFeatureDelete.Size = new Size(57, 23);
-            btnGeneFeatureDelete.TabIndex = 26;
+            btnGeneFeatureDelete.TabIndex = 29;
             btnGeneFeatureDelete.Text = "Delete";
             btnGeneFeatureDelete.UseVisualStyleBackColor = true;
             btnGeneFeatureDelete.Click += btnGeneFeatureDelete_Click;
@@ -1616,7 +1616,7 @@
             cboGeneFeatureName.Location = new Point(254, 259);
             cboGeneFeatureName.Name = "cboGeneFeatureName";
             cboGeneFeatureName.Size = new Size(143, 23);
-            cboGeneFeatureName.TabIndex = 22;
+            cboGeneFeatureName.TabIndex = 25;
             cboGeneFeatureName.SelectedIndexChanged += cboGeneFeatureName_SelectedIndexChanged;
             cboGeneFeatureName.TextChanged += cboGeneFeatureName_TextChanged;
             // 
@@ -1626,7 +1626,7 @@
             btnGeneFeatureAddUpdate.Location = new Point(340, 302);
             btnGeneFeatureAddUpdate.Name = "btnGeneFeatureAddUpdate";
             btnGeneFeatureAddUpdate.Size = new Size(57, 23);
-            btnGeneFeatureAddUpdate.TabIndex = 24;
+            btnGeneFeatureAddUpdate.TabIndex = 27;
             btnGeneFeatureAddUpdate.Text = "Add";
             btnGeneFeatureAddUpdate.UseVisualStyleBackColor = true;
             btnGeneFeatureAddUpdate.Click += btnGeneFeatureAddUpdate_Click;
@@ -1638,7 +1638,7 @@
             nudGeneFeatureH.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudGeneFeatureH.Name = "nudGeneFeatureH";
             nudGeneFeatureH.Size = new Size(57, 23);
-            nudGeneFeatureH.TabIndex = 16;
+            nudGeneFeatureH.TabIndex = 19;
             nudGeneFeatureH.Value = new decimal(new int[] { 20, 0, 0, 0 });
             nudGeneFeatureH.ValueChanged += nudGeneFeatureH_ValueChanged;
             // 
@@ -1649,7 +1649,7 @@
             nudGeneFeatureW.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudGeneFeatureW.Name = "nudGeneFeatureW";
             nudGeneFeatureW.Size = new Size(57, 23);
-            nudGeneFeatureW.TabIndex = 14;
+            nudGeneFeatureW.TabIndex = 17;
             nudGeneFeatureW.Value = new decimal(new int[] { 20, 0, 0, 0 });
             nudGeneFeatureW.ValueChanged += nudGeneFeatureW_ValueChanged;
             // 
@@ -1659,7 +1659,7 @@
             label37.Location = new Point(317, 174);
             label37.Name = "label37";
             label37.Size = new Size(19, 15);
-            label37.TabIndex = 15;
+            label37.TabIndex = 18;
             label37.Text = "H:";
             // 
             // label38
@@ -1668,7 +1668,7 @@
             label38.Location = new Point(231, 174);
             label38.Name = "label38";
             label38.Size = new Size(21, 15);
-            label38.TabIndex = 13;
+            label38.TabIndex = 16;
             label38.Text = "W:";
             // 
             // btnGeneFeatureFillColour
@@ -1676,7 +1676,7 @@
             btnGeneFeatureFillColour.Location = new Point(340, 201);
             btnGeneFeatureFillColour.Name = "btnGeneFeatureFillColour";
             btnGeneFeatureFillColour.Size = new Size(59, 23);
-            btnGeneFeatureFillColour.TabIndex = 18;
+            btnGeneFeatureFillColour.TabIndex = 21;
             btnGeneFeatureFillColour.Text = "Colour";
             btnGeneFeatureFillColour.UseVisualStyleBackColor = true;
             btnGeneFeatureFillColour.Click += btnGeneFeatureFillColour_Click;
@@ -1686,7 +1686,7 @@
             nudGeneFeatureY.Location = new Point(340, 109);
             nudGeneFeatureY.Name = "nudGeneFeatureY";
             nudGeneFeatureY.Size = new Size(57, 23);
-            nudGeneFeatureY.TabIndex = 9;
+            nudGeneFeatureY.TabIndex = 12;
             nudGeneFeatureY.ValueChanged += nudGeneFeatureY_ValueChanged;
             // 
             // nudGeneFeatureX
@@ -1694,7 +1694,7 @@
             nudGeneFeatureX.Location = new Point(254, 109);
             nudGeneFeatureX.Name = "nudGeneFeatureX";
             nudGeneFeatureX.Size = new Size(57, 23);
-            nudGeneFeatureX.TabIndex = 7;
+            nudGeneFeatureX.TabIndex = 10;
             nudGeneFeatureX.ValueChanged += nudGeneFeatureX_ValueChanged;
             // 
             // label36
@@ -1703,7 +1703,7 @@
             label36.Location = new Point(317, 111);
             label36.Name = "label36";
             label36.Size = new Size(17, 15);
-            label36.TabIndex = 8;
+            label36.TabIndex = 11;
             label36.Text = "Y:";
             // 
             // label35
@@ -1712,7 +1712,7 @@
             label35.Location = new Point(231, 111);
             label35.Name = "label35";
             label35.Size = new Size(17, 15);
-            label35.TabIndex = 6;
+            label35.TabIndex = 9;
             label35.Text = "X:";
             // 
             // label27
@@ -1721,7 +1721,7 @@
             label27.Location = new Point(6, 83);
             label27.Name = "label27";
             label27.Size = new Size(132, 15);
-            label27.TabIndex = 3;
+            label27.TabIndex = 6;
             label27.Text = "Link marker to a feature";
             // 
             // label42
@@ -1730,7 +1730,7 @@
             label42.Location = new Point(6, 238);
             label42.Name = "label42";
             label42.Size = new Size(115, 15);
-            label42.TabIndex = 19;
+            label42.TabIndex = 22;
             label42.Text = "Draw current marker";
             // 
             // label41
@@ -1738,7 +1738,7 @@
             label41.Location = new Point(6, 325);
             label41.Name = "label41";
             label41.Size = new Size(242, 33);
-            label41.TabIndex = 25;
+            label41.TabIndex = 28;
             label41.Text = "Press the 'Delete' button to remove the marker";
             // 
             // label30
@@ -1746,7 +1746,7 @@
             label30.Location = new Point(6, 139);
             label30.Name = "label30";
             label30.Size = new Size(242, 35);
-            label30.TabIndex = 10;
+            label30.TabIndex = 13;
             label30.Text = "Select tthe approximate location by clicking on the image";
             // 
             // label40
@@ -1754,7 +1754,7 @@
             label40.Location = new Point(6, 292);
             label40.Name = "label40";
             label40.Size = new Size(242, 33);
-            label40.TabIndex = 23;
+            label40.TabIndex = 26;
             label40.Text = "Press the 'Add'/'Update' button to save the marker";
             // 
             // label39
@@ -1763,7 +1763,7 @@
             label39.Location = new Point(6, 262);
             label39.Name = "label39";
             label39.Size = new Size(135, 15);
-            label39.TabIndex = 21;
+            label39.TabIndex = 24;
             label39.Text = "Enter the marker's name";
             // 
             // label34
@@ -1772,7 +1772,7 @@
             label34.Location = new Point(6, 174);
             label34.Name = "label34";
             label34.Size = new Size(226, 15);
-            label34.TabIndex = 12;
+            label34.TabIndex = 15;
             label34.Text = "Set the marker's width (W) and height (H)";
             // 
             // label32
@@ -1781,7 +1781,7 @@
             label32.Location = new Point(3, 205);
             label32.Name = "label32";
             label32.Size = new Size(143, 15);
-            label32.TabIndex = 17;
+            label32.TabIndex = 20;
             label32.Text = "Select the marker's colour";
             // 
             // label31
@@ -1790,7 +1790,7 @@
             label31.Location = new Point(6, 111);
             label31.Name = "label31";
             label31.Size = new Size(176, 15);
-            label31.TabIndex = 5;
+            label31.TabIndex = 8;
             label31.Text = "Modify the X and Y coordinates:";
             // 
             // tabPage7
