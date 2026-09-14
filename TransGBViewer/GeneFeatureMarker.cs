@@ -21,6 +21,8 @@ namespace TransGBViewer
         private int viewTo = 0;
         private float place = 0.0f;
         private string linkedName = "";
+        private string text = "";
+        private bool solid = false;
         private int currentTop = 0;
         private int currentLeft = 0;
         private int basePlace = int.MinValue;
@@ -61,6 +63,8 @@ namespace TransGBViewer
             copy.LinkedName = linkedName;
             copy.Place = place;
             copy.SolidFill = solidFill;
+            copy.Text = text;
+            copy.Solid = solid;
             return copy;
         }
 
@@ -196,6 +200,8 @@ namespace TransGBViewer
         public PointF[] ShapePoints { get => shapePoints; set => shapePoints = value; }
         public bool SolidFill { get => solidFill; set => solidFill = value; }   
         public ShapeType ShapeType { get => shapeType; }
+        public String Text { get => text; set => text = value; }
+        public bool Solid { get => solid; set => solid = value; }
         public bool DrawMe { get => drawMe; set => drawMe = value; }
     }
 }

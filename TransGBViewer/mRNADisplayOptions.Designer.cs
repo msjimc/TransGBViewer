@@ -147,6 +147,9 @@
             label53 = new Label();
             tabPage5 = new TabPage();
             groupBox7 = new GroupBox();
+            ckbOverwrite = new CheckBox();
+            label60 = new Label();
+            txtText = new TextBox();
             pGeneFeatureFillColour = new PictureBox();
             chkGenefeatureSolid = new CheckBox();
             cboFeatureTops = new ComboBox();
@@ -1457,6 +1460,9 @@
             // 
             // groupBox7
             // 
+            groupBox7.Controls.Add(ckbOverwrite);
+            groupBox7.Controls.Add(label60);
+            groupBox7.Controls.Add(txtText);
             groupBox7.Controls.Add(pGeneFeatureFillColour);
             groupBox7.Controls.Add(chkGenefeatureSolid);
             groupBox7.Controls.Add(cboFeatureTops);
@@ -1493,9 +1499,39 @@
             groupBox7.TabStop = false;
             groupBox7.Text = "Add markers";
             // 
+            // ckbOverwrite
+            // 
+            ckbOverwrite.AutoSize = true;
+            ckbOverwrite.Enabled = false;
+            ckbOverwrite.Location = new Point(200, 54);
+            ckbOverwrite.Name = "ckbOverwrite";
+            ckbOverwrite.Size = new Size(52, 19);
+            ckbOverwrite.TabIndex = 57;
+            ckbOverwrite.Text = "Solid";
+            ckbOverwrite.UseVisualStyleBackColor = true;
+            ckbOverwrite.CheckedChanged += ckbOverwrite_CheckedChanged;
+            // 
+            // label60
+            // 
+            label60.AutoSize = true;
+            label60.Location = new Point(6, 54);
+            label60.Name = "label60";
+            label60.Size = new Size(156, 15);
+            label60.TabIndex = 56;
+            label60.Text = "Enter the text in the text area";
+            // 
+            // txtText
+            // 
+            txtText.Enabled = false;
+            txtText.Location = new Point(254, 51);
+            txtText.Name = "txtText";
+            txtText.Size = new Size(143, 23);
+            txtText.TabIndex = 55;
+            txtText.TextChanged += txtText_TextChanged;
+            // 
             // pGeneFeatureFillColour
             // 
-            pGeneFeatureFillColour.Location = new Point(311, 178);
+            pGeneFeatureFillColour.Location = new Point(311, 201);
             pGeneFeatureFillColour.Name = "pGeneFeatureFillColour";
             pGeneFeatureFillColour.Size = new Size(23, 23);
             pGeneFeatureFillColour.TabIndex = 54;
@@ -1506,7 +1542,7 @@
             chkGenefeatureSolid.AutoSize = true;
             chkGenefeatureSolid.Checked = true;
             chkGenefeatureSolid.CheckState = CheckState.Checked;
-            chkGenefeatureSolid.Location = new Point(207, 24);
+            chkGenefeatureSolid.Location = new Point(200, 24);
             chkGenefeatureSolid.Name = "chkGenefeatureSolid";
             chkGenefeatureSolid.Size = new Size(41, 19);
             chkGenefeatureSolid.TabIndex = 1;
@@ -1517,7 +1553,7 @@
             // cboFeatureTops
             // 
             cboFeatureTops.FormattingEnabled = true;
-            cboFeatureTops.Location = new Point(254, 57);
+            cboFeatureTops.Location = new Point(254, 80);
             cboFeatureTops.Name = "cboFeatureTops";
             cboFeatureTops.Size = new Size(143, 23);
             cboFeatureTops.TabIndex = 4;
@@ -1526,7 +1562,7 @@
             // chlGenefeatureMouseClick
             // 
             chlGenefeatureMouseClick.AutoSize = true;
-            chlGenefeatureMouseClick.Location = new Point(254, 115);
+            chlGenefeatureMouseClick.Location = new Point(254, 138);
             chlGenefeatureMouseClick.Name = "chlGenefeatureMouseClick";
             chlGenefeatureMouseClick.Size = new Size(89, 19);
             chlGenefeatureMouseClick.TabIndex = 11;
@@ -1537,7 +1573,7 @@
             // cboGeneFeatureShapetype
             // 
             cboGeneFeatureShapetype.FormattingEnabled = true;
-            cboGeneFeatureShapetype.Items.AddRange(new object[] { "Select", "Arrow (Down)", "Arrow (Left)", "Arrow (Right)", "Arrow (Up)", "Box", "Circle", "Cross (Diagonal)", "Cross (Vertical)", "Diamond", "Hexagon", "Octagon", "Pentagon", "Rectangle (Horizontal)", "Rectangle (Vertical)", "Square", "Star", "Triangle (Down)", "Triangle (Left)", "Triangle (Right)", "Triangle (Up)", "Vertical line" });
+            cboGeneFeatureShapetype.Items.AddRange(new object[] { "Select", "Arrow (Down)", "Arrow (Left)", "Arrow (Right)", "Arrow (Up)", "Box", "Circle", "Cross (Diagonal)", "Cross (Vertical)", "Diamond", "Hexagon", "Octagon", "Pentagon", "Rectangle (Horizontal)", "Rectangle (Vertical)", "Square", "Star", "Triangle (Down)", "Triangle (Left)", "Triangle (Right)", "Triangle (Up)", "Vertical line", "Text", "Text-up", "Text-down" });
             cboGeneFeatureShapetype.Location = new Point(254, 22);
             cboGeneFeatureShapetype.Name = "cboGeneFeatureShapetype";
             cboGeneFeatureShapetype.Size = new Size(143, 23);
@@ -1555,7 +1591,7 @@
             // 
             // btnDrawCurrentGeneFeatureMarker
             // 
-            btnDrawCurrentGeneFeatureMarker.Location = new Point(340, 207);
+            btnDrawCurrentGeneFeatureMarker.Location = new Point(340, 230);
             btnDrawCurrentGeneFeatureMarker.Name = "btnDrawCurrentGeneFeatureMarker";
             btnDrawCurrentGeneFeatureMarker.Size = new Size(59, 23);
             btnDrawCurrentGeneFeatureMarker.TabIndex = 20;
@@ -1566,7 +1602,7 @@
             // btnGeneFeatureDelete
             // 
             btnGeneFeatureDelete.Enabled = false;
-            btnGeneFeatureDelete.Location = new Point(340, 312);
+            btnGeneFeatureDelete.Location = new Point(340, 335);
             btnGeneFeatureDelete.Name = "btnGeneFeatureDelete";
             btnGeneFeatureDelete.Size = new Size(57, 23);
             btnGeneFeatureDelete.TabIndex = 26;
@@ -1577,7 +1613,7 @@
             // cboGeneFeatureName
             // 
             cboGeneFeatureName.FormattingEnabled = true;
-            cboGeneFeatureName.Location = new Point(254, 236);
+            cboGeneFeatureName.Location = new Point(254, 259);
             cboGeneFeatureName.Name = "cboGeneFeatureName";
             cboGeneFeatureName.Size = new Size(143, 23);
             cboGeneFeatureName.TabIndex = 22;
@@ -1587,7 +1623,7 @@
             // btnGeneFeatureAddUpdate
             // 
             btnGeneFeatureAddUpdate.Enabled = false;
-            btnGeneFeatureAddUpdate.Location = new Point(340, 279);
+            btnGeneFeatureAddUpdate.Location = new Point(340, 302);
             btnGeneFeatureAddUpdate.Name = "btnGeneFeatureAddUpdate";
             btnGeneFeatureAddUpdate.Size = new Size(57, 23);
             btnGeneFeatureAddUpdate.TabIndex = 24;
@@ -1597,7 +1633,7 @@
             // 
             // nudGeneFeatureH
             // 
-            nudGeneFeatureH.Location = new Point(340, 149);
+            nudGeneFeatureH.Location = new Point(340, 172);
             nudGeneFeatureH.Maximum = new decimal(new int[] { 25, 0, 0, 0 });
             nudGeneFeatureH.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudGeneFeatureH.Name = "nudGeneFeatureH";
@@ -1608,7 +1644,7 @@
             // 
             // nudGeneFeatureW
             // 
-            nudGeneFeatureW.Location = new Point(254, 149);
+            nudGeneFeatureW.Location = new Point(254, 172);
             nudGeneFeatureW.Maximum = new decimal(new int[] { 25, 0, 0, 0 });
             nudGeneFeatureW.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudGeneFeatureW.Name = "nudGeneFeatureW";
@@ -1620,7 +1656,7 @@
             // label37
             // 
             label37.AutoSize = true;
-            label37.Location = new Point(317, 151);
+            label37.Location = new Point(317, 174);
             label37.Name = "label37";
             label37.Size = new Size(19, 15);
             label37.TabIndex = 15;
@@ -1629,7 +1665,7 @@
             // label38
             // 
             label38.AutoSize = true;
-            label38.Location = new Point(231, 151);
+            label38.Location = new Point(231, 174);
             label38.Name = "label38";
             label38.Size = new Size(21, 15);
             label38.TabIndex = 13;
@@ -1637,7 +1673,7 @@
             // 
             // btnGeneFeatureFillColour
             // 
-            btnGeneFeatureFillColour.Location = new Point(340, 178);
+            btnGeneFeatureFillColour.Location = new Point(340, 201);
             btnGeneFeatureFillColour.Name = "btnGeneFeatureFillColour";
             btnGeneFeatureFillColour.Size = new Size(59, 23);
             btnGeneFeatureFillColour.TabIndex = 18;
@@ -1647,7 +1683,7 @@
             // 
             // nudGeneFeatureY
             // 
-            nudGeneFeatureY.Location = new Point(340, 86);
+            nudGeneFeatureY.Location = new Point(340, 109);
             nudGeneFeatureY.Name = "nudGeneFeatureY";
             nudGeneFeatureY.Size = new Size(57, 23);
             nudGeneFeatureY.TabIndex = 9;
@@ -1655,7 +1691,7 @@
             // 
             // nudGeneFeatureX
             // 
-            nudGeneFeatureX.Location = new Point(254, 86);
+            nudGeneFeatureX.Location = new Point(254, 109);
             nudGeneFeatureX.Name = "nudGeneFeatureX";
             nudGeneFeatureX.Size = new Size(57, 23);
             nudGeneFeatureX.TabIndex = 7;
@@ -1664,7 +1700,7 @@
             // label36
             // 
             label36.AutoSize = true;
-            label36.Location = new Point(317, 88);
+            label36.Location = new Point(317, 111);
             label36.Name = "label36";
             label36.Size = new Size(17, 15);
             label36.TabIndex = 8;
@@ -1673,7 +1709,7 @@
             // label35
             // 
             label35.AutoSize = true;
-            label35.Location = new Point(231, 88);
+            label35.Location = new Point(231, 111);
             label35.Name = "label35";
             label35.Size = new Size(17, 15);
             label35.TabIndex = 6;
@@ -1682,7 +1718,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Location = new Point(6, 60);
+            label27.Location = new Point(6, 83);
             label27.Name = "label27";
             label27.Size = new Size(132, 15);
             label27.TabIndex = 3;
@@ -1691,7 +1727,7 @@
             // label42
             // 
             label42.AutoSize = true;
-            label42.Location = new Point(6, 215);
+            label42.Location = new Point(6, 238);
             label42.Name = "label42";
             label42.Size = new Size(115, 15);
             label42.TabIndex = 19;
@@ -1699,7 +1735,7 @@
             // 
             // label41
             // 
-            label41.Location = new Point(6, 302);
+            label41.Location = new Point(6, 325);
             label41.Name = "label41";
             label41.Size = new Size(242, 33);
             label41.TabIndex = 25;
@@ -1707,7 +1743,7 @@
             // 
             // label30
             // 
-            label30.Location = new Point(6, 116);
+            label30.Location = new Point(6, 139);
             label30.Name = "label30";
             label30.Size = new Size(242, 35);
             label30.TabIndex = 10;
@@ -1715,7 +1751,7 @@
             // 
             // label40
             // 
-            label40.Location = new Point(6, 269);
+            label40.Location = new Point(6, 292);
             label40.Name = "label40";
             label40.Size = new Size(242, 33);
             label40.TabIndex = 23;
@@ -1724,7 +1760,7 @@
             // label39
             // 
             label39.AutoSize = true;
-            label39.Location = new Point(6, 239);
+            label39.Location = new Point(6, 262);
             label39.Name = "label39";
             label39.Size = new Size(135, 15);
             label39.TabIndex = 21;
@@ -1733,7 +1769,7 @@
             // label34
             // 
             label34.AutoSize = true;
-            label34.Location = new Point(6, 151);
+            label34.Location = new Point(6, 174);
             label34.Name = "label34";
             label34.Size = new Size(226, 15);
             label34.TabIndex = 12;
@@ -1742,7 +1778,7 @@
             // label32
             // 
             label32.AutoSize = true;
-            label32.Location = new Point(3, 182);
+            label32.Location = new Point(3, 205);
             label32.Name = "label32";
             label32.Size = new Size(143, 15);
             label32.TabIndex = 17;
@@ -1751,7 +1787,7 @@
             // label31
             // 
             label31.AutoSize = true;
-            label31.Location = new Point(6, 88);
+            label31.Location = new Point(6, 111);
             label31.Name = "label31";
             label31.Size = new Size(176, 15);
             label31.TabIndex = 5;
@@ -2045,5 +2081,8 @@
         private Label label59;
         private Button btnSequenceColour;
         private CheckBox chkReverseComplement;
+        private Label label60;
+        private TextBox txtText;
+        private CheckBox ckbOverwrite;
     }
 }

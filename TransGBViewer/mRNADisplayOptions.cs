@@ -20,6 +20,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.AxHost;
 
 namespace TransGBViewer
 {
@@ -57,8 +58,8 @@ namespace TransGBViewer
                 }
 
                 foreach (string file in genbankFiles)
-                { 
-                    ReadGenBankFile(file); 
+                {
+                    ReadGenBankFile(file);
                 }
 
                 if (genbankFiles.Count == 0)
@@ -437,8 +438,8 @@ namespace TransGBViewer
         {
             Dictionary<string, exonGraphNode> exonSetDict = new Dictionary<string, exonGraphNode>();
             foreach (string name in parameters.Exons.Keys)
-            {                
-                
+            {
+
                 List<Point> exons = parameters.Exons[name];
                 foreach (Point exon in exons)
                 {
@@ -2792,6 +2793,10 @@ namespace TransGBViewer
                     PointF[] shape = currentGeneFeatureMarker.GetResizedfeaturePoints(scaleDPI);
                     if (currentGeneFeatureMarker.ShapeType == ShapeType.Box)
                     { g.DrawPolygon(new Pen(currentGeneFeatureMarker.Colour, scaleDPI.i[2]), shape); }
+                    else if (currentGeneFeatureMarker.ShapeType == ShapeType.Text || currentGeneFeatureMarker.ShapeType == ShapeType.TextUp || currentGeneFeatureMarker.ShapeType == ShapeType.TextDown)
+                    {
+                        DrawMarkertext(currentGeneFeatureMarker, g, true, scaleDPI);
+                    }
                     else
                     {
                         if (currentGeneFeatureMarker.SolidFill == true)
@@ -2821,10 +2826,12 @@ namespace TransGBViewer
                     gfm.UpdateTop((int)parameters.FeatureRows[gfm.LinkedName], scaleDPI);
                     PointF[] shape = gfm.GetResizedfeaturePoints(scaleDPI);
 
-
-
                     if (gfm.ShapeType == ShapeType.Box)
                     { g.DrawPolygon(new Pen(gfm.Colour, scaleDPI.i[2]), shape); }
+                    else if (gfm.ShapeType == ShapeType.Text || gfm.ShapeType == ShapeType.TextUp || gfm.ShapeType == ShapeType.TextDown)
+                    {
+                        DrawMarkertext(gfm, g, false, scaleDPI);
+                    }
                     else
                     {
                         if (gfm.SolidFill == true)
@@ -2834,6 +2841,32 @@ namespace TransGBViewer
                     }
                 }
             }
+        }
+
+        private void DrawMarkertext(GeneFeatureMarker gfm, Graphics g, bool temp, scalar scaleDPI)
+        {
+            float rotationAngle = 0;
+            if (gfm.ShapeType == ShapeType.TextUp) { rotationAngle = -90; }
+            else if (gfm.ShapeType == ShapeType.TextDown) { rotationAngle = 90; }
+
+            g.TranslateTransform(gfm.X, gfm.Y * scaleDPI.scale);
+            if (rotationAngle != 0)
+            { g.RotateTransform(rotationAngle); }
+
+            System.Drawing.Font fText = new System.Drawing.Font(parameters.IDFont.Name, 10);
+            SizeF sf = g.MeasureString(gfm.Text, fText);
+            if (gfm.Solid == true)
+            {
+                float offset = 2 * scaleDPI.scale;
+                g.FillRectangle(Brushes.White, 0 + offset, 0 + offset, sf.Width - (2 * offset), sf.Height - (2 * offset));
+            }
+            if (temp == true)
+            {                
+                g.DrawRectangle(Pens.Black, 0, 0, sf.Width, sf.Height);
+                g.FillEllipse(Brushes.Black, -2 * scaleDPI.scale, -2 * scaleDPI.scale, 5 * scaleDPI.scale, 5 * scaleDPI.scale);
+            }
+            g.DrawString(gfm.Text, fText, new SolidBrush(gfm.Colour), 0, 0);
+            g.ResetTransform();
         }
 
         private float getXOffset(int theStart, int place, float scaleFactor, scalar scale)
@@ -2871,9 +2904,10 @@ namespace TransGBViewer
             DrawCurrentFeatureMarker();
         }
 
-
         private void cboGeneFeatureShapetype_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtText.Enabled = false;
+            ckbOverwrite.Enabled = false;
             if (currentGeneFeatureMarker == null) { return; }
 
             switch (cboGeneFeatureShapetype.Text)
@@ -2941,11 +2975,42 @@ namespace TransGBViewer
                 case "Vertical line":
                     currentGeneFeatureMarker.SetShapePoints(ShapeType.VerticalLine);
                     break;
+                case "Text":
+                case "Text-down":
+                case "Text-up":                    
+                    txtText.Enabled = true;
+                    ckbOverwrite.Enabled = true;
+                    currentGeneFeatureMarker.Text = txtText.Text.Trim();
+                    if (cboGeneFeatureShapetype.Text == "Text-down")
+                    { currentGeneFeatureMarker.SetShapePoints(ShapeType.TextDown); }
+                    else if (cboGeneFeatureShapetype.Text == "Text-up")
+                    { currentGeneFeatureMarker.SetShapePoints(ShapeType.TextUp); }
+                    else { currentGeneFeatureMarker.SetShapePoints(ShapeType.Text); }
+                    currentGeneFeatureMarker.Solid = ckbOverwrite.Checked;
+                    break;
                 default:
                     currentGeneFeatureMarker.SetShapePoints(ShapeType.NotSet);
                     break;
             }
             DrawCurrentFeatureMarker();
+        }
+
+        private void txtText_TextChanged(object sender, EventArgs e)
+        {
+            if (currentGeneFeatureMarker != null && txtText.Enabled)
+            {
+                currentGeneFeatureMarker.Text = txtText.Text.Trim();
+                DrawCurrentFeatureMarker();
+            }
+        }
+
+        private void ckbOverwrite_CheckedChanged(object sender, EventArgs e)
+        {
+            if (currentGeneFeatureMarker != null && txtText.Enabled)
+            {
+                currentGeneFeatureMarker.Solid = ckbOverwrite.Checked;
+                DrawCurrentFeatureMarker();
+            }
         }
         #endregion
 
@@ -3279,7 +3344,7 @@ namespace TransGBViewer
             for (int index = sequence.Length - 1; index >= 0; index--)
             {
                 char c = sequence[index];
-               switch (c)
+                switch (c)
                 {
                     case 'a':
                         revComp += "t";
@@ -3361,7 +3426,7 @@ namespace TransGBViewer
             int sequencelength = sequence.Length;
             int score = 0;
             int bestScore = 0;
-            
+
             List<int> hits = new List<int>();
 
             for (int index = 0; index < target.Length - sequence.Length - 1; index++)
@@ -3400,7 +3465,7 @@ namespace TransGBViewer
             {
                 sequenceColour = sc.GetShapeColour;
                 setExampleColourBox(sequenceColour, p1Sequencecolour);
-           }
+            }
         }
     }
 }

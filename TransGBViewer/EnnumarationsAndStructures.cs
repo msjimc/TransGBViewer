@@ -120,7 +120,10 @@ namespace TransGBViewer
         TriangleLeft,
         TriangleRight,
         UnderLine,
-        VerticalLine
+        VerticalLine,
+        Text,
+        TextUp,
+        TextDown
     }
 
     public enum ShapeLocation
