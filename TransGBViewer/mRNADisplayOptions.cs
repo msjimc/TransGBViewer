@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Net;
+using System.Numerics;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Reflection.Metadata;
@@ -3266,7 +3267,7 @@ namespace TransGBViewer
             if (parameters.BindingSites.ContainsKey(key) == true)
             { btnSequencerRmove.Enabled = true; }
 
-            if (CleanSequence(txtSequencesSequence.Text).Length < 5) { return; }
+            if (CleanSequence(txtSequencesSequence.Text).Length < 5 && txtSequencesSequence.Text.Trim().Contains(":") == false) { return; }
             btnSequenceAdd.Enabled = true;
         }
         private void txtSequenceDisplayname_TextChanged(object sender, EventArgs e)
@@ -3292,13 +3293,19 @@ namespace TransGBViewer
         {
             string sequence = parameters.SequenceDNA[cboSequenceTranscriptName.Text];
             List<string> seqs = new List<string>();
+            List<Point> points = new List<Point>();
             foreach (string s in txtSequencesSequence.Lines)
             {
-                string cleaned = CleanSequence(s);
-                if (chkReverseComplement.Checked == true)
-                { cleaned = GetReverseComplement(cleaned); }
-                if (cleaned.Length > 5)
-                    seqs.Add(cleaned.Trim().ToLower());
+                if (s.Contains(":") == true)
+                { points.Add(getPoints(s)); }
+                else                
+                {
+                    string cleaned = CleanSequence(s);                
+                    if (chkReverseComplement.Checked == true)
+                    { cleaned = GetReverseComplement(cleaned); }
+                    if (cleaned.Length > 5)
+                    { seqs.Add(cleaned.Trim().ToLower()); }
+                }
             }
 
             List<BindingSite> sites = new List<BindingSite>();
@@ -3317,6 +3324,17 @@ namespace TransGBViewer
                     }
                 }
             }
+            foreach(Point p in points)
+            {
+                if (p.X > -1 && p.Y > -1)
+                {
+                    BindingSite bs;
+                    bs.FillColour = sequenceColour;
+                    bs.Region = p;
+                    bs.LineColour = Color.Black;
+                    sites.Add(bs);
+                }
+            }
 
             if (sites.Count > 0)
             { parameters.BindingSites[cboSequenceTranscriptName.Text + "#" + txtSequenceDisplayname.Text.Trim()] = sites; }
@@ -3325,7 +3343,7 @@ namespace TransGBViewer
             txtSequenceDisplayname.Clear();
             cboSequenceTranscriptName.SelectedIndex = 0;
             ReDraw();
-        }
+        }       
 
         private void btnSequencerRmove_Click(object sender, EventArgs e)
         {
@@ -3336,6 +3354,22 @@ namespace TransGBViewer
             txtSequenceDisplayname.Clear();
             cboSequenceTranscriptName.SelectedIndex = 0;
             ReDraw();
+        }
+
+        private Point getPoints(string region)
+        {
+            string[] parts = region.Split(':');
+            if (parts.Length == 2)
+            {
+                if (int.TryParse(parts[0], out int start) && int.TryParse(parts[1], out int end))
+                {
+                    if (start > -1 && end + 1 > start)
+                    { return new Point(start, end); }
+                    else
+                    { return new Point(-1, -1); }
+                }
+            }
+            return Point.Empty;
         }
 
         private string GetReverseComplement(string sequence)
