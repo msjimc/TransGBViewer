@@ -8,14 +8,14 @@ It is possible to download the whole repository by clicking on the green '<> Cod
 ## Which file to use
 
 The downloads folder contains three versions of the prebuilt program and you only need 1. 
-- TransGBViewer_x64.exe: 
+- TransGBViewer_x64_singleFile.zip: 
     - This version is 64 bit and will run on any modernish PC.
     - It contains all the code required to run on a computer and doesn't require the .NET 9.0 desktop runtime installing
 - TransGBViewer_cpu32.zip:
     - This version is 32 bit and will run on any PC, but intended for people who want to use the program on Linux computer with Wine.
     - This version requires the .NET 9.0 desktop runtime installing [from here](https://dotnet.microsoft.com/en-us/download/dotnet/9.0).
 - TransGBViewer_cpu64.zip:
-    - This version is 64 bit and will run on any newish PC.
+    - This version is 64 bit and will run on any PC.
     - This version requires the .NET 9.0 desktop runtime installing [from here](https://dotnet.microsoft.com/en-us/download/dotnet/9.0).
 
 ## Downloading just the program the zip file

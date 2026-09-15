@@ -8,8 +8,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
-//using Newtonsoft.Json;
-//using Newtonsoft.Json.Linq;
 
 namespace TransGBViewer
 {

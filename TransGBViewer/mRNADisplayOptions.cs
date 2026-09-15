@@ -1804,7 +1804,6 @@ namespace TransGBViewer
                         }
                         if (draw == true)
                         {
-                            //RectangleF r = new RectangleF(startPoint, Top + ((float)height / -1), (endPoint - startPoint), ((float)height / 1));
                             RectangleF r = new RectangleF(startPoint, Top, (endPoint - startPoint), height);
                             CommonGraphicTasks.DrawRectangle(g, r, new SolidBrush(bsc.FillColour), parameters.Rounded, scale, 2, true);
                             if (parameters.DrawExonBorders == true)
