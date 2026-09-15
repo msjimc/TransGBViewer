@@ -1813,8 +1813,7 @@ namespace TransGBViewer
                     }
                 }
                 Top += scale.i[25];
-            }
-            Top += scale.i[10];
+            }            
             FillMask(g, currentHeight, Top, scale, bmp.Width);
             return Top;
         }

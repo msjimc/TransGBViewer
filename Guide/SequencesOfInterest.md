@@ -34,8 +34,8 @@ Figure 3.
 
 ---
 
-- Next, enter the sequence(s) of interest into the lower larger text area (black line in Figure 2). These sequences must be in the same sense as the sequence in the transcript and not its reverse complement; consequently, anti-sense RNA or siRNA sequences must be reverse complemented. See the section [Hit detection](#Hit-detection). If you want to display more than one sequence on a display line, enter each sequence on a new line in the text area.
-- If the entered sequence is tht reverse complement of the transcript's sequents tick the __Reverse complement__ check box. This will instruct __TransGBViewer__ to reverse complement the sequence before searching for a hit. __Note:__ If you enter more then one sequence they must all be in the same orientation.
+- Next, enter the sequence(s) of interest into the lower larger text area (black line in Figures 2 and 4). In this case gccacctgRRcacgtccacgcc is the sequence of an anti-sense RNA, while 500:520 is the coordinates of another sequence in the same transcript. A sequence must be in the same sense as the sequence in the transcript or the __Reverse complement__ box must be ticked (pink line in Figures 2 and 4)  consequently, anti-sense RNA or siRNA sequences must be reverse complemented. See the section [Hit detection](#Hit-detection). If you want to display more than one sequence on a display line, enter each sequence on a new line in the text area.
+- If the entered sequence is the reverse complement of the transcript's sequents tick the __Reverse complement__ check box. This will instruct __TransGBViewer__ to reverse complement the sequence before searching for a hit. __Note:__ If you enter more then one sequence they must all be in the same orientation. This is not necessary if a sequence's coordinates are used.
 - Finally, press the __Add__ button (purple line in Figure 2) to import and display the sequences. See Figures 4a and 4b.
 
 
